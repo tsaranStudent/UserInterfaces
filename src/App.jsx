@@ -9,7 +9,7 @@ function App() {
     return (
         <Container fluid>
             <div className="mb-3">
-                Ma³y test tomka  , 2 test tomka , 3 tes
+                Ma³y test tomka  , 2 test tomka , 3 tes                dsadada416561651651651651651
             </div>
             <div className="mb-3">
                 dawaj dawaj niefdsfdsfdsdfsdasdasdassssssssssssssss
