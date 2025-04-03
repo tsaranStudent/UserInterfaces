@@ -12,7 +12,7 @@ function App() {
                 Ma³y test tomka  , 2 test tomka , 3 tes
             </div>
             <div className="mb-3">
-                Lorem Ipsum is simply dummy text of the printing and  34243243243243242432
+                Lorem Ipsum is simply dummy text of the printing and  34243243243243242432   fdsfsd
             </div>
             <hr />
             <Row>
