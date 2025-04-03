@@ -12,7 +12,7 @@ function App() {
                 Ma³y test tomka  , 2 test tomka , 3 tes
             </div>
             <div className="mb-3">
-                dawaj dawaj niefdsfdsfds
+                dawaj dawaj niefdsfdsfdsdfsdasdasdassssssssssssssss
             </div>
             <hr />
             <Row>
