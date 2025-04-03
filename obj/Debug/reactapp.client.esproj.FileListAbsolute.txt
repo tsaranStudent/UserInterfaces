@@ -1,0 +1,3 @@
+C:\Users\akornatka\Desktop\Zajecia 2025\TIU\Zajecia\ReactApp\reactapp.client\obj\Debug\reactapp.client.esproj.CoreCompileInputs.cache
+\\QNAP-TS-453B\Dane\Studia\Tworzenie interfejsów użytkownika\Wyklady\akornatka-29032025175814-ReactApp4\ReactApp\reactapp.client\obj\Debug\reactapp.client.esproj.CoreCompileInputs.cache
+C:\Users\tomek\Projekty\UserInterfaces\Projekt\ReactApp\reactapp.client\obj\Debug\reactapp.client.esproj.CoreCompileInputs.cache
