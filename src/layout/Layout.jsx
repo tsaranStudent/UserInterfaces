@@ -43,14 +43,14 @@ export function Layout() {
                                     <Link to="/" className="d-block">Konfiguracja</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Odœwierz konfiguracjê</Link>
+                                    <Link to="/" className="d-block">Odï¿½wierz konfiguracjï¿½</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Nowoœci w wersji</Link>
+                                    <Link to="/" className="d-block">Nowoï¿½ci w wersji</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">W³acz nowe funkcje</Link>
+                                    <Link to="/" className="d-block">Wï¿½acz nowe funkcje</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -75,7 +75,7 @@ export function Layout() {
                             {/*        <Link to="/pracownik" className="d-block">Pracownik</Link>*/}
                             {/*    </NavDropdown.Item>*/}
                             {/*</NavDropdown>*/}
-                            <NavDropdown title="Ogólne" id="ogolne">
+                            <NavDropdown title="Ogï¿½lne" id="ogolne">
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Kontrachenci</Link>
                                 </NavDropdown.Item>
@@ -117,14 +117,14 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Przesy³ki kurierskie</Link>
+                                    <Link to="/pracownicy" className="d-block">Przesyï¿½ki kurierskie</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wiadomoœci SMS</Link>
+                                    <Link to="/pracownicy" className="d-block">Wiadomoï¿½ci SMS</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Zakup paczkê SMS</Link>
+                                    <Link to="/pracownicy" className="d-block">Zakup paczkï¿½ SMS</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Raporty</Link>
@@ -139,7 +139,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Udziel pe³nomocnictwa</Link>
+                                    <Link to="/pracownicy" className="d-block">Udziel peï¿½nomocnictwa</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="CRM" id="crm">
@@ -158,11 +158,11 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Archiwum wydruków</Link>
+                                    <Link to="/pracownicy" className="d-block">Archiwum wydrukï¿½w</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Biblioteka dokumentów</Link>
+                                    <Link to="/pracownicy" className="d-block">Biblioteka dokumentï¿½w</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Nowy dokument</Link>
@@ -180,7 +180,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Schematy</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Historia zdarzeñ</Link>
+                                    <Link to="/pracownicy" className="d-block">Historia zdarzeï¿½</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -196,7 +196,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Szablony odpowiedzi</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Grupy zapytañ</Link>
+                                    <Link to="/pracownicy" className="d-block">Grupy zapytaï¿½</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -242,14 +242,14 @@ export function Layout() {
                                     <Link to="/" className="d-block">Zasoby</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Raport braków</Link>
+                                    <Link to="/" className="d-block">Raport brakï¿½w</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
                                     <Link to="/" className="d-block">Wydania zewnetrzne WZ</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Przyjêcia zewnêtrzne PZ</Link>
+                                    <Link to="/" className="d-block">Przyjï¿½cia zewnï¿½trzne PZ</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/" className="d-block">Inne</Link>
@@ -263,10 +263,10 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Urz¹dzenia</Link>
+                                    <Link to="/" className="d-block">Urzï¿½dzenia</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Rodzanie urz¹dzeñ</Link>
+                                    <Link to="/" className="d-block">Rodzanie urzï¿½dzeï¿½</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -286,7 +286,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz pï¿½atnoï¿½ci</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -305,7 +305,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Dokumenty kompensat</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Ró¿nice kursowe</Link>
+                                    <Link to="/pracownicy" className="d-block">Rï¿½nice kursowe</Link>
                                 </NavDropdown.Item>                                
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -333,7 +333,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Rejestry VAT</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Struktura zakupów</Link>
+                                    <Link to="/pracownicy" className="d-block">Struktura zakupï¿½w</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Ewidencja dodatkowa</Link>
@@ -362,7 +362,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wyœlij dane</Link>
+                                    <Link to="/pracownicy" className="d-block">Wyï¿½lij dane</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Historia wymiany</Link>
@@ -372,10 +372,10 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Klienci biura</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wiadomosci od klientów</Link>
+                                    <Link to="/pracownicy" className="d-block">Wiadomosci od klientï¿½w</Link>
                                 </NavDropdown.Item>                               
                             </NavDropdown>
-                            <NavDropdown title="Ksiêgowoœæ" id="ksiegowosc">
+                            <NavDropdown title="Ksiï¿½gowoï¿½ï¿½" id="ksiegowosc">
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Zapisy KPiR</Link>
                                 </NavDropdown.Item>
@@ -395,17 +395,17 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Dokumenty Ÿród³owe</Link>
+                                    <Link to="/pracownik" className="d-block">Dokumenty ï¿½rï¿½dï¿½owe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Ewidencja œrodków trwa³ych</Link>
+                                    <Link to="/pracownicy" className="d-block">Ewidencja ï¿½rodkï¿½w trwaï¿½ych</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Dokumenty œrodków trwa³ych</Link>
+                                    <Link to="/pracownik" className="d-block">Dokumenty ï¿½rodkï¿½w trwaï¿½ych</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Ewidencja wyposa¿enia</Link>
+                                    <Link to="/pracownik" className="d-block">Ewidencja wyposaï¿½enia</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Inwentaryzacja</Link>
@@ -426,7 +426,7 @@ export function Layout() {
                                     <Link to="/pracownik" className="d-block">Informacje o JPK pomoc</Link>
                                 </NavDropdown.Item>                                
                             </NavDropdown>
-                            <NavDropdown title="P³ace i kadry" id="placeKardy">
+                            <NavDropdown title="Pï¿½ace i kadry" id="placeKardy">
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Kadry</Link>
                                 </NavDropdown.Item>
@@ -435,10 +435,10 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Listy p³ac</Link>
+                                    <Link to="/pracownik" className="d-block">Listy pï¿½ac</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Wyp³aty pracowników</Link>
+                                    <Link to="/pracownik" className="d-block">Wypï¿½aty pracownikï¿½w</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -462,7 +462,7 @@ export function Layout() {
                                     <Link to="/pracownik" className="d-block">Podatek na PIT-8AR</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Deklaracje PIT pracowników</Link>
+                                    <Link to="/pracownik" className="d-block">Deklaracje PIT pracownikï¿½w</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Deklaracje PFRON</Link>
@@ -472,7 +472,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">S³owniki</Link>
+                                    <Link to="/pracownik" className="d-block">Sï¿½owniki</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -480,7 +480,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Kasy zapomogowo - po¿yczkowe PKZP</Link>
+                                    <Link to="/pracownik" className="d-block">Kasy zapomogowo - poï¿½yczkowe PKZP</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -507,7 +507,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Ustawienia ogólne</Link>
+                                    <Link to="/pracownik" className="d-block">Ustawienia ogï¿½lne</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Pomoc" id="pomoc">
@@ -515,7 +515,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Pomoc</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Jak zacz¹æ</Link>
+                                    <Link to="/pracownik" className="d-block">Jak zaczï¿½ï¿½</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -529,7 +529,7 @@ export function Layout() {
                                     <Link to="/pracownik" className="d-block">Pomoc zdalna</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">System obs³ugi zdarzeñ</Link>
+                                    <Link to="/pracownik" className="d-block">System obsï¿½ugi zdarzeï¿½</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Twoja indywidalna strona</Link>
