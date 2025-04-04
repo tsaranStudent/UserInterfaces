@@ -9,14 +9,6 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\handel\" />
-    <Folder Include="src\kasaBank\" />
-    <Folder Include="src\ksiegowosc\" />
-    <Folder Include="src\jpk\" />
-    <Folder Include="src\NewFolder\" />
-    <Folder Include="src\placeKadry\" />
-    <Folder Include="src\rejestryVat\" />
-    <Folder Include="src\ogolne\" />
     <Folder Include="src\start\" />
   </ItemGroup>
 </Project>

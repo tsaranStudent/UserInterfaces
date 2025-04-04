@@ -77,10 +77,10 @@ export function Layout() {
                             {/*</NavDropdown>*/}
                             <NavDropdown title="Og�lne" id="ogolne">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Kontrachenci</Link>
+                                    <Link to="/kontrahenci" className="d-block">Kontrachenci</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Nowy kontrachent</Link>
+                                    <Link to="/nowyKontrahent" className="d-block">Nowy kontrachent</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -88,58 +88,58 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Cennik</Link>
+                                    <Link to="/cennik" className="d-block">Cennik</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Nowy towar</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Grupy towarowe</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Rabaty</Link>
+                                    <Link to="/nowyTowar" className="d-block">Nowy towar</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Kategorie</Link>
+                                    <Link to="/grupyTowarowe" className="d-block">Grupy towarowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Atrybuty</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wymiary opisu analitycznego</Link>
+                                    <Link to="/ogolne" className="d-block">Rabaty</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Inne</Link>
+                                    <Link to="/ogolne" className="d-block">Kategorie</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/ogolne" className="d-block">Atrybuty</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Przesy�ki kurierskie</Link>
+                                    <Link to="/ogolne" className="d-block">Wymiary opisu analitycznego</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wiadomo�ci SMS</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Zakup paczk� SMS</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Raporty</Link>
+                                    <Link to="/ogolne" className="d-block">Inne</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Waluty</Link>
+                                    <Link to="/ogolne" className="d-block">Przesy�ki kurierskie</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Dane osobowe</Link>
+                                    <Link to="/ogolne" className="d-block">Wiadomo�ci SMS</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/ogolne" className="d-block">Zakup paczk� SMS</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/ogolne" className="d-block">Raporty</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Udziel pe�nomocnictwa</Link>
+                                    <Link to="/ogolne" className="d-block">Waluty</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/ogolne" className="d-block">Dane osobowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/ogolne" className="d-block">Udziel pe�nomocnictwa</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="CRM" id="crm">
