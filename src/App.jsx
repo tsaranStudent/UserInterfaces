@@ -21,7 +21,7 @@ function App() {
                         <Card.Header>Ogloszenie 1</Card.Header>
                         <Card.Body>
                             <Card.Text>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummy text of the prin
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
@@ -32,7 +32,7 @@ function App() {
                         <Card.Header>Ogloszenie 2</Card.Header>
                         <Card.Body>
                             <Card.Text>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is s.
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
@@ -43,7 +43,7 @@ function App() {
                         <Card.Header>Ogloszenie 3</Card.Header>
                         <Card.Body>
                             <Card.Text>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummym.
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
@@ -54,7 +54,7 @@ function App() {
                         <Card.Header>Ogloszenie 4</Card.Header>
                         <Card.Body>
                             <Card.Text>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummy text osum.
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
@@ -69,8 +69,7 @@ function App() {
                         <Card.Body>
                             <Card.Title>Towar 1</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                Some quick examk of the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
@@ -82,7 +81,7 @@ function App() {
                         <Card.Body>
                             <Card.Title>Towar 2</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
+                                Some quick exampup the
                                 bulk of the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>
@@ -95,7 +94,7 @@ function App() {
                         <Card.Body>
                             <Card.Title>Towar 3</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
+                                Some quick examp up the
                                 bulk of the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>
@@ -108,7 +107,7 @@ function App() {
                         <Card.Body>
                             <Card.Title>Towar 4</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
+                                Some quick example tex
                                 bulk of the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>
@@ -121,7 +120,7 @@ function App() {
                         <Card.Body>
                             <Card.Title>Towar 4</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
+                                Some quick example up the
                                 bulk of the card's content.
                             </Card.Text>
                             <Button variant="primary">Go somewhere</Button>

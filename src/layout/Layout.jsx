@@ -45,22 +45,305 @@ export function Layout() {
                                     <Link to="/pracownik" className="d-block">Pracownik</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="Inne 1" id="inne1">
+                            <NavDropdown title="Handel" id="handel">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Inne 1.1</Link>
+                                    <Link to="/pracownicy" className="d-block">Faktury</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Inne 1.2</Link>
+                                    <Link to="/pracownik" className="d-block">Nowa faktura</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Paragony</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Nowy paragon</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Faktury proforma</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rezerwacje zakupu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Wydania zewnêtrzne WZ</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Przyjêcia zewnêtrzne PZ</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zlecenia</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Inne</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="Inne 2" id="inne1">
+                            <NavDropdown title="Kasa/Bank" id="kasaBank">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Inne 2.1</Link>
+                                    <Link to="/pracownicy" className="d-block">Rejestry kasowe/bankowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Inne 2.2</Link>
+                                    <Link to="/pracownik" className="d-block">Raporty kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zapisy kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Magazyn walut</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rozmiczenia podmiotu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Klienci biura</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
+                            <NavDropdown title="Rejestry VAT" id="rejestryVat">
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Rejestry VAT</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Raporty kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zapisy kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Magazyn walut</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rozmiczenia podmiotu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Klienci biura</Link>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Kasa/Bank" id="kasaBank">
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Rejestry kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Raporty kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zapisy kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Magazyn walut</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rozmiczenia podmiotu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Klienci biura</Link>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Kasa/Bank" id="kasaBank">
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Rejestry kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Raporty kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zapisy kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Magazyn walut</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rozmiczenia podmiotu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Klienci biura</Link>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Kasa/Bank" id="kasaBank">
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Rejestry kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Raporty kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zapisy kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Magazyn walut</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rozmiczenia podmiotu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Klienci biura</Link>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Kasa/Bank" id="kasaBank">
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Rejestry kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Raporty kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zapisy kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Magazyn walut</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rozmiczenia podmiotu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Klienci biura</Link>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <NavDropdown title="Kasa/Bank" id="kasaBank">
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Rejestry kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Raporty kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Zapisy kasowe/bankowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Preliminarz p³atnoœci</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Magazyn walut</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Rozmiczenia podmiotu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pracownik" className="d-block">Klienci biura</Link>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+
                             
                         </Nav>
                         <Form className="d-flex">
