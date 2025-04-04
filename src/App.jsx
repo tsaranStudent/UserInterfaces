@@ -8,8 +8,8 @@ import Card from 'react-bootstrap/Card';
 function App() {
     return (
         <Container fluid>
-            <div className="mb-3">
-                Ma³y test tomka  , 2 test tomka , 3 tes                dsadada416561651651651651651
+            <div className="mb-3"> 
+                Ma³y test tomka  , 2 test tomka , 3 tes                dsadada416561651651651651651   dsda
             </div>
             <div className="mb-3">
                 dawaj dawaj niefdsfdsfdsdfsdasdasdassssssssssssssss
