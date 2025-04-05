@@ -77,7 +77,7 @@ export function Layout() {
                             {/*    </NavDropdown.Item>*/}
                             {/*</NavDropdown>*/}
 
-                            {/*grupaogolne*/}
+                            {/*grupa ogolne*/}
                             <NavDropdown title="Ogólne" id="ogolne">
                                 <NavDropdown.Item>
                                     <Link to="/kontrahenci" className="d-block">Kontrachenci</Link>
@@ -326,10 +326,10 @@ export function Layout() {
                                     <Link to="/delegacje" className="d-block">Delegacje</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                {/*<NavDropdown.Item>*/}
-                                {/*    <Link to="/pracownicy" className="d-block">Wyslij dane</Link>*/}
-                                {/*</NavDropdown.Item>*/}
-                                {/*<NavDropdown.Divider />*/}
+                                <NavDropdown.Item>
+                                    <Link to="/wyslijDane" className="d-block">Wyslij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
                                 <NavDropdown.Item>
                                     <Link to="/odbierzDane" className="d-block">Odbierz dane</Link>
                                 </NavDropdown.Item>
@@ -347,216 +347,241 @@ export function Layout() {
                             {/*grupa rejestryVat*/}
                             <NavDropdown title="Rejestry VAT" id="rejestryVat">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Rejestry VAT</Link>
+                                    <Link to="/rejestryVat" className="d-block">Rejestry VAT</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Struktura zakupów</Link>
+                                    <Link to="/strukturaZakupow" className="d-block">Struktura zakupów</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Ewidencja dodatkowa</Link>
+                                    <Link to="/ewidencjaDodatkowa" className="d-block">Ewidencja dodatkowa</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Ewidencja kasowego PIT</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Pliki JPK_V7</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Deklaracje VAT-UE</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Deklaracje VAT-8</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Delegacje VAT-9M</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Deklaracje inne</Link>
+                                    <Link to="/ewidencjaKasowegoPit" className="d-block">Ewidencja kasowego PIT</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
+                                    <Link to="/deklaracjePlikiJPK_V7" className="d-block">Pliki JPK_V7</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wyślij dane</Link>
+                                    <Link to="/deklaracjeVatUe" className="d-block">Deklaracje VAT-UE</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Historia wymiany</Link>
+                                    <Link to="/deklracjeVat_8" className="d-block">Deklaracje VAT-8</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/deklaracjeVat_9M" className="d-block">Delegacje VAT-9M</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/deklaracjeInne" className="d-block">Deklaracje inne</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Klienci biura</Link>
+                                    <Link to="/odbierzDane" className="d-block">Odbierz dane</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wiadomosci od klientów</Link>
+                                    <Link to="/wyslijDane" className="d-block">Wyślij dane</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/historiaWymiany" className="d-block">Historia wymiany</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/klienciBiura" className="d-block">Klienci biura</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/wiadomosciOdKlientow" className="d-block">Wiadomosci od klientów</Link>
                                 </NavDropdown.Item>                               
                             </NavDropdown>
+
+
+
+                            {/*grupa ksiegowosc*/}
                             <NavDropdown title="Księgowość" id="ksiegowosc">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Zapisy KPiR</Link>
+                                    <Link to="/zapisyKPiR" className="d-block">Zapisy KPiR</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Spis z natury</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">PIT</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">CIT</Link>
+                                    <Link to="/spisZNatury" className="d-block">Spis z natury</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Samochody</Link>
+                                    <Link to="/deklaracjePIT" className="d-block">Deklaracje PIT</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/deklaracjeCIT" className="d-block">Deklaracje CIT</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Dokumenty źródłowe</Link>
+                                    <Link to="/samochody" className="d-block">Samochody</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Ewidencja środków trwałych</Link>
+                                    <Link to="/dokumentyZrodlowe" className="d-block">Dokumenty źródłowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/ewidencjaSrodkowTrwalych" className="d-block">Ewidencja środków trwałych</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Dokumenty środków trwałych</Link>
+                                    <Link to="/dokumentySrodowTrwalych" className="d-block">Dokumenty środków trwałych</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Ewidencja wyposażenia</Link>
+                                    <Link to="/ewidencjaWyposarzenia" className="d-block">Ewidencja wyposażenia</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Inwentaryzacja</Link>
+                                    <Link to="/inwentaryzacja" className="d-block">Inwentaryzacja</Link>
                                 </NavDropdown.Item>                                
                             </NavDropdown>
+
+
+
+                            {/*grupa JPK*/}
                             <NavDropdown title="JPK" id="jpk">                                
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Pliki JPK_V7</Link>
+                                    <Link to="/deklaracjePlikiJPK_V7" className="d-block">Pliki JPK_V7</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Pliki JPK</Link>
-                                </NavDropdown.Item>                                
+                                    <Link to="/deklaracjeVat_9M" className="d-block">Pliki VAT 9M</Link>
+                                </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Import do rej. VAT</Link>
+                                    <Link to="/deklaracjeVatUe" className="d-block">Pliki VAT UE-OE</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/deklracjeVat_8" className="d-block">Pliki VAT 8</Link>
+                                </NavDropdown.Item>                                                                
+                                <NavDropdown.Item>
+                                    <Link to="/importDoRejetruVat" className="d-block">Import do rej. VAT</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Informacje o JPK pomoc</Link>
+                                    <Link to="/informacjeJpk" className="d-block">Informacje o JPK pomoc</Link>
                                 </NavDropdown.Item>                                
                             </NavDropdown>
+
+
+
+                            {/*grupa placeKadry*/}
                             <NavDropdown title="Płace i kadry" id="placeKardy">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Kadry</Link>
+                                    <Link to="/kadry" className="d-block">Kadry</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Nowy pracownik</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Listy płac</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Wypłaty pracowników</Link>
+                                    <Link to="/nowyPracownik" className="d-block">Nowy pracownik</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">ZUS Pliki KEDU</Link>
+                                    <Link to="/listyPlac" className="d-block">Listy płac</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/wtplatyPracownikow" className="d-block">Wypłaty pracowników</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Deklaracje ZUS rozliczeniowe</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Deklaracje roczne IWA</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Deklaracje roczne ZSWA</Link>
+                                    <Link to="/zusPlikiKedu" className="d-block">ZUS Pliki KEDU</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Zaliczki na PIT-4R</Link>
+                                    <Link to="/deklarecjeZus" className="d-block">Deklaracje ZUS rozliczeniowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Podatek na PIT-8AR</Link>
+                                    <Link to="/deklarazjeRoczneIwa" className="d-block">Deklaracje roczne IWA</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Deklaracje PIT pracowników</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Deklaracje PFRON</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Deklaracje PPK</Link>
+                                    <Link to="/deklaracjeRoczneZswa" className="d-block">Deklaracje roczne ZSWA</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Słowniki</Link>
+                                    <Link to="/zalacznikiNaPit4r" className="d-block">Zaliczki na PIT-4R</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/podatekNaPit8ar" className="d-block">Podatek na PIT-8AR</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/deklaracjePitPracownikow" className="d-block">Deklaracje PIT pracowników</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/deklaracjePfron" className="d-block">Deklaracje PFRON</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/deklaracjePpk" className="d-block">Deklaracje PPK</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Struktura organizacyjna</Link>
+                                    <Link to="/slowniki" className="d-block">Słowniki</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Kasy zapomogowo - pożyczkowe PKZP</Link>
+                                    <Link to="/strukturaOrganizacyjna" className="d-block">Struktura organizacyjna</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">KRM TS</Link>
+                                    <Link to="/kasyZapomogowoPorzyczkowePkzp" className="d-block">Kasy zapomogowo - pożyczkowe PKZP</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/hrmTs" className="d-block">KRM TS</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
+
+
+                            {/*grupa widok*/}
                             <NavDropdown title="Widok" id="widok">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Kompozycje widoku</Link>
+                                    <Link to="/kompozycjeWidoku" className="d-block">Kompozycje widoku</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Czcionki</Link>
+                                    <Link to="/czcinki" className="d-block">Czcionki</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Ustawienia okien</Link>
+                                    <Link to="/ustawieniaOkien" className="d-block">Ustawienia okien</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Import</Link>
+                                    <Link to="/ustawieniaOkienImport" className="d-block">Import</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Eksport</Link>
+                                    <Link to="/ustawieniaOkienEksport" className="d-block">Eksport</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Ustawienia ogólne</Link>
+                                    <Link to="/ustawieniaOgolne" className="d-block">Ustawienia ogólne</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
+
+
+
+                            {/*grupa pomoc*/}
                             <NavDropdown title="Pomoc" id="pomoc">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Pomoc</Link>
+                                    <Link to="/pomoc" className="d-block">Pomoc</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Jak zacząć</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Filmy instruktarzowe</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">FAQ</Link>
+                                    <Link to="/pomocJakZaczac" className="d-block">Jak zacząć</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Pomoc zdalna</Link>
+                                    <Link to="/pomocFilmyInstruktarzowe" className="d-block">Filmy instruktarzowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">System obsługi zdarzeń</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Twoja indywidalna strona</Link>
+                                    <Link to="/pomocFaq" className="d-block">FAQ</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Rejestracja programu</Link>
+                                    <Link to="/pomocZdalna" className="d-block">Pomoc zdalna</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">O programie</Link>
+                                    <Link to="/pomocSystemObslugiZdarzen" className="d-block">System obsługi zdarzeń</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/pomocTwojaIndywidaStrona" className="d-block">Twoja indywidalna strona</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/rejestracjaProgramu" className="d-block">Rejestracja programu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/oprogramie" className="d-block">O programie</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
 

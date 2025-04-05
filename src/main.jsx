@@ -105,6 +105,85 @@ import { RozniceKursowe } from './kasaBank/RozniceKursowePage.jsx';
 //import { WyslijDane } from './kasaBank/WyslijDanePage.jsx';
 import { ZapisyKasowoBankowe } from './kasaBank/ZapisyKasowoBankowePage.jsx';
 
+
+
+//grupa rejestryVat
+import { DeklaracjeInne } from './rejestryVat/DeklaracjeInnePage.jsx';
+import { DeklaracjePlikiJPK_V7 } from './rejestryVat/DeklaracjePlikiJPK_V7Page.jsx';
+import { DeklaracjeVat_9M } from './rejestryVat/DeklaracjeVat_9MPage.jsx';
+import { DeklaracjeVatUe } from './rejestryVat/DeklaracjeVatUePage.jsx';
+import { DeklracjeVat_8 } from './rejestryVat/DeklracjeVat_8Page.jsx';
+import { EwidencjaDodatkowa } from './rejestryVat/EwidencjaDodatkowaPage.jsx';
+import { EwidencjaKasowegoPit } from './rejestryVat/EwidencjaKasowegoPitPage.jsx';
+//import { HistoriaWymiany } from './rejestryVat/HistoriaWymianyPage.jsx';
+//import { KlienciBiura } from './rejestryVat/KlienciBiuraPage.jsx';
+//import { OdbierzDane } from './rejestryVat/OdbierzDanePage.jsx';
+import { RejestryVat } from './rejestryVat/RejestryVatPage.jsx';
+import { StrukturaZakupow } from './rejestryVat/StrukturaZakupowPage.jsx';
+import { WiadomosciOdKlientow } from './rejestryVat/WiadomosciOdKlientowPage.jsx';
+import { WyslijDane } from './rejestryVat/WyslijDanePage.jsx';
+
+
+//grupa ksiegowosc
+import { DeklaracjeCIT } from './ksiegowosc/DeklaracjeCITPage.jsx';
+import { DeklaracjePIT } from './ksiegowosc/DeklaracjePITPage.jsx';
+import { DokumentySrodowTrwalych } from './ksiegowosc/DokumentySrodowTrwalychPage.jsx';
+import { DokumentyZrodlowe } from './ksiegowosc/DokumentyZrodlowePage.jsx';
+import { EwidencjaSrodkowTrwalych } from './ksiegowosc/EwidencjaSrodkowTrwalychPage.jsx';
+import { EwidencjaWyposarzenia } from './ksiegowosc/EwidencjaWyposarzeniaPage.jsx';
+import { Inwentaryzacja } from './ksiegowosc/InwentaryzacjaPage.jsx';
+import { Samochody } from './ksiegowosc/SamochodyPage.jsx';
+import { SpisZNatury } from './ksiegowosc/SpisZNaturyPage.jsx';
+import { ZapisyKPiR } from './ksiegowosc/ZapisyKPiRPage.jsx';
+
+
+//grupa jpk
+import { ImportDoRejetruVat } from './jpk/ImportDoRejetruVatPage.jsx';
+import { InformacjeJpk } from './jpk/InformacjeJpkPage.jsx';
+
+
+//grupa place i kadry
+import { DeklaracjePfron } from './placeKadry/DeklaracjePfronPage.jsx';
+import { DeklaracjePitPracownikow } from './placeKadry/DeklaracjePitPracownikowPage.jsx';
+import { DeklaracjePpk } from './placeKadry/DeklaracjePpkPage.jsx';
+import { DeklaracjeRoczneZswa } from './placeKadry/DeklaracjeRoczneZswaPage.jsx';
+import { DeklarazjeRoczneIwa } from './placeKadry/DeklarazjeRoczneIwaPage.jsx';
+import { DeklarecjeZus } from './placeKadry/DeklarecjeZusPage.jsx';
+import { HrmTs } from './placeKadry/HrmTsPage.jsx';
+import { Kadry } from './placeKadry/KadryPage.jsx';
+import { KasyZapomogowoPorzyczkowePkzp } from './placeKadry/KasyZapomogowoPorzyczkowePkzpPage.jsx';
+import { ListyPlac } from './placeKadry/ListyPlacPage.jsx';
+import { NowyPracownik } from './placeKadry/NowyPracownikPage.jsx';
+import { PodatekNaPit8ar } from './placeKadry/PodatekNaPit8arPage.jsx';
+import { Slowniki } from './placeKadry/SlownikiPage.jsx';
+import { StrukturaOrganizacyjna } from './placeKadry/StrukturaOrganizacyjnaPage.jsx';
+import { WtplatyPracownikow } from './placeKadry/WtplatyPracownikowPage.jsx';
+import { ZalacznikiNaPit4r } from './placeKadry/ZalacznikiNaPit4rPage.jsx';
+import { ZusPlikiKedu } from './placeKadry/ZusPlikiKeduPage.jsx';
+
+
+//grupa widok
+import { Czcinki } from './widok/CzcinkiPage.jsx';
+import { KompozycjeWidoku } from './widok/KompozycjeWidokuPage.jsx';
+import { UstawieniaOgolne } from './widok/UstawieniaOgolnePage.jsx';
+import { UstawieniaOkienEksport } from './widok/UstawieniaOkienEksportPage.jsx';
+import { UstawieniaOkienImport } from './widok/UstawieniaOkienImportPage.jsx';
+import { UstawieniaOkien } from './widok/UstawieniaOkienPage.jsx';
+
+
+
+//grupa pomoc
+import { Oprogramie } from './pomoc/OprogramiePage.jsx';
+import { PomocFaq } from './pomoc/PomocFaqPage.jsx';
+import { PomocFilmyInstruktarzowe } from './pomoc/PomocFilmyInstruktarzowePage.jsx';
+import { PomocJakZaczac } from './pomoc/PomocJakZaczacPage.jsx';
+import { Pomoc } from './pomoc/PomocPage.jsx';
+import { PomocSystemObslugiZdarzen } from './pomoc/PomocSystemObslugiZdarzenPage.jsx';
+import { PomocTwojaIndywidaStrona } from './pomoc/PomocTwojaIndywidaStronaPage.jsx';
+import { PomocZdalna } from './pomoc/PomocZdalnaPage.jsx';
+import { RejestracjaProgramu } from './pomoc/RejestracjaProgramuPage.jsx';
+
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //const router = createBrowserRouter([
@@ -389,6 +468,203 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 {/*</Route>*/}
                 <Route path='/zapisyKasowoBankowe' element={<Layout />}>
                     <Route index element={<ZapisyKasowoBankowe />} />
+                </Route>
+
+
+
+                {/*grupa rejestryVat*/}
+                <Route path='/deklaracjeInne' element={<Layout />}>
+                    <Route index element={<DeklaracjeInne />} />
+                </Route>
+                <Route path='/deklaracjePlikiJPK_V7' element={<Layout />}>
+                    <Route index element={<DeklaracjePlikiJPK_V7 />} />
+                </Route>
+                <Route path='/deklaracjeVat_9M' element={<Layout />}>
+                    <Route index element={<DeklaracjeVat_9M />} />
+                </Route>
+                <Route path='/deklaracjeVatUe' element={<Layout />}>
+                    <Route index element={<DeklaracjeVatUe />} />
+                </Route>
+                <Route path='/deklracjeVat_8' element={<Layout />}>
+                    <Route index element={<DeklracjeVat_8 />} />
+                </Route>
+                <Route path='/ewidencjaDodatkowa' element={<Layout />}>
+                    <Route index element={<EwidencjaDodatkowa />} />
+                </Route>
+                <Route path='/ewidencjaKasowegoPit' element={<Layout />}>
+                    <Route index element={<EwidencjaKasowegoPit />} />
+                </Route>
+                {/*<Route path='/historiaWymiany' element={<Layout />}>*/}
+                {/*    <Route index element={<HistoriaWymiany />} />*/}
+                {/*</Route>*/}
+                {/*<Route path='/klienciBiura' element={<Layout />}>*/}
+                {/*    <Route index element={<KlienciBiura />} />*/}
+                {/*</Route>*/}
+                {/*<Route path='/odbierzDane' element={<Layout />}>*/}
+                {/*    <Route index element={<OdbierzDane />} />*/}
+                {/*</Route>*/}
+                <Route path='/rejestryVat' element={<Layout />}>
+                    <Route index element={<RejestryVat />} />
+                </Route>
+                <Route path='/strukturaZakupow' element={<Layout />}>
+                    <Route index element={<StrukturaZakupow />} />
+                </Route>
+                <Route path='/wiadomosciOdKlientow' element={<Layout />}>
+                    <Route index element={<WiadomosciOdKlientow />} />
+                </Route>
+                <Route path='/wyslijDane' element={<Layout />}>
+                    <Route index element={<WyslijDane />} />
+                </Route>
+
+
+
+
+                {/*grupa ksiegowosc*/}
+                <Route path='/deklaracjeCIT' element={<Layout />}>
+                    <Route index element={<DeklaracjeCIT />} />
+                </Route>
+                <Route path='/deklaracjePIT' element={<Layout />}>
+                    <Route index element={<DeklaracjePIT />} />
+                </Route>
+                <Route path='/dokumentySrodowTrwalych' element={<Layout />}>
+                    <Route index element={<DokumentySrodowTrwalych />} />
+                </Route>
+                <Route path='/dokumentyZrodlowe' element={<Layout />}>
+                    <Route index element={<DokumentyZrodlowe />} />
+                </Route>
+                <Route path='/ewidencjaSrodkowTrwalych' element={<Layout />}>
+                    <Route index element={<EwidencjaSrodkowTrwalych />} />
+                </Route>
+                <Route path='/ewidencjaWyposarzenia' element={<Layout />}>
+                    <Route index element={<EwidencjaWyposarzenia />} />
+                </Route>
+                <Route path='/inwentaryzacja' element={<Layout />}>
+                    <Route index element={<Inwentaryzacja />} />
+                </Route>
+                <Route path='/samochody' element={<Layout />}>
+                    <Route index element={<Samochody />} />
+                </Route>
+                <Route path='/spisZNatury' element={<Layout />}>
+                    <Route index element={<SpisZNatury />} />
+                </Route>
+                <Route path='/zapisyKPiR' element={<Layout />}>
+                    <Route index element={<ZapisyKPiR />} />
+                </Route>
+
+
+                {/*grupa jpk*/}
+                <Route path='/importDoRejetruVat' element={<Layout />}>
+                    <Route index element={<ImportDoRejetruVat />} />
+                </Route>
+                <Route path='/informacjeJpk' element={<Layout />}>
+                    <Route index element={<InformacjeJpk />} />
+                </Route>
+
+
+                {/*grupa placeKadry*/}
+                <Route path='/deklaracjePfron' element={<Layout />}>
+                    <Route index element={<DeklaracjePfron />} />
+                </Route>
+                <Route path='/deklaracjePitPracownikow' element={<Layout />}>
+                    <Route index element={<DeklaracjePitPracownikow />} />
+                </Route>
+                <Route path='/deklaracjePpk' element={<Layout />}>
+                    <Route index element={<DeklaracjePpk />} />
+                </Route>
+                <Route path='/deklaracjeRoczneZswa' element={<Layout />}>
+                    <Route index element={<DeklaracjeRoczneZswa />} />
+                </Route>
+                <Route path='/deklarazjeRoczneIwa' element={<Layout />}>
+                    <Route index element={<DeklarazjeRoczneIwa />} />
+                </Route>
+                <Route path='/deklarecjeZus' element={<Layout />}>
+                    <Route index element={<DeklarecjeZus />} />
+                </Route>
+                <Route path='/hrmTs' element={<Layout />}>
+                    <Route index element={<HrmTs />} />
+                </Route>
+                <Route path='/kadry' element={<Layout />}>
+                    <Route index element={<Kadry />} />
+                </Route>
+                <Route path='/kasyZapomogowoPorzyczkowePkzp' element={<Layout />}>
+                    <Route index element={<KasyZapomogowoPorzyczkowePkzp />} />
+                </Route>
+                <Route path='/listyPlac' element={<Layout />}>
+                    <Route index element={<ListyPlac />} />
+                </Route>
+                <Route path='/nowyPracownik' element={<Layout />}>
+                    <Route index element={<NowyPracownik />} />
+                </Route>
+                <Route path='/podatekNaPit8ar' element={<Layout />}>
+                    <Route index element={<PodatekNaPit8ar />} />
+                </Route>
+                <Route path='/slowniki' element={<Layout />}>
+                    <Route index element={<Slowniki />} />
+                </Route>
+                <Route path='/strukturaOrganizacyjna' element={<Layout />}>
+                    <Route index element={<StrukturaOrganizacyjna />} />
+                </Route>
+                <Route path='/wtplatyPracownikow' element={<Layout />}>
+                    <Route index element={<WtplatyPracownikow />} />
+                </Route>
+                <Route path='/zalacznikiNaPit4r' element={<Layout />}>
+                    <Route index element={<ZalacznikiNaPit4r />} />
+                </Route>
+                <Route path='/zusPlikiKedu' element={<Layout />}>
+                    <Route index element={<ZusPlikiKedu />} />
+                </Route>
+
+
+
+                {/*grupa widok*/}
+                <Route path='/czcinki' element={<Layout />}>
+                    <Route index element={<Czcinki />} />
+                </Route>
+                <Route path='/kompozycjeWidoku' element={<Layout />}>
+                    <Route index element={<KompozycjeWidoku />} />
+                </Route>
+                <Route path='/ustawieniaOgolne' element={<Layout />}>
+                    <Route index element={<UstawieniaOgolne />} />
+                </Route>
+                <Route path='/ustawieniaOkienEksport' element={<Layout />}>
+                    <Route index element={<UstawieniaOkienEksport />} />
+                </Route>
+                <Route path='/ustawieniaOkienImport' element={<Layout />}>
+                    <Route index element={<UstawieniaOkienImport />} />
+                </Route>
+                <Route path='/ustawieniaOkien' element={<Layout />}>
+                    <Route index element={<UstawieniaOkien />} />
+                </Route>
+
+
+
+                {/*grupa pomoc*/}
+                <Route path='/oprogramie' element={<Layout />}>
+                    <Route index element={<Oprogramie />} />
+                </Route>
+                <Route path='/pomocFaq' element={<Layout />}>
+                    <Route index element={<PomocFaq />} />
+                </Route>
+                <Route path='/pomocFilmyInstruktarzowe' element={<Layout />}>
+                    <Route index element={<PomocFilmyInstruktarzowe />} />
+                </Route>
+                <Route path='/pomocJakZaczac' element={<Layout />}>
+                    <Route index element={<PomocJakZaczac />} />
+                </Route>
+                <Route path='/pomoc' element={<Layout />}>
+                    <Route index element={<Pomoc />} />
+                </Route>
+                <Route path='/pomocSystemObslugiZdarzen' element={<Layout />}>
+                    <Route index element={<PomocSystemObslugiZdarzen />} />
+                </Route>
+                <Route path='/pomocTwojaIndywidaStrona' element={<Layout />}>
+                    <Route index element={<PomocTwojaIndywidaStrona />} />
+                </Route>
+                <Route path='/pomocZdalna' element={<Layout />}>
+                    <Route index element={<PomocZdalna />} />
+                </Route>
+                <Route path='/rejestracjaProgramu' element={<Layout />}>
+                    <Route index element={<RejestracjaProgramu />} />
                 </Route>
 
 
