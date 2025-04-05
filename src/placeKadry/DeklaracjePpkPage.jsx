@@ -5,8 +5,8 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-export const Atrybuty = () => {
+export const DeklaracjePpk = () => {
     return (
-        <div>AtrybutyPage</div>
+        <div>DeklaracjePpkPage</div>
     )
 }

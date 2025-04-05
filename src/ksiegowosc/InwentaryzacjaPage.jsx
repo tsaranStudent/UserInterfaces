@@ -5,8 +5,8 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-export const daneOsobpwe = () => {
+export const Inwentaryzacja = () => {
     return (
-        <div>daneOsobpwePage</div>
+        <div>InwentaryzacjaPage</div>
     )
 }

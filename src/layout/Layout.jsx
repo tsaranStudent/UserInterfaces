@@ -24,37 +24,38 @@ export function Layout() {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
+                            {/*grupa statrt ,uwaga na Home*/}
                             <NavDropdown title="Home" id="magazynhome">
                                 <NavDropdown.Item>
                                     <Link to="/" className="d-block">Home</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Logowanie</Link>
+                                    <Link to="/logowanie" className="d-block">Logowanie</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Zmiana firmy</Link>
+                                    <Link to="/zmianaFirmy" className="d-block">Zmiana firmy</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Informacje o frmie</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Konfiguracja</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Od�wierz konfiguracj�</Link>
+                                    <Link to="/informacjeoFirmie" className="d-block">Informacje o firmie</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Nowo�ci w wersji</Link>
+                                    <Link to="/konfiguracja" className="d-block">Konfiguracja</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">W�acz nowe funkcje</Link>
+                                    <Link to="/odswierzKonfiguracje" className="d-block">Odświerz konfigurację</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Koniec pracy</Link>
+                                    <Link to="/nowoscWwersji" className="d-block">Nowości w wersji</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/wlaczNoweFunkcje" className="d-block">Włacz nowe funkcje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/koniecPracy" className="d-block">Koniec pracy</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>                            
                             {/*<NavDropdown title="Magazyn" id="magazyn">*/}
@@ -75,7 +76,9 @@ export function Layout() {
                             {/*        <Link to="/pracownik" className="d-block">Pracownik</Link>*/}
                             {/*    </NavDropdown.Item>*/}
                             {/*</NavDropdown>*/}
-                            <NavDropdown title="Og�lne" id="ogolne">
+
+                            {/*grupaogolne*/}
+                            <NavDropdown title="Ogólne" id="ogolne">
                                 <NavDropdown.Item>
                                     <Link to="/kontrahenci" className="d-block">Kontrachenci</Link>
                                 </NavDropdown.Item>
@@ -98,242 +101,256 @@ export function Layout() {
                                     <Link to="/grupyTowarowe" className="d-block">Grupy towarowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Rabaty</Link>
+                                    <Link to="/rabaty" className="d-block">Rabaty</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Kategorie</Link>
+                                    <Link to="/kategorie" className="d-block">Kategorie</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Atrybuty</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Wymiary opisu analitycznego</Link>
+                                    <Link to="/atrybuty" className="d-block">Atrybuty</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Inne</Link>
+                                    <Link to="/wymiaryOpisuAnalitycznego" className="d-block">Wymiary opisu analitycznego</Link>
+                                </NavDropdown.Item>
+                                {/*<NavDropdown.Divider />*/}
+                                {/*<NavDropdown.Item>*/}
+                                {/*    <Link to="/ogolne" className="d-block">Inne</Link>*/}
+                                {/*</NavDropdown.Item>*/}
+                                {/*<NavDropdown.Divider />*/}
+                                <NavDropdown.Item>
+                                    <Link to="/przesylkiKurierskie" className="d-block">Przesyłki kurierskie</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Przesy�ki kurierskie</Link>
+                                    <Link to="/wiadomosciSms" className="d-block">Wiadomości SMS</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/zakupPaczkiSms" className="d-block">Zakup paczki SMS</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/raporty" className="d-block">Raporty</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Wiadomo�ci SMS</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Zakup paczk� SMS</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Raporty</Link>
+                                    <Link to="/waluty" className="d-block">Waluty</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Waluty</Link>
+                                    <Link to="/daneOsobowe" className="d-block">Dane osobowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Dane osobowe</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/ogolne" className="d-block">Udziel pe�nomocnictwa</Link>
+                                    <Link to="/udzielPelnomocnictwa" className="d-block">Udziel pełnomocnictwa</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
+
+
+                            {/*grupa crm*/}
                             <NavDropdown title="CRM" id="crm">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Kontakty</Link>
+                                    <Link to="/kontakty" className="d-block">Kontakty</Link>
                                 </NavDropdown.Item>                                
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Terminarz</Link>
+                                    <Link to="/terminarz" className="d-block">Terminarz</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Faktury cykliczne</Link>
+                                    <Link to="/fakturyCykliczne" className="d-block">Faktury cykliczne</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Oferty handlowe</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Archiwum wydruk�w</Link>
+                                    <Link to="/ofertyHandlowe" className="d-block">Oferty handlowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Biblioteka dokument�w</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Nowy dokument</Link>
+                                    <Link to="/archiwumWydrukow" className="d-block">Archiwum wydruków</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Skrzynka operatora</Link>
+                                    <Link to="/bibliotekaDokumentow" className="d-block">Biblioteka dokumentów</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/nowyDokument" className="d-block">Nowy dokument</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Skrzynka pocztowa</Link>
+                                    <Link to="/skrzynkaOperatora" className="d-block">Skrzynka operatora</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Schematy</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Historia zdarze�</Link>
+                                    <Link to="/skrzynkaPocztowa" className="d-block">Skrzynka pocztowa</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Ankietowanie</Link>
+                                    <Link to="/windykacjaSchematy" className="d-block">Schematy</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wzorce ankietowe</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Pytania</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Szablony odpowiedzi</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Grupy zapyta�</Link>
+                                    <Link to="/windykacjaHistoriaZdarzen" className="d-block">Historia zdarzeń</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wiecej funkcji</Link>
+                                    <Link to="/ankietyAnkietowanie" className="d-block">Ankietowanie</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/ankietyWzorceAnkiet" className="d-block">Wzorce ankietowe</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/ankietyPytania" className="d-block">Pytania</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/ankietySzablonyOdpowiedzi" className="d-block">Szablony odpowiedzi</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/ankietyGrupyZapytan" className="d-block">Grupy zapytań</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/wiecejFunkcji" className="d-block">Wiecej funkcji</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
+
+
+
+                            {/*grupa handel*/}
                             <NavDropdown title="Handel" id="handel">
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Faktury</Link>
+                                    <Link to="/faktury" className="d-block">Faktury</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Nowa faktura</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Paragony</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Nowy paragon</Link>
+                                    <Link to="/nowaFaktura" className="d-block">Nowa faktura</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Rezeerwacje odbiorcy</Link>
+                                    <Link to="/paragony" className="d-block">Paragony</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Faktury proforma</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Sprzedarz dedykowana</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Faktury zakupu</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Zlecenia u dostawcy</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Inne</Link>
+                                    <Link to="/nowyParagon" className="d-block">Nowy paragon</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Zasoby</Link>
+                                    <Link to="/rezerwacjeOdbiorcy" className="d-block">Rezeerwacje odbiorcy</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Raport brak�w</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Wydania zewnetrzne WZ</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Przyj�cia zewn�trzne PZ</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Inne</Link>
+                                    <Link to="/fakturyProforma" className="d-block">Faktury proforma</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Zlecenia</Link>
+                                    <Link to="/sprzedarzDedykowana" className="d-block">Sprzedarz dedykowana</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Zlecenia cykliczne</Link>
+                                    <Link to="/fakturyZakupu" className="d-block">Faktury zakupu</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                <Link to="/zleceniaUDostawcy" className="d-block">Zlecenia u dostawcy</Link>
+                                </NavDropdown.Item>
+                                {/*<NavDropdown.Item>*/}
+                                {/*    <Link to="/" className="d-block">Inne</Link>*/}
+                                {/*</NavDropdown.Item>*/}
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                        <Link to="/zasoby" className="d-block">Zasoby</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/raportBrakow" className="d-block">Raport braków</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Urz�dzenia</Link>
+                                    <Link to="/wydaniaZewnetrzne" className="d-block">Wydania zewnętrzne WZ</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Rodzanie urz�dze�</Link>
+                                    <Link to="/przyjeciaZewnetrzne" className="d-block">Przyjęcia zewnętrzne PZ</Link>
+                                </NavDropdown.Item>
+                                    {/*<NavDropdown.Item>*/}
+                                    {/*    <Link to="/" className="d-block">Inne</Link>*/}
+                                    {/*</NavDropdown.Item>*/}
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/zlecenia" className="d-block">Zlecenia</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/zleceniaCykliczne" className="d-block">Zlecenia cykliczne</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/" className="d-block">Wiecej funkcji</Link>
-                                </NavDropdown.Item>                                
+                                   <Link to="/urzadzniaServis" className="d-block">Urządzenia</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <Link to="/rodzajeUrzadzenServis" className="d-block">Rodzanie urządzeń</Link>
+                                </NavDropdown.Item>
+                                {/*<NavDropdown.Divider />*/}
+                                {/*<NavDropdown.Item>*/}
+                                {/*   <Link to="/wiecejFunkcji" className="d-block">Wiecej funkcji</Link>*/}
+                                {/*</NavDropdown.Item>*/}
                             </NavDropdown>
+
+
+
+                            {/*grupa kasaBank*/}
                             <NavDropdown title="Kasa/Bank" id="kasaBank">
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Rejestry kasowe/bankowe</Link>
+                                    <Link to="/rejestryKasowoBankowe" className="d-block">Rejestry kasowe/bankowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Raporty kasowe/bankowe</Link>
+                                    <Link to="/raportyKasowoBankowe" className="d-block">Raporty kasowe/bankowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Zapisy kasowe/bankowe</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Preliminarz p�atno�ci</Link>
+                                    <Link to="/zapisyKasowoBankowe" className="d-block">Zapisy kasowe/bankowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Magazyn walut</Link>
+                                    <Link to="/preliminarzPlatnosci" className="d-block">Preliminarz platności</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item>
+                                    <Link to="/magazynWalut" className="d-block">Magazyn walut</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Rozmiczenia podmiotu</Link>
+                                    <Link to="/rozliczeniaPodmiotu" className="d-block">Rozmiczenia podmiotu</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Dokumenty nierozliczone</Link>
+                                    <Link to="/dokumentyNierozliczone" className="d-block">Dokumenty nierozliczone</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Dokumenty rozliczone</Link>
+                                    <Link to="/dokumentyRozliczone" className="d-block">Dokumenty rozliczone</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Dokumenty kompensat</Link>
+                                    <Link to="/dokumentyKompensat" className="d-block">Dokumenty kompensat</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">R�nice kursowe</Link>
+                                    <Link to="/rozniceKursowe" className="d-block">Rónice kursowe</Link>
                                 </NavDropdown.Item>                                
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Delegacje</Link>
+                                    <Link to="/delegacje" className="d-block">Delegacje</Link>
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                {/*<NavDropdown.Item>*/}
+                                {/*    <Link to="/pracownicy" className="d-block">Wyslij dane</Link>*/}
+                                {/*</NavDropdown.Item>*/}
+                                {/*<NavDropdown.Divider />*/}
+                                <NavDropdown.Item>
+                                    <Link to="/odbierzDane" className="d-block">Odbierz dane</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wyslij dane</Link>
+                                    <Link to="/historiaWymiany" className="d-block">Historia wymiany</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Historia wymiany</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Klienci biura</Link>
+                                    <Link to="/klienciBiura" className="d-block">Klienci biura</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
+
+
+                            {/*grupa rejestryVat*/}
                             <NavDropdown title="Rejestry VAT" id="rejestryVat">
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Rejestry VAT</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Struktura zakup�w</Link>
+                                    <Link to="/pracownicy" className="d-block">Struktura zakupów</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Ewidencja dodatkowa</Link>
@@ -362,7 +379,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Odbierz dane</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wy�lij dane</Link>
+                                    <Link to="/pracownicy" className="d-block">Wyślij dane</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Historia wymiany</Link>
@@ -372,10 +389,10 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Klienci biura</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Wiadomosci od klient�w</Link>
+                                    <Link to="/pracownicy" className="d-block">Wiadomosci od klientów</Link>
                                 </NavDropdown.Item>                               
                             </NavDropdown>
-                            <NavDropdown title="Ksi�gowo��" id="ksiegowosc">
+                            <NavDropdown title="Księgowość" id="ksiegowosc">
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Zapisy KPiR</Link>
                                 </NavDropdown.Item>
@@ -395,17 +412,17 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Dokumenty �r�d�owe</Link>
+                                    <Link to="/pracownik" className="d-block">Dokumenty źródłowe</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownicy" className="d-block">Ewidencja �rodk�w trwa�ych</Link>
+                                    <Link to="/pracownicy" className="d-block">Ewidencja środków trwałych</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Dokumenty �rodk�w trwa�ych</Link>
+                                    <Link to="/pracownik" className="d-block">Dokumenty środków trwałych</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Ewidencja wyposa�enia</Link>
+                                    <Link to="/pracownik" className="d-block">Ewidencja wyposażenia</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Inwentaryzacja</Link>
@@ -426,7 +443,7 @@ export function Layout() {
                                     <Link to="/pracownik" className="d-block">Informacje o JPK pomoc</Link>
                                 </NavDropdown.Item>                                
                             </NavDropdown>
-                            <NavDropdown title="P�ace i kadry" id="placeKardy">
+                            <NavDropdown title="Płace i kadry" id="placeKardy">
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Kadry</Link>
                                 </NavDropdown.Item>
@@ -435,10 +452,10 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Listy p�ac</Link>
+                                    <Link to="/pracownik" className="d-block">Listy płac</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Wyp�aty pracownik�w</Link>
+                                    <Link to="/pracownik" className="d-block">Wypłaty pracowników</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -462,7 +479,7 @@ export function Layout() {
                                     <Link to="/pracownik" className="d-block">Podatek na PIT-8AR</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Deklaracje PIT pracownik�w</Link>
+                                    <Link to="/pracownik" className="d-block">Deklaracje PIT pracowników</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Deklaracje PFRON</Link>
@@ -472,7 +489,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">S�owniki</Link>
+                                    <Link to="/pracownik" className="d-block">Słowniki</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -480,7 +497,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Kasy zapomogowo - po�yczkowe PKZP</Link>
+                                    <Link to="/pracownik" className="d-block">Kasy zapomogowo - pożyczkowe PKZP</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -507,7 +524,7 @@ export function Layout() {
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Ustawienia og�lne</Link>
+                                    <Link to="/pracownik" className="d-block">Ustawienia ogólne</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Pomoc" id="pomoc">
@@ -515,7 +532,7 @@ export function Layout() {
                                     <Link to="/pracownicy" className="d-block">Pomoc</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">Jak zacz��</Link>
+                                    <Link to="/pracownik" className="d-block">Jak zacząć</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item>
@@ -529,7 +546,7 @@ export function Layout() {
                                     <Link to="/pracownik" className="d-block">Pomoc zdalna</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link to="/pracownik" className="d-block">System obs�ugi zdarze�</Link>
+                                    <Link to="/pracownik" className="d-block">System obsługi zdarzeń</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link to="/pracownicy" className="d-block">Twoja indywidalna strona</Link>

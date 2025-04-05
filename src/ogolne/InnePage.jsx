@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-export const Inne = () => {
+export const InneInne = () => {
     return (
         <div>InnePage</div>
     )

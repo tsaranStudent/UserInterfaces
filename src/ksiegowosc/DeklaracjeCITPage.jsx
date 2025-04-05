@@ -5,8 +5,8 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-export const Atrybuty = () => {
+export const DeklaracjeCIT = () => {
     return (
-        <div>AtrybutyPage</div>
+        <div>DeklaracjeCITPage</div>
     )
 }

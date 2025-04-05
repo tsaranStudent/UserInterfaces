@@ -7,6 +7,6 @@ import Col from 'react-bootstrap/Col';
 
 export const Kontrahenci = () => {
     return (
-        <div>Kontrahenci</div>
+        <div>KontrahenciPage</div>
     )
 }
