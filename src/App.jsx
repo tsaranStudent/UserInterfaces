@@ -1,4 +1,4 @@
-import './App.css';
+﻿import './App.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,7 +9,7 @@ function App() {
     return (
         <Container fluid>
             <div className="mb-3"> 
-                jedziemy
+                jedziemy aaaa
             </div>
             <div className="mb-3">
                 z koksem
@@ -21,7 +21,7 @@ function App() {
                         <Card.Header>Ogloszenie 1</Card.Header>
                         <Card.Body>
                             <Card.Text>
-                                Lorem Ipsum is simply dummy text of the prin
+                                Lorem Ipsum siąąąy dummy text of the prin
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
@@ -30,9 +30,10 @@ function App() {
                 <Col className="mb-3">
                     <Card>
                         <Card.Header>Ogloszenie 2</Card.Header>
-                        <Card.Body>
-                            <Card.Text>
-                                Lorem Ipsum is s.
+                        <Card.Body >
+                            <Card.Text lang="pl">
+                                Lorem Ipsum ąąąąąąąąąńńńń
+                                is s.
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
