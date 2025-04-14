@@ -21,7 +21,7 @@ function App() {
                         <Card.Header>Ogloszenie 1</Card.Header>
                         <Card.Body>
                             <Card.Text>
-                                Lorem Ipsum siąąąy dummy text of the prin
+                                test tttttttttttttttttttt
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
