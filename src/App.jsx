@@ -21,7 +21,7 @@ function App() {
                         <Card.Header>Ogloszenie 1</Card.Header>
                         <Card.Body>
                             <Card.Text>
-                                test tttttttttttttttttttt
+                                test ssl
                             </Card.Text>
                             <Button variant="primary">Szczegoly</Button>
                         </Card.Body>
