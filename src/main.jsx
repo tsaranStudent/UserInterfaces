@@ -1,4 +1,4 @@
-import React from 'react'
+ï»¿import React from 'react'
 import ReactDOM from "react-dom/client";
 import App from './App.jsx'
 import './index.css'
@@ -23,7 +23,7 @@ import { WlaczNoweFunkcje } from './start/WlaczNoweFunkcjePage.jsx';
 import { ZmianaFirmy } from './start/ZmianaFirmyPage.jsx';
 
 
-//grupa ogólne
+//grupa ogï¿½lne
 import { Layout } from './layout/Layout.jsx';
 import { Atrybuty } from './ogolne/AtrybutyPage.jsx';
 import { Cennik } from './ogolne/CennikPage.jsx';
@@ -248,7 +248,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route index element={<ZmianaFirmy />} />
                 </Route>
 
-                {/*grupa ogólne*/}
+                {/*grupa ogï¿½lne*/}
                 <Route path='/atrybuty' element={<Layout />}>
                     <Route index element={<Atrybuty />} />
                 </Route>
