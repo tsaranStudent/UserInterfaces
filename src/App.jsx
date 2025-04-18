@@ -18,7 +18,7 @@ function App() {
             <Row>
                 <Col className="mb-3">
                     <Card>
-                        <Card.Header>Ogloszenie 1</Card.Header>
+                        <Card.Header>Oglosząąąenie 1</Card.Header>
                         <Card.Body>
                             <Card.Text>
                                 Lorem Ipsum siąąąy dummy text of the prin
