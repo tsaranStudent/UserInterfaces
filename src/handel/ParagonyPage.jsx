@@ -1,4 +1,5 @@
-﻿import Container from 'react-bootstrap/Container';
+﻿import '../App.css';
+import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
@@ -9,47 +10,47 @@ import Badge from 'react-bootstrap/Badge';
 
 export const Paragony = () => {
     return (
-        <Container fluid>
-            <h3 className="mb-4">Historia paragonów</h3>
+        <Container fluid className="background">
+            <h3 className="mb-4 page-title">Historia paragonów</h3>
 
-            <Accordion defaultActiveKey="filters" className="mb-4">
+            <Accordion defaultActiveKey="filters" className="mb-4 module-tabs">
                 <Accordion.Item eventKey="filters">
-                    <Accordion.Header>Filtry wyszukiwania</Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Header className="accordion-header">Filtry wyszukiwania</Accordion.Header>
+                    <Accordion.Body className="accordion-body">
                         <Form>
                             <Row>
                                 <Col md={3}>
                                     <Form.Group>
-                                        <Form.Label>Numer paragonu</Form.Label>
+                                        <Form.Label className="form-label">Numer paragonu</Form.Label>
                                         <Form.Control type="text" placeholder="Wprowadź numer" />
                                     </Form.Group>
                                 </Col>
                                 <Col md={3}>
                                     <Form.Group>
-                                        <Form.Label>Data od</Form.Label>
+                                        <Form.Label className="form-label">Data od</Form.Label>
                                         <Form.Control type="date" />
                                     </Form.Group>
                                 </Col>
                                 <Col md={3}>
                                     <Form.Group>
-                                        <Form.Label>Data do</Form.Label>
+                                        <Form.Label className="form-label">Data do</Form.Label>
                                         <Form.Control type="date" />
                                     </Form.Group>
                                 </Col>
                                 <Col md={3}>
                                     <Form.Group>
-                                        <Form.Label>Kwota powyżej</Form.Label>
+                                        <Form.Label className="form-label">Kwota powyżej</Form.Label>
                                         <Form.Control type="number" placeholder="PLN" />
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <Button variant="primary" className="mt-3">Filtruj</Button>
+                            <Button variant="primary" className="mt-3 actions-bar-end">Filtruj</Button>
                         </Form>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
 
-            <Table striped hover responsive>
+            <Table striped hover responsive className="data-table">
                 <thead>
                     <tr>
                         <th>Numer paragonu</th>
@@ -66,9 +67,9 @@ export const Paragony = () => {
                         <td>2023-07-15 10:23</td>
                         <td>Kasa 1 - Anna Nowak</td>
                         <td>189.99 zł</td>
-                        <td><Badge bg="success">Zaksięgowany</Badge></td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Podgląd</Button>{' '}
+                        <td><Badge bg="success" className="badge badge-success">Zaksięgowany</Badge></td>
+                        <td className="actions-bar">
+                            <Button variant="outline-primary" size="sm" className="me-2">Podgląd</Button>
                             <Button variant="outline-secondary" size="sm">Drukuj</Button>
                         </td>
                     </tr>

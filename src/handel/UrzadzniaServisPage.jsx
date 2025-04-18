@@ -1,26 +1,39 @@
-﻿import Container from 'react-bootstrap/Container';
+﻿import '../App.css';
+import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Accordion from 'react-bootstrap/Accordion';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Badge from 'react-bootstrap/Badge';
 
 export const UrzadzniaServis = () => {
     return (
-        <Container fluid>
-            <h3 className="mb-4">Lista urządzeń przyjętych do serwisu</h3>
+        <Container fluid className="background">
+            <h3 className="page-title">Lista urządzeń przyjętych do serwisu</h3>
 
-            <div className="d-flex justify-content-between mb-4">
-                <Button variant="primary">+ Nowe zgłoszenie</Button>
-                <Form.Control
-                    type="text"
-                    placeholder="Wyszukaj po numerze zgłoszenia..."
-                    style={{ width: '300px' }}
-                />
+            {/* Pasek akcji z wyszukiwarką i przyciskiem */}
+            <div className="actions-bar">
+                <div className="actions-bar-start">
+                    <Form className="d-flex search-input">
+                        <Form.Control
+                            type="search"
+                            placeholder="Wyszukaj po numerze zgłoszenia..."
+                            className="me-2"
+                        />
+                        <Button variant="outline-primary" type="submit">
+                            Szukaj
+                        </Button>
+                    </Form>
+                </div>
+
+                <div className="actions-bar-end">
+                    <Button variant="primary">+ Nowe zgłoszenie</Button>
+                </div>
             </div>
 
-            <Table striped bordered hover>
+            {/* Tabela urządzeń */}
+            <Table bordered hover responsive className="data-table">
                 <thead>
                     <tr>
                         <th>Numer zgłoszenia</th>
@@ -37,7 +50,7 @@ export const UrzadzniaServis = () => {
                         <td>2023-07-12</td>
                         <td>Laptop Lenovo XYZ</td>
                         <td>Jan Kowalski</td>
-                        <td><Badge bg="warning">W diagnozie</Badge></td>
+                        <td><span className="badge badge-w-realizacji">W diagnozie</span></td>
                         <td>
                             <Button variant="outline-primary" size="sm">Szczegóły</Button>{' '}
                             <Button variant="outline-success" size="sm">Zakończ</Button>
@@ -48,7 +61,7 @@ export const UrzadzniaServis = () => {
                         <td>2023-07-15</td>
                         <td>Drukarka Epson L310</td>
                         <td>Firma ABC Sp. z o.o.</td>
-                        <td><Badge bg="info">W naprawie</Badge></td>
+                        <td><span className="badge badge-success">W naprawie</span></td>
                         <td>
                             <Button variant="outline-primary" size="sm">Szczegóły</Button>{' '}
                             <Button variant="outline-success" size="sm">Zakończ</Button>

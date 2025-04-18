@@ -1,4 +1,6 @@
-﻿import Container from 'react-bootstrap/Container';
+﻿import '../App.css';
+
+import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -7,19 +9,29 @@ import Col from 'react-bootstrap/Col';
 
 export const Zasoby = () => {
     return (
-        <Container fluid>
-            <h3 className="mb-4">Zasoby magazynowe (stan, lokalizacja)</h3>
+        <Container fluid className="lang-pl background">
+            <h3 className="page-title">Zasoby magazynowe (stan, lokalizacja)</h3>
 
-            <div className="d-flex justify-content-between mb-4">
-                <Button variant="primary">+ Dodaj zasób</Button>
-                <Form.Control
-                    type="text"
-                    placeholder="Wyszukaj zasób..."
-                    style={{ width: '300px' }}
-                />
+            <div className="actions-bar">
+                <div className="actions-bar-start">
+                    <Form className="d-flex search-input">
+                        <Form.Control
+                            type="search"
+                            placeholder="Wyszukaj po nr zasobu"
+                            className="me-2"
+                        />
+                        <Button variant="outline-primary" type="submit">
+                            Szukaj
+                        </Button>
+                    </Form>
+                </div>
+
+                <div className="actions-bar-end">
+                    <Button variant="primary">+ dodaj zasób</Button>
+                </div>
             </div>
 
-            <Table striped bordered hover>
+            <Table striped bordered hover responsive className="data-table">
                 <thead>
                     <tr>
                         <th>ID zasobu</th>
@@ -38,7 +50,7 @@ export const Zasoby = () => {
                         <td>Narzędzia</td>
                         <td>5</td>
                         <td>szt.</td>
-                        <td>Dostępny</td>
+                        <td><span className="badge badge-success">Dostępny</span></td>
                         <td>
                             <Button variant="outline-primary" size="sm">Edytuj</Button>
                         </td>
@@ -49,7 +61,7 @@ export const Zasoby = () => {
                         <td>Narzędzia</td>
                         <td>10</td>
                         <td>komplet</td>
-                        <td>Dostępny</td>
+                        <td><span className="badge badge-success">Dostępny</span></td>
                         <td>
                             <Button variant="outline-primary" size="sm">Edytuj</Button>
                         </td>

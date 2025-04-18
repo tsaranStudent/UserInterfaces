@@ -1,19 +1,342 @@
-﻿.logo{
-    width:35px;
-    height:35px;
-    margin-right:10px;
+﻿/*****************************/
+/* Logo i ikony */
+/*****************************/
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
 }
-a{
-    text-decoration:none;
-    color:unset;
-}
+
 .icon-unified {
     width: 32px;
     height: 32px;
     object-fit: contain;
 }
+
+/*****************************/
+/* Linki i język */
+/*****************************/
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 .lang-pl {
     font-family: "Arial", sans-serif;
     direction: ltr;
     color: black;
 }
+
+/*****************************/
+/* Tło aplikacji */
+/*****************************/
+.background {
+    background-color: #f5f5f5;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/*****************************/
+/* Nagłówki, tytuły */
+/*****************************/
+.page-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*****************************/
+/* Pasek akcji i wyszukiwarka */
+/*****************************/
+.actions-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.actions-bar-end {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 300px;
+}
+
+/*****************************/
+/* Przyciski akcji */
+/*****************************/
+.actions-bar {
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.actions-bar-start {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.actions-bar-end {
+    gap: 15px;
+    align-items: center;
+}
+
+.actions-bar button {
+    min-width: 120px;
+    transition: all 0.2s ease;
+}
+
+    .actions-bar button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+/*****************************/
+/* Responsywność */
+/*****************************/
+@media (max-width: 768px) {
+    .actions-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .actions-bar-start,
+    .actions-bar-end {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-section {
+        padding: 12px;
+    }
+
+    .search-input {
+        max-width: 100%;
+    }
+}
+
+/*****************************/
+/* Tabele danych */
+/*****************************/
+.data-table th {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    text-align: left;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*****************************/
+/* Karty, formularze */
+/*****************************/
+.module-tabs {
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/*****************************/
+/* Badge'y statusów */
+/*****************************/
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+/*****************************/
+/* Accordion */
+/*****************************/
+.accordion-header {
+    font-weight: bold;
+}
+
+.accordion-body {
+    transition: all 0.3s ease-in-out;
+}
+
+
+------------------------------
+/*****************************/
+/* Sekcja podsumowania */
+/*****************************/
+.summary-row {
+    margin-top: 20px;
+}
+
+.summary-box {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.summary-text {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.submit-btn {
+    width: 100%;
+    max-width: 250px;
+    float: right;
+}
+
+/*****************************/
+/* Responsywność */
+/*****************************/
+@media (max-width: 768px) {
+    .summary-box {
+        text-align: center;
+    }
+
+    .submit-btn {
+        float: none;
+        max-width: 100%;
+    }
+}
+import '../App.css';
+import Container from 'react-bootstrap/Container';
+import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+export const WydaniaZewnetrzne = () = > {
+    return (
+        <Container fluid className="background lang-pl">
+            <h3 className="page-title">Obsługa wydań zewnętrznych z magazynu</h3>
+
+            {/* Pasek akcji */}
+            <div className="actions-bar">
+                <div className="actions-bar-start">
+                    <Button variant="primary">+ Nowe wydanie</Button>
+                </div>
+                <div className="actions-bar-end">
+                    <Form.Control
+                        type="text"
+                        placeholder="Wyszukaj po numerze dokumentu..."
+                        className="search-input"
+                    />
+                </div>
+            </div>
+
+            {/* Formularz dodania wydania */}
+            <div className="form-section">
+                <Form>
+                    <Row className="align-items-end">
+                        <Col md={3}>
+                            <Form.Label className="form-label">Numer wydania</Form.Label>
+                            <Form.Control type="text" placeholder="Numer wydania" />
+                        </Col>
+
+                        <Col md={3}>
+                            <Form.Label className="form-label">Data wydania</Form.Label>
+                            <Form.Control type="date" />
+                        </Col>
+
+                        <Col md={3}>
+                            <Form.Label className="form-label">Odbiorca</Form.Label>
+                            <Form.Control type="text" placeholder="Odbiorca" />
+                        </Col>
+
+                        <Col md={3}>
+                            <Form.Label className="form-label">Powód wydania</Form.Label>
+                            <Form.Control type="text" placeholder="Powód wydania" />
+                        </Col>
+                    </Row>
+
+                    <Row className="align-items-end mt-3">
+                        <Col md={6}>
+                            <Form.Label className="form-label">Liczba pozycji</Form.Label>
+                            <Form.Control type="number" placeholder="Liczba pozycji" />
+                        </Col>
+
+                        <Col md={3} className="d-grid">
+                            <Button variant="outline-primary">Zapisz</Button>
+                        </Col>
+                    </Row>
+                </Form>
+            </div>
+
+            {/* Tabela wydań */}
+            <Table striped bordered hover responsive className="data-table mt-4">
+                <thead>
+                    <tr>
+                        <th>Numer dokumentu</th>
+                        <th>Data wydania</th>
+                        <th>Odbiorca</th>
+                        <th>Powód wydania</th>
+                        <th>Liczba pozycji</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WYD/2023/07/001</td>
+                        <td>2023-07-18</td>
+                        <td>Klient XYZ</td>
+                        <td>Sprzedaż</td>
+                        <td>3</td>
+                        <td>
+                            <Button variant="outline-primary" size="sm">Szczegóły</Button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>WYD/2023/07/002</td>
+                        <td>2023-07-17</td>
+                        <td>Serwis ABC</td>
+                        <td>Naprawa gwarancyjna</td>
+                        <td>1</td>
+                        <td>
+                            <Button variant="outline-primary" size="sm">Szczegóły</Button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>WYD/2023/07/003</td>
+                        <td>2023-07-16</td>
+                        <td>Klient ABC</td>
+                        <td>Zwrot towaru</td>
+                        <td>5</td>
+                        <td>
+                            <Button variant="outline-primary" size="sm">Szczegóły</Button>
+                        </td>
+                    </tr>
+                </tbody>
+            </Table>
+        </Container>
+    );
+}
+
+;

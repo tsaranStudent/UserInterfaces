@@ -1,4 +1,6 @@
-﻿import Container from 'react-bootstrap/Container';
+﻿import '../App.css';
+
+import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
@@ -8,43 +10,53 @@ import Button from 'react-bootstrap/Button';
 
 export const FakturyZakupu = () => {
     return (
-        <Container fluid>
-            <Accordion defaultActiveKey="filtr">
-                <Accordion.Item eventKey="filtr">
-                    <Accordion.Header>Filtrowanie faktur zakupu</Accordion.Header>
-                    <Accordion.Body>
+        <Container fluid className="lang-pl background">
+            {/* Sekcja filtrowania */}
+            <Accordion defaultActiveKey="filtr" className="accordion">
+                <Accordion.Item eventKey="filtr" className="accordion-item">
+                    <Accordion.Header className="accordion-header">
+                        Filtrowanie faktur zakupu
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body form-section">
                         <Form>
-                            <Row>
+                            <Row className="mb-3">
                                 <Col md={6}>
                                     <Form.Group>
-                                        <Form.Label>Dostawca</Form.Label>
-                                        <Form.Control type="text" placeholder="Nazwa dostawcy" />
+                                        <Form.Label className="form-label">Dostawca</Form.Label>
+                                        <Form.Control
+                                            type="text"
+                                            placeholder="Nazwa dostawcy"
+                                            className="search-input"
+                                        />
                                     </Form.Group>
                                 </Col>
                                 <Col md={3}>
                                     <Form.Group>
-                                        <Form.Label>Data od</Form.Label>
+                                        <Form.Label className="form-label">Data od</Form.Label>
                                         <Form.Control type="date" />
                                     </Form.Group>
                                 </Col>
                                 <Col md={3}>
                                     <Form.Group>
-                                        <Form.Label>Data do</Form.Label>
+                                        <Form.Label className="form-label">Data do</Form.Label>
                                         <Form.Control type="date" />
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <Row className="mt-3">
-                                <Col>
-                                    <Button variant="primary">Dodaj nową fakturę</Button>
-                                </Col>
-                            </Row>
+
+                            <div className="actions-bar-end">
+                                <Button variant="primary">Dodaj nową fakturę</Button>
+                            </div>
                         </Form>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
-            <h4 className="mt-4">Rejestr faktur zakupu</h4>
-            <Table striped bordered hover responsive>
+
+            {/* Tytuł strony */}
+            <h4 className="mt-4 page-title">Rejestr faktur zakupu</h4>
+
+            {/* Tabela faktur */}
+            <Table striped bordered hover responsive className="data-table">
                 <thead>
                     <tr>
                         <th>Nr faktury</th>
@@ -60,17 +72,21 @@ export const FakturyZakupu = () => {
                         <td>ABC Tools</td>
                         <td>2024-03-15</td>
                         <td>4 800,00 zł</td>
-                        <td>Zaksięgowana</td>
+                        <td>
+                            <span className="badge badge-success">Zaksięgowana</span>
+                        </td>
                     </tr>
                     <tr>
                         <td>FZ/2024/16</td>
                         <td>Global Parts</td>
                         <td>2024-03-18</td>
                         <td>9 200,00 zł</td>
-                        <td>W toku</td>
+                        <td>
+                            <span className="badge badge-danger">W toku</span>
+                        </td>
                     </tr>
                 </tbody>
             </Table>
         </Container>
-    )
-}
+    );
+};

@@ -1,91 +1,112 @@
-﻿import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
+﻿import '../App.css';
+
+import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
-import { useState } from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Table from 'react-bootstrap/Table';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 export const RodzajeUrzadzenServis = () => {
-    const [showModal, setShowModal] = useState(false);
-    const [deviceType, setDeviceType] = useState('');
-
     return (
-        <Container fluid>
-            <h3 className="mb-4">
-                Katalog typów urządzeń
-            </h3>
+        <div className="background">
+            <Container fluid className="lang-pl">
+                <h3 className="page-title">Katalog typów urządzeń serwisowych</h3>
 
-            <div className="d-flex justify-content-between mb-4">
-                <Button variant="primary" onClick={() => setShowModal(true)}>
-                    + Dodaj nowy typ
-                </Button>
-                <Form.Control
-                    type="text"
-                    placeholder="Wyszukaj typ urządzenia..."
-                    style={{ width: '300px' }}
-                />
-            </div>
+                {/* Formularz wyszukiwania urządzeń */}
+                <Form className="form">
+                    <div className="form-section">
+                        <Row className="mb-3">
+                            <Col md={8}>
+                                <Form.Group className="form-group">
+                                    <Form.Label className="form-label">Wyszukaj urządzenie</Form.Label>
+                                    <InputGroup>
+                                        <Form.Control
+                                            type="text"
+                                            placeholder="Wprowadź nazwę urządzenia lub ID"
+                                            className="search-input"
+                                        />
+                                        <Button variant="outline-primary">Szukaj</Button>
+                                    </InputGroup>
+                                </Form.Group>
+                            </Col>
+                            <Col md={4} className="d-flex align-items-center justify-content-end">
+                                <Button variant="primary">+ Dodaj nowy typ urządzenia</Button>
+                            </Col>
+                        </Row>
+                    </div>
+                </Form>
 
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Typ urządzenia</th>
-                        <th>Średni czas naprawy</th>
-                        <th>Liczba zgłoszeń</th>
-                        <th>Akcje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Laptop</td>
-                        <td>3 dni</td>
-                        <td>24</td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Edytuj</Button>{' '}
-                            <Button variant="outline-danger" size="sm">Usuń</Button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Smartphone</td>
-                        <td>2 dni</td>
-                        <td>42</td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Edytuj</Button>{' '}
-                            <Button variant="outline-danger" size="sm">Usuń</Button>
-                        </td>
-                    </tr>
-                </tbody>
-            </Table>
+                {/* Tabela urządzeń */}
+                <h5 className="mt-4 mb-3">Lista dostępnych typów urządzeń</h5>
+                <div className="form-section">
+                    <Table bordered responsive className="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Typ urządzenia</th>
+                                <th>Średni czas naprawy</th>
+                                <th>Liczba zgłoszeń</th>
+                                <th>Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Laptop</td>
+                                <td>3 dni</td>
+                                <td>24</td>
+                                <td>
+                                    <Button variant="outline-primary" size="sm">Edytuj</Button>
+                                    <Button variant="outline-danger" size="sm" className="ms-2">Usuń</Button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Smartphone</td>
+                                <td>2 dni</td>
+                                <td>42</td>
+                                <td>
+                                    <Button variant="outline-primary" size="sm">Edytuj</Button>
+                                    <Button variant="outline-danger" size="sm" className="ms-2">Usuń</Button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </div>
 
-            <Modal show={showModal} onHide={() => setShowModal(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Dodaj nowy typ urządzenia</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
+                {/* Formularz do dodania nowego urządzenia */}
+                <h5 className="mt-4 mb-3">Dodaj nowy typ urządzenia</h5>
+                <div className="form-section">
                     <Form>
-                        <Form.Group className="mb-3">
-                            <Form.Label>Nazwa typu urządzenia</Form.Label>
-                            <Form.Control
-                                type="text"
-                                value={deviceType}
-                                onChange={(e) => setDeviceType(e.target.value)}
-                                placeholder="np. Drukarka laserowa"
-                            />
-                        </Form.Group>
+                        <Row className="mb-3">
+                            <Col md={6}>
+                                <Form.Group className="form-group">
+                                    <Form.Label className="form-label">Nazwa urządzenia</Form.Label>
+                                    <Form.Control type="text" placeholder="np. Drukarka laserowa" />
+                                </Form.Group>
+                            </Col>
+                            <Col md={3}>
+                                <Form.Group className="form-group">
+                                    <Form.Label className="form-label">Średni czas naprawy</Form.Label>
+                                    <Form.Control type="number" placeholder="np. 3 dni" />
+                                </Form.Group>
+                            </Col>
+                            <Col md={3}>
+                                <Form.Group className="form-group">
+                                    <Form.Label className="form-label">Liczba zgłoszeń</Form.Label>
+                                    <Form.Control type="number" placeholder="np. 0" />
+                                </Form.Group>
+                            </Col>
+                        </Row>
+
+                        <div className="actions-bar-end">
+                            <Button variant="success" size="lg">Zapisz typ urządzenia</Button>
+                        </div>
                     </Form>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={() => setShowModal(false)}>
-                        Anuluj
-                    </Button>
-                    <Button variant="primary" onClick={() => setShowModal(false)}>
-                        Zapisz
-                    </Button>
-                </Modal.Footer>
-            </Modal>
-        </Container>
+                </div>
+            </Container>
+        </div>
     );
 };

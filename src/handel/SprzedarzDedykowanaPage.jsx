@@ -1,4 +1,6 @@
-﻿import Container from 'react-bootstrap/Container';
+﻿import '../App.css'; // Upewnij się, że CSS jest zaimportowane w pliku
+
+import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
@@ -9,8 +11,8 @@ import Badge from 'react-bootstrap/Badge';
 
 export const SprzedarzDedykowana = () => {
     return (
-        <Container fluid>
-            <h3 className="mb-4">Obsługa sprzedaży dedykowanej / umownej</h3>
+        <Container fluid className="background"> {/* Dodanie klasy tła dla aplikacji */}
+            <h3 className="page-title mb-4">Obsługa sprzedaży dedykowanej / umownej</h3>
 
             <Accordion defaultActiveKey="newOrder" className="mb-4">
                 <Accordion.Item eventKey="newOrder">
@@ -21,7 +23,11 @@ export const SprzedarzDedykowana = () => {
                                 <Col md={6}>
                                     <Form.Group>
                                         <Form.Label>Klient</Form.Label>
-                                        <Form.Control type="text" placeholder="Wyszukaj klienta..." />
+                                        <Form.Control
+                                            type="text"
+                                            placeholder="Wyszukaj klienta..."
+                                            className="search-input"
+                                        />
                                     </Form.Group>
                                 </Col>
                                 <Col md={3}>
@@ -43,7 +49,7 @@ export const SprzedarzDedykowana = () => {
                 </Accordion.Item>
             </Accordion>
 
-            <Table striped bordered hover>
+            <Table striped bordered hover className="data-table">
                 <thead>
                     <tr>
                         <th>Numer umowy</th>
@@ -62,7 +68,9 @@ export const SprzedarzDedykowana = () => {
                         <td>2023-07-01</td>
                         <td>2023-08-15</td>
                         <td>12,450.00 zł</td>
-                        <td><Badge bg="info">W realizacji</Badge></td>
+                        <td>
+                            <Badge className="badge-w-realizacji">W realizacji</Badge> {/* Wyróżniony status */}
+                        </td>
                         <td>
                             <Button variant="outline-primary" size="sm">Szczegóły</Button>
                         </td>
