@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
+import { Link } from 'react-router-dom'; 
 
 export const Paragony = () => {
     return (
@@ -50,7 +51,16 @@ export const Paragony = () => {
                 </Accordion.Item>
             </Accordion>
 
-            <Table striped hover responsive className="data-table">
+            <div className="d-flex justify-content-between align-items-center mt-4">
+                <h4 className="page-title">Lista paragonów</h4>
+                <div className="actions-bar-end">
+                    <Link to="/nowyParagon">
+                        <Button variant="primary">+ Dodaj nowy paragon</Button>
+                    </Link>
+                </div>
+            </div>
+
+            <Table striped hover responsive className="data-table mt-4">
                 <thead>
                     <tr>
                         <th>Numer paragonu</th>
@@ -75,6 +85,18 @@ export const Paragony = () => {
                     </tr>
                 </tbody>
             </Table>
+
+            {/* Sekcja podsumowania */}
+            <div className="summary-row">
+                <div className="summary-box">
+                    <div className="summary-text">
+                        <h5>Podsumowanie transakcji</h5>
+                        <p>Łączna liczba paragonów: 1</p>
+                        <p>Całkowita kwota: 189.99 zł</p>
+                    </div>
+                    <Button variant="success" className="submit-btn">Zatwierdź</Button>
+                </div>
+            </div>
         </Container>
-    )
-}
+    );
+};

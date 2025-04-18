@@ -7,12 +7,15 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Table from 'react-bootstrap/Table';
+import { Link } from 'react-router-dom';
 
 export const NowaFaktura = () => {
     return (
         <div className="background">
             <Container fluid className="lang-pl">
-                <h3 className="page-title">Nowa faktura sprzedażowa</h3>
+                <div className="form-section">
+                    <h3 className="page-title mt-3">Nowa faktura sprzedażowa</h3>
+                </div>
 
                 <Form className="form">
                     <div className="form-section">
@@ -50,6 +53,19 @@ export const NowaFaktura = () => {
                                         <option>Przelew</option>
                                         <option>Gotówka</option>
                                         <option>Karta</option>
+                                    </Form.Select>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+
+                        {/* Dodanie wyboru typu faktury */}
+                        <Row className="mb-3 row">
+                            <Col md={4}>
+                                <Form.Group className="form-group">
+                                    <Form.Label className="form-label">Typ faktury</Form.Label>
+                                    <Form.Select className="form-control">
+                                        <option>Faktura VAT</option>
+                                        <option>Faktura Proforma</option>
                                     </Form.Select>
                                 </Form.Group>
                             </Col>
@@ -115,11 +131,21 @@ export const NowaFaktura = () => {
                         <Button variant="outline-primary" className="mt-2">Dodaj pozycję</Button>
                     </div>
 
-                    <div className="actions-bar-end">
+                    <div className="actions-bar-end form-section">
+                        <Link to="/faktury">
+                            <Button variant="outline-primary" className="me-3">Lista faktur VAT</Button>
+                        </Link>
+                        <Link to="/fakturyproforma">
+                            <Button variant="outline-primary">Lista faktur proforma</Button>
+                        </Link>
                         <Button variant="success" size="lg">Zapisz fakturę</Button>
                     </div>
+                    {/* Kontener z przyciskami na Listy faktur */}
+                    
                 </Form>
             </Container>
+
+
         </div>
     );
 };

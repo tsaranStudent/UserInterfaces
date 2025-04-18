@@ -6,6 +6,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'; // Importujemy Link do nawigacji
 
 export const Faktury = () => {
     return (
@@ -42,13 +44,23 @@ export const Faktury = () => {
                                         </Form.Group>
                                     </Col>
                                 </Row>
+                                <Button variant="outline-primary" className="mt-3">
+                                    Filtruj
+                                </Button>
                             </Form>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
 
-                <h4 className="mt-4 page-title">Lista faktur sprzedażowych</h4>
-                <Table striped bordered hover responsive className="table data-table">
+                {/* Przycisk dodaj nową fakturę */}
+                <div className="d-flex justify-content-between align-items-center mt-4">
+                    <h4 className="page-title">Lista faktur sprzedażowych</h4>
+                    <Link to="/nowaFaktura">
+                        <Button variant="primary">+ Dodaj nową fakturę</Button>
+                    </Link>
+                </div>
+
+                <Table striped bordered hover responsive className="table data-table mt-4">
                     <thead>
                         <tr>
                             <th>Numer</th>

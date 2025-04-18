@@ -7,10 +7,18 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 export const FakturyProforma = () => {
     return (
         <Container fluid className="lang-pl background">
+
+            
+            <div className="form-section">
+                <h3 className="page-title mt-3">Lista faktur proforma</h3>               
+            </div>
+
+
             <Accordion defaultActiveKey="kryteria" className="module-tabs">
                 <Accordion.Item eventKey="kryteria" className="accordion-item">
                     <Accordion.Header className="accordion-header">
@@ -19,12 +27,22 @@ export const FakturyProforma = () => {
                     <Accordion.Body className="form-section">
                         <Form>
                             <Row className="mb-3">
-                                <Col md={6}>
+                                <Col md={3}>
                                     <Form.Group>
                                         <Form.Label className="form-label">Odbiorca</Form.Label>
                                         <Form.Control
                                             type="text"
                                             placeholder="Nazwa odbiorcy"
+                                            className="search-input"
+                                        />
+                                    </Form.Group>
+                                </Col>
+                                <Col md={3}>
+                                    <Form.Group>
+                                        <Form.Label className="form-label">Nr faktury Vat</Form.Label>
+                                        <Form.Control
+                                            type="text"
+                                            placeholder="Nr faktury"
                                             className="search-input"
                                         />
                                     </Form.Group>
@@ -50,17 +68,31 @@ export const FakturyProforma = () => {
                                     </Form.Group>
                                 </Col>
                             </Row>
-
-                            <div className="actions-bar-end">
-                                <Button variant="success">Generuj dokument</Button>
-                                <Button variant="secondary">Wyczyść</Button>
-                            </div>
+                            <div className="form-section">
+                                <div className="actions-bar-end">
+                                    <Button variant="secondary">Wyczyść</Button>                                    {/* Dodajemy przycisk "Szukaj" */}
+                                    <Button variant="primary" className="ms-2">Szukaj</Button>
+                                    <Button variant="success">Generuj Fakturę VAT</Button>
+                                    
+                                </div>
+                            </div>                            
                         </Form>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
 
-            <h4 className="page-title mt-4">Lista faktur proforma</h4>
+            {/* Nowa faktura i lista faktur VAT - kontener z przyciskami */}
+
+            <div className="actions-bar-end mt-4 form-section">
+                <Link to="/nowaFaktura">
+                    <Button variant="outline-success" className="me-3">Nowa faktura</Button>
+                </Link>
+                <Link to="/faktury">
+                    <Button variant="outline-primary">Lista faktur VAT</Button>
+                </Link>
+            </div>
+
+            
 
             <Table striped bordered hover responsive className="data-table">
                 <thead>
@@ -89,10 +121,9 @@ export const FakturyProforma = () => {
                     </tr>
                 </tbody>
             </Table>
+
             
-            <div className="actions-bar-end">
-                <Button variant="success">Zapisz fakturę</Button>
-            </div>
+            
         </Container>
     );
 };
