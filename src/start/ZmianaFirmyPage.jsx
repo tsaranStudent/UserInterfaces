@@ -15,10 +15,20 @@ export const ZmianaFirmy = () => {
     return (
         <Container fluid className="lang-pl mt-2 mb-2">
             <div className="background mt-2 mb-2">
-
-                
-
-
+                <Container fluid className="lang-pl mt-5" style={{ maxWidth: '500px' }}>
+                    <div className="form-section text-center">
+                        <h3 className="page-title">Zmiana firmy</h3>
+                        <Form>
+                            <Form.Group className="mb-3">
+                                <Form.Select>
+                                    <option>Firma A</option>
+                                    <option>Firma B</option>
+                                </Form.Select>
+                            </Form.Group>
+                            <Button variant="success" className="w-100">Zatwierdź</Button>
+                        </Form>
+                    </div>
+                </Container>
             </div>
         </Container>
     )
