@@ -1,15 +1,63 @@
-import Container from 'react-bootstrap/Container';
+﻿import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, useLocation } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Image from 'react-bootstrap/Image';
+import Footer from "../components/Footer";
+
 export function Layout() {
+
+    // Hook do uzyskania bieżącej lokalizacji URL
+    const location = useLocation();
+
+    // Lista ścieżek, które należą do "Grupy Home"
+    const homeRoutes = [
+        "/",
+        "/logowanie",
+        "/zmianaFirmy",
+        "/informacjeoFirmie",
+        "/konfiguracja",
+        "/odswierzKonfiguracje",
+        "/nowoscWwersji",
+        "/wlaczNoweFunkcje",
+        "/koniecPracy"
+    ];
+
+    // Lista ścieżek, które należą do "Grupy Handel"
+    const handelRoutes = [
+        "/faktury",
+        "/nowaFaktura",
+        "/paragony",
+        "/nowyParagon",
+        "/rezerwacjeOdbiorcy",
+        "/fakturyProforma",
+        "/sprzedarzDedykowana",
+        "/fakturyZakupu",
+        "/zleceniaUDostawcy",
+        "/zasoby",
+        "/raportBrakow",
+        "/wydaniaZewnetrzne",
+        "/przyjeciaZewnetrzne",
+        "/zlecenia",
+        "/zleceniaCykliczne",
+        "/urzadzniaServis",
+        "/rodzajeUrzadzenServis"
+    ];
+
+
+    // Sprawdzamy, czy bieżąca ścieżka URL znajduje się w "Grupie Home,Handel itd."
+    const isHomePage = homeRoutes.includes(location.pathname);
+    const isHandelPage = handelRoutes.includes(location.pathname);
+
+
+
+
     return (
-        <div className="app">
+        <div className="app d-flex flex-column min-vh-100">
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container fluid>
                     <Navbar.Brand>
@@ -599,11 +647,179 @@ export function Layout() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <div className="px-3">
-                <Container fluid>
+
+            {/* Nowy pasek nawigacyjny */}
+            {/* Pokaż ten pasek tylko, gdy jesteś na stronie z grupy "Home" */}
+            {isHomePage && (
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div className="container-fluid">
+                        <a className="navbar-brand" href="#">
+                            <img
+                                src="./image/1.png"
+                                alt="Logo"
+                                className="logo"
+                            />
+                            <span className="logo-name">SystemERP</span>
+                        </a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarNav">
+                            <ul className="navbar-nav ms-auto">
+                                {/* Home */}
+                                <li className="nav-item">
+                                    <Link to="/" className="nav-link custom-link">Home</Link>
+                                </li>
+                                {/* Logowanie */}
+                                <li className="nav-item">
+                                    <Link to="/logowanie" className="nav-link custom-link">Logowanie</Link>
+                                </li>
+                                {/* Zmiana firmy */}
+                                <li className="nav-item">
+                                    <Link to="/zmianaFirmy" className="nav-link custom-link">Zmiana firmy</Link>
+                                </li>
+                                {/* Informacje o firmie */}
+                                <li className="nav-item">
+                                    <Link to="/informacjeoFirmie" className="nav-link custom-link">Informacje o firmie</Link>
+                                </li>
+                                {/* Konfiguracja */}
+                                <li className="nav-item">
+                                    <Link to="/konfiguracja" className="nav-link custom-link">Konfiguracja</Link>
+                                </li>
+                                {/* Odśwież konfigurację */}
+                                <li className="nav-item">
+                                    <Link to="/odswierzKonfiguracje" className="nav-link custom-link">Odśwież konfigurację</Link>
+                                </li>
+                                {/* Nowości w wersji */}
+                                <li className="nav-item">
+                                    <Link to="/nowoscWwersji" className="nav-link custom-link">Nowości w wersji</Link>
+                                </li>
+                                {/* Włącz nowe funkcje */}
+                                <li className="nav-item">
+                                    <Link to="/wlaczNoweFunkcje" className="nav-link custom-link">Włącz nowe funkcje</Link>
+                                </li>
+                                {/* Koniec pracy */}
+                                <li className="nav-item">
+                                    <Link to="/koniecPracy" className="nav-link custom-link">Koniec pracy</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            )}
+
+            {/* Nowy pasek nawigacyjny */}
+            {/* Pokaż ten pasek tylko, gdy jesteś na stronie z grupy "Handel"*/}
+            {isHandelPage && (
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div className="container-fluid">
+                        <a className="navbar-brand" href="#">
+                            <img
+                                src="./image/1.png"
+                                alt="Logo"
+                                className="logo"
+                            />
+                            <span className="logo-name">Handel</span>
+                        </a>
+                        <button
+                            className="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#handelNav"
+                            aria-controls="handelNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="handelNav">
+                            <ul className="navbar-nav ms-auto">
+                                <li className="nav-item">
+                                    <Link to="/faktury" className="nav-link custom-link">Faktury</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/nowaFaktura" className="nav-link custom-link">Nowa faktura</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/paragony" className="nav-link custom-link">Paragony</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/nowyParagon" className="nav-link custom-link">Nowy paragon</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/rezerwacjeOdbiorcy" className="nav-link custom-link">Rezerwacje odbiorcy</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/fakturyProforma" className="nav-link custom-link">Faktury proforma</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/sprzedarzDedykowana" className="nav-link custom-link">Sprzedaż dedykowana</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/fakturyZakupu" className="nav-link custom-link">Faktury zakupu</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/zleceniaUDostawcy" className="nav-link custom-link">Zlecenia u dostawcy</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/zasoby" className="nav-link custom-link">Zasoby</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/raportBrakow" className="nav-link custom-link">Raport braków</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/wydaniaZewnetrzne" className="nav-link custom-link">Wydania zewnętrzne WZ</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/przyjeciaZewnetrzne" className="nav-link custom-link">Przyjęcia zewnętrzne PZ</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/zlecenia" className="nav-link custom-link">Zlecenia</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/zleceniaCykliczne" className="nav-link custom-link">Zlecenia cykliczne</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/urzadzniaServis" className="nav-link custom-link">Urządzenia</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/rodzajeUrzadzenServis" className="nav-link custom-link">Rodzaje urządzeń</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            )}
+
+
+            {/* Outlet dla reszty aplikacji */}
+            <div className="main-content flex-grow-1">
+                <Container fluid className="py-3">
                     <Outlet />
                 </Container>
             </div>
+            {/*<div className="px-3">*/}
+            {/*    <Container fluid>*/}
+            {/*        <Outlet />*/}
+            {/*    </Container>*/}
+            {/*</div>*/}
+            {/* Stopka */}
+            {/*<footer className="mt-4 py-3 bg-dark text-white">*/}
+            {/*    <Container fluid>*/}
+            {/*        <span className="mt-4 py-3 bg-dark text-white">*/}
+            {/*            © {new Date().getFullYear()} System ERP. Wszelkie prawa zastrzeżone. Projekt interfejsu TSaran.*/}
+            {/*        </span>*/}
+            {/*    </Container>*/}
+            {/*</footer>*/}
+            {/* Stopka */}
+            {/*<footer className="mt-4 py-3 bg-dark text-white">*/}
+            {/*    <Container fluid>*/}
+            {/*        <p className="text-center mb-0">© 2023 SystemERP. Wszystkie prawa zastrzeżone.</p>*/}
+            {/*    </Container>*/}
+            {/*</footer>*/}
+
+            {/* Stopka */}
+            <Footer />
          
         </div>
     )
