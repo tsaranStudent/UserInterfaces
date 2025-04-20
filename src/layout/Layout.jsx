@@ -638,11 +638,11 @@ export function Layout() {
                         <Form className="d-flex">
                             <Form.Control
                                 type="search"
-                                placeholder="Search"
+                                placeholder="Szukaj.."
                                 className="me-2"
                                 aria-label="Search"
                             />
-                            <Button variant="outline-success">Search</Button>
+                            <Button variant="outline-success">Szukaj</Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>
@@ -798,26 +798,8 @@ export function Layout() {
                     <Outlet />
                 </Container>
             </div>
-            {/*<div className="px-3">*/}
-            {/*    <Container fluid>*/}
-            {/*        <Outlet />*/}
-            {/*    </Container>*/}
-            {/*</div>*/}
-            {/* Stopka */}
-            {/*<footer className="mt-4 py-3 bg-dark text-white">*/}
-            {/*    <Container fluid>*/}
-            {/*        <span className="mt-4 py-3 bg-dark text-white">*/}
-            {/*            © {new Date().getFullYear()} System ERP. Wszelkie prawa zastrzeżone. Projekt interfejsu TSaran.*/}
-            {/*        </span>*/}
-            {/*    </Container>*/}
-            {/*</footer>*/}
-            {/* Stopka */}
-            {/*<footer className="mt-4 py-3 bg-dark text-white">*/}
-            {/*    <Container fluid>*/}
-            {/*        <p className="text-center mb-0">© 2023 SystemERP. Wszystkie prawa zastrzeżone.</p>*/}
-            {/*    </Container>*/}
-            {/*</footer>*/}
 
+            
             {/* Stopka */}
             <Footer />
          

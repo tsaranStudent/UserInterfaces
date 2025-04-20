@@ -139,7 +139,7 @@ export const NowaFaktura = () => {
                         <Link to="/faktury">
                             <Button variant="outline-primary" className="me-3">Lista faktur VAT</Button>
                         </Link>
-                        <Link to="/fakturyproforma">
+                        <Link to="/fakturyProforma">
                             <Button variant="outline-primary">Lista faktur proforma</Button>
                         </Link>
                         <Button variant="success" size="lg">Zapisz fakturę</Button>
