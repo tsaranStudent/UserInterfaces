@@ -11,6 +11,11 @@ import './index.css'
 //import { Pracownik } from './pracownik/PracownikPage.jsx';
 //import { Pracownicy } from './pracownik/PracownicyPage.jsx';
 
+//Navbary grgup komponentow
+//import { HomeNavbar } from './components/navbars/HomeNavbar';
+//import { HandelNavbar } from './components/navbars/HandelNavbar';
+
+
 //grupa start
 //import { Home } from './start/HomePage.jsx';
 import { InformacjeoFirmie } from './start/InformacjeoFirmiePage.jsx';
@@ -186,28 +191,7 @@ import { RejestracjaProgramu } from './pomoc/RejestracjaProgramuPage.jsx';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-//const router = createBrowserRouter([
-//    {
-//        path: "/",
-//        element: <App/>,
-//    },
-//    {
-//        path: "/towar",
-//        element: <Towar/>,
-//    },
-//    {
-//        path: "/towary",
-//        element: <Towary />,
-//    },
-//    {
-//        path: "/pracownik",
-//        element: <Pracownik />,
-//    },
-//    {
-//        path: "/pracownicy",
-//        element: <Pracownicy />,
-//    },
-//]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>

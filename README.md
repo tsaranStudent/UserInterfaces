@@ -13,6 +13,31 @@ If you are developing a production application, we recommend using TypeScript an
 
 # Projekt - Aplikacja SystemERP (React + Bootstrap)
 
+# Komponent Layout
+
+Główny komponent nawigacyjny aplikacji, który zawiera:
+
+- Responsywną nawigację z wykorzystaniem React-Bootstrap
+- Dynamiczne menu rozwijane z podziałem na sekcje (Home, Handel, CRM, Księgowość itp.)
+- System grupowania ścieżek i wyświetlania odpowiednich pasków nawigacyjnych
+- Wyszukiwarkę w navbarze
+- Obsługę routingu przy użyciu React Router
+- Kontener dla treści strony (Outlet)
+- Stopkę aplikacji
+
+## Funkcjonalności
+
+- Automatyczne wykrywanie aktualnej ścieżki i wyświetlanie odpowiedniego paska nawigacyjnego
+- Rozbudowane menu z podziałem na logiczne kategorie
+- Responsywny design dostosowany do różnych rozmiarów ekranu
+- Spójny układ dla całej aplikacji
+
+## Wykorzystane technologie
+
+- React
+- React-Bootstrap
+- React Router
+
 ## Podstrony:
 1. **Faktury** - Przegląd i dodawanie faktur sprzedaży.
 2. **Paragony** - Lista paragonów i możliwość ich wystawienia.
