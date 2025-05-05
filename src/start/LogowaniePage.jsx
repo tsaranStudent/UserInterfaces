@@ -1,47 +1,63 @@
-﻿import React from 'react';
+﻿import { Container, Card, Form, Button, Alert } from 'react-bootstrap';
 import '../App.css';
-
-import Container from 'react-bootstrap/Container';
-
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Table from 'react-bootstrap/Table';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
 
 export const Logowanie = () => {
     return (
-        <Container fluid className="lang-pl mt-2 mb-2">
-            <div className="background mt-2 mb-2">
-
-                
-
-                <Container fluid className="lang-pl mt-5" style={{ maxWidth: '500px' }}>
-                    <div className="form-section text-center">
-                        <h3 className="page-title">Logowanie do systemu</h3>
-
-                        <Form className="mt-4">
-                            <Form.Group className="mb-3">
-                                <Form.Label>Login</Form.Label>
-                                <Form.Control type="text" placeholder="Wprowadź login" />
-                            </Form.Group>
-
-                            <Form.Group className="mb-3">
-                                <Form.Label>Hasło</Form.Label>
-                                <Form.Control type="password" placeholder="Wprowadź hasło" />
-                            </Form.Group>
-
-                            <Button variant="primary" type="submit" className="w-100 mt-3">
-                                Zaloguj
-                            </Button>
-                        </Form>
+        <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '80vh' }}>
+            <Card className="shadow-lg" style={{ width: '100%', maxWidth: '500px' }}>
+                <Card.Body>
+                    {/* Nagłówek */}
+                    <div className="text-center mb-4">
+                        <h2>Logowanie do systemu</h2>
+                        <p className="text-muted">Wprowadź swoje dane dostępowe</p>
                     </div>
-                </Container>
-            </div>
+
+                    {/* Formularz logowania */}
+                    <Form>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Login</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Wprowadź login"
+                                className="form-control-lg"
+                            />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3">
+                            <Form.Label>Hasło</Form.Label>
+                            <Form.Control
+                                type="password"
+                                placeholder="Wprowadź hasło"
+                                className="form-control-lg"
+                            />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3">
+                            <Form.Check
+                                type="checkbox"
+                                label="Zapamiętaj mnie"
+                            />
+                        </Form.Group>
+
+                        <div className="d-grid gap-2">
+                            <Button variant="primary" size="lg" className="mb-3">
+                                Zaloguj się
+                            </Button>
+                        </div>
+                    </Form>
+
+                    {/* Linki dodatkowe */}
+                    <div className="d-flex justify-content-between">
+                        <Button variant="link" className="p-0">Przypomnij hasło</Button>
+                        <Button variant="link" className="p-0">Zmień firmę</Button>
+                    </div>
+                </Card.Body>
+            </Card>
+
+            {/* Informacja o wersji */}
+            <Alert variant="info" className="position-fixed bottom-0 start-0 m-3">
+                System ERP v3.2.0 (2025)
+            </Alert>
         </Container>
-            
-    )
+    );
 }

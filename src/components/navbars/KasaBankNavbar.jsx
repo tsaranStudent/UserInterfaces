@@ -59,7 +59,7 @@ export function KasaBankNavbar() {
 
                         {/* 7. Wymiana danych - rozwijane */}
                         <NavDropdown title="Wymiana danych" id="wymiana-dropdown">
-                            <NavDropdown.Item as={Link} to="/wyslijDane">Wyślij dane</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/wyslijDaneKasaBank">Wyślij dane</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/odbierzDane">Odbierz dane</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/historiaWymiany">Historia wymiany</NavDropdown.Item>
                         </NavDropdown>

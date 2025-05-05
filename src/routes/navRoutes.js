@@ -92,6 +92,7 @@ export const kasaBankRoutes = [
     "/rejestryKasowoBankowe",
     "/rozliczeniaPodmiotu",
     "/rozniceKursowe",
+    "/wyslijDaneKasaBank",
     "/zapisyKasowoBankowe"
 ];
 

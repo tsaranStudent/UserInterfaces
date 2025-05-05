@@ -128,7 +128,7 @@ const GlownyNavbar = () => {
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/delegacje">Delegacje</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to="/wyslijDane">Wyslij dane</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/wyslijDaneKasaBank">Wyslij dane</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/odbierzDane">Odbierz dane</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -146,7 +146,7 @@ const GlownyNavbar = () => {
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/deklaracjePlikiJPK_V7">Pliki JPK_V7</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/deklaracjeVatUe">Deklaracje VAT-UE</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/deklracjeVat_8">Deklaracje VAT-8</NavDropdown.Item>
+                {/*<NavDropdown.Item as={Link} to="/deklracjeVat_8">Deklaracje VAT-8</NavDropdown.Item>*/}
                 <NavDropdown.Item as={Link} to="/deklaracjeVat_9M">Delegacje VAT-9M</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/deklaracjeInne">Deklaracje inne</NavDropdown.Item>
                 <NavDropdown.Divider />

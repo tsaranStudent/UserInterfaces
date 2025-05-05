@@ -1,6 +1,6 @@
 ﻿import './App.css';
 import React from 'react';
-import { Container, Row, Col, Card, Button, Navbar, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Navbar, Nav, Badge } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-router-dom';
 

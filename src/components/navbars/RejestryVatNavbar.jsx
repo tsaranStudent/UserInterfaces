@@ -41,7 +41,7 @@ export function RejestryVatNavbar() {
                         {/* 5. Deklaracje VAT */}
                         <NavDropdown title="Deklaracje VAT" id="deklaracje-dropdown">
                             <NavDropdown.Item as={Link} to="/deklaracjeVatUe">VAT-UE</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/deklracjeVat_8">VAT-8</NavDropdown.Item>
+                            {/*<NavDropdown.Item as={Link} to="/deklaracjeVat_8">VAT-8</NavDropdown.Item>*/}
                             <NavDropdown.Item as={Link} to="/deklaracjeVat_9M">VAT-9M</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/deklaracjeInne">Deklaracje inne</NavDropdown.Item>
                         </NavDropdown>
