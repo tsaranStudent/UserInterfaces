@@ -102,7 +102,7 @@ export const rejestryVatRoutes = [
     "/deklaracjePlikiJPK_V7",
     "/deklaracjeVat_9M",
     "/deklaracjeVatUe",
-    "/deklracjeVat_8",
+    "/deklaracjeVat_8",
     "/ewidencjaDodatkowa",
     "/ewidencjaKasowegoPit",
     "/rejestryVat",

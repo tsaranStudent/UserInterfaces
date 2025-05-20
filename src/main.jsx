@@ -117,7 +117,7 @@ import { DeklaracjeInne } from './rejestryVat/DeklaracjeInnePage.jsx';
 import { DeklaracjePlikiJPK_V7 } from './rejestryVat/DeklaracjePlikiJPK_V7Page.jsx';
 import { DeklaracjeVat_9M } from './rejestryVat/DeklaracjeVat_9MPage.jsx';
 import { DeklaracjeVatUe } from './rejestryVat/DeklaracjeVatUePage.jsx';
-//import { DeklracjeVat_8 } from './rejestryVat/DeklracjeVat_8Page.jsx';
+import { DeklaracjeVat_8 } from './rejestryVat/DeklracjeVat_8Page.jsx';
 import { EwidencjaDodatkowa } from './rejestryVat/EwidencjaDodatkowaPage.jsx';
 import { EwidencjaKasowegoPit } from './rejestryVat/EwidencjaKasowegoPitPage.jsx';
 //import { HistoriaWymiany } from './rejestryVat/HistoriaWymianyPage.jsx';
@@ -469,9 +469,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path='/deklaracjeVatUe' element={<Layout />}>
                     <Route index element={<DeklaracjeVatUe />} />
                 </Route>
-                {/*<Route path='/deklracjeVat_8' element={<Layout />}>*/}
-                {/*    <Route index element={<DeklaracjeVat_8 />} />*/}
-                {/*</Route>*/}
+                <Route path='/deklaracjeVat_8' element={<Layout />}>
+                    <Route index element={<DeklaracjeVat_8 />} />
+                </Route>
                 <Route path='/ewidencjaDodatkowa' element={<Layout />}>
                     <Route index element={<EwidencjaDodatkowa />} />
                 </Route>

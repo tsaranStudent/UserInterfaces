@@ -28,7 +28,7 @@ export function JpkNavbar() {
                             <NavDropdown.Item as={Link} to="/deklaracjePlikiJPK_V7">Pliki JPK_V7</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/deklaracjeVat_9M">Pliki VAT 9M</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/deklaracjeVatUe">Pliki VAT UE-OE</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/deklracjeVat_8">Pliki VAT 8</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/deklaracjeVat_8">Pliki VAT 8</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/importDoRejetruVat">Import do rej. VAT</NavDropdown.Item>
                         </NavDropdown>
 
