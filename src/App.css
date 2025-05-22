@@ -305,3 +305,31 @@ footer {
         font-size: 1rem;
     }
 }
+/*****************************/
+/* Slider banner */
+/*****************************/
+.banner-scroll {
+    height: 15vh;
+    overflow: hidden;
+    position: relative;
+}
+
+    .banner-scroll img {
+        width: 100%;
+        height: auto;
+        animation: scroll 16s ease-in-out infinite;
+    }
+
+@keyframes scroll {
+    0%, 20% {
+        transform: translateY(0);
+    }
+
+    40%, 60% {
+        transform: translateY(calc(15vh - 100%));
+    }
+
+    80%, 100% {
+        transform: translateY(0);
+    }
+}
