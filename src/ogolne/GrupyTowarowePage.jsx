@@ -1,164 +1,123 @@
 ﻿import React from 'react';
 import '../App.css';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Container, Row, Col, Form, Button, Table, Accordion } from 'react-bootstrap';
 
-export const GrupyTowarowe = () => {
-    return (
-        <div className="background">
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Grupy towarowe 2025</h3>
+export const GrupyTowarowe = () => (
+    <Container className="lang-pl mt-2 mb-2">
+        {/* Główny kontener */}
+        <div className="background mt-2 mb-2">
+            {/* Tło sekcji */}
+            <Container className="main-content lang-pl mt-2 mb-2">
+                {/* Nagłówek sekcji */}
+                <div className="form-section text-center mb-4">
+                    {/* Tytuł i opis */}
+                    <i className="bi bi-tags icon-unified mb-2" />
+                    <h1 className="page-title">Grupy towarowe 2025</h1>
                     <p className="text-muted">Zarządzaj hierarchią grup towarowych</p>
                 </div>
 
-                <div className="actions-bar form-section mb-4">
-                    <div className="actions-bar-start">
-                        <Button variant="success" className="me-2">
-                            <i className="bi bi-plus-lg me-1"></i> Nowa grupa
-                        </Button>
-                    </div>
-                    <div className="actions-bar-end">
-                        <Form.Control
-                            type="text"
-                            placeholder="Wyszukaj grupę..."
-                            className="search-input"
-                        />
-                    </div>
+                {/* Pasek akcji i wyszukiwarka */}
+                <div className="actions-bar form-section mb-4 d-flex justify-content-between align-items-center">
+                    <Button variant="success">
+                        <i className="bi bi-plus-lg me-1" /> Nowa grupa
+                    </Button>
+                    <Form.Control
+                        type="text"
+                        placeholder="Wyszukaj grupę..."
+                        className="search-input w-25"
+                    />
                 </div>
 
-                <Table bordered hover responsive className="data-table">
+                {/* Tabela grup towarowych */}
+                <Table bordered hover responsive className="data-table mb-4">
                     <thead>
                         <tr>
                             <th>Kod</th>
-                            <th>Nazwa grupy</th>
-                            <th>Liczba produktów</th>
-                            <th>Data utworzenia</th>
+                            <th>Nazwa</th>
+                            <th>Liczba</th>
+                            <th>Data utw.</th>
                             <th>Status</th>
                             <th>Akcje</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>GT-2025-001</td>
+                            <td>EL</td>
                             <td>Elektronika</td>
-                            <td>156</td>
-                            <td>15.01.2025</td>
-                            <td><Badge bg="success">Aktywna</Badge></td>
+                            <td>120</td>
+                            <td>05.02.2025</td>
+                            <td><span className="badge badge-success">Aktywna</span></td>
                             <td>
-                                <Button variant="outline-primary" size="sm" className="me-1">
-                                    <i className="bi bi-pencil"></i>
-                                </Button>
-                                <Button variant="outline-danger" size="sm">
-                                    <i className="bi bi-trash"></i>
-                                </Button>
+                                <Button size="sm"><i className="bi bi-pencil" /></Button>
                             </td>
                         </tr>
                         <tr>
-                            <td>GT-2025-002</td>
-                            <td>Artykuły biurowe</td>
-                            <td>87</td>
-                            <td>10.01.2025</td>
-                            <td><Badge bg="success">Aktywna</Badge></td>
+                            <td>BIU</td>
+                            <td>Biurowe</td>
+                            <td>80</td>
+                            <td>12.01.2025</td>
+                            <td><span className="badge badge-success">Aktywna</span></td>
                             <td>
-                                <Button variant="outline-primary" size="sm" className="me-1">
-                                    <i className="bi bi-pencil"></i>
-                                </Button>
-                                <Button variant="outline-danger" size="sm">
-                                    <i className="bi bi-trash"></i>
-                                </Button>
+                                <Button size="sm"><i className="bi bi-pencil" /></Button>
                             </td>
                         </tr>
                         <tr>
-                            <td>GT-2025-003</td>
-                            <td>Meble</td>
-                            <td>42</td>
-                            <td>05.01.2025</td>
-                            <td><Badge bg="warning" text="dark">Wstrzymana</Badge></td>
+                            <td>HIG</td>
+                            <td>Higiena</td>
+                            <td>45</td>
+                            <td>20.03.2025</td>
+                            <td><span className="badge badge-planned">Planowana</span></td>
                             <td>
-                                <Button variant="outline-primary" size="sm" className="me-1">
-                                    <i className="bi bi-pencil"></i>
-                                </Button>
-                                <Button variant="outline-danger" size="sm">
-                                    <i className="bi bi-trash"></i>
-                                </Button>
+                                <Button size="sm"><i className="bi bi-pencil" /></Button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RTV</td>
+                            <td>RTV</td>
+                            <td>60</td>
+                            <td>28.03.2025</td>
+                            <td><span className="badge badge-inactive">Nieaktywna</span></td>
+                            <td>
+                                <Button size="sm"><i className="bi bi-pencil" /></Button>
                             </td>
                         </tr>
                     </tbody>
                 </Table>
 
-                <Accordion className="mt-4">
+                {/* Dodawanie nowej grupy */}
+                <Accordion>
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header>Dodaj nową grupę towarową</Accordion.Header>
+                        <Accordion.Header>Dodaj nową grupę</Accordion.Header>
                         <Accordion.Body>
                             <Form>
-                                <Row className="mb-3">
+                                <Row className="g-3 mb-3">
                                     <Col md={6}>
-                                        <Form.Group>
-                                            <Form.Label className="form-label">Nazwa grupy*</Form.Label>
-                                            <Form.Control type="text" required />
-                                        </Form.Group>
+                                        <Form.Control placeholder="Nazwa grupy*" required />
                                     </Col>
-                                    <Col md={6}>
-                                        <Form.Group>
-                                            <Form.Label className="form-label">Grupa nadrzędna</Form.Label>
-                                            <Form.Select>
-                                                <option value="">Brak</option>
-                                                <option value="1">Elektronika</option>
-                                                <option value="2">Artykuły biurowe</option>
-                                            </Form.Select>
-                                        </Form.Group>
+                                    <Col md={4}>
+                                        <Form.Control placeholder="Kod grupy*" required />
                                     </Col>
-                                </Row>
-                                <Row className="mb-3">
-                                    <Col md={6}>
-                                        <Form.Group>
-                                            <Form.Label className="form-label">Kod grupy*</Form.Label>
-                                            <Form.Control type="text" required />
-                                        </Form.Group>
-                                    </Col>
-                                    <Col md={6}>
-                                        <Form.Group>
-                                            <Form.Label className="form-label">Status</Form.Label>
-                                            <Form.Select>
-                                                <option value="active">Aktywna</option>
-                                                <option value="inactive">Nieaktywna</option>
-                                            </Form.Select>
-                                        </Form.Group>
+                                    <Col md={2}>
+                                        {/* Przykładowa lista rozwijana */}
+                                        <Form.Select required>
+                                            <option>Typ grupy*</option>
+                                            <option>Asortyment</option>
+                                            <option>Usługa</option>
+                                            <option>Zestaw</option>
+                                        </Form.Select>
                                     </Col>
                                 </Row>
-                                <div className="actions-bar-end">
-                                    <Button variant="outline-secondary" className="me-2">
-                                        Anuluj
+                                <div className="d-flex justify-content-end gap-2">
+                                    <Button variant="success">
+                                        <i className="bi bi-save me-1" /> Zapisz
                                     </Button>
-                                    <Button variant="primary">Zapisz</Button>
                                 </div>
                             </Form>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-
-                <div className="summary-row">
-                    <Row>
-                        <Col md={{ span: 4, offset: 8 }}>
-                            <div className="summary-box">
-                                <div className="summary-text">
-                                    <strong>Liczba grup w 2025:</strong> 12
-                                </div>
-                                <Button variant="outline-primary" className="submit-btn mt-2">
-                                    Pełna hierarchia
-                                </Button>
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
             </Container>
         </div>
-    );
-};
+    </Container>
+);

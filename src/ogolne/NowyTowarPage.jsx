@@ -1,145 +1,116 @@
 ﻿import React from 'react';
 import '../App.css';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import { Link } from 'react-router-dom';
-import Accordion from 'react-bootstrap/Accordion';
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Container, Tabs, Tab, Form, Row, Col, Button, InputGroup, Accordion } from 'react-bootstrap';
 
-export const NowyTowar = () => {
-    return (
-        <div className="background">
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Nowy towar</h3>
-                    <p className="text-muted">Dodaj nowy produkt do systemu (2025)</p>
+// Formularz dodawania nowego towaru
+export const NowyTowar = () => (
+    <Container className="lang-pl mt-2 mb-2">
+        {/* Główny kontener */}
+        <div className="background mt-2 mb-2">
+            <Container className="main-content lang-pl mt-2 mb-2">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    {/* Tytuł i opis */}
+                    <i className="bi bi-box-seam icon-unified mb-2" />
+                    <h1 className="page-title">Nowy towar</h1>
+                    <p className="text-muted">Dodaj nowy produkt (2025)</p>
                 </div>
 
-                <Tabs defaultActiveKey="basic" className="mb-3">
-                    <Tab eventKey="basic" title="Podstawowe">
-                        <Form className="form-section mt-3">
-                            <Row className="mb-3">
-                                <Col md={8}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Nazwa produktu*</Form.Label>
-                                        <Form.Control type="text" required />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={4}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Kod produktu*</Form.Label>
+                {/* Zakładki formularza */}
+                <div className="form-section mb-4">
+                    <Tabs defaultActiveKey="basic" id="product-tabs" className="mb-3">
+                        <Tab eventKey="basic" title="Podstawowe">
+                            <Form className="mt-3">
+                                {/* Podstawowe dane */}
+                                <Row className="g-3 mb-3">
+                                    <Col md={8}>
+                                        <Form.Control placeholder="Nazwa produktu*" required />
+                                    </Col>
+                                    <Col md={4}>
                                         <InputGroup>
                                             <InputGroup.Text>PRD-2025-</InputGroup.Text>
-                                            <Form.Control type="text" required />
+                                            <Form.Control placeholder="Kod*" required />
                                         </InputGroup>
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <Row className="mb-3">
-                                <Col md={4}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Kategoria*</Form.Label>
+                                    </Col>
+                                </Row>
+                                <Row className="g-3 mb-3">
+                                    {/* Kategoria - min. 3 pozycje */}
+                                    <Col md={4}>
                                         <Form.Select required>
-                                            <option>Wybierz kategorię...</option>
-                                            <option>Elektronika</option>
-                                            <option>Artykuły biurowe</option>
+                                            <option value="">Wybierz kategorię...</option>
+                                            <option value="elektro">Elektronika</option>
+                                            <option value="dom">Artykuły domowe</option>
+                                            <option value="odziez">Odzież</option>
                                         </Form.Select>
-                                    </Form.Group>
-                                </Col>
-                                <Col md={4}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Jednostka miary*</Form.Label>
+                                    </Col>
+                                    {/* Jednostka miary - min. 3 pozycje */}
+                                    <Col md={4}>
                                         <Form.Select defaultValue="szt">
-                                            <option value="szt">Sztuki</option>
-                                            <option value="kg">Kilogramy</option>
-                                            <option value="m">Metry</option>
+                                            <option value="szt">szt</option>
+                                            <option value="kg">kg</option>
+                                            <option value="op">op.</option>
                                         </Form.Select>
-                                    </Form.Group>
-                                </Col>
-                                <Col md={4}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Stan początkowy</Form.Label>
-                                        <Form.Control type="number" defaultValue="0" />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <Accordion>
-                                <Accordion.Item eventKey="0">
-                                    <Accordion.Header>Dane dodatkowe</Accordion.Header>
-                                    <Accordion.Body>
-                                        <Form.Group className="mb-3">
-                                            <Form.Label className="form-label">Opis produktu</Form.Label>
+                                    </Col>
+                                    <Col md={4}>
+                                        <Form.Control type="number" defaultValue="0" placeholder="Stan początkowy" />
+                                    </Col>
+                                </Row>
+                                {/* Opis dodatkowy */}
+                                <Accordion>
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header>Opis produktu</Accordion.Header>
+                                        <Accordion.Body>
                                             <Form.Control as="textarea" rows={3} />
-                                        </Form.Group>
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
-                        </Form>
-                    </Tab>
-
-                    <Tab eventKey="price" title="Cennik">
-                        <div className="form-section mt-3">
-                            <h5>Ceny w 2025 roku</h5>
-                            <Row className="mb-3">
-                                <Col md={4}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Cena zakupu netto</Form.Label>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
+                            </Form>
+                        </Tab>
+                        <Tab eventKey="price" title="Cennik">
+                            {/* Ceny */}
+                            <div className="mt-3">
+                                <Row className="g-3 mb-3">
+                                    <Col md={4}>
                                         <InputGroup>
-                                            <Form.Control type="number" step="0.01" />
+                                            <Form.Control type="number" step="0.01" placeholder="Zakup netto" />
                                             <InputGroup.Text>zł</InputGroup.Text>
                                         </InputGroup>
-                                    </Form.Group>
-                                </Col>
-                                <Col md={4}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Cena sprzedaży netto*</Form.Label>
+                                    </Col>
+                                    <Col md={4}>
                                         <InputGroup>
-                                            <Form.Control type="number" step="0.01" required />
+                                            <Form.Control type="number" step="0.01" placeholder="Sprzedaż netto*" required />
                                             <InputGroup.Text>zł</InputGroup.Text>
                                         </InputGroup>
-                                    </Form.Group>
-                                </Col>
-                                <Col md={4}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">VAT*</Form.Label>
+                                    </Col>
+                                    {/* VAT - min. 3 pozycje */}
+                                    <Col md={4}>
                                         <Form.Select defaultValue="23">
                                             <option value="23">23%</option>
                                             <option value="8">8%</option>
-                                            <option value="5">5%</option>
                                             <option value="0">0%</option>
                                         </Form.Select>
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Tab>
-                </Tabs>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Tab>
+                    </Tabs>
+                </div>
 
-                <div className="actions-bar-end form-section">
-                    <Link to="/towary">
-                        <Button variant="outline-secondary" className="me-2">
-                            Anuluj
-                        </Button>
-                    </Link>
+                {/* Pasek akcji */}
+                <div className="actions-bar-end form-section d-flex justify-content-end gap-2 mb-4">
+                    <Button variant="outline-secondary">Anuluj</Button>
                     <Button variant="success">Zapisz towar</Button>
                 </div>
 
-                <div className="summary-box mt-4">
-                    <div className="summary-text">
-                        <strong>Nowe produkty w 2025:</strong> 48
+                {/* Podsumowanie */}
+                <Container className="mt-4">
+                    <div className="summary-box">
+                        <p><strong>Nowe produkty w 2025:</strong> {/* liczba */}</p>
+                        <p><strong>Ostatnio dodany:</strong> {/* kod */}</p>
                     </div>
-                    <div className="summary-text">
-                        <strong>Ostatnio dodany:</strong> PRD-2025-0047 (15.01.2025)
-                    </div>
-                </div>
+                </Container>
             </Container>
         </div>
-    );
-};
+    </Container>
+);

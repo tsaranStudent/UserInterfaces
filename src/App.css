@@ -177,6 +177,16 @@ a {
     background-color: #f0ad4e;
 }
 
+.badge-inactive {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.badge-planned {
+    background-color: #ffc107;
+    color: #212529;
+}
+
 /*****************************/
 /* Accordion */
 /*****************************/
@@ -233,6 +243,21 @@ a {
 
 .nav-item {
     margin-right: 20px;
+}
+
+/* --- DODANE DLA POPRAWNEGO WYŚWIETLANIA ROZWIJANYCH MENU --- */
+/*****************************/
+/* Sticky/fixed Navbar z-index fix */
+/*****************************/
+/* Sticky/fixed navbar na górze nie może być nad dropdownami! */
+.navbar.sticky-top,
+.navbar.fixed-top {
+    z-index: 1020 !important; /* musi być niższy niż .dropdown-menu (1050) */
+}
+
+/* Rozwijane menu Bootstrap */
+.dropdown-menu {
+    z-index: 1055 !important; /* pewność, że menu jest ponad paskiem */
 }
 
 /*****************************/
@@ -333,3 +358,26 @@ footer {
         transform: translateY(0);
     }
 }
+
+/*****************************/
+/* Quick Access navbar */
+/*****************************/
+.quick-access-btn {
+    min-width: 90px;
+    border-radius: 15px;
+    padding: 12px 8px;
+    background: #f8f9fa;
+    border: 1px solid #e5e5e5;
+    transition: background 0.15s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px #f1f1f1;
+    font-weight: 500;
+}
+
+    .quick-access-btn:hover {
+        background: #e2e6ea;
+        box-shadow: 0 2px 12px #ddd;
+        text-decoration: none;
+        color: #000;
+    }
+
+/* --- KONIEC STYLI --- */
