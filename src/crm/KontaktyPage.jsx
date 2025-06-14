@@ -1,248 +1,206 @@
 ﻿import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
-import Card from 'react-bootstrap/Card';
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import InputGroup from 'react-bootstrap/InputGroup';
-import ListGroup from 'react-bootstrap/ListGroup';
 import '../App.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import {
+    Container, Row, Col, Tabs, Tab, Button, InputGroup, Form, Table, Accordion
+} from 'react-bootstrap';
 
-export const Kontakty = () => {
-    return (
-        <div className="background">
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Kontakty</h3>
-                    <p className="text-muted">Zarządzanie kontaktami w systemie (2025)</p>
+export const Kontakty = () => (
+    <Container className="lang-pl mt-2 mb-2">
+        {/* Główny kontener */}
+        <div className="background mt-2 mb-2">
+            <Container className="main-content lang-pl mt-2 mb-2">
+                {/* Nagłówek sekcji */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-person-lines-fill icon-unified mb-2" />
+                    <h1 className="page-title">Zarządzanie kontaktami</h1>
+                    <p className="text-muted">Baza kontaktów CRM - stan na 2025</p>
                 </div>
 
-                <Tabs defaultActiveKey="lista" className="mb-3">
+                {/* Zakładki */}
+                <Tabs defaultActiveKey="lista" className="mb-4">
                     <Tab eventKey="lista" title="Lista kontaktów">
-                        <div className="form-section mt-3">
-                            <div className="actions-bar mb-3">
-                                <div className="actions-bar-start">
-                                    <Form.Select style={{ maxWidth: '200px' }}>
-                                        <option>Wszystkie kategorie</option>
-                                        <option>Klienci</option>
-                                        <option>Dostawcy</option>
-                                        <option>Pracownicy</option>
-                                    </Form.Select>
-                                    <Form.Select style={{ maxWidth: '200px' }}>
-                                        <option>Wszystkie statusy</option>
-                                        <option>Aktywny</option>
-                                        <option>Nieaktywny</option>
-                                    </Form.Select>
-                                </div>
-                                <div className="actions-bar-end">
-                                    <Button variant="primary" className="me-2">
-                                        <i className="bi bi-plus-circle"></i> Dodaj kontakt
-                                    </Button>
-                                    <InputGroup className="search-input">
-                                        <Form.Control placeholder="Szukaj kontaktów..." />
-                                        <Button variant="outline-secondary">
-                                            <i className="bi bi-search"></i>
-                                        </Button>
-                                    </InputGroup>
-                                </div>
+                        {/* Pasek akcji */}
+                        <div className="actions-bar form-section mb-4 d-flex justify-content-between align-items-center">
+                            <div>
+                                <Button variant="success" className="me-2">
+                                    <i className="bi bi-person-plus-fill me-1" /> Dodaj
+                                </Button>
+                                <Button variant="outline-primary">
+                                    <i className="bi bi-funnel me-1" /> Filtry
+                                </Button>
                             </div>
-
-                            <Row>
-                                <Col md={4}>
-                                    <Card className="mb-3">
-                                        <Card.Body>
-                                            <h5 className="mb-3">Filtry zaawansowane</h5>
-                                            <Form>
-                                                <Form.Group className="mb-3">
-                                                    <Form.Label>Nazwa</Form.Label>
-                                                    <Form.Control type="text" />
-                                                </Form.Group>
-                                                <Form.Group className="mb-3">
-                                                    <Form.Label>E-mail</Form.Label>
-                                                    <Form.Control type="text" />
-                                                </Form.Group>
-                                                <Button variant="outline-secondary" className="w-100">
-                                                    Filtruj
-                                                </Button>
-                                            </Form>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col md={8}>
-                                    <Table striped bordered hover className="data-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Nazwa</th>
-                                                <th>Typ</th>
-                                                <th>E-mail</th>
-                                                <th>Telefon</th>
-                                                <th>Ostatni kontakt</th>
-                                                <th>Akcje</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Jan Kowalski</td>
-                                                <td><Badge bg="primary">Klient</Badge></td>
-                                                <td>jan.kowalski@firma.pl</td>
-                                                <td>+48 123 456 789</td>
-                                                <td>12.03.2025</td>
-                                                <td>
-                                                    <Button variant="outline-primary" size="sm" className="me-1">Edytuj</Button>
-                                                    <Button variant="outline-info" size="sm">Historia</Button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>ABC Sp. z o.o.</td>
-                                                <td><Badge bg="success">Dostawca</Badge></td>
-                                                <td>biuro@abc.pl</td>
-                                                <td>+48 987 654 321</td>
-                                                <td>28.02.2025</td>
-                                                <td>
-                                                    <Button variant="outline-primary" size="sm" className="me-1">Edytuj</Button>
-                                                    <Button variant="outline-info" size="sm">Historia</Button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </Table>
-                                </Col>
-                            </Row>
+                            <InputGroup className="search-input w-25">
+                                <Form.Control placeholder="Szukaj kontaktu..." />
+                                <Button variant="outline-secondary">
+                                    <i className="bi bi-search" />
+                                </Button>
+                            </InputGroup>
                         </div>
-                    </Tab>
 
-                    <Tab eventKey="nowy" title="Nowy kontakt">
-                        <div className="form-section mt-3">
-                            <Card>
-                                <Card.Body>
-                                    <Tabs defaultActiveKey="dane" className="mb-3">
-                                        <Tab eventKey="dane" title="Dane podstawowe">
-                                            <Form className="mt-3">
-                                                <Row className="mb-3">
-                                                    <Col md={6}>
-                                                        <Form.Group controlId="contactType">
-                                                            <Form.Label>Typ kontaktu</Form.Label>
-                                                            <Form.Select>
-                                                                <option>Osoba prywatna</option>
-                                                                <option>Firma</option>
-                                                            </Form.Select>
-                                                        </Form.Group>
-                                                    </Col>
-                                                    <Col md={6}>
-                                                        <Form.Group controlId="contactCategory">
-                                                            <Form.Label>Kategoria</Form.Label>
-                                                            <Form.Select>
-                                                                <option>Klient</option>
-                                                                <option>Dostawca</option>
-                                                                <option>Partner</option>
-                                                            </Form.Select>
-                                                        </Form.Group>
-                                                    </Col>
-                                                </Row>
-
-                                                <Row className="mb-3">
-                                                    <Col md={6}>
-                                                        <Form.Group controlId="firstName">
-                                                            <Form.Label>Imię</Form.Label>
-                                                            <Form.Control type="text" />
-                                                        </Form.Group>
-                                                    </Col>
-                                                    <Col md={6}>
-                                                        <Form.Group controlId="lastName">
-                                                            <Form.Label>Nazwisko</Form.Label>
-                                                            <Form.Control type="text" />
-                                                        </Form.Group>
-                                                    </Col>
-                                                </Row>
-
-                                                <Row className="mb-3">
-                                                    <Col md={6}>
-                                                        <Form.Group controlId="email">
-                                                            <Form.Label>E-mail</Form.Label>
-                                                            <Form.Control type="email" />
-                                                        </Form.Group>
-                                                    </Col>
-                                                    <Col md={6}>
-                                                        <Form.Group controlId="phone">
-                                                            <Form.Label>Telefon</Form.Label>
-                                                            <Form.Control type="tel" />
-                                                        </Form.Group>
-                                                    </Col>
-                                                </Row>
-
-                                                <div className="d-flex justify-content-end">
-                                                    <Button variant="outline-secondary" className="me-2">
-                                                        Anuluj
-                                                    </Button>
-                                                    <Button variant="primary">
-                                                        Zapisz kontakt
-                                                    </Button>
-                                                </div>
-                                            </Form>
-                                        </Tab>
-
-                                        <Tab eventKey="dodatkowe" title="Dane dodatkowe" disabled>
-                                            {/* Sekcja dla dodatkowych pól */}
-                                        </Tab>
-                                    </Tabs>
-                                </Card.Body>
-                            </Card>
-                        </div>
+                        {/* Tabela kontaktów */}
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Imię i nazwisko</th>
+                                    <th>Typ</th>
+                                    <th>E-mail</th>
+                                    <th>Telefon</th>
+                                    <th>Status</th>
+                                    <th>Akcje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Jan Nowak</td>
+                                    <td>Klient</td>
+                                    <td>jan.nowak@firma.pl</td>
+                                    <td>+48 600 123 456</td>
+                                    <td><span className="badge badge-success">Aktywny</span></td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm" className="me-1">
+                                            <i className="bi bi-eye" />
+                                        </Button>
+                                        <Button variant="outline-secondary" size="sm">
+                                            <i className="bi bi-pencil" />
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>Maria Wiśniewska</td>
+                                    <td>Partner</td>
+                                    <td>maria.wisniewska@firma.pl</td>
+                                    <td>+48 511 789 654</td>
+                                    <td><span className="badge badge-planned">Oczekuje</span></td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm" className="me-1">
+                                            <i className="bi bi-eye" />
+                                        </Button>
+                                        <Button variant="outline-secondary" size="sm">
+                                            <i className="bi bi-pencil" />
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>003</td>
+                                    <td>ABC Sp. z o.o.</td>
+                                    <td>Dostawca</td>
+                                    <td>kontakt@abc.pl</td>
+                                    <td>+48 800 200 100</td>
+                                    <td><span className="badge badge-inactive">Nieaktywny</span></td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm" className="me-1">
+                                            <i className="bi bi-eye" />
+                                        </Button>
+                                        <Button variant="outline-secondary" size="sm">
+                                            <i className="bi bi-pencil" />
+                                        </Button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
                     </Tab>
 
                     <Tab eventKey="grupy" title="Grupy kontaktów">
-                        <div className="form-section mt-3">
-                            <Row>
-                                <Col md={4}>
-                                    <Card>
-                                        <Card.Body>
-                                            <h5 className="mb-3">Nowa grupa</h5>
-                                            <Form>
-                                                <Form.Group className="mb-3">
-                                                    <Form.Label>Nazwa grupy</Form.Label>
-                                                    <Form.Control type="text" />
-                                                </Form.Group>
-                                                <Button variant="primary" className="w-100">
-                                                    Utwórz grupę
-                                                </Button>
-                                            </Form>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col md={8}>
-                                    <ListGroup>
-                                        <ListGroup.Item className="d-flex justify-content-between align-items-center">
-                                            Klienci VIP
-                                            <Badge bg="primary" pill>24</Badge>
-                                        </ListGroup.Item>
-                                        <ListGroup.Item className="d-flex justify-content-between align-items-center">
-                                            Dostawcy materiałów
-                                            <Badge bg="primary" pill>12</Badge>
-                                        </ListGroup.Item>
-                                        <ListGroup.Item className="d-flex justify-content-between align-items-center">
-                                            Kontakty serwisowe
-                                            <Badge bg="primary" pill>8</Badge>
-                                        </ListGroup.Item>
-                                    </ListGroup>
-                                </Col>
-                            </Row>
+                        {/* Tabela grup */}
+                        <div className="form-section mb-3">
+                            <h5>Zarządzanie grupami</h5>
+                            <div className="d-flex justify-content-between align-items-center mb-3">
+                                <Button variant="primary" size="sm">
+                                    <i className="bi bi-plus-circle me-1" /> Nowa grupa
+                                </Button>
+                                <span className="text-muted">Zaktualizowano: 12.03.2025</span>
+                            </div>
+                            <Table bordered className="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nazwa grupy</th>
+                                        <th>Liczba kontaktów</th>
+                                        <th>Data utworzenia</th>
+                                        <th>Akcje</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Klienci VIP</td>
+                                        <td>10</td>
+                                        <td>05.02.2025</td>
+                                        <td>
+                                            <Button variant="outline-secondary" size="sm">
+                                                <i className="bi bi-pencil" />
+                                            </Button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Partnerzy strategiczni</td>
+                                        <td>7</td>
+                                        <td>20.01.2025</td>
+                                        <td>
+                                            <Button variant="outline-secondary" size="sm">
+                                                <i className="bi bi-pencil" />
+                                            </Button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </Table>
                         </div>
                     </Tab>
                 </Tabs>
 
-                <div className="summary-box mt-4">
-                    <div className="summary-text">
-                        <strong>Łączna liczba kontaktów:</strong> 156
-                    </div>
-                    <div className="summary-text">
-                        <strong>Ostatnio dodany:</strong> 05.03.2025
-                    </div>
-                </div>
+                {/* Formularz dodawania kontaktu */}
+                <Accordion className="form-section mb-4">
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>Dodaj kontakt</Accordion.Header>
+                        <Accordion.Body>
+                            <Form>
+                                <Row className="g-3 mb-3">
+                                    <Col md={4}><Form.Control placeholder="Imię*" required /></Col>
+                                    <Col md={4}><Form.Control placeholder="Nazwisko*" required /></Col>
+                                    <Col md={4}>
+                                        <Form.Select required>
+                                            <option>Wybierz typ</option>
+                                            <option>Klient</option>
+                                            <option>Dostawca</option>
+                                            <option>Partner</option>
+                                        </Form.Select>
+                                    </Col>
+                                </Row>
+                                <Row className="g-3 mb-3">
+                                    <Col md={6}><Form.Control placeholder="E-mail*" type="email" required /></Col>
+                                    <Col md={6}><Form.Control placeholder="Telefon" /></Col>
+                                </Row>
+                                <div className="d-flex justify-content-end gap-2">
+                                    <Button variant="success" className="me-2">
+                                        <i className="bi bi-save me-1" /> Zapisz+Nowy
+                                    </Button>
+                                    <Button variant="primary">
+                                        <i className="bi bi-check-circle me-1" /> Zapisz
+                                    </Button>
+                                </div>
+                            </Form>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+
+                {/* Statystyki */}
+                <Row className="form-section text-center">
+                    <Col md={4} className="mb-3">
+                        <h5>Nowi w 2025</h5>
+                        <h3 className="text-primary">18</h3>
+                    </Col>
+                    <Col md={4} className="mb-3">
+                        <h5>Aktywni</h5>
+                        <h3 className="text-success">36</h3>
+                    </Col>
+                    <Col md={4} className="mb-3">
+                        <h5>Wszystkie kontakty</h5>
+                        <h3 className="text-info">72</h3>
+                    </Col>
+                </Row>
             </Container>
         </div>
-    );
-};
+    </Container>
+);

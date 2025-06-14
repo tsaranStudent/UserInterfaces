@@ -1,66 +1,74 @@
 ﻿import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
-import Card from 'react-bootstrap/Card';
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Alert from 'react-bootstrap/Alert';
+import {
+    Container, Tabs, Tab, Table, Form, Row, Col, Button,
+    Badge, Card, ListGroup, Alert
+} from 'react-bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../App.css';
 
-export const SkrzynkaOperatora = () => {
-    return (
-        <div className="background">
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Skrzynka operatora</h3>
-                    <p className="text-muted">Komunikaty i zadania systemowe (2025)</p>
+export const SkrzynkaOperatora = () => (
+    <Container className="lang-pl mt-2 mb-2">
+        <div className="background mt-2 mb-2">
+            <Container className="main-content lang-pl mt-2 mb-2">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-inbox-fill icon-unified mb-2" />
+                    <h1 className="page-title">Skrzynka operatora</h1>
+                    <p className="text-muted">Komunikaty i zadania systemowe – rok 2025</p>
                 </div>
 
+                {/* Zakładki */}
                 <Tabs defaultActiveKey="wiadomosci" className="mb-3">
-                    <Tab eventKey="wiadomosci" title="Wiadomości">
-                        <div className="form-section mt-3">
-                            <div className="actions-bar mb-3">
+                    <Tab eventKey="wiadomosci" title={<><i className="bi bi-envelope-fill me-1" />Wiadomości</>}>
+                        <div className="form-section">
+                            <div className="actions-bar">
                                 <div className="actions-bar-start">
                                     <Form.Select style={{ maxWidth: '200px' }}>
                                         <option>Wszystkie typy</option>
                                         <option>Systemowe</option>
-                                        <option>Od użytkowników</option>
+                                        <option>Użytkownicy</option>
                                     </Form.Select>
                                 </div>
                                 <div className="actions-bar-end">
-                                    <Button variant="primary" className="me-2">
-                                        <i className="bi bi-envelope-plus"></i> Nowa wiadomość
+                                    <Button variant="primary">
+                                        <i className="bi bi-envelope-plus me-1" /> Nowa wiadomość
                                     </Button>
                                 </div>
                             </div>
 
                             <ListGroup>
-                                <ListGroup.Item className="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <h6>Awaria systemu - pilne!</h6>
-                                        <p className="mb-1">System ERP będzie niedostępny w dniu 15.04.2025 w godzinach 22:00-02:00</p>
-                                        <small className="text-muted">Administrator systemu, 10.03.2025</small>
-                                    </div>
-                                    <Badge bg="danger">Nowe</Badge>
-                                </ListGroup.Item>
-                                <ListGroup.Item>
-                                    <h6>Prośba o weryfikację danych</h6>
-                                    <p className="mb-1">Anna Nowak prosi o sprawdzenie danych klienta XYZ S.A.</p>
-                                    <small className="text-muted">Anna Nowak, 08.03.2025</small>
-                                </ListGroup.Item>
+                                {[
+                                    {
+                                        tytul: 'Awaria systemu - pilne!',
+                                        tresc: 'ERP będzie niedostępny 15.04.2025, 22:00–02:00',
+                                        autor: 'Administrator systemu',
+                                        data: '10.03.2025',
+                                        badge: 'danger'
+                                    },
+                                    {
+                                        tytul: 'Prośba o weryfikację danych',
+                                        tresc: 'Sprawdź dane klienta XYZ S.A.',
+                                        autor: 'Anna Nowak',
+                                        data: '08.03.2025',
+                                        badge: null
+                                    }
+                                ].map((msg, i) => (
+                                    <ListGroup.Item key={i} className="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <h6 className="mb-1">{msg.tytul}</h6>
+                                            <p className="mb-1">{msg.tresc}</p>
+                                            <small className="text-muted">{msg.autor}, {msg.data}</small>
+                                        </div>
+                                        {msg.badge && <Badge bg={msg.badge}>Nowe</Badge>}
+                                    </ListGroup.Item>
+                                ))}
                             </ListGroup>
                         </div>
                     </Tab>
 
-                    <Tab eventKey="zadania" title="Zadania">
-                        <div className="form-section mt-3">
-                            <Table striped bordered hover className="data-table">
+                    <Tab eventKey="zadania" title={<><i className="bi bi-check2-square me-1" />Zadania</>}>
+                        <div className="form-section">
+                            <Table striped bordered hover responsive className="data-table">
                                 <thead>
                                     <tr>
                                         <th>Zadanie</th>
@@ -71,43 +79,49 @@ export const SkrzynkaOperatora = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Weryfikacja danych kontrahentów</td>
-                                        <td><Badge bg="danger">Wysoki</Badge></td>
-                                        <td>20.03.2025</td>
-                                        <td><Badge bg="warning">W realizacji</Badge></td>
-                                        <td>
-                                            <Button variant="outline-success" size="sm">Zakończ</Button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Aktualizacja dokumentacji</td>
-                                        <td><Badge bg="info">Normalny</Badge></td>
-                                        <td>30.04.2025</td>
-                                        <td><Badge bg="secondary">Nowe</Badge></td>
-                                        <td>
-                                            <Button variant="outline-primary" size="sm">Rozpocznij</Button>
-                                        </td>
-                                    </tr>
+                                    {[
+                                        {
+                                            zadanie: 'Weryfikacja danych kontrahentów',
+                                            priorytet: 'Wysoki', badgeP: 'danger',
+                                            termin: '20.03.2025',
+                                            status: 'W realizacji', badgeS: 'warning',
+                                            akcja: 'Zakończ', variant: 'success'
+                                        },
+                                        {
+                                            zadanie: 'Aktualizacja dokumentacji',
+                                            priorytet: 'Normalny', badgeP: 'info',
+                                            termin: '30.04.2025',
+                                            status: 'Nowe', badgeS: 'secondary',
+                                            akcja: 'Rozpocznij', variant: 'primary'
+                                        }
+                                    ].map((z, i) => (
+                                        <tr key={i}>
+                                            <td>{z.zadanie}</td>
+                                            <td><Badge bg={z.badgeP}>{z.priorytet}</Badge></td>
+                                            <td>{z.termin}</td>
+                                            <td><Badge bg={z.badgeS}>{z.status}</Badge></td>
+                                            <td><Button size="sm" variant={`outline-${z.variant}`}>{z.akcja}</Button></td>
+                                        </tr>
+                                    ))}
                                 </tbody>
                             </Table>
                         </div>
                     </Tab>
 
-                    <Tab eventKey="powiadomienia" title="Powiadomienia">
-                        <div className="form-section mt-3">
-                            <Alert variant="info" className="d-flex justify-content-between">
-                                <span>Nowa wersja systemu 2.5 dostępna od 01.04.2025</span>
+                    <Tab eventKey="powiadomienia" title={<><i className="bi bi-bell-fill me-1" />Powiadomienia</>}>
+                        <div className="form-section">
+                            <Alert variant="info" className="d-flex justify-content-between align-items-center">
+                                <span><i className="bi bi-exclamation-circle me-1" /> Nowa wersja systemu 2.5 dostępna od 01.04.2025</span>
                                 <Button variant="outline-info" size="sm">Szczegóły</Button>
                             </Alert>
 
                             <ListGroup>
                                 <ListGroup.Item className="d-flex justify-content-between">
-                                    <span>Zgłoszenie #2456 zostało przypisane do Ciebie</span>
+                                    <span><i className="bi bi-person-check me-1" />Zgłoszenie #2456 przypisane do Ciebie</span>
                                     <small className="text-muted">05.03.2025</small>
                                 </ListGroup.Item>
                                 <ListGroup.Item className="d-flex justify-content-between">
-                                    <span>Nowy użytkownik wymaga akceptacji</span>
+                                    <span><i className="bi bi-person-plus me-1" />Nowy użytkownik oczekuje akceptacji</span>
                                     <small className="text-muted">03.03.2025</small>
                                 </ListGroup.Item>
                             </ListGroup>
@@ -115,15 +129,16 @@ export const SkrzynkaOperatora = () => {
                     </Tab>
                 </Tabs>
 
+                {/* Podsumowanie */}
                 <div className="summary-box mt-4">
                     <div className="summary-text">
-                        <strong>Nieprzeczytane wiadomości:</strong> 3
+                        <i className="bi bi-envelope-open-fill me-1" /><strong>Nieprzeczytane wiadomości:</strong> 3
                     </div>
                     <div className="summary-text">
-                        <strong>Nierozwiązane zadania:</strong> 5
+                        <i className="bi bi-clipboard2-check-fill me-1" /><strong>Nierozwiązane zadania:</strong> 5
                     </div>
                 </div>
             </Container>
         </div>
-    );
-};
+    </Container>
+);

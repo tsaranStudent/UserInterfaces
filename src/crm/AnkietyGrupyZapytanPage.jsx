@@ -1,192 +1,189 @@
 ﻿import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
-import Card from 'react-bootstrap/Card';
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
-import InputGroup from 'react-bootstrap/InputGroup';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../App.css';
+import {
+    Container, Row, Col, Tabs, Tab, Button, InputGroup,
+    Form, Table, Accordion, Card, Badge
+} from 'react-bootstrap';
 
-export const AnkietyGrupyZapytan = () => {
-    return (
-        <div className="background">
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Wzorce ankiet</h3>
-                    <p className="text-muted">Zarządzanie gotowymi wzorcami ankiet w systemie (2025)</p>
-                </div>
+export const AnkietyGrupyZapytan = () => (
+    <div className="background">
+        <Container className="main-content lang-pl mt-2 mb-2">
+            {/* Nagłówek sekcji */}
+            <div className="form-section text-center mb-4">
+                <i className="bi bi-journal-text icon-unified mb-2" />
+                <h1 className="page-title">Grupy zapytań ankietowych</h1>
+                <p className="text-muted">Zarządzanie zestawami pytań wykorzystywanych w ankietach</p>
+            </div>
 
-                <Tabs defaultActiveKey="wzorce" className="mb-3">
-                    <Tab eventKey="wzorce" title="Lista wzorców">
-                        <div className="form-section mt-3">
-                            <div className="actions-bar mb-3">
-                                <div className="actions-bar-start">
-                                    <Button variant="primary">Nowy wzorzec</Button>
-                                    <Button variant="outline-secondary">Importuj wzorzec</Button>
-                                </div>
-                                <div className="actions-bar-end">
-                                    <InputGroup className="search-input">
-                                        <Form.Control placeholder="Szukaj wzorców..." />
-                                        <Button variant="outline-secondary">
-                                            <i className="bi bi-search"></i>
-                                        </Button>
-                                    </InputGroup>
-                                </div>
-                            </div>
-
-                            <Table striped bordered hover className="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Nazwa wzorca</th>
-                                        <th>Kategoria</th>
-                                        <th>Liczba pytań</th>
-                                        <th>Data utworzenia</th>
-                                        <th>Status</th>
-                                        <th>Akcje</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Ankieta satysfakcji klienta</td>
-                                        <td>Badania rynku</td>
-                                        <td>12</td>
-                                        <td>15.01.2025</td>
-                                        <td><Badge bg="success">Aktywny</Badge></td>
-                                        <td>
-                                            <Button variant="outline-primary" size="sm" className="me-1">Podgląd</Button>
-                                            <Button variant="outline-success" size="sm" className="me-1">Użyj</Button>
-                                            <Button variant="outline-danger" size="sm">Usuń</Button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ocena szkolenia</td>
-                                        <td>HR</td>
-                                        <td>8</td>
-                                        <td>20.02.2025</td>
-                                        <td><Badge bg="warning">Wersja robocza</Badge></td>
-                                        <td>
-                                            <Button variant="outline-primary" size="sm" className="me-1">Podgląd</Button>
-                                            <Button variant="outline-success" size="sm" className="me-1">Użyj</Button>
-                                            <Button variant="outline-danger" size="sm">Usuń</Button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </Table>
-                        </div>
-                    </Tab>
-
-                    <Tab eventKey="nowy" title="Nowy wzorzec">
-                        <div className="form-section mt-3">
-                            <Form>
-                                <Row className="mb-3">
-                                    <Col md={6}>
-                                        <Form.Group>
-                                            <Form.Label>Nazwa wzorca*</Form.Label>
-                                            <Form.Control type="text" required />
-                                        </Form.Group>
-                                    </Col>
-                                    <Col md={6}>
-                                        <Form.Group>
-                                            <Form.Label>Kategoria*</Form.Label>
-                                            <Form.Select required>
-                                                <option>Badania rynku</option>
-                                                <option>HR</option>
-                                                <option>Obsługa klienta</option>
-                                                <option>Inne</option>
-                                            </Form.Select>
-                                        </Form.Group>
-                                    </Col>
-                                </Row>
-
-                                <Form.Group className="mb-3">
-                                    <Form.Label>Opis wzorca</Form.Label>
-                                    <Form.Control as="textarea" rows={3} />
-                                </Form.Group>
-
-                                <h5 className="mb-3">Pytania we wzorcu</h5>
-                                <Accordion defaultActiveKey="0">
-                                    <Accordion.Item eventKey="0">
-                                        <Accordion.Header>1. Jak oceniasz nasze usługi?</Accordion.Header>
-                                        <Accordion.Body>
-                                            <Form.Group className="mb-3">
-                                                <Form.Label>Typ pytania</Form.Label>
-                                                <Form.Select>
-                                                    <option>Skala 1-5</option>
-                                                    <option>Tak/Nie</option>
-                                                    <option>Odpowiedź tekstowa</option>
-                                                </Form.Select>
-                                            </Form.Group>
-                                            <Button variant="outline-danger" size="sm">Usuń pytanie</Button>
-                                        </Accordion.Body>
-                                    </Accordion.Item>
-                                </Accordion>
-
-                                <Button variant="outline-primary" className="mt-3 me-2">
-                                    <i className="bi bi-plus-circle me-1"></i> Dodaj pytanie
+            <Tabs defaultActiveKey="lista" className="mb-4 module-tabs">
+                {/* Lista */}
+                <Tab eventKey="lista" title={<><i className="bi bi-list-ul me-1" />Lista grup</>}>
+                    <div className="form-section mb-4">
+                        <div className="actions-bar d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <Button variant="primary" className="me-2">
+                                    <i className="bi bi-plus-circle me-1" />Nowa grupa
                                 </Button>
                                 <Button variant="outline-secondary">
-                                    <i className="bi bi-collection me-1"></i> Wybierz z biblioteki
+                                    <i className="bi bi-upload me-1" />Importuj
                                 </Button>
-
-                                <div className="actions-bar-end mt-4">
-                                    <Button variant="outline-secondary" className="me-2">
-                                        Anuluj
-                                    </Button>
-                                    <Button variant="primary">
-                                        Zapisz wzorzec
-                                    </Button>
-                                </div>
-                            </Form>
+                            </div>
+                            <InputGroup className="search-input w-25">
+                                <Form.Control placeholder="Szukaj grup..." />
+                                <Button variant="outline-secondary">
+                                    <i className="bi bi-search" />
+                                </Button>
+                            </InputGroup>
                         </div>
-                    </Tab>
 
-                    <Tab eventKey="statystyki" title="Statystyki">
-                        <div className="form-section mt-3">
-                            <Card>
-                                <Card.Body>
-                                    <h5 className="mb-3">Użycie wzorców</h5>
-                                    <Table bordered className="data-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Wzorzec</th>
-                                                <th>Liczba użyć</th>
-                                                <th>Ostatnie użycie</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Ankieta satysfakcji klienta</td>
-                                                <td>24</td>
-                                                <td>10.03.2025</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ocena szkolenia</td>
-                                                <td>15</td>
-                                                <td>15.02.2025</td>
-                                            </tr>
-                                        </tbody>
-                                    </Table>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </Tab>
-                </Tabs>
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nazwa grupy</th>
+                                    <th>Kategoria</th>
+                                    <th>Pytania</th>
+                                    <th>Utworzono</th>
+                                    <th>Status</th>
+                                    <th>Akcje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Grupa satysfakcji klienta</td>
+                                    <td>Obsługa klienta</td>
+                                    <td>5</td>
+                                    <td>10.01.2025</td>
+                                    <td><Badge bg="success">Aktywna</Badge></td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm" className="me-1">Podgląd</Button>
+                                        <Button variant="outline-success" size="sm" className="me-1">Użyj</Button>
+                                        <Button variant="outline-danger" size="sm">Usuń</Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ocena wewnętrzna HR</td>
+                                    <td>Zarządzanie</td>
+                                    <td>3</td>
+                                    <td>15.03.2025</td>
+                                    <td><Badge bg="warning">Robocza</Badge></td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm" className="me-1">Podgląd</Button>
+                                        <Button variant="outline-success" size="sm" className="me-1">Użyj</Button>
+                                        <Button variant="outline-danger" size="sm">Usuń</Button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </div>
+                </Tab>
 
-                <div className="summary-box mt-4">
-                    <div className="summary-text">
-                        <strong>Liczba dostępnych wzorców:</strong> 8
+                {/* Nowa grupa */}
+                <Tab eventKey="nowa" title={<><i className="bi bi-ui-checks me-1" />Nowa grupa</>}>
+                    <div className="form-section">
+                        <Form>
+                            <Row className="mb-3">
+                                <Col md={6}>
+                                    <Form.Label>Nazwa grupy</Form.Label>
+                                    <Form.Control placeholder="Wprowadź nazwę grupy" required />
+                                </Col>
+                                <Col md={6}>
+                                    <Form.Label>Kategoria</Form.Label>
+                                    <Form.Select required>
+                                        <option>Obsługa klienta</option>
+                                        <option>Zarządzanie</option>
+                                        <option>Badania rynku</option>
+                                        <option>Inne</option>
+                                    </Form.Select>
+                                </Col>
+                            </Row>
+
+                            <Form.Group className="mb-3">
+                                <Form.Label>Opis grupy</Form.Label>
+                                <Form.Control as="textarea" rows={3} />
+                            </Form.Group>
+
+                            <h5 className="mb-3"><i className="bi bi-patch-question me-2" />Pytania w grupie</h5>
+                            <Accordion defaultActiveKey="0">
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header>1. Jak oceniasz szybkość obsługi?</Accordion.Header>
+                                    <Accordion.Body>
+                                        <Form.Label>Typ pytania</Form.Label>
+                                        <Form.Select>
+                                            <option>Skala 1-5</option>
+                                            <option>Tak/Nie</option>
+                                            <option>Tekst otwarty</option>
+                                        </Form.Select>
+                                        <Button variant="outline-danger" size="sm" className="mt-3">
+                                            <i className="bi bi-trash me-1" />Usuń pytanie
+                                        </Button>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
+
+                            <div className="mt-3">
+                                <Button variant="outline-primary" className="me-2">
+                                    <i className="bi bi-plus-circle me-1" />Dodaj pytanie
+                                </Button>
+                                <Button variant="outline-secondary">
+                                    <i className="bi bi-journal-richtext me-1" />Z biblioteki
+                                </Button>
+                            </div>
+
+                            <div className="actions-bar-end mt-4">
+                                <Button variant="outline-secondary" className="me-2">Anuluj</Button>
+                                <Button variant="primary">
+                                    <i className="bi bi-save me-1" />Zapisz grupę
+                                </Button>
+                            </div>
+                        </Form>
                     </div>
-                    <div className="summary-text">
-                        <strong>Najpopularniejszy wzorzec:</strong> Ankieta satysfakcji klienta (24 użycia)
+                </Tab>
+
+                {/* Statystyki */}
+                <Tab eventKey="statystyki" title={<><i className="bi bi-bar-chart-line me-1" />Statystyki</>}>
+                    <div className="form-section mt-3">
+                        <Card>
+                            <Card.Body>
+                                <h5><i className="bi bi-graph-up-arrow me-2" />Statystyka użycia grup</h5>
+                                <Table bordered responsive className="data-table mt-3">
+                                    <thead>
+                                        <tr>
+                                            <th>Grupa</th>
+                                            <th>Użycia</th>
+                                            <th>Ostatnie użycie</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Grupa satysfakcji klienta</td>
+                                            <td>18</td>
+                                            <td>12.06.2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ocena wewnętrzna HR</td>
+                                            <td>9</td>
+                                            <td>09.06.2025</td>
+                                        </tr>
+                                    </tbody>
+                                </Table>
+                            </Card.Body>
+                        </Card>
                     </div>
+                </Tab>
+            </Tabs>
+
+            {/* Podsumowanie */}
+            <div className="summary-box mt-4">
+                <div className="summary-text">
+                    <i className="bi bi-puzzle me-1" />
+                    <strong>Łączna liczba grup:</strong> 5
                 </div>
-            </Container>
-        </div>
-    );
-};
+                <div className="summary-text">
+                    <i className="bi bi-bar-chart me-1" />
+                    <strong>Najczęściej używana:</strong> Grupa satysfakcji klienta (18 użyć)
+                </div>
+            </div>
+        </Container>
+    </div>
+);
