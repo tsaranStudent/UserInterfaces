@@ -2,58 +2,67 @@
 import '../App.css';
 import { Container, Tabs, Tab, Alert, Card, Row, Col, Form, InputGroup, Button, Table, Badge } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useTranslation } from 'react-i18next';
 
 export const ZakupPaczkiSms = () => {
+    const { t } = useTranslation();
+
     return (
         <Container className="main-content lang-pl mt-3 mb-3">
             {/* Nagłówek sekcji z ikoną */}
             <div className="form-section text-center mb-4">
                 <i className="bi bi-envelope-paper icon-unified mb-2" />
-                <h1 className="page-title">Zakup pakietu SMS</h1>
+                <h1 className="page-title">{t('zakupPaczkiSms.title')}</h1>
                 <p className="text-muted">
-                    Moduł komunikacji SMS w systemie ERP (2025)
+                    {t('zakupPaczkiSms.subtitle')}
                 </p>
             </div>
 
             {/* Zakładki: zakup + historia */}
             <Tabs defaultActiveKey="zakup" className="mb-4">
-                <Tab eventKey="zakup" title={<><i className="bi bi-cart-plus me-1" />Nowy zakup</>}>
+                <Tab
+                    eventKey="zakup"
+                    title={<>
+                        <i className="bi bi-cart-plus me-1" />
+                        {t('zakupPaczkiSms.tabs.newPurchase')}
+                    </>}
+                >
                     {/* Zakup pakietu */}
                     <div className="form-section mt-3">
                         {/* Info o stanie konta */}
                         <Alert variant="info">
                             <i className="bi bi-info-circle me-1" />
-                            <strong>Stan konta:</strong> 248 SMS ważnych do 31.12.2025 |{' '}
-                            <strong>Limit kredytowy:</strong> 5 000 zł
+                            <strong>{t('zakupPaczkiSms.accountStatus.balance')}</strong> {t('zakupPaczkiSms.accountStatus.balanceValue')} |{' '}
+                            <strong>{t('zakupPaczkiSms.accountStatus.creditLimit')}</strong> {t('zakupPaczkiSms.accountStatus.creditLimitValue')}
                         </Alert>
 
                         {/* Wybór pakietu SMS */}
                         <Card className="mb-4">
                             <Card.Body>
                                 <h5 className="mb-4">
-                                    <i className="bi bi-box-seam me-1" />Wybierz pakiet SMS
+                                    <i className="bi bi-box-seam me-1" />{t('zakupPaczkiSms.packageSelection.title')}
                                 </h5>
                                 <Row>
                                     <Col md={6}>
                                         <Form.Group controlId="smsPackageType" className="mb-3">
                                             <Form.Label>
-                                                <i className="bi bi-layers me-1" />Typ pakietu
+                                                <i className="bi bi-layers me-1" />{t('zakupPaczkiSms.packageSelection.labels.type')}
                                             </Form.Label>
                                             <Form.Select>
-                                                <option>Standard (0.40 zł/SMS)</option>
-                                                <option>Biznes (0.35 zł/SMS)</option>
-                                                <option>Premium (0.30 zł/SMS)</option>
+                                                <option>{t('zakupPaczkiSms.packageSelection.types.standard')}</option>
+                                                <option>{t('zakupPaczkiSms.packageSelection.types.business')}</option>
+                                                <option>{t('zakupPaczkiSms.packageSelection.types.premium')}</option>
                                             </Form.Select>
                                         </Form.Group>
                                     </Col>
                                     <Col md={6}>
                                         <Form.Group controlId="smsPackageQuantity" className="mb-3">
                                             <Form.Label>
-                                                <i className="bi bi-123 me-1" />Ilość SMS
+                                                <i className="bi bi-123 me-1" />{t('zakupPaczkiSms.packageSelection.labels.quantity')}
                                             </Form.Label>
                                             <InputGroup>
                                                 <Form.Control type="number" defaultValue={1000} min={100} />
-                                                <InputGroup.Text>sztuk</InputGroup.Text>
+                                                <InputGroup.Text>{t('zakupPaczkiSms.packageSelection.units')}</InputGroup.Text>
                                             </InputGroup>
                                         </Form.Group>
                                     </Col>
@@ -62,15 +71,15 @@ export const ZakupPaczkiSms = () => {
                                 <div className="summary-box p-3 mb-3">
                                     <div className="summary-text">
                                         <i className="bi bi-cash-stack me-1" />
-                                        <strong>Koszt netto:</strong> 350,00 zł
+                                        <strong>{t('zakupPaczkiSms.summary.netCost')}</strong> {t('zakupPaczkiSms.summary.netCostValue')}
                                     </div>
                                     <div className="summary-text">
                                         <i className="bi bi-percent me-1" />
-                                        <strong>VAT (23%):</strong> 80,50 zł
+                                        <strong>{t('zakupPaczkiSms.summary.vat')}</strong> {t('zakupPaczkiSms.summary.vatValue')}
                                     </div>
                                     <div className="summary-text h5">
                                         <i className="bi bi-credit-card-2-front me-1" />
-                                        <strong>Do zapłaty:</strong> 430,50 zł
+                                        <strong>{t('zakupPaczkiSms.summary.total')}</strong> {t('zakupPaczkiSms.summary.totalValue')}
                                     </div>
                                 </div>
                             </Card.Body>
@@ -80,12 +89,12 @@ export const ZakupPaczkiSms = () => {
                         <Card>
                             <Card.Body>
                                 <h5 className="mb-4">
-                                    <i className="bi bi-wallet2 me-1" />Metoda płatności
+                                    <i className="bi bi-wallet2 me-1" />{t('zakupPaczkiSms.paymentMethod.title')}
                                 </h5>
                                 <Form.Group controlId="payTransfer" className="mb-3">
                                     <Form.Check
                                         type="radio"
-                                        label={<><i className="bi bi-bank me-1" />Przelew tradycyjny</>}
+                                        label={<><i className="bi bi-bank me-1" />{t('zakupPaczkiSms.paymentMethod.options.transfer')}</>}
                                         name="paymentMethod"
                                         defaultChecked
                                     />
@@ -93,21 +102,21 @@ export const ZakupPaczkiSms = () => {
                                 <Form.Group controlId="payCard" className="mb-3">
                                     <Form.Check
                                         type="radio"
-                                        label={<><i className="bi bi-credit-card me-1" />Płatność kartą</>}
+                                        label={<><i className="bi bi-credit-card me-1" />{t('zakupPaczkiSms.paymentMethod.options.card')}</>}
                                         name="paymentMethod"
                                     />
                                 </Form.Group>
                                 <Form.Group controlId="payCredit" className="mb-3">
                                     <Form.Check
                                         type="radio"
-                                        label={<><i className="bi bi-coin me-1" />Saldo kredytowe w ERP</>}
+                                        label={<><i className="bi bi-coin me-1" />{t('zakupPaczkiSms.paymentMethod.options.credit')}</>}
                                         name="paymentMethod"
                                     />
                                 </Form.Group>
                                 <Form.Group controlId="acceptRules" className="mb-3">
                                     <Form.Check
                                         type="checkbox"
-                                        label={<><i className="bi bi-check2-square me-1" />Akceptuję regulamin usług SMS</>}
+                                        label={<><i className="bi bi-check2-square me-1" />{t('zakupPaczkiSms.paymentMethod.acceptTerms')}</>}
                                         required
                                     />
                                 </Form.Group>
@@ -117,16 +126,22 @@ export const ZakupPaczkiSms = () => {
                         {/* Akcje */}
                         <div className="actions-bar-end mt-4 d-flex justify-content-end gap-2">
                             <Button variant="outline-secondary">
-                                <i className="bi bi-x-circle me-1" /> Anuluj
+                                <i className="bi bi-x-circle me-1" /> {t('zakupPaczkiSms.actions.cancel')}
                             </Button>
                             <Button variant="success">
-                                <i className="bi bi-credit-card me-1" /> Zatwierdź zakup
+                                <i className="bi bi-credit-card me-1" /> {t('zakupPaczkiSms.actions.confirm')}
                             </Button>
                         </div>
                     </div>
                 </Tab>
 
-                <Tab eventKey="historia" title={<><i className="bi bi-clock-history me-1" />Historia zakupów</>}>
+                <Tab
+                    eventKey="historia"
+                    title={<>
+                        <i className="bi bi-clock-history me-1" />
+                        {t('zakupPaczkiSms.tabs.history')}
+                    </>}
+                >
                     {/* Historia zakupów */}
                     <div className="form-section mt-3">
                         {/* Akcje nad tabelą */}
@@ -141,7 +156,7 @@ export const ZakupPaczkiSms = () => {
                             </div>
                             <div className="actions-bar-end">
                                 <InputGroup className="search-input">
-                                    <Form.Control placeholder="Szukaj zamówień..." />
+                                    <Form.Control placeholder={t('zakupPaczkiSms.search.placeholder')} />
                                     <Button variant="outline-secondary">
                                         <i className="bi bi-search" />
                                     </Button>
@@ -152,11 +167,11 @@ export const ZakupPaczkiSms = () => {
                         <Table striped bordered hover className="data-table mb-4">
                             <thead>
                                 <tr>
-                                    <th><i className="bi bi-calendar me-1" />Data</th>
-                                    <th><i className="bi bi-hash me-1" />Numer zamówienia</th>
-                                    <th><i className="bi bi-envelope me-1" />Ilość SMS</th>
-                                    <th><i className="bi bi-cash-coin me-1" />Kwota</th>
-                                    <th><i className="bi bi-patch-check me-1" />Status</th>
+                                    <th><i className="bi bi-calendar me-1" />{t('zakupPaczkiSms.historyTable.headers.date')}</th>
+                                    <th><i className="bi bi-hash me-1" />{t('zakupPaczkiSms.historyTable.headers.orderNumber')}</th>
+                                    <th><i className="bi bi-envelope me-1" />{t('zakupPaczkiSms.historyTable.headers.smsQuantity')}</th>
+                                    <th><i className="bi bi-cash-coin me-1" />{t('zakupPaczkiSms.historyTable.headers.amount')}</th>
+                                    <th><i className="bi bi-patch-check me-1" />{t('zakupPaczkiSms.historyTable.headers.status')}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -166,7 +181,7 @@ export const ZakupPaczkiSms = () => {
                                     <td>1000</td>
                                     <td>430,50 zł</td>
                                     <td>
-                                        <Badge bg="success"><i className="bi bi-check-circle me-1" />Zrealizowane</Badge>
+                                        <Badge bg="success"><i className="bi bi-check-circle me-1" />{t('zakupPaczkiSms.status.completed')}</Badge>
                                     </td>
                                 </tr>
                                 <tr>
@@ -175,7 +190,7 @@ export const ZakupPaczkiSms = () => {
                                     <td>500</td>
                                     <td>215,25 zł</td>
                                     <td>
-                                        <Badge bg="warning"><i className="bi bi-hourglass-split me-1" />Oczekuje</Badge>
+                                        <Badge bg="warning"><i className="bi bi-hourglass-split me-1" />{t('zakupPaczkiSms.status.pending')}</Badge>
                                     </td>
                                 </tr>
                                 <tr>
@@ -184,7 +199,7 @@ export const ZakupPaczkiSms = () => {
                                     <td>2000</td>
                                     <td>860,00 zł</td>
                                     <td>
-                                        <Badge bg="danger"><i className="bi bi-x-circle me-1" />Anulowane</Badge>
+                                        <Badge bg="danger"><i className="bi bi-x-circle me-1" />{t('zakupPaczkiSms.status.cancelled')}</Badge>
                                     </td>
                                 </tr>
                             </tbody>

@@ -472,28 +472,169 @@ html[data-theme='dark'], .dark {
             }
 
 /*****************************/
-/* Dynamiczne języki PL/EN */
+/* Comarch Optima – Dark Mode */
 /*****************************/
-html[lang='pl'] .lang-switch::after {
-    content: 'Polski';
+html[data-theme="dark"] {
+    --bg: #2b2b2b;
+    --surface: #323232;
+    --surface-alt: #3a3a3a;
+    --border: #505050;
+    --text: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --primary: #4f94d4;
+    --secondary: #9ca0a4;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
-html[lang='en'] .lang-switch::after {
-    content: 'English';
+    html[data-theme="dark"] .main-content {
+        background-color: var(--surface);
+    }
+
+    html[data-theme="dark"] .form-section {
+        background-color: var(--surface-alt);
+        border: 1px solid var(--border);
+    }
+
+    html[data-theme="dark"] .page-title {
+        color: var(--text);
+    }
+
+    /* Tabele */
+    html[data-theme="dark"] .data-table th {
+        background-color: var(--surface-alt);
+        color: var(--text);
+        border-bottom: 1px solid var(--border);
+    }
+
+    html[data-theme="dark"] .data-table td {
+        color: var(--text);
+        border-color: var(--border);
+    }
+
+    html[data-theme="dark"] .data-table tbody tr:nth-child(even) {
+        background-color: #2f2f2f;
+    }
+
+    /* Przyciski */
+    html[data-theme="dark"] .btn-primary {
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+
+    html[data-theme="dark"] .btn-outline-secondary {
+        color: var(--text);
+        border-color: var(--border);
+    }
+
+        html[data-theme="dark"] .btn-outline-secondary:hover {
+            background-color: var(--border);
+        }
+
+    /* Badges */
+    html[data-theme="dark"] .badge-success {
+        background-color: var(--success);
+    }
+
+    html[data-theme="dark"] .badge-info {
+        background-color: var(--info);
+    }
+
+    html[data-theme="dark"] .badge-warning {
+        background-color: var(--warning);
+    }
+
+    html[data-theme="dark"] .badge-danger {
+        background-color: var(--danger);
+    }
+
+    /* Alerty */
+    html[data-theme="dark"] .alert {
+        border-color: var(--border);
+        color: var(--text);
+    }
+
+    html[data-theme="dark"] .alert-info {
+        background-color: #1f3a4b;
+    }
+
+    html[data-theme="dark"] .alert-warning {
+        background-color: #5a4a00;
+        color: #fff3cd;
+    }
+
+    html[data-theme="dark"] .alert-danger {
+        background-color: #641b1b;
+    }
+
+    /* Navbar & dropdown */
+    html[data-theme="dark"] .navbar,
+    html[data-theme="dark"] .dropdown-menu {
+        background-color: var(--surface-alt) !important;
+    }
+
+        html[data-theme="dark"] .navbar .nav-link {
+            color: var(--text) !important;
+        }
+
+            html[data-theme="dark"] .navbar .nav-link:hover {
+                color: var(--primary) !important;
+            }
+
+    /* Formularze */
+    html[data-theme="dark"] input,
+    html[data-theme="dark"] select,
+    html[data-theme="dark"] .form-control {
+        background-color: var(--surface-alt);
+        color: var(--text);
+        border: 1px solid var(--border);
+    }
+
+        html[data-theme="dark"] input::placeholder,
+        html[data-theme="dark"] .form-control::placeholder {
+            color: var(--text-muted);
+        }
+
+    /* Quick Access */
+    html[data-theme="dark"] .quick-access-btn {
+        background: var(--surface-alt);
+        border-color: var(--border);
+        color: var(--text);
+    }
+
+        html[data-theme="dark"] .quick-access-btn:hover {
+            background: var(--surface);
+        }
+
+    /* Stopka */
+    html[data-theme="dark"] footer {
+        background-color: var(--surface-alt);
+        color: var(--text-muted);
+    }
+
+/* Pozostałe style (jasne) – bez zmian */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-html[lang='pl'] .txt-search::after {
-    content: 'Szukaj';
+* {
+    box-sizing: border-box;
 }
 
-html[lang='en'] .txt-search::after {
-    content: 'Search';
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
 }
 
-html[lang='pl'] .txt-theme-toggle::after {
-    content: 'Tryb ciemny';
-}
-
-html[lang='en'] .txt-theme-toggle::after {
-    content: 'Dark Mode';
+.logo-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
 }

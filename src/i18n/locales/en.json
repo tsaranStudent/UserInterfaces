@@ -1,0 +1,2844 @@
+﻿{
+  "system": {
+    "nazwa": "ERP System"
+  },
+  "start": {
+    "nazwa": "Start",
+    "stronaGlowna": "Home Page",
+    "informacjeOFirmie": "Company Information",
+    "zmianaFirmy": "Change Company",
+    "konfiguracja": "Configuration",
+    "konfiguracjaSystemu": "System Configuration",
+    "odswierzKonfiguracje": "Refresh Configuration",
+    "wlaczNoweFunkcje": "Enable New Features",
+    "aktualnosci": "News",
+    "nowosciWersji": "What's New",
+    "uzytkownik": "User",
+    "logowanie": "Login",
+    "koniecPracy": "Logout"
+  },
+  "ogolne": {
+    "nazwa": "General",
+    "kontrahenci": "Contractors",
+    "listaKontrahentow": "Contractor list",
+    "nowyKontrahent": "New contractor",
+    "grupyKontrahentow": "Contractor groups",
+    "kategorie": "Categories",
+    "towary": "Goods",
+    "nowyTowar": "New good",
+    "atrybuty": "Attributes",
+    "grupyTowarowe": "Goods groups",
+    "cennikiIRabaty": "Price lists and discounts",
+    "cennik": "Price list",
+    "rabaty": "Discounts",
+    "pracownicy": "Employees",
+    "pelnomocnictwa": "Powers of attorney",
+    "daneOsobowe": "Personal data",
+    "komunikacja": "Communication",
+    "przesylki": "Courier shipments",
+    "smsy": "SMS messages",
+    "zakupSms": "Buy SMS package",
+    "raporty": "Reports",
+    "wymiary": "Analytical dimensions",
+    "slowniki": "Dictionaries",
+    "waluty": "Currencies"
+  },
+  "crm": {
+    "nazwa": "CRM",
+    "kontakty": "Contacts",
+    "terminarz": "Calendar",
+    "fakturyCykliczne": "Recurring invoices",
+    "ofertyHandlowe": "Commercial offers",
+    "archiwumWydrukow": "Print archive",
+    "bibliotekaDokumentow": "Document library",
+    "nowyDokument": "New document",
+    "skrzynkaOperatora": "Operator inbox",
+    "skrzynkaPocztowa": "Mailbox",
+    "windykacjaSchematy": "Collection schemes",
+    "windykacjaHistoriaZdarzen": "Event history",
+    "ankietyAnkietowanie": "Surveys",
+    "ankietyWzorceAnkiet": "Survey templates",
+    "ankietyPytania": "Questions",
+    "ankietySzablonyOdpowiedzi": "Answer templates",
+    "ankietyGrupyZapytan": "Query groups",
+    "wiecejFunkcji": "More features",
+    "hrmTs": "HRM TS"
+  },
+  "handel": {
+    "nazwa": "Trade",
+    "faktury": "Invoices",
+    "nowaFaktura": "New invoice",
+    "paragony": "Receipts",
+    "nowyParagon": "New receipt",
+    "rezerwacjeOdbiorcy": "Customer reservations",
+    "fakturyProforma": "Proforma invoices",
+    "sprzedarzDedykowana": "Dedicated sales",
+    "fakturyZakupu": "Purchase invoices",
+    "zleceniaUDostawcy": "Supplier orders",
+    "zasoby": "Resources",
+    "raportBrakow": "Shortage report",
+    "wydaniaZewnetrzne": "External releases",
+    "przyjeciaZewnetrzne": "External receipts",
+    "zlecenia": "Orders",
+    "zleceniaCykliczne": "Recurring orders",
+    "urzadzniaServis": "Service devices",
+    "rodzajeUrzadzenServis": "Service device types",
+    "operacjeMagazynowe": "Warehouse Operations"
+  },
+  "kasaBank": {
+    "nazwa": "Cash/Bank",
+    "rejestryKasowoBankowe": "Cash-bank registers",
+    "raportyKasowoBankowe": "Cash-bank reports",
+    "zapisyKasowoBankowe": "Cash-bank entries",
+    "preliminarzPlatnosci": "Payment schedule",
+    "magazynWalut": "Currency warehouse",
+    "rozliczeniaPodmiotu": "Entity settlements",
+    "dokumentyNierozliczone": "Unsettled documents",
+    "dokumentyRozliczone": "Settled documents",
+    "dokumentyKompensat": "Compensation documents",
+    "rozniceKursowe": "Exchange differences",
+    "delegacje": "Business trips",
+    "wyslijDane": "Send data",
+    "odbierzDane": "Receive data",
+    "historiaWymiany": "Exchange history",
+    "klienciBiura": "Office clients"
+  },
+  "rejestryVat": {
+    "nazwa": "VAT Registers",
+    "rejestryVat": "VAT registers",
+    "strukturaZakupow": "Purchase structure",
+    "ewidencjaDodatkowa": "Additional records",
+    "ewidencjaKasowegoPit": "Cash PIT records",
+    "deklaracjePlikiJPK_V7": "JPK_V7 files",
+    "deklaracjeVatUe": "VAT EU declarations",
+    "deklaracjeVat_8": "VAT-8 declarations",
+    "deklaracjeVat_9M": "VAT-9M declarations",
+    "deklaracjeInne": "Other declarations",
+    "wiadomosciOdKlientow": "Client messages"
+  },
+  "ksiegowosc": {
+    "nazwa": "Accounting",
+    "zapisyKPiR": "KPiR entries",
+    "spisZNatury": "Inventory list",
+    "deklaracjePIT": "PIT declarations",
+    "deklaracjeCIT": "CIT declarations",
+    "samochody": "Cars",
+    "dokumentyZrodlowe": "Source documents",
+    "ewidencjaSrodkowTrwalych": "Fixed assets register",
+    "dokumentySrodowTrwalych": "Fixed assets documents",
+    "ewidencjaWyposarzenia": "Equipment register",
+    "inwentaryzacja": "Inventory"
+  },
+  "jpk": {
+    "nazwa": "JPK",
+    "deklaracjePlikiJPK_V7": "JPK_V7 files",
+    "deklaracjeVat_9M": "VAT-9M files",
+    "deklaracjeVatUe": "VAT EU files",
+    "deklaracjeVat_8": "VAT-8 files",
+    "importDoRejetruVat": "Import to VAT register",
+    "informacjeJpk": "JPK information"
+  },
+  "placeKadry": {
+    "nazwa": "Payroll & HR",
+    "kadry": "HR",
+    "nowyPracownik": "New employee",
+    "listyPlac": "Payrolls",
+    "wtplatyPracownikow": "Employee payments",
+    "zusPlikiKedu": "ZUS KEDU files",
+    "deklarecjeZus": "ZUS declarations",
+    "deklarazjeRoczneIwa": "Annual IWA declarations",
+    "deklaracjeRoczneZswa": "Annual ZSWA declarations",
+    "zalacznikiNaPit4r": "PIT-4R attachments",
+    "podatekNaPit8ar": "PIT-8AR tax",
+    "deklaracjePitPracownikow": "Employee PIT declarations",
+    "deklaracjePfron": "PFRON declarations",
+    "deklaracjePpk": "PPK declarations",
+    "slowniki": "Dictionaries",
+    "strukturaOrganizacyjna": "Organizational structure",
+    "kasyZapomogowoPorzyczkowePkzp": "PKZP loan and aid funds",
+    "hrmTs": "HRM TS"
+  },
+  "widok": {
+    "nazwa": "View",
+    "kompozycjeWidoku": "View compositions",
+    "czcinki": "Fonts",
+    "ustawieniaOkien": "Window settings",
+    "ustawieniaOkienImport": "Import settings",
+    "ustawieniaOkienEksport": "Export settings",
+    "ustawieniaOgolne": "General settings"
+  },
+  "pomoc": {
+    "nazwa": "Help",
+    "pomocJakZaczac": "Getting started",
+    "pomocFilmyInstruktarzowe": "Tutorial videos",
+    "pomocFaq": "FAQ",
+    "pomocZdalna": "Remote help",
+    "pomocSystemObslugiZdarzen": "Incident management system",
+    "pomocTwojaIndywidaStrona": "Your personal page",
+    "rejestracjaProgramu": "Program registration",
+    "oprogramie": "About program"
+  },
+  "ui": {
+    "przejdz": "Go",
+    "szybkiDostep": "Quick Access",
+    "nowe": "New",
+    "ulepszone": "Improved",
+    "szybciej": "Faster"
+  },
+  "informacjeFirmy": {
+    "tytul": "Company Information",
+    "podtytul": "Basic data and statistics for 2025",
+    "danePodstawowe": "Basic Data",
+    "daneRejestrowe": "Registry Data",
+    "nazwa": "Name",
+    "przykladowaNazwa": "TechSolutions Ltd.",
+    "nip": "Tax ID",
+    "przykladowyNip": "123-456-78-90",
+    "regon": "Business ID",
+    "przykladowyRegon": "123456789",
+    "daneKontaktowe": "Contact Details",
+    "adres": "Address",
+    "przykladowyAdres": "Sample Street 123\n00-001 Warsaw",
+    "telefon": "Phone",
+    "przykladowyTelefon": "+48 123 456 789",
+    "email": "Email",
+    "przykladowyEmail": "office@techsolutions.pl",
+    "statystyki": "Statistics",
+    "wskazniki2025": "Key Indicators 2025",
+    "wskaznik": "Indicator",
+    "wartosc": "Value",
+    "status": "Status",
+    "przychodyQ1": "Revenue Q1",
+    "wartoscPrzychodow": "1,245,678 PLN",
+    "wzrostRR": "+15% y/y",
+    "liczbaKlientow": "Number of clients",
+    "wartoscKlientow": "128",
+    "statusStabilny": "Stable",
+    "zatrudnieni": "Employees",
+    "wartoscZatrudnionych": "42",
+    "statusRekrutacja": "Recruitment",
+    "struktura": "Structure",
+    "organizacjaFirmy": "Company Organization",
+    "dzialIT": "IT Department",
+    "pracownicyIT": "12 employees",
+    "budzetIT": "2025 Budget: 1.2M PLN",
+    "dzialSprzedazy": "Sales Department",
+    "pracownicySprzedaz": "8 employees",
+    "celSprzedaz": "2025 Target: 5M PLN",
+    "dzialHR": "HR Department",
+    "pracownicyHR": "5 employees",
+    "planRekrutacji": "Recruitment plan: +8 in 2025",
+    "planowaneZmianyTytul": "Planned changes in 2025",
+    "planowaneZmianyOpis": "R&D department expansion, new product line introduction in Q3"
+  },
+  "zmianaFirmy": {
+    "tytul": "Change Company",
+    "podtytul": "Select company to switch to",
+    "aktualnaFirmaNaglowek": "Currently logged in to",
+    "aktualnaFirma": "TechSolutions Ltd. (since 15.05.2025)",
+    "dostepneFirmy": "Available companies",
+    "nazwaFirmy": "Company name",
+    "nip": "Tax ID",
+    "ostatnieLogowanie": "Last login",
+    "statusAkcja": "Status / Action",
+    "firma1Nazwa": "TechSolutions Ltd.",
+    "firma1Nip": "123-456-78-90",
+    "firma1Logowanie": "15.05.2025 08:30",
+    "statusAktywna": "Active",
+    "firma2Nazwa": "Innovations IT Inc.",
+    "firma2Nip": "987-654-32-10",
+    "firma2Logowanie": "10.05.2025 14:20",
+    "firma3Nazwa": "SoftWare House",
+    "firma3Nip": "555-666-77-88",
+    "firma3Logowanie": "05.04.2025 09:15",
+    "przelacz": "Switch",
+    "dodajNowaFirme": "Add new company",
+    "wpiszNazweFirmy": "Enter company name",
+    "wpiszNip": "Enter tax ID",
+    "typFirmy": "Company type",
+    "wybierzTypFirmy": "Select company type...",
+    "spolkaZOO": "Limited liability company",
+    "spolkaAkcyjna": "Joint-stock company",
+    "dzialalnoscGospodarcza": "Business activity",
+    "dodajFirme": "Add company",
+    "anuluj": "Cancel",
+    "zapiszZmiany": "Save changes",
+    "uwagaZmianaFirmy": "Warning: Changing company may require re-login to the system."
+  },
+  "konfiguracja": {
+    "akcja": "Action",
+    "aktywuj": "Activate",
+    "apiBankowe": "Banking API 2025",
+    "certyfikatPodpisu": "Signature certificate",
+    "domyslnaNazwaSystemu": "ERP COMPANY",
+    "domyslnaWaluta": "Default currency",
+    "domyslnyJezyk": "Default language",
+    "fiskalne": "Fiscal",
+    "formatDaty": "Date format",
+    "integracje": "Integrations",
+    "integracjeZewnetrzne": "External integrations",
+    "jezykAngielski": "English",
+    "jezykNiemiecki": "German",
+    "jezykPolski": "Polish",
+    "komunikatPonowneLogowanie": "All changes require re-login (2025)",
+    "konfiguracjaJPK": "JPK Configuration",
+    "konfiguruj": "Configure",
+    "nazwaSystemu": "System name",
+    "platnosciOnline": "Online payments",
+    "podstawowe": "Basic",
+    "podtytul": "Main settings and parameters (2025)",
+    "polaczPonownie": "Reconnect",
+    "przykladowyCertyfikat": "CERT_2025_12345678",
+    "status": "Status",
+    "statusAktywna": "Active",
+    "statusBlad": "Error",
+    "statusNieaktywna": "Inactive",
+    "systemKsiegowy": "Accounting system",
+    "typJPK": "JPK type",
+    "tytul": "System Configuration",
+    "usluga": "Service",
+    "ustawieniaJPKInfo": "JPK file settings for 2025",
+    "ustawieniaSystemowe": "System settings",
+    "zapiszUstawienia": "Save settings",
+    "zapiszZmiany": "Save changes"
+  },
+  "odswierzKonfiguracje": {
+    "title": "Refresh system configuration",
+    "subtitle": "Version 3.2.0 | 15.05.2025",
+    "status": "System requires configuration refresh",
+    "changesHeader": "Detected configuration changes:",
+    "change1": "New JPK 2025 settings",
+    "badge1": "Requires approval",
+    "change2": "Updated VAT rates",
+    "badge2": "Completed",
+    "change3": "Bank API integration",
+    "badge3": "Not configured",
+    "change4": "Settings backup",
+    "badge4": "Done",
+    "progressTitle": "Refresh progress:",
+    "lastUpdate": "Last update: 15.05.2025 14:30",
+    "refreshNow": "Refresh now",
+    "scheduleLater": "Schedule for later",
+    "finalWarning": "Refresh process may take several minutes and require a system restart"
+  },
+  "wlaczNoweFunkcje": {
+    "title": "New system features",
+    "subtitle": "Version 3.2.0 | May 2025",
+    "featuresHeader": "Features to activate",
+    "feature1": {
+      "title": "Analytics dashboard 2025",
+      "desc": "New data visualizations"
+    },
+    "feature2": {
+      "title": "Bank integration",
+      "desc": "API Standard 2025"
+    },
+    "feature3": {
+      "title": "Push notifications",
+      "desc": "Automatic user messages"
+    },
+    "inProgressHeader": "In development",
+    "inProgress": {
+      "title": "AI module",
+      "desc": "Expected release: Q3 2025",
+      "progress": "25%",
+      "badge": "In progress"
+    },
+    "cancel": "Cancel",
+    "save": "Save changes",
+    "alert": "After saving changes the system may require re-login"
+  },
+  "nowoscWwersji": {
+    "title": "What's New in 3.2.0",
+    "subtitle": "Release date: 15.05.2025",
+    "changesHeader": "Key changes:",
+    "change1": {
+      "icon": "bi-bar-chart-steps",
+      "title": "New analytics module",
+      "desc": "Advanced sales reports",
+      "badgeVariant": "success",
+      "badgeIcon": "bi-star",
+      "badgeText": "New"
+    },
+    "change2": {
+      "icon": "bi-bank",
+      "title": "Bank API integration 2025",
+      "desc": "Payment automation",
+      "badgeVariant": "primary",
+      "badgeIcon": "bi-arrow-repeat",
+      "badgeText": "Improved"
+    },
+    "change3": {
+      "icon": "bi-file-earmark-bar-graph",
+      "title": "JPK_V7M optimization",
+      "desc": "Faster document generation",
+      "badgeVariant": "info",
+      "badgeIcon": "bi-rocket-takeoff",
+      "badgeText": "Enhanced"
+    },
+    "change4": {
+      "icon": "bi-robot",
+      "title": "AI Assistant",
+      "desc": "Document generation support",
+      "badgeVariant": "warning",
+      "badgeIcon": "bi-stars",
+      "badgeText": "Beta"
+    },
+    "plannedHeader": "Planned:",
+    "planned1": {
+      "icon": "bi-people",
+      "title": "Customer recommendation system",
+      "progress": "65",
+      "variant": "success",
+      "schedule": "Planned for Q3 2025"
+    },
+    "planned2": {
+      "icon": "bi-envelope-paper",
+      "title": "New push notifications",
+      "progress": "40",
+      "variant": "warning",
+      "schedule": "Beta testing: 08.2025"
+    },
+    "planned3": {
+      "icon": "bi-diagram-3",
+      "title": "Team management panel",
+      "progress": "25",
+      "variant": "danger",
+      "schedule": "Planned for Q4 2025"
+    },
+    "badges": {
+      "inProgress": "In progress",
+      "beta": "Beta version: 09.2025"
+    },
+    "actions": {
+      "details": "View details",
+      "skip": "Skip"
+    },
+    "footerInfo": "More information in the system documentation"
+  },
+  "logowanie": {
+    "title": "System Login",
+    "subtitle": "Enter your credentials",
+    "labelLogin": "Username",
+    "placeholderLogin": "Enter username",
+    "labelPassword": "Password",
+    "placeholderPassword": "Enter password",
+    "labelCompany": "Company",
+    "companyOptionPlaceholder": "Select company...",
+    "company1": "TechSolutions Ltd.",
+    "company2": "Handel24 Inc.",
+    "company3": "NetSoft Poland",
+    "rememberMe": "Remember me",
+    "submit": "Log In",
+    "forgotPassword": "Forgot password",
+    "changeCompany": "Change company",
+    "versionInfo": "ERP System v3.2.0 (2025)"
+  },
+  "koniecPracy": {
+    "title": "End of session",
+    "subtitle": "Safely log out of the system (15.05.2025)",
+    "warning": "Please review the following before logging out",
+    "unsavedHeader": "Unsaved changes",
+    "table": {
+      "module": "Module",
+      "status": "Status"
+    },
+    "unsaved1": {
+      "module": "Sales documents",
+      "status": "Saved"
+    },
+    "unsaved2": {
+      "module": "Contract editing",
+      "status": "Unsaved (2)"
+    },
+    "unsaved3": {
+      "module": "CRM tasks",
+      "status": "In progress"
+    },
+    "activeHeader": "Active processes",
+    "active1": {
+      "text": "Monthly report generation",
+      "percent": "65"
+    },
+    "active2": {
+      "text": "Data synchronization",
+      "percent": "30"
+    },
+    "activeWarning": "It is recommended to finish processes before logging out",
+    "dailyHeader": "Daily statistics",
+    "dailyDate": "15.05.2025",
+    "stats1": {
+      "icon": "bi bi-file-earmark-text",
+      "label": "Documents",
+      "value": "24"
+    },
+    "stats2": {
+      "icon": "bi bi-check2-square",
+      "label": "Tasks",
+      "value": "8"
+    },
+    "stats3": {
+      "icon": "bi bi-people",
+      "label": "Clients",
+      "value": "5"
+    },
+    "stats4": {
+      "icon": "bi bi-clock-history",
+      "label": "Work time",
+      "value": "7:45"
+    },
+    "actions": {
+      "logout": "Log out",
+      "cancel": "Cancel",
+      "saveContinue": "Save & continue"
+    },
+    "backupInfo": "Last system backup performed: 15.05.2025 02:00"
+  },
+  "kontrahenci": {
+    "title": "Manage Contractors",
+    "subtitle": "Current contractor data for 2025",
+    "tabs": {
+      "all": "All",
+      "groups": "Groups"
+    },
+    "actions": {
+      "add": "Add",
+      "filter": "Filters",
+      "view": "View",
+      "edit": "Edit"
+    },
+    "searchPlaceholder": "Search contractor...",
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "nip": "VAT ID",
+      "group": "Group",
+      "transactions": "Transactions 2025",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "pending": "Pending",
+      "inactive": "Inactive"
+    },
+    "groups": {
+      "business": "Business",
+      "partner": "Partner",
+      "standard": "Standard",
+      "manageHeader": "Manage Groups",
+      "add": "New Group",
+      "updated": "Updated: {{date}}",
+      "table": {
+        "group": "Group",
+        "count": "Count",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "counts": {
+        "business": "12",
+        "partner": "8",
+        "standard": "6"
+      },
+      "dates": {
+        "business": "03/10/2025",
+        "partner": "02/05/2025",
+        "standard": "01/12/2025"
+      }
+    },
+    "quickAdd": {
+      "header": "Add Contractor",
+      "placeholders": {
+        "name": "Name*",
+        "nip": "VAT ID*",
+        "group": "Select group"
+      },
+      "actions": {
+        "saveNew": "Save+New",
+        "save": "Save"
+      }
+    },
+    "stats": {
+      "new2025": "New 2025",
+      "active": "Active",
+      "transactions": "Transactions",
+      "values": {
+        "new": "15",
+        "active": "25",
+        "transactions": "2,580,000 PLN"
+      }
+    }
+  },
+  "nowyKontrahent": {
+    "title": "New Contractor",
+    "subtitle": "Add a new contractor (2025)",
+    "basicHeader": "Basic Data",
+    "additionalHeader": "Additional Data",
+    "addressHeader": "Address",
+    "contactHeader": "Contact Details",
+    "placeholders": {
+      "name": "Name*",
+      "nip": "VAT ID*",
+      "regon": "REGON",
+      "krs": "KRS",
+      "street": "Street*",
+      "houseNumber": "House No.*",
+      "apartmentNumber": "Apartment No.",
+      "postalCode": "Postal Code*",
+      "city": "City*",
+      "email": "Email*",
+      "phone": "Phone*",
+      "website": "Website"
+    },
+    "countries": {
+      "PL": "Poland",
+      "DE": "Germany",
+      "CZ": "Czech Republic"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "save": "Save Contractor"
+    },
+    "summary": {
+      "newCount": "New contractors in 2025:",
+      "newCountValue": "",
+      "lastAdded": "Last added:",
+      "lastAddedValue": ""
+    }
+  },
+  "pracownicy": {
+    "title": "Employee Management",
+    "subtitle": "Current data for 2025",
+    "actions": {
+      "add": "Add",
+      "import": "Import",
+      "view": "View"
+    },
+    "searchPlaceholder": "Search employee...",
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "position": "Position",
+      "hireDate": "Hire Date",
+      "contractUntil": "Contract Until",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "rows": {
+      "1": {
+        "id": "PRAC-001",
+        "name": "Jan Kowalski",
+        "position": "Manager",
+        "hireDate": "2020-01-15",
+        "contractUntil": "2025-12-31",
+        "statusVariant": "success",
+        "statusText": "Active"
+      },
+      "2": {
+        "id": "PRAC-002",
+        "name": "Anna Nowak",
+        "position": "Specialist",
+        "hireDate": "2025-01-01",
+        "contractUntil": "2026-12-31",
+        "statusVariant": "planned",
+        "statusText": "Probation"
+      },
+      "3": {
+        "id": "PRAC-003",
+        "name": "Kamil Kwiatkowski",
+        "position": "Warehouse Worker",
+        "hireDate": "2024-06-10",
+        "contractUntil": "2025-12-31",
+        "statusVariant": "inactive",
+        "statusText": "Inactive"
+      }
+    },
+    "new": {
+      "header": "Add Employee",
+      "placeholders": {
+        "firstName": "First Name*",
+        "lastName": "Last Name*",
+        "position": "Position"
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "save": "Save"
+      }
+    },
+    "positions": {
+      "manager": "Manager",
+      "specialist": "Specialist",
+      "warehouse": "Warehouse Worker"
+    },
+    "summary": {
+      "total": "Total employees:",
+      "totalValue": "3",
+      "new": "New in 2025:",
+      "newValue": "1",
+      "yearlyReport": "Yearly report"
+    }
+  },
+  "cennik": {
+    "title": "Price Lists Management 2025",
+    "subtitle": "Define and manage product and service price lists for 2025",
+    "tabs": {
+      "products": "Products",
+      "services": "Services"
+    },
+    "actions": {
+      "nowyCennik": "New price list",
+      "aktualizujCeny": "Update prices",
+      "drukuj": "Print",
+      "eksportuj": "Export",
+      "grupy": "Groups"
+    },
+    "table": {
+      "name": "Name",
+      "from": "From",
+      "to": "To",
+      "currency": "Currency",
+      "items": "Items",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "products": {
+      "1": {
+        "name": "Standard",
+        "from": "01/01/2025",
+        "to": "12/31/2025",
+        "currency": "PLN",
+        "items": "500",
+        "statusVariant": "success",
+        "statusText": "Active"
+      },
+      "2": {
+        "name": "Promotional Q1",
+        "from": "01/01/2025",
+        "to": "03/31/2025",
+        "currency": "PLN",
+        "items": "200",
+        "statusVariant": "planned",
+        "statusText": "Planned"
+      },
+      "3": {
+        "name": "Spring Seasonal",
+        "from": "04/01/2025",
+        "to": "06/30/2025",
+        "currency": "PLN",
+        "items": "150",
+        "statusVariant": "planned",
+        "statusText": "Planned"
+      },
+      "4": {
+        "name": "Summer",
+        "from": "07/01/2025",
+        "to": "09/30/2025",
+        "currency": "PLN",
+        "items": "120",
+        "statusVariant": "inactive",
+        "statusText": "Exhausted"
+      }
+    },
+    "services": {
+      "1": {
+        "name": "Basic Service",
+        "from": "01/01/2025",
+        "to": "12/31/2025",
+        "currency": "PLN",
+        "items": "100",
+        "statusVariant": "success",
+        "statusText": "Active"
+      },
+      "2": {
+        "name": "Premium Service",
+        "from": "03/01/2025",
+        "to": "02/28/2026",
+        "currency": "EUR",
+        "items": "50",
+        "statusVariant": "success",
+        "statusText": "Active"
+      },
+      "3": {
+        "name": "24/7 Support",
+        "from": "01/01/2025",
+        "to": "12/31/2025",
+        "currency": "PLN",
+        "items": "20",
+        "statusVariant": "success",
+        "statusText": "Active"
+      },
+      "4": {
+        "name": "Training",
+        "from": "06/01/2025",
+        "to": "06/30/2025",
+        "currency": "PLN",
+        "items": "10",
+        "statusVariant": "planned",
+        "statusText": "Planned"
+      }
+    },
+    "new": {
+      "header": "Add Price List",
+      "placeholder": "Name*",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "summary": {
+      "total": "Total price lists:",
+      "totalValue": "20",
+      "active": "Active:",
+      "activeValue": "7",
+      "lastUpdate": "Last update:",
+      "lastUpdateValue": "05/01/2025",
+      "history": "History"
+    }
+  },
+  "nowyTowar": {
+    "title": "New Product",
+    "subtitle": "Add a new product (2025)",
+    "tabs": {
+      "basic": "Basic",
+      "price": "Pricing"
+    },
+    "form": {
+      "basic": {
+        "productNamePlaceholder": "Product name*",
+        "codePrefix": "PRD-2025-",
+        "codePlaceholder": "Code*",
+        "categoryPlaceholder": "Select category...",
+        "categories": {
+          "elektro": "Electronics",
+          "dom": "Home Goods",
+          "odziez": "Clothing"
+        },
+        "unitPlaceholder": "pcs",
+        "units": {
+          "szt": "pcs",
+          "kg": "kg",
+          "op": "pkg."
+        },
+        "initialStockPlaceholder": "Initial stock",
+        "descriptionHeader": "Product description"
+      },
+      "price": {
+        "purchaseNetPlaceholder": "Purchase net",
+        "saleNetPlaceholder": "Sale net*",
+        "vatValues": [ "23%", "8%", "0%" ]
+      }
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "save": "Save product"
+    },
+    "summary": {
+      "newProducts": "New products in 2025:",
+      "lastAdded": "Last added:"
+    }
+  },
+  "grupyTowarowe": {
+    "title": "Item Groups 2025",
+    "subtitle": "Manage your item group hierarchy",
+    "actions": {
+      "newGroup": "New group",
+      "searchPlaceholder": "Search group..."
+    },
+    "table": {
+      "code": "Code",
+      "name": "Name",
+      "count": "Count",
+      "created": "Created",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "statuses": {
+      "active": "Active",
+      "planned": "Planned",
+      "inactive": "Inactive"
+    },
+    "add": {
+      "header": "Add new group",
+      "placeholderName": "Group name*",
+      "placeholderCode": "Group code*",
+      "placeholderType": "Group type*",
+      "types": {
+        "Asortyment": "Assortment",
+        "Usługa": "Service",
+        "Zestaw": "Bundle"
+      },
+      "save": "Save"
+    }
+  },
+  "layout": {
+    "search": "Search",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "languageOptions": {
+      "pl": "Polish",
+      "en": "English"
+    }
+  },
+  "rabaty": {
+    "title": "Discount Management",
+    "subtitle": "Promotions and special offers for 2025",
+    "actions": {
+      "new": "New Discount",
+      "planned": "Scheduled Promotions",
+      "view": "View",
+      "edit": "Edit"
+    },
+    "search": {
+      "placeholder": "Search discount..."
+    },
+    "table": {
+      "headers": {
+        "code": "Discount Code",
+        "name": "Promotion Name",
+        "value": "Value",
+        "period": "Validity Period",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "sample": {
+      "newYearSale": "New Year Sale",
+      "summerPromo": "Summer Promotions"
+    },
+    "status": {
+      "active": "Active",
+      "planned": "Planned"
+    },
+    "accordion": {
+      "add": "Add New Discount"
+    },
+    "form": {
+      "labels": {
+        "name": "Discount Name*",
+        "code": "Discount Code*",
+        "value": "Discount Value*",
+        "start": "Start Date*",
+        "end": "End Date*"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save Discount"
+      }
+    },
+    "summary": {
+      "activeLabel": "Active discounts in 2025:",
+      "activeCount": "{{count}}",
+      "plannedLabel": "Scheduled promotions:",
+      "plannedCount": "{{count}}",
+      "annualReport": "Annual Report"
+    }
+  },
+  "kategorie": {
+    "title": "Product Categories 2025",
+    "subtitle": "Manage product categories",
+    "actions": {
+      "new": "New Category",
+      "tree": "Category Tree",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "search": {
+      "placeholder": "Search category..."
+    },
+    "table": {
+      "headers": {
+        "id": "ID",
+        "name": "Category Name",
+        "count": "Product Count",
+        "created": "Created On",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "sample": {
+      "electronics": "Electronics",
+      "homeGoods": "Home Goods",
+      "clothing": "Clothing"
+    },
+    "status": {
+      "active": "Active",
+      "planned": "Paused"
+    },
+    "accordion": {
+      "add": "Add New Category"
+    },
+    "form": {
+      "labels": {
+        "name": "Category Name*",
+        "parent": "Parent Category",
+        "status": "Status",
+        "expiry": "Expiry Date"
+      },
+      "parentOptions": {
+        "none": "None (top-level)"
+      },
+      "status": {
+        "active": "Active",
+        "planned": "Paused",
+        "inactive": "Inactive"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save Category"
+      }
+    },
+    "summary": {
+      "countLabel": "Categories in 2025:",
+      "count": "{{count}}",
+      "lastUpdateLabel": "Last updated:",
+      "lastUpdate": "{{date}}",
+      "hierarchy": "Full Hierarchy"
+    }
+  },
+  "atrybuty": {
+    "title": "Attribute Management",
+    "subtitle": "Group: General",
+    "filters": {
+      "searchPlaceholder": "Enter attribute name",
+      "searchButton": "Search",
+      "typeAll": "All types",
+      "types": {
+        "text": "Text",
+        "number": "Number",
+        "date": "Date",
+        "list": "List"
+      },
+      "statusAll": "All statuses",
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "button": "Filter"
+    },
+    "actions": {
+      "add": "Add New",
+      "export": "Export",
+      "deleteSelected": "Delete Selected",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "table": {
+      "headers": {
+        "checkbox": "Select",
+        "name": "Attribute Name",
+        "key": "Key",
+        "type": "Type",
+        "required": "Required",
+        "status": "Status",
+        "options": "Options"
+      },
+      "required": {
+        "yes": "Yes",
+        "no": "No"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    },
+    "sample": {
+      "color": "Color",
+      "weight": "Weight",
+      "expiryDate": "Expiry Date"
+    },
+    "sampleTypes": {
+      "text": "Text",
+      "number": "Number",
+      "date": "Date"
+    },
+    "accordion": {
+      "add": "Add New Attribute"
+    },
+    "form": {
+      "labels": {
+        "name": "Attribute Name*",
+        "key": "Key*",
+        "type": "Type*",
+        "group": "Group",
+        "status": "Status"
+      },
+      "generateKey": "Generate Key",
+      "types": {
+        "text": "Text",
+        "number": "Number",
+        "date": "Date",
+        "boolean": "Yes/No",
+        "list": "List"
+      },
+      "groups": {
+        "general": "General",
+        "inventory": "Inventory"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "check": {
+        "required": "Required",
+        "filterable": "Filterable"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save Attribute"
+      }
+    }
+  },
+  "wymiaryOpisuAnalitycznego": {
+    "title": "Analytical Dimensions",
+    "subtitle": "Management of dimensions used in analysis",
+    "tabs": {
+      "list": "Dimensions list",
+      "reports": "Reports"
+    },
+    "actions": {
+      "add": "Add dimension",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "search": {
+      "placeholder": "Search dimensions..."
+    },
+    "table": {
+      "headers": {
+        "code": "Code",
+        "name": "Name",
+        "desc": "Description",
+        "status": "Status",
+        "created": "Created date",
+        "actions": "Actions"
+      }
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "sample": {
+      "region": "Region",
+      "regionDesc": "Geographical division",
+      "channel": "Sales channel",
+      "channelDesc": "Product distribution channels",
+      "cost": "Cost type",
+      "costDesc": "Cost classification"
+    },
+    "reports": {
+      "header": "Dimensions statistics",
+      "activeCountLabel": "Active count:",
+      "activeCount": "{{count}} active",
+      "inactiveCountLabel": "Inactive count:",
+      "inactiveCount": "{{count}} inactive",
+      "mostUsedLabel": "Most used:",
+      "lastAddedLabel": "Last added:"
+    },
+    "modal": {
+      "title": "Dimension management"
+    },
+    "form": {
+      "labels": {
+        "code": "Dimension code",
+        "name": "Dimension name",
+        "desc": "Description",
+        "active": "Dimension active"
+      },
+      "selectPlaceholder": "Select name...",
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save"
+      }
+    }
+  },
+  "przesylkiKurierskie": {
+    "title": "Courier Shipments 2025",
+    "subtitle": "Management of shipments and consignments",
+    "actions": {
+      "new": "New shipment",
+      "printLabels": "Print labels",
+      "cancel": "Cancel",
+      "send": "Send shipment",
+      "generateReport": "Generate report"
+    },
+    "search": {
+      "placeholder": "Search shipment..."
+    },
+    "table": {
+      "headers": {
+        "number": "Shipment number",
+        "sender": "Sender",
+        "receiver": "Receiver",
+        "date": "Dispatch date",
+        "status": "Status",
+        "courier": "Courier",
+        "actions": "Actions"
+      }
+    },
+    "status": {
+      "delivered": "Delivered",
+      "inTransit": "In transit",
+      "return": "Return"
+    },
+    "form": {
+      "newShipment": "Send new shipment",
+      "labels": {
+        "sender": "Sender*",
+        "receiver": "Receiver*",
+        "date": "Dispatch date*",
+        "company": "Courier company*",
+        "weight": "Weight (kg)*"
+      },
+      "companies": {
+        "dpd": "DPD",
+        "inpost": "InPost",
+        "dhl": "DHL"
+      }
+    },
+    "summary": {
+      "title": "Shipments in 2025:",
+      "count": "148",
+      "delivered": "Delivered:",
+      "deliveredCount": "132 (89%)"
+    }
+  },
+  "wiadomosciSms": {
+    "title": "SMS Messages",
+    "subtitle": "Sending and history of SMS messages in 2025",
+    "tabs": {
+      "new": "New message",
+      "history": "History"
+    },
+    "form": {
+      "labels": {
+        "recipients": "Recipients*",
+        "template": "Template",
+        "content": "Message content*"
+      },
+      "hints": {
+        "recipients": "Enter phone numbers separated by commas"
+      },
+      "selectPlaceholder": "Select template...",
+      "templates": {
+        "orderConfirmation": "Order confirmation",
+        "paymentReminder": "Payment reminder",
+        "seasonalPromo": "Seasonal promotion"
+      },
+      "characters": "characters"
+    },
+    "actions": {
+      "clear": "Clear",
+      "send": "Send SMS",
+      "fullStats": "Full statistics"
+    },
+    "search": {
+      "placeholder": "Search messages..."
+    },
+    "table": {
+      "headers": {
+        "date": "Sent date",
+        "recipient": "Recipient",
+        "content": "Content",
+        "status": "Status"
+      }
+    },
+    "status": {
+      "sent": "Sent",
+      "pending": "Pending",
+      "error": "Error"
+    },
+    "samples": {
+      "orderConfirmation": "Order confirmation no. 2025/001",
+      "paymentReminder": "Payment reminder for INV/2025/12",
+      "seasonalPromo": "Seasonal promotion - today only -20%"
+    },
+    "summary": {
+      "sent": "Sent in 2025:",
+      "sentCount": "248 SMS",
+      "lastMessage": "Last message:"
+    }
+  },
+  "zakupPaczkiSms": {
+    "title": "SMS Package Purchase",
+    "subtitle": "SMS communication module in ERP system (2025)",
+    "tabs": {
+      "newPurchase": "New purchase",
+      "history": "Purchase history"
+    },
+    "accountStatus": {
+      "balance": "Account balance:",
+      "balanceValue": "248 SMS valid until 31.12.2025",
+      "creditLimit": "Credit limit:",
+      "creditLimitValue": "5,000 PLN"
+    },
+    "packageSelection": {
+      "title": "Select SMS package",
+      "labels": {
+        "type": "Package type",
+        "quantity": "SMS quantity"
+      },
+      "types": {
+        "standard": "Standard (0.40 PLN/SMS)",
+        "business": "Business (0.35 PLN/SMS)",
+        "premium": "Premium (0.30 PLN/SMS)"
+      },
+      "units": "pcs"
+    },
+    "summary": {
+      "netCost": "Net cost:",
+      "netCostValue": "350.00 PLN",
+      "vat": "VAT (23%):",
+      "vatValue": "80.50 PLN",
+      "total": "Total to pay:",
+      "totalValue": "430.50 PLN"
+    },
+    "paymentMethod": {
+      "title": "Payment method",
+      "options": {
+        "transfer": "Bank transfer",
+        "card": "Card payment",
+        "credit": "ERP credit balance"
+      },
+      "acceptTerms": "I accept SMS service terms"
+    },
+    "search": {
+      "placeholder": "Search orders..."
+    },
+    "historyTable": {
+      "headers": {
+        "date": "Date",
+        "orderNumber": "Order number",
+        "smsQuantity": "SMS quantity",
+        "amount": "Amount",
+        "status": "Status"
+      }
+    },
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "confirm": "Confirm purchase"
+    }
+  },
+  "raporty": {
+    "title": "Report Generation",
+    "subtitle": "Data for year 2025",
+    "tabs": {
+      "sales": "Sales",
+      "warehouse": "Warehouse"
+    },
+    "form": {
+      "labels": {
+        "reportType": "Report type",
+        "fromDate": "From date",
+        "toDate": "To date",
+        "product": "Product",
+        "reportKind": "Report kind"
+      }
+    },
+    "reportTypes": {
+      "monthly": "Monthly report",
+      "quarterly": "Quarterly report",
+      "yearly": "Yearly report"
+    },
+    "periods": {
+      "january2025": "January 2025",
+      "q1_2025": "Q1 2025"
+    },
+    "products": {
+      "monitor": "Dell 24\" Monitor",
+      "printer": "HP 2330 Printer",
+      "paper": "A4 Paper Palette"
+    },
+    "warehouseReports": {
+      "stock": "Stock report",
+      "movements": "Movements report",
+      "receipts": "Receipts report"
+    },
+    "table": {
+      "headers": {
+        "type": "Report type",
+        "period": "Period",
+        "generationDate": "Generation date",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "status": {
+      "ready": "Ready",
+      "inProgress": "In progress",
+      "pending": "Pending"
+    },
+    "scheduledReports": {
+      "title": "Scheduled reports",
+      "headers": {
+        "name": "Report name",
+        "frequency": "Frequency",
+        "recipients": "Recipients",
+        "nextExecution": "Next execution",
+        "actions": "Actions"
+      },
+      "types": {
+        "weekly": "Weekly report",
+        "monthly": "Monthly report",
+        "yearly": "Yearly report"
+      },
+      "frequencies": {
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      }
+    },
+    "summary": {
+      "generated": "Generated in 2025:",
+      "generatedCount": "24 reports",
+      "scheduled": "Scheduled:",
+      "scheduledCount": "8 reports"
+    },
+    "actions": {
+      "generate": "Generate report",
+      "download": "Download",
+      "edit": "Edit",
+      "reportHistory": "Report history"
+    }
+  },
+  "waluty": {
+    "title": "Currency Rates 2025",
+    "subtitle": "Current rates and currency management",
+    "lastUpdate": "Last update",
+    "actions": {
+      "refresh": "Refresh rates",
+      "add": "Add currency",
+      "edit": "Edit",
+      "history": "History",
+      "cancel": "Cancel",
+      "save": "Save currency",
+      "rateHistory": "Rate history"
+    },
+    "table": {
+      "headers": {
+        "currency": "Currency",
+        "code": "Code",
+        "rate": "Rate (PLN)",
+        "validity": "Validity date",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "currencies": {
+      "usd": "US Dollar",
+      "eur": "Euro",
+      "gbp": "British Pound"
+    },
+    "status": {
+      "active": "Active",
+      "changed": "Changed"
+    },
+    "form": {
+      "addTitle": "Add new currency",
+      "labels": {
+        "name": "Currency name*",
+        "code": "Code*",
+        "rate": "Rate (PLN)*",
+        "validityDate": "Validity date*"
+      },
+      "selectPlaceholder": "Select..."
+    },
+    "summary": {
+      "currenciesCount": "Number of supported currencies:",
+      "currenciesNumber": "8",
+      "lastRateChange": "Last rate change:"
+    }
+  },
+  "daneOsobowe": {
+    "title": "Personal Data Management",
+    "subtitle": "Current data for year 2025",
+    "search": {
+      "placeholder": "First name, last name or ID"
+    },
+    "filters": {
+      "allDepartments": "All departments",
+      "allStatuses": "All statuses"
+    },
+    "departments": {
+      "hr": "HR",
+      "finance": "Finance",
+      "it": "IT"
+    },
+    "status": {
+      "active": "Active",
+      "vacation": "Vacation",
+      "inactive": "Inactive"
+    },
+    "positions": {
+      "accountant": "Accountant",
+      "developer": "Developer",
+      "hrbp": "HRBP"
+    },
+    "contractTypes": {
+      "employment": "Employment contract",
+      "b2b": "B2B",
+      "contract": "Contract"
+    },
+    "employees": {
+      "annaKowalska": "Anna Kowalska",
+      "piotrNowak": "Piotr Nowak",
+      "mariaWisniewska": "Maria Wiśniewska"
+    },
+    "actions": {
+      "filter": "Filter",
+      "add": "Add",
+      "import": "Import",
+      "print": "Print",
+      "export": "Export",
+      "cancel": "Cancel",
+      "save": "Save",
+      "statistics": "Statistics"
+    },
+    "table": {
+      "headers": {
+        "id": "ID",
+        "name": "Name",
+        "position": "Position",
+        "department": "Department",
+        "hireDate": "Hire date",
+        "contractEnd": "Contract end",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "form": {
+      "addEmployee": "Add employee",
+      "labels": {
+        "firstName": "First name*",
+        "lastName": "Last name*",
+        "pesel": "PESEL*"
+      },
+      "selectPlaceholders": {
+        "position": "Position*",
+        "department": "Department*",
+        "contractType": "Contract type*"
+      }
+    },
+    "summary": {
+      "total": "Total:",
+      "totalCount": "3",
+      "new": "New:",
+      "newCount": "1",
+      "lastUpdate": "Last update:"
+    }
+  },
+  "udzielPelnomocnictwa": {
+    "title": "Powers of Attorney",
+    "subtitle": "Power of attorney management for 2025",
+    "search": {
+      "placeholder": "Search power of attorney..."
+    },
+    "actions": {
+      "new": "New power of attorney",
+      "preview": "Preview",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "save": "Save power of attorney",
+      "generateReport": "Generate report"
+    },
+    "table": {
+      "headers": {
+        "number": "Power of attorney No.",
+        "grantor": "Grantor",
+        "attorney": "Attorney",
+        "expiryDate": "Expiry date",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "people": {
+      "janKowalski": "Jan Kowalski",
+      "annaNowak": "Anna Nowak",
+      "barbaraWisniewska": "Barbara Wiśniewska",
+      "piotrZalewski": "Piotr Zalewski",
+      "tomaszMalinowski": "Tomasz Malinowski",
+      "katarzynaZielinska": "Katarzyna Zielińska"
+    },
+    "status": {
+      "active": "Active",
+      "expiring": "Expiring",
+      "expired": "Expired"
+    },
+    "form": {
+      "createNew": "Create new power of attorney",
+      "labels": {
+        "grantor": "Grantor*",
+        "attorney": "Attorney*",
+        "scope": "Scope of authority*",
+        "expiryDate": "Expiry date*",
+        "description": "Authority description"
+      },
+      "scopes": {
+        "full": "Full",
+        "limited": "Limited",
+        "temporary": "Temporary"
+      }
+    },
+    "summary": {
+      "active": "Active powers of attorney in 2025:",
+      "activeCount": "12",
+      "expiring": "Expiring in 2025:",
+      "expiringCount": "3"
+    }
+  },
+  "crmNavbar": {
+    "brand": "CRM",
+    "sections": {
+      "contacts": "Contacts & Relations",
+      "documents": "Documents",
+      "library": "Library",
+      "archive": "Archive",
+      "communication": "Communication",
+      "collection": "Collection",
+      "surveys": "Surveys",
+      "more": "More"
+    },
+    "links": {
+      "contactsList": "Contacts list",
+      "calendar": "Calendar",
+      "commercialOffers": "Commercial offers",
+      "recurringInvoices": "Recurring invoices",
+      "newDocument": "New document",
+      "browseDocuments": "Browse documents",
+      "printArchive": "Print archive",
+      "archivedContacts": "Archived contacts",
+      "operatorInbox": "Operator inbox",
+      "mailbox": "Mailbox",
+      "schemes": "Schemes",
+      "eventHistory": "Event history",
+      "surveying": "Surveying",
+      "surveyTemplates": "Survey templates",
+      "questions": "Questions",
+      "answerTemplates": "Answer templates",
+      "queryGroups": "Query groups",
+      "moreFeatures": "More features"
+    }
+  },
+  "kasaBankNavbar": {
+    "brand": "Cash/Bank",
+    "sections": {
+      "registers": "Registers",
+      "reports": "Reports",
+      "settlements": "Settlements",
+      "currencies": "Currencies",
+      "payments": "Payments",
+      "businessTrips": "Business trips",
+      "dataExchange": "Data exchange",
+      "office": "Office"
+    },
+    "links": {
+      "cashBankRegisters": "Cash/bank registers",
+      "cashBankReports": "Cash/bank reports",
+      "cashBankEntries": "Cash/bank entries",
+      "entitySettlements": "Entity settlements",
+      "unsettledDocuments": "Unsettled documents",
+      "settledDocuments": "Settled documents",
+      "compensationDocuments": "Compensation documents",
+      "currencyWarehouse": "Currency warehouse",
+      "exchangeDifferences": "Exchange differences",
+      "paymentSchedule": "Payment schedule",
+      "businessTrips": "Business trips",
+      "sendData": "Send data",
+      "receiveData": "Receive data",
+      "exchangeHistory": "Exchange history",
+      "officeClients": "Office clients"
+    }
+  },
+  "rejestryVatNavbar": {
+    "brand": "VAT Registers",
+    "sections": {
+      "registers": "Registers",
+      "records": "Records",
+      "jpk": "JPK",
+      "vatDeclarations": "VAT Declarations",
+      "communication": "Communication",
+      "clients": "Clients",
+      "messages": "Messages"
+    },
+    "links": {
+      "vatRegisters": "VAT Registers",
+      "purchaseStructure": "Purchase structure",
+      "additionalRecords": "Additional records",
+      "cashPitRecords": "Cash PIT records",
+      "jpkV7Files": "JPK_V7 Files",
+      "vatUe": "VAT-UE",
+      "vat8": "VAT-8",
+      "vat9m": "VAT-9M",
+      "otherDeclarations": "Other declarations",
+      "receiveData": "Receive data",
+      "sendData": "Send data",
+      "exchangeHistory": "Exchange history",
+      "officeClients": "Office clients",
+      "clientMessages": "Client messages"
+    }
+  },
+  "ksiegowoscNavbar": {
+    "brand": "Accounting",
+    "sections": {
+      "kpir": "Lump-sum Tax Records",
+      "declarations": "Declarations",
+      "fixedAssets": "Fixed Assets",
+      "equipment": "Equipment",
+      "cars": "Cars",
+      "documents": "Documents",
+      "inventory": "Inventory"
+    },
+    "links": {
+      "kpirEntries": "Lump-sum Tax Entries",
+      "inventoryList": "Inventory List",
+      "pitDeclarations": "PIT Declarations",
+      "citDeclarations": "CIT Declarations",
+      "fixedAssetsRegister": "Fixed Assets Register",
+      "fixedAssetsDocuments": "Fixed Assets Documents",
+      "equipmentRegister": "Equipment Register",
+      "cars": "Cars",
+      "sourceDocuments": "Source Documents",
+      "inventory": "Inventory"
+    }
+  },
+  "jpkNavbar": {
+    "brand": "SAF-T",
+    "sections": {
+      "jpkFiles": "SAF-T Files",
+      "importExport": "Import/Export",
+      "information": "Information"
+    },
+    "links": {
+      "jpkV7Files": "SAF-T V7 Files",
+      "vat9mFiles": "VAT 9M Files",
+      "vatUeFiles": "VAT EU Files",
+      "vat8Files": "VAT 8 Files",
+      "importToVatRegister": "Import to VAT register",
+      "jpkInfoHelp": "SAF-T information / help"
+    }
+  },
+  "placeKadryNavbar": {
+    "brand": "Payroll & HR",
+    "sections": {
+      "hr": "Human Resources",
+      "payroll": "Payroll",
+      "socialSecurity": "Social Security",
+      "declarations": "Declarations",
+      "employeeLoanFunds": "Employee Funds"
+    },
+    "links": {
+      "hr": "HR",
+      "newEmployee": "New employee",
+      "orgStructure": "Organizational structure",
+      "payrollLists": "Payroll lists",
+      "employeePayments": "Employee payments",
+      "socialSecurityKeduFiles": "Social Security KEDU files",
+      "socialSecurityDeclarations": "Social Security declarations",
+      "employeePitDeclarations": "Employee PIT declarations",
+      "pit4rAdvances": "PIT-4R advances",
+      "pit8arTax": "PIT-8AR tax",
+      "pfronDeclarations": "PFRON declarations",
+      "ppkDeclarations": "PPK declarations",
+      "annualZswaDeclarations": "Annual ZSWA declarations",
+      "annualIwaDeclarations": "Annual IWA declarations",
+      "employeeLoanFunds": "Employee loan funds",
+      "hrmTs": "HRM TS",
+      "dictionaries": "Dictionaries"
+    }
+  },
+  "widokNavbar": {
+    "brand": "View",
+    "sections": {
+      "views": "Views",
+      "windows": "Windows"
+    },
+    "links": {
+      "viewCompositions": "View compositions",
+      "fonts": "Fonts",
+      "windowSettings": "Window settings",
+      "import": "Import",
+      "export": "Export",
+      "generalSettings": "General settings"
+    }
+  },
+  "pomocNavbar": {
+    "brand": "Help",
+    "sections": {
+      "support": "Support",
+      "contact": "Contact & Remote Help",
+      "registration": "Registration"
+    },
+    "links": {
+      "help": "Help",
+      "faq": "FAQ",
+      "gettingStarted": "Getting Started",
+      "tutorialVideos": "Tutorial Videos",
+      "remoteSupport": "Remote Support",
+      "incidentSystem": "Incident System",
+      "personalPage": "Your Personal Page",
+      "programRegistration": "Program Registration",
+      "about": "About"
+    }
+  },
+  "kontakty": {
+    "title": "Contact Management",
+    "subtitle": "CRM contacts database - status as of 2025",
+    "tabs": {
+      "list": "Contact List",
+      "groups": "Contact Groups"
+    },
+    "buttons": {
+      "add": "Add",
+      "filters": "Filters",
+      "newGroup": "New Group",
+      "save": "Save",
+      "saveNew": "Save+New"
+    },
+    "search": {
+      "placeholder": "Search contacts..."
+    },
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "types": {
+      "client": "Client",
+      "partner": "Partner",
+      "supplier": "Supplier"
+    },
+    "status": {
+      "active": "Active",
+      "pending": "Pending",
+      "inactive": "Inactive"
+    },
+    "groups": {
+      "title": "Groups Management",
+      "updated": "Updated",
+      "name": "Group Name",
+      "count": "Contacts Count",
+      "created": "Creation Date",
+      "vip": "VIP Clients",
+      "strategic": "Strategic Partners"
+    },
+    "form": {
+      "addContact": "Add Contact",
+      "firstName": "First Name*",
+      "lastName": "Last Name*",
+      "selectType": "Select Type",
+      "email": "Email*",
+      "phone": "Phone"
+    },
+    "stats": {
+      "new2025": "New in 2025",
+      "active": "Active",
+      "total": "All Contacts"
+    }
+  },
+  "terminarz": {
+    "title": "Calendar",
+    "subtitle": "Task and event management - May 2025",
+    "tabs": {
+      "upcoming": "Upcoming",
+      "categories": "Categories"
+    },
+    "buttons": {
+      "new": "New",
+      "history": "History",
+      "newCategory": "New Category",
+      "save": "Save",
+      "saveNew": "Save+New"
+    },
+    "table": {
+      "type": "Type",
+      "subject": "Subject",
+      "date": "Date",
+      "time": "Time",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "types": {
+      "meeting": "Meeting",
+      "task": "Task"
+    },
+    "status": {
+      "scheduled": "Scheduled",
+      "pending": "Pending"
+    },
+    "events": {
+      "clientMeeting": "Meeting with client XYZ",
+      "presentation": "Prepare presentation",
+      "until": "Until"
+    },
+    "categories": {
+      "title": "Calendar Categories",
+      "updated": "Updated",
+      "category": "Category",
+      "count": "Events Count",
+      "created": "Creation Date",
+      "meetings": "Meetings",
+      "tasks": "Tasks"
+    },
+    "form": {
+      "addEvent": "Add new event / task",
+      "subject": "Subject*",
+      "selectType": "Select type",
+      "startTime": "Start time",
+      "endTime": "End time"
+    },
+    "stats": {
+      "allMay": "All in May",
+      "scheduledMeetings": "Scheduled meetings",
+      "tasksToDo": "Tasks to do"
+    }
+  },
+  "fakturyCykliczne": {
+    "title": "Recurring Invoices",
+    "subtitle": "Periodic invoice management – year 2025",
+    "tabs": {
+      "active": "Active",
+      "archived": "Archived",
+      "addNew": "Add New"
+    },
+    "buttons": {
+      "new": "New",
+      "history": "History",
+      "restore": "Restore",
+      "cancel": "Cancel",
+      "saveInvoice": "Save Invoice"
+    },
+    "search": {
+      "placeholder": "Search invoices..."
+    },
+    "table": {
+      "number": "Number",
+      "contractor": "Contractor",
+      "period": "Period",
+      "amount": "Amount",
+      "next": "Next",
+      "status": "Status",
+      "actions": "Actions",
+      "ended": "Ended"
+    },
+    "status": {
+      "active": "Active"
+    },
+    "periods": {
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "yearly": "Yearly"
+    },
+    "example": {
+      "softnet": "SoftNet Ltd.",
+      "deltacom": "DeltaCom",
+      "testowa": "Test Company Ltd.",
+      "companyA": "Company A",
+      "companyB": "Company B"
+    },
+    "form": {
+      "contractor": "Contractor",
+      "select": "Select",
+      "period": "Period",
+      "startDate": "Cycle start date",
+      "nextInvoice": "Next invoice",
+      "netAmount": "Net amount",
+      "notes": "Notes"
+    },
+    "summary": {
+      "activeCount": "Total active",
+      "monthlySum": "Monthly sum",
+      "lastUpdate": "Last update"
+    }
+  },
+  "ofertyHandlowe": {
+    "title": "Commercial Offers",
+    "subtitle": "Commercial offers management – year 2025",
+    "tabs": {
+      "active": "Active",
+      "statistics": "Statistics"
+    },
+    "buttons": {
+      "new": "New",
+      "history": "History"
+    },
+    "search": {
+      "placeholder": "Search offers..."
+    },
+    "table": {
+      "number": "Number",
+      "client": "Client",
+      "date": "Date",
+      "validity": "Validity",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "sent": "Sent",
+      "accepted": "Accepted",
+      "inPreparation": "In preparation",
+      "rejected": "Rejected",
+      "inProgress": "In progress"
+    },
+    "example": {
+      "abc": "ABC Ltd.",
+      "xyz": "XYZ Inc.",
+      "techmedia": "TechMedia",
+      "firmaTech": "Tech Company",
+      "alpha": "Alpha Ltd."
+    },
+    "statistics": {
+      "effectiveness": "Offers effectiveness",
+      "topOffers": "Top offers"
+    },
+    "summary": {
+      "activeOffers": "Active offers",
+      "inProgressValue": "In progress value"
+    }
+  },
+  "archiwumWydrukow": {
+    "title": "Print Archive",
+    "subtitle": "Printed documents history – year 2025",
+    "tabs": {
+      "history": "History",
+      "statistics": "Statistics",
+      "settings": "Settings"
+    },
+    "filters": {
+      "allTypes": "All types"
+    },
+    "types": {
+      "invoices": "Invoices",
+      "offers": "Offers",
+      "orders": "Orders"
+    },
+    "search": {
+      "placeholder": "Search prints..."
+    },
+    "table": {
+      "date": "Date",
+      "type": "Type",
+      "file": "File",
+      "user": "User",
+      "size": "Size",
+      "actions": "Actions"
+    },
+    "buttons": {
+      "download": "Download",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "statistics": {
+      "summary": "Summary",
+      "totalPrints": "Total prints",
+      "inMay2025": "In May 2025",
+      "dominantType": "Dominant type",
+      "recentPrints": "Recent prints"
+    },
+    "settings": {
+      "retentionTime": "Retention time",
+      "1month": "1 month",
+      "3months": "3 months",
+      "6months": "6 months",
+      "1year": "1 year",
+      "enableAutoCleanup": "Enable auto cleanup",
+      "archiveSizeLimit": "Archive size limit"
+    },
+    "summary": {
+      "spaceUsage": "Space usage",
+      "lastSave": "Last save"
+    }
+  },
+  "bibliotekaDokumentow": {
+    "title": "Document Library",
+    "subtitle": "Central repository for company documents – year 2025",
+    "tabs": {
+      "documents": "Documents",
+      "templates": "Templates",
+      "categories": "Categories"
+    },
+    "filters": {
+      "allCategories": "All Categories",
+      "contracts": "Contracts",
+      "policies": "Policies",
+      "procedures": "Procedures",
+      "allDepartments": "All Departments",
+      "hr": "HR",
+      "it": "IT",
+      "finance": "Finance"
+    },
+    "buttons": {
+      "add": "Add",
+      "download": "Download",
+      "history": "History",
+      "archive": "Archive",
+      "save": "Save",
+      "delete": "Delete"
+    },
+    "searchPlaceholder": "Search documents...",
+    "table": {
+      "name": "Name",
+      "category": "Category",
+      "date": "Date",
+      "size": "Size",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "statusActive": "Active",
+    "templates": {
+      "employmentContract": "Employment Contract",
+      "employmentContractDesc": "HR Standard",
+      "vatInvoice": "VAT Invoice",
+      "vatInvoiceDesc": "For Finance Department",
+      "monthlyReport": "Monthly Report",
+      "monthlyReportDesc": "Internal statements",
+      "modification": "Modification"
+    },
+    "categories": {
+      "addCategory": "Add Category",
+      "categoryName": "Category Name",
+      "enterNamePlaceholder": "Enter name",
+      "department": "Department",
+      "categoryList": "Category List",
+      "category": "Category",
+      "departmentHeader": "Department",
+      "procedures": "Procedures",
+      "reports": "Reports",
+      "templates": "Templates"
+    },
+    "summary": {
+      "documentsCount": "Documents",
+      "lastUpdate": "Last update"
+    }
+  },
+  "nowyDokument": {
+    "title": "New Document",
+    "subtitle": "Creating a document in the system – year 2025",
+    "form": {
+      "documentName": "Document Name",
+      "enterNamePlaceholder": "Enter name",
+      "type": "Type",
+      "types": {
+        "invoice": "Invoice",
+        "contract": "Contract",
+        "report": "Report",
+        "memo": "Memo"
+      },
+      "department": "Department",
+      "departments": {
+        "finance": "Finance",
+        "hr": "HR",
+        "it": "IT",
+        "marketing": "Marketing"
+      },
+      "description": "Description",
+      "descriptionPlaceholder": "Document description...",
+      "attachment": "Attachment",
+      "maxSize": "Max. 10MB",
+      "date": "Date",
+      "priority": "Priority",
+      "priorities": {
+        "normal": "Normal",
+        "high": "High",
+        "critical": "Critical"
+      },
+      "additionalOptions": "Additional Options",
+      "requireApproval": "Require Approval",
+      "confidentialDocument": "Confidential Document",
+      "notifyTeam": "Notify Team"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "preview": "Preview",
+      "save": "Save"
+    },
+    "quickCreate": {
+      "title": "Quick Creation",
+      "newInvoice": "New Invoice",
+      "newContract": "New Contract",
+      "newReport": "New Report",
+      "memo": "Memo"
+    }
+  },
+  "skrzynkaOperatora": {
+    "title": "Operator's Inbox",
+    "subtitle": "System messages and tasks – year 2025",
+    "tabs": {
+      "messages": "Messages",
+      "tasks": "Tasks",
+      "notifications": "Notifications"
+    },
+    "messages": {
+      "filter": {
+        "allTypes": "All Types",
+        "system": "System",
+        "users": "Users"
+      },
+      "newMessageButton": "New Message",
+      "list": {
+        "systemFailureUrgent": "System Failure - Urgent!",
+        "erpDowntime": "ERP will be unavailable 15.04.2025, 22:00–02:00",
+        "systemAdmin": "System Administrator",
+        "dataVerificationRequest": "Data verification request",
+        "checkClientXYZ": "Check data for client XYZ S.A.",
+        "annaNowak": "Anna Nowak"
+      },
+      "newBadge": "New"
+    },
+    "tasks": {
+      "table": {
+        "task": "Task",
+        "priority": "Priority",
+        "deadline": "Deadline",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "list": {
+        "verifyContractorData": "Verify contractor data",
+        "documentUpdate": "Documentation update"
+      },
+      "priorities": {
+        "high": "High",
+        "normal": "Normal"
+      },
+      "statuses": {
+        "inProgress": "In Progress",
+        "new": "New"
+      },
+      "actions": {
+        "complete": "Complete",
+        "start": "Start"
+      }
+    },
+    "notifications": {
+      "newSystemVersion": "New system version 2.5 available from 01.04.2025",
+      "detailsButton": "Details",
+      "ticketAssigned": "Ticket #{{ticketId}} assigned to you",
+      "newUserApproval": "New user awaiting approval"
+    },
+    "summary": {
+      "unreadMessages": "Unread messages",
+      "unresolvedTasks": "Unresolved tasks"
+    }
+  },
+  "skrzynkaPocztowa": {
+    "title": "Mailbox",
+    "subtitle": "Message management system – year 2025",
+    "tabs": {
+      "inbox": "Inbox",
+      "sent": "Sent",
+      "newMessage": "New Message"
+    },
+    "inbox": {
+      "refreshButton": "Refresh",
+      "filter": {
+        "all": "All",
+        "unread": "Unread",
+        "flagged": "Flagged"
+      },
+      "searchPlaceholder": "Search messages...",
+      "messages": {
+        "orderConfirmation": "Order Confirmation #2456",
+        "salesDepartment": "Sales Department",
+        "deliveryTermsChange": "Delivery Terms Change",
+        "logisticsDepartment": "Logistics Department"
+      },
+      "newBadge": "New"
+    },
+    "sent": {
+      "table": {
+        "recipient": "Recipient",
+        "subject": "Subject",
+        "date": "Date",
+        "status": "Status"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "sent": "Sent"
+      },
+      "subjects": {
+        "offerInquiry": "Offer Inquiry",
+        "paymentConfirmation": "Payment Confirmation"
+      }
+    },
+    "newMessage": {
+      "recipientLabel": "Recipient",
+      "recipientPlaceholder": "e.g., jan@company.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Message subject",
+      "messageContentLabel": "Message content",
+      "attachmentLabel": "Attachment",
+      "cancelButton": "Cancel",
+      "sendButton": "Send Message"
+    },
+    "summary": {
+      "unreadMessages": "Unread",
+      "messagesCount": "messages",
+      "systemVersion": "System version"
+    }
+  },
+  "windykacjaSchematy": {
+    "title": "Debt Collection Schemes",
+    "subtitle": "Managing debt collection processes – year 2025",
+    "tabs": {
+      "listSchemes": "List of Schemes",
+      "newScheme": "New Scheme"
+    },
+    "list": {
+      "newSchemeButton": "New Scheme",
+      "importButton": "Import",
+      "searchPlaceholder": "Search schemes...",
+      "standardProcessTitle": "Standard Debt Collection Process",
+      "table": {
+        "step": "Step",
+        "action": "Action",
+        "deadline": "Deadline",
+        "status": "Status",
+        "actions": "Actions",
+        "sendReminder": "Send Reminder",
+        "days": "days",
+        "activeStatus": "Active",
+        "recoveryCall": "Debt Collection Call"
+      }
+    },
+    "newScheme": {
+      "schemeNameLabel": "Scheme Name*",
+      "schemeNamePlaceholder": "e.g., Standard Collection",
+      "clientTypeLabel": "Client Type*",
+      "clientTypeStandard": "Standard",
+      "clientTypeVIP": "VIP",
+      "clientTypeCorporate": "Corporate",
+      "stepsInSchemeTitle": "Steps in Scheme",
+      "step1Title": "Send Reminder",
+      "actionTypeLabel": "Action Type",
+      "actionTypeEmail": "Email",
+      "actionTypeSMS": "SMS",
+      "actionTypeList": "Letter",
+      "deleteStepButton": "Delete Step",
+      "addStepButton": "Add Step",
+      "cancelButton": "Cancel",
+      "saveSchemeButton": "Save Scheme"
+    },
+    "summary": {
+      "activeSchemes": "Active Schemes",
+      "lastModified": "Last Modified"
+    }
+  },
+  "windykacjaHistoriaZdarzen": {
+    "title": "Debt Collection Event History",
+    "subtitle": "Process overview and management – year 2025",
+    "filter": {
+      "clientNumber": "Client Number",
+      "clientNumberPlaceholder": "e.g., KLT/2025/001",
+      "dateFrom": "Date from",
+      "dateTo": "Date to",
+      "status": "Status",
+      "statuses": {
+        "all": "All",
+        "active": "Active",
+        "completed": "Completed"
+      },
+      "filterButton": "Filter",
+      "clearButton": "Clear"
+    },
+    "summary": {
+      "title": "Debt Collection Summary – Q1 2025",
+      "totalDebt": "Total debt value",
+      "activeCases": "Active cases",
+      "averageDelay": "Average delay",
+      "days": "days"
+    },
+    "table": {
+      "headers": {
+        "eventDate": "Event Date",
+        "client": "Client",
+        "type": "Type",
+        "amount": "Amount",
+        "status": "Status",
+        "responsible": "Responsible"
+      },
+      "types": {
+        "paymentReminder": "Payment Reminder",
+        "debtCall": "Debt Collection Call",
+        "reminderEmail": "Reminder Email"
+      },
+      "statuses": {
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "delayed": "Delayed"
+      },
+      "responsible": {
+        "annaKowalska": "Anna Kowalska",
+        "janNowak": "Jan Nowak",
+        "marekWisniewski": "Marek Wisniewski"
+      }
+    },
+    "actions": {
+      "exportCSV": "Export CSV",
+      "printReport": "Print Report",
+      "newEvent": "New Event"
+    }
+  },
+  "ankietyAnkietowanie": {
+    "title": "Surveys and Polls",
+    "subtitle": "CRM module / internal research – year 2025",
+    "filter": {
+      "keyword": "Keyword",
+      "keywordPlaceholder": "e.g. satisfaction, training",
+      "createdFrom": "Created from",
+      "status": "Status"
+    },
+    "status": {
+      "all": "All",
+      "active": "Active",
+      "inPreparation": "In preparation"
+    },
+    "buttons": {
+      "filter": "Filter",
+      "preview": "Preview",
+      "edit": "Edit",
+      "exportCSV": "Export CSV",
+      "printReport": "Print report",
+      "newSurvey": "New survey"
+    },
+    "summary": {
+      "title": "Surveys summary – Q1 2025",
+      "totalSurveys": "Total surveys",
+      "activeNow": "Active now",
+      "avgResponses": "Average responses"
+    },
+    "table": {
+      "title": "Title",
+      "created": "Created",
+      "deadline": "Deadline",
+      "status": "Status",
+      "responses": "Responses",
+      "actions": "Actions"
+    },
+    "example": {
+      "erpSurvey": "ERP system satisfaction",
+      "trainingSurvey": "2025 training evaluation",
+      "customerSurvey": "Customer needs research"
+    }
+  },
+  "ankietyWzorce": {
+    "title": "Survey Templates",
+    "subtitle": "Managing question and form templates – CRM 2025",
+    "tabs": {
+      "templates": "Templates list",
+      "newTemplate": "New template",
+      "statistics": "Statistics"
+    },
+    "buttons": {
+      "newTemplate": "New template",
+      "import": "Import",
+      "preview": "Preview",
+      "use": "Use",
+      "delete": "Delete",
+      "addQuestion": "Add question",
+      "fromLibrary": "From library",
+      "cancel": "Cancel",
+      "saveTemplate": "Save template",
+      "deleteQuestion": "Delete question"
+    },
+    "search": {
+      "placeholder": "Search templates..."
+    },
+    "table": {
+      "name": "Name",
+      "category": "Category",
+      "questions": "Questions",
+      "date": "Date",
+      "status": "Status",
+      "actions": "Actions",
+      "template": "Template",
+      "usageCount": "Usage count",
+      "lastUsed": "Last used"
+    },
+    "status": {
+      "active": "Active",
+      "draft": "Draft"
+    },
+    "categories": {
+      "marketResearch": "Market research",
+      "hr": "HR",
+      "customerService": "Customer service"
+    },
+    "example": {
+      "customerSatisfaction": "Customer satisfaction survey",
+      "trainingEvaluation": "Training evaluation"
+    },
+    "form": {
+      "templateName": "Template name",
+      "namePlaceholder": "Enter name...",
+      "category": "Category",
+      "description": "Description",
+      "question": "Question",
+      "questionType": "Question type"
+    },
+    "questionTypes": {
+      "scale": "Scale 1–5",
+      "yesNo": "Yes/No",
+      "text": "Text answer"
+    },
+    "statistics": {
+      "usage": "Templates usage"
+    },
+    "summary": {
+      "templatesCount": "Available templates count",
+      "mostUsed": "Most used",
+      "uses": "uses"
+    }
+  },
+  "ankietyPytania": {
+    "title": "Survey Questions Database",
+    "subtitle": "Managing form questions in CRM department – 2025",
+    "tabs": {
+      "allQuestions": "All questions",
+      "newQuestion": "New question",
+      "statistics": "Statistics"
+    },
+    "buttons": {
+      "newQuestion": "New question",
+      "edit": "Edit",
+      "delete": "Delete",
+      "addOption": "Add option",
+      "cancel": "Cancel",
+      "saveQuestion": "Save question"
+    },
+    "search": {
+      "placeholder": "Search questions..."
+    },
+    "table": {
+      "questionText": "Question text",
+      "type": "Type",
+      "group": "Group",
+      "addedDate": "Added date",
+      "status": "Status",
+      "actions": "Actions",
+      "question": "Question",
+      "surveys": "Surveys",
+      "lastUsed": "Last used"
+    },
+    "status": {
+      "active": "Active",
+      "archived": "Archived"
+    },
+    "questionTypes": {
+      "ratingScale": "Rating scale",
+      "multipleChoice": "Multiple choice",
+      "singleChoice": "Single choice",
+      "textAnswer": "Text answer"
+    },
+    "groups": {
+      "none": "None",
+      "satisfaction": "Satisfaction",
+      "preferences": "Preferences",
+      "demographics": "Demographics"
+    },
+    "example": {
+      "productRating": "How would you rate our product on a scale of 1–5?",
+      "importantFeatures": "Which features are most important to you?"
+    },
+    "form": {
+      "questionText": "Question text",
+      "questionPlaceholder": "Enter question text...",
+      "questionType": "Question type",
+      "selectPlaceholder": "Select...",
+      "questionGroup": "Question group",
+      "answerOptions": "Answer options",
+      "option": "Option",
+      "requiredQuestion": "Required question"
+    },
+    "statistics": {
+      "usageStats": "Question usage statistics"
+    },
+    "summary": {
+      "activeQuestions": "Active questions count",
+      "lastAdded": "Last added"
+    }
+  },
+  "ankietySzablony": {
+    "title": "Response Templates",
+    "subtitle": "Managing predefined question responses (2025)",
+    "tabs": {
+      "templates": "Templates list",
+      "newTemplate": "New template",
+      "statistics": "Statistics"
+    },
+    "buttons": {
+      "newTemplate": "New template",
+      "edit": "Edit",
+      "delete": "Delete",
+      "addOption": "Add option",
+      "cancel": "Cancel",
+      "saveTemplate": "Save template"
+    },
+    "search": {
+      "placeholder": "Search templates..."
+    },
+    "table": {
+      "name": "Name",
+      "type": "Type",
+      "optionsCount": "Options count",
+      "date": "Date",
+      "status": "Status",
+      "actions": "Actions",
+      "template": "Template",
+      "usageCount": "Usage count",
+      "lastUsed": "Last used"
+    },
+    "status": {
+      "active": "Active",
+      "draft": "Draft"
+    },
+    "types": {
+      "scale": "Scale",
+      "list": "List",
+      "numericScale": "Numeric scale",
+      "choiceList": "Choice list",
+      "yesNo": "Yes/No",
+      "verbalRating": "Verbal rating"
+    },
+    "example": {
+      "satisfactionScale": "Satisfaction scale 1–5",
+      "qualityRating": "Quality rating",
+      "veryDissatisfied": "Very dissatisfied",
+      "satisfied": "Satisfied"
+    },
+    "form": {
+      "templateName": "Template name",
+      "responseType": "Response type",
+      "description": "Description",
+      "responseOptions": "Response options",
+      "option": "Option",
+      "setAsDefault": "Set as default"
+    },
+    "statistics": {
+      "usage": "Templates usage"
+    },
+    "summary": {
+      "activeTemplates": "Active templates count",
+      "lastAdded": "Last added"
+    }
+  },
+  "ankietyGrupyZapytan": {
+    "title": "Survey Question Groups",
+    "subtitle": "Management of question sets used in surveys",
+    "tabs": {
+      "list": "Group List",
+      "newGroup": "New Group",
+      "statistics": "Statistics"
+    },
+    "buttons": {
+      "newGroup": "New Group",
+      "import": "Import",
+      "preview": "Preview",
+      "use": "Use",
+      "delete": "Delete",
+      "addQuestion": "Add Question",
+      "fromLibrary": "From Library",
+      "cancel": "Cancel",
+      "saveGroup": "Save Group",
+      "deleteQuestion": "Delete Question"
+    },
+    "search": {
+      "placeholder": "Search groups..."
+    },
+    "table": {
+      "groupName": "Group Name",
+      "category": "Category",
+      "questions": "Questions",
+      "created": "Created",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "draft": "Draft"
+    },
+    "categories": {
+      "customerService": "Customer Service",
+      "management": "Management",
+      "marketResearch": "Market Research",
+      "other": "Other"
+    },
+    "example": {
+      "customerSatisfaction": "Customer Satisfaction Group",
+      "hrEvaluation": "Internal HR Evaluation",
+      "question1": "How do you rate the service speed?"
+    },
+    "form": {
+      "groupName": "Group Name",
+      "groupNamePlaceholder": "Enter group name",
+      "category": "Category",
+      "description": "Group Description",
+      "questionsInGroup": "Questions in Group",
+      "questionType": "Question Type"
+    },
+    "questionTypes": {
+      "scale": "Scale 1-5",
+      "yesNo": "Yes/No",
+      "openText": "Open Text"
+    },
+    "statistics": {
+      "title": "Group Usage Statistics",
+      "group": "Group",
+      "usage": "Usage",
+      "lastUsed": "Last Used"
+    },
+    "summary": {
+      "totalGroups": "Total Groups",
+      "mostUsed": "Most Used",
+      "uses": "uses"
+    }
+  },
+  "wiecejFunkcji": {
+    "title": "Advanced Features",
+    "subtitle": "Management of additional system functionalities and reports",
+    "tabs": {
+      "reports": "Reports",
+      "schedule": "Schedule"
+    },
+    "reports": {
+      "type": "Report type",
+      "dateFrom": "Date from",
+      "dateTo": "Date to",
+      "reportName": "Report name",
+      "generationDate": "Generation date",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "reportTypes": {
+      "sales": "Sales report",
+      "customerAnalysis": "Customer analysis",
+      "productivity": "Productivity statistics"
+    },
+    "schedule": {
+      "filters": "Schedule filters",
+      "dateRange": "Date range",
+      "next30Days": "Next 30 days",
+      "may2025": "May 2025",
+      "custom": "Custom",
+      "eventType": "Event type",
+      "all": "All",
+      "meetings": "Meetings",
+      "tasks": "Tasks",
+      "priority": "Priority",
+      "high": "High",
+      "medium": "Medium",
+      "upcomingEvents": "Upcoming events",
+      "meeting": "Meeting",
+      "task": "Task"
+    },
+    "status": {
+      "ready": "Ready",
+      "inProgress": "In progress",
+      "pending": "Pending"
+    },
+    "examples": {
+      "salesQ1": "Sales report Q1 2025",
+      "vipAnalysis": "VIP customer analysis",
+      "clientPresentation": "Client presentation",
+      "monthEnd": "Month end closing"
+    },
+    "buttons": {
+      "download": "Download",
+      "generateReport": "Generate report",
+      "exportData": "Export data",
+      "saveSettings": "Save settings"
+    }
+  },
+  "faktury": {
+    "title": "Sales Invoices List",
+    "subtitle": "Browse and filter issued invoices",
+    "tabs": {
+      "search": "Search",
+      "list": "Invoice List"
+    },
+    "search": {
+      "title": "Sales Invoices Search",
+      "invoiceNumber": "Invoice Number",
+      "invoiceNumberPlaceholder": "Enter invoice number",
+      "contractor": "Contractor",
+      "contractorPlaceholder": "Contractor name",
+      "dateFrom": "Date from",
+      "dateTo": "Date to",
+      "paymentStatus": "Payment status",
+      "all": "All",
+      "placeholderList": "Search in invoice list..."
+    },
+    "buttons": {
+      "clear": "Clear",
+      "filter": "Filter",
+      "newInvoice": "New Invoice",
+      "proformaList": "Proforma List"
+    },
+    "table": {
+      "number": "Number",
+      "issueDate": "Issue Date",
+      "contractor": "Contractor",
+      "grossAmount": "Gross Amount",
+      "status": "Status"
+    },
+    "status": {
+      "paid": "Paid",
+      "unpaid": "Unpaid"
+    },
+    "example": {
+      "companyABC": "ABC Ltd.",
+      "companyXYZ": "XYZ Inc.",
+      "janNowak": "John Nowak"
+    }
+  },
+  "nowaFaktura": {
+    "title": "New Sales Invoice",
+    "form": {
+      "contractor": "Contractor",
+      "contractorPlaceholder": "Enter name or VAT ID",
+      "issueDate": "Issue Date",
+      "dueDate": "Due Date",
+      "paymentMethod": "Payment Method",
+      "invoiceType": "Invoice Type"
+    },
+    "dueOptions": {
+      "7": "7 days",
+      "14": "14 days",
+      "30": "30 days"
+    },
+    "paymentOptions": {
+      "transfer": "Transfer",
+      "cash": "Cash",
+      "card": "Card"
+    },
+    "invoiceTypes": {
+      "vat": "VAT Invoice",
+      "proforma": "Proforma Invoice"
+    },
+    "items": {
+      "header": "Invoice Items",
+      "name": "Item Name/Service",
+      "qty": "Qty",
+      "unit": "Unit",
+      "netPrice": "Net Price",
+      "vat": "VAT",
+      "netValue": "Net Value",
+      "actions": "Actions",
+      "add": "Add Item",
+      "remove": "Remove"
+    },
+    "buttons": {
+      "backVAT": "VAT Invoice List",
+      "backProforma": "Proforma Invoice List",
+      "save": "Save Invoice"
+    }
+  }
+}

@@ -1,12 +1,9 @@
-﻿// src/layouts/Layout.jsx
-
-import React from 'react';
+﻿import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Footer from "../components/Footer";
 import GlownyNavbar from '../components/GlownyNavbar';
 import { Outlet, Link } from 'react-router-dom';
@@ -18,20 +15,23 @@ import { navbarComponents } from '../components/navbars/navbarConfig';
 // =============================
 import useTheme from '../components/ThemeManager';
 import useLanguage from '../components/LanguageManager';
+import { useTranslation } from 'react-i18next';
 
 export function Layout() {
     const routeGroup = useRouteGroup();
     const NavbarComponent = navbarComponents[routeGroup];
 
-    // =============================
-    // Hook do obsługi trybu jasny / ciemny
-    // =============================
+    // tryb jasny / ciemny
     const { theme, toggleTheme } = useTheme();
 
-    // =============================
-    // Hook do obsługi języka
-    // =============================
+    // język
     const { language, changeLanguage } = useLanguage();
+    const { t } = useTranslation();
+
+    // funkcja przełączająca język
+    const toggleLanguage = () => {
+        changeLanguage(language === 'pl' ? 'en' : 'pl');
+    };
 
     return (
         <div className="app d-flex flex-column min-vh-100">
@@ -43,50 +43,66 @@ export function Layout() {
                         <Image src="/image/1.png" className="logo" />
                     </Navbar.Brand>
 
-                    {/* Przycisk do rozwijania navbaru na urządzeniach mobilnych */}
+                    {/* Hamburger */}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        {/* Główny pasek nawigacyjny */}
+
+                        {/* Główny navbar */}
                         <GlownyNavbar />
 
-                        {/* Formularz wyszukiwania */}
+                        {/* Wyszukiwarka */}
                         <Form className="d-flex mt-2 mt-lg-0 ms-lg-2 me-2">
                             <Form.Control
                                 type="search"
-                                placeholder={language === 'pl' ? 'Szukaj...' : 'Search...'}
+                                placeholder={t('layout.search')}
                                 className="me-2"
-                                aria-label="Search"
+                                aria-label={t('layout.search')}
                             />
                             <Button variant="outline-success">
-                                {language === 'pl' ? 'Szukaj' : 'Search'}
+                                {t('layout.search')}
                             </Button>
                         </Form>
 
-                        {/* Przełącznik trybu jasny/ciemny */}
-                        <Button variant="outline-secondary" onClick={toggleTheme} className="me-2">
-                            {theme === 'light' ? '🌙 Tryb ciemny' : '☀️ Tryb jasny'}
+                        {/* Przełącznik jasny/ciemny ikonką */}
+                        <Button
+                            variant="outline-secondary"
+                            onClick={toggleTheme}
+                            aria-label={
+                                theme === 'light' ? t('layout.darkMode') : t('layout.lightMode')
+                            }
+                            className="me-2"
+                        >
+                            {theme === 'light' ? (
+                                <i className="bi bi-moon-fill" />
+                            ) : (
+                                <i className="bi bi-sun-fill" />
+                            )}
                         </Button>
 
-                        {/* Przełącznik języka */}
-                        <NavDropdown title={language === 'pl' ? 'Język' : 'Language'} id="language-selector">
-                            <NavDropdown.Item onClick={() => changeLanguage('pl')}>Polski</NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => changeLanguage('en')}>English</NavDropdown.Item>
-                        </NavDropdown>
+                        {/* Jedna ikonka do przełączania języka */}
+                        <Button
+                            variant="outline-secondary"
+                            onClick={toggleLanguage}
+                            aria-label={language === 'pl' ? 'Przełącz na angielski' : 'Switch to Polish'}
+                        >
+                            {language === 'pl' ? '🇬🇧' : '🇵🇱'}
+                        </Button>
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
-            {/* Dodatkowe paski nawigacyjne (modułowe) */}
+            {/* Modułowy navbar */}
             {NavbarComponent && <NavbarComponent />}
 
-            {/* Główna zawartość strony */}
+            {/* Zawartość */}
             <div className="main-content flex-grow-1">
                 <Container fluid className="py-3">
-                    <Outlet /> {/* Zagnieżdżona zawartość w zależności od routingu */}
+                    <Outlet />
                 </Container>
             </div>
 
-            {/* Stopka strony */}
+            {/* Stopka */}
             <Footer />
         </div>
     );

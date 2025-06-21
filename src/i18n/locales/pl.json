@@ -1,0 +1,2844 @@
+﻿{
+  "system": {
+    "nazwa": "System ERP"
+  },
+  "start": {
+    "nazwa": "Start",
+    "stronaGlowna": "Strona główna",
+    "informacjeOFirmie": "Informacje o firmie",
+    "zmianaFirmy": "Zmiana firmy",
+    "konfiguracja": "Konfiguracja",
+    "konfiguracjaSystemu": "Konfiguracja systemu",
+    "odswiezKonfiguracje": "Odśwież konfigurację",
+    "wlaczNoweFunkcje": "Włącz nowe funkcje",
+    "aktualnosci": "Aktualności",
+    "nowosciWersji": "Nowości w wersji",
+    "uzytkownik": "Użytkownik",
+    "logowanie": "Logowanie",
+    "koniecPracy": "Koniec pracy"
+  },
+  "ogolne": {
+    "nazwa": "Ogólne",
+    "kontrahenci": "Kontrahenci",
+    "listaKontrahentow": "Lista kontrahentów",
+    "nowyKontrahent": "Nowy kontrahent",
+    "grupyKontrahentow": "Grupy kontrahentów",
+    "kategorie": "Kategorie",
+    "towary": "Towary",
+    "nowyTowar": "Nowy towar",
+    "atrybuty": "Atrybuty",
+    "grupyTowarowe": "Grupy towarowe",
+    "cennikiIRabaty": "Cenniki i rabaty",
+    "cennik": "Cennik",
+    "rabaty": "Rabaty",
+    "pracownicy": "Pracownicy",
+    "pelnomocnictwa": "Pełnomocnictwa",
+    "daneOsobowe": "Dane osobowe",
+    "komunikacja": "Komunikacja",
+    "przesylki": "Przesyłki kurierskie",
+    "smsy": "Wiadomości SMS",
+    "zakupSms": "Zakup paczki SMS",
+    "raporty": "Raporty",
+    "wymiary": "Wymiary opisu analitycznego",
+    "slowniki": "Słowniki",
+    "waluty": "Waluty"
+  },
+  "crm": {
+    "nazwa": "CRM",
+    "kontakty": "Kontakty",
+    "terminarz": "Terminarz",
+    "fakturyCykliczne": "Faktury cykliczne",
+    "ofertyHandlowe": "Oferty handlowe",
+    "archiwumWydrukow": "Archiwum wydruków",
+    "bibliotekaDokumentow": "Biblioteka dokumentów",
+    "nowyDokument": "Nowy dokument",
+    "skrzynkaOperatora": "Skrzynka operatora",
+    "skrzynkaPocztowa": "Skrzynka pocztowa",
+    "windykacjaSchematy": "Windykacja - schematy",
+    "windykacjaHistoriaZdarzen": "Historia zdarzeń",
+    "ankietyAnkietowanie": "Ankiety",
+    "ankietyWzorceAnkiet": "Wzorce ankiet",
+    "ankietyPytania": "Pytania",
+    "ankietySzablonyOdpowiedzi": "Szablony odpowiedzi",
+    "ankietyGrupyZapytan": "Grupy zapytań",
+    "wiecejFunkcji": "Więcej funkcji",
+    "hrmTs": "HRM TS"
+  },
+  "handel": {
+    "nazwa": "Handel",
+    "faktury": "Faktury",
+    "nowaFaktura": "Nowa faktura",
+    "paragony": "Paragony",
+    "nowyParagon": "Nowy paragon",
+    "rezerwacjeOdbiorcy": "Rezerwacje odbiorcy",
+    "fakturyProforma": "Faktury proforma",
+    "sprzedarzDedykowana": "Sprzedaż dedykowana",
+    "fakturyZakupu": "Faktury zakupu",
+    "zleceniaUDostawcy": "Zlecenia u dostawcy",
+    "zasoby": "Zasoby",
+    "raportBrakow": "Raport braków",
+    "wydaniaZewnetrzne": "Wydania zewnętrzne",
+    "przyjeciaZewnetrzne": "Przyjęcia zewnętrzne",
+    "zlecenia": "Zlecenia",
+    "zleceniaCykliczne": "Zlecenia cykliczne",
+    "urzadzniaServis": "Urządzenia serwis",
+    "rodzajeUrzadzenServis": "Rodzaje urządzeń serwis",
+    "operacjeMagazynowe": "Operacje magazynowe"
+  },
+  "kasaBank": {
+    "nazwa": "Kasa/Bank",
+    "rejestryKasowoBankowe": "Rejestry kasowo-bankowe",
+    "raportyKasowoBankowe": "Raporty kasowo-bankowe",
+    "zapisyKasowoBankowe": "Zapisy kasowo-bankowe",
+    "preliminarzPlatnosci": "Preliminarz płatności",
+    "magazynWalut": "Magazyn walut",
+    "rozliczeniaPodmiotu": "Rozliczenia podmiotu",
+    "dokumentyNierozliczone": "Dokumenty nierozliczone",
+    "dokumentyRozliczone": "Dokumenty rozliczone",
+    "dokumentyKompensat": "Dokumenty kompensat",
+    "rozniceKursowe": "Różnice kursowe",
+    "delegacje": "Delegacje",
+    "wyslijDane": "Wyślij dane",
+    "odbierzDane": "Odbierz dane",
+    "historiaWymiany": "Historia wymiany",
+    "klienciBiura": "Klienci biura"
+  },
+  "rejestryVat": {
+    "nazwa": "Rejestry VAT",
+    "rejestryVat": "Rejestry VAT",
+    "strukturaZakupow": "Struktura zakupów",
+    "ewidencjaDodatkowa": "Ewidencja dodatkowa",
+    "ewidencjaKasowegoPit": "Ewidencja kasowego PIT",
+    "deklaracjePlikiJPK_V7": "Deklaracje pliki JPK_V7",
+    "deklaracjeVatUe": "Deklaracje VAT UE",
+    "deklaracjeVat_8": "Deklaracje VAT-8",
+    "deklaracjeVat_9M": "Deklaracje VAT-9M",
+    "deklaracjeInne": "Deklaracje inne",
+    "wiadomosciOdKlientow": "Wiadomości od klientów"
+  },
+  "ksiegowosc": {
+    "nazwa": "Księgowość",
+    "zapisyKPiR": "Zapisy KPiR",
+    "spisZNatury": "Spis z natury",
+    "deklaracjePIT": "Deklaracje PIT",
+    "deklaracjeCIT": "Deklaracje CIT",
+    "samochody": "Samochody",
+    "dokumentyZrodlowe": "Dokumenty źródłowe",
+    "ewidencjaSrodkowTrwalych": "Ewidencja środków trwałych",
+    "dokumentySrodowTrwalych": "Dokumenty środków trwałych",
+    "ewidencjaWyposarzenia": "Ewidencja wyposażenia",
+    "inwentaryzacja": "Inwentaryzacja"
+  },
+  "jpk": {
+    "nazwa": "JPK",
+    "deklaracjePlikiJPK_V7": "Deklaracje pliki JPK_V7",
+    "deklaracjeVat_9M": "Deklaracje VAT-9M",
+    "deklaracjeVatUe": "Deklaracje VAT UE",
+    "deklaracjeVat_8": "Deklaracje VAT-8",
+    "importDoRejetruVat": "Import do rejestru VAT",
+    "informacjeJpk": "Informacje JPK"
+  },
+  "placeKadry": {
+    "nazwa": "Płace i Kadry",
+    "kadry": "Kadry",
+    "nowyPracownik": "Nowy pracownik",
+    "listyPlac": "Listy płac",
+    "wtplatyPracownikow": "Wypłaty pracowników",
+    "zusPlikiKedu": "ZUS pliki KEDU",
+    "deklarecjeZus": "Deklaracje ZUS",
+    "deklarazjeRoczneIwa": "Deklaracje roczne IWA",
+    "deklaracjeRoczneZswa": "Deklaracje roczne ZSWA",
+    "zalacznikiNaPit4r": "Załączniki na PIT-4R",
+    "podatekNaPit8ar": "Podatek na PIT-8AR",
+    "deklaracjePitPracownikow": "Deklaracje PIT pracowników",
+    "deklaracjePfron": "Deklaracje PFRON",
+    "deklaracjePpk": "Deklaracje PPK",
+    "slowniki": "Słowniki",
+    "strukturaOrganizacyjna": "Struktura organizacyjna",
+    "kasyZapomogowoPorzyczkowePkzp": "Kasy zapomogowo-pożyczkowe PKZP",
+    "hrmTs": "HRM TS"
+  },
+  "widok": {
+    "nazwa": "Widok",
+    "kompozycjeWidoku": "Kompozycje widoku",
+    "czcinki": "Czcionki",
+    "ustawieniaOkien": "Ustawienia okien",
+    "ustawieniaOkienImport": "Import ustawień",
+    "ustawieniaOkienEksport": "Eksport ustawień",
+    "ustawieniaOgolne": "Ustawienia ogólne"
+  },
+  "pomoc": {
+    "nazwa": "Pomoc",
+    "pomocJakZaczac": "Jak zacząć",
+    "pomocFilmyInstruktarzowe": "Filmy instruktażowe",
+    "pomocFaq": "FAQ",
+    "pomocZdalna": "Pomoc zdalna",
+    "pomocSystemObslugiZdarzen": "System obsługi zdarzeń",
+    "pomocTwojaIndywidaStrona": "Twoja indywidualna strona",
+    "rejestracjaProgramu": "Rejestracja programu",
+    "oprogramie": "O programie"
+  },
+  "ui": {
+    "przejdz": "Przejdź",
+    "szybkiDostep": "Szybki dostęp",
+    "nowe": "Nowe",
+    "ulepszone": "Ulepszone",
+    "szybciej": "Szybciej"
+  },
+  "informacjeFirmy": {
+    "tytul": "Informacje o firmie",
+    "podtytul": "Dane podstawowe i statystyki na rok 2025",
+    "danePodstawowe": "Dane podstawowe",
+    "daneRejestrowe": "Dane rejestrowe",
+    "nazwa": "Nazwa",
+    "przykladowaNazwa": "TechSolutions Sp. z o.o.",
+    "nip": "NIP",
+    "przykladowyNip": "123-456-78-90",
+    "regon": "REGON",
+    "przykladowyRegon": "123456789",
+    "daneKontaktowe": "Dane kontaktowe",
+    "adres": "Adres",
+    "przykladowyAdres": "ul. Przykładowa 123\n00-001 Warszawa",
+    "telefon": "Telefon",
+    "przykladowyTelefon": "+48 123 456 789",
+    "email": "Email",
+    "przykladowyEmail": "biuro@techsolutions.pl",
+    "statystyki": "Statystyki",
+    "wskazniki2025": "Podstawowe wskaźniki 2025",
+    "wskaznik": "Wskaźnik",
+    "wartosc": "Wartość",
+    "status": "Status",
+    "przychodyQ1": "Przychody Q1",
+    "wartoscPrzychodow": "1 245 678 PLN",
+    "wzrostRR": "+15% r/r",
+    "liczbaKlientow": "Liczba klientów",
+    "wartoscKlientow": "128",
+    "statusStabilny": "Stabilny",
+    "zatrudnieni": "Zatrudnieni",
+    "wartoscZatrudnionych": "42",
+    "statusRekrutacja": "Rekrutacja",
+    "struktura": "Struktura",
+    "organizacjaFirmy": "Organizacja firmy",
+    "dzialIT": "Dział IT",
+    "pracownicyIT": "12 pracowników",
+    "budzetIT": "Budżet 2025: 1.2M PLN",
+    "dzialSprzedazy": "Dział Sprzedaży",
+    "pracownicySprzedaz": "8 pracowników",
+    "celSprzedaz": "Cel 2025: 5M PLN",
+    "dzialHR": "Dział HR",
+    "pracownicyHR": "5 pracowników",
+    "planRekrutacji": "Plan rekrutacji: +8 w 2025",
+    "planowaneZmianyTytul": "Planowane zmiany w 2025",
+    "planowaneZmianyOpis": "Rozbudowa działu R&D, wprowadzenie nowej linii produktowej w Q3"
+  },
+  "zmianaFirmy": {
+    "tytul": "Zmiana firmy",
+    "podtytul": "Wybierz firmę, na którą chcesz się przełączyć",
+    "aktualnaFirmaNaglowek": "Aktualnie zalogowany do",
+    "aktualnaFirma": "TechSolutions Sp. z o.o. (od 15.05.2025)",
+    "dostepneFirmy": "Dostępne firmy",
+    "nazwaFirmy": "Nazwa firmy",
+    "nip": "NIP",
+    "ostatnieLogowanie": "Ostatnie logowanie",
+    "statusAkcja": "Status / Akcja",
+    "firma1Nazwa": "TechSolutions Sp. z o.o.",
+    "firma1Nip": "123-456-78-90",
+    "firma1Logowanie": "15.05.2025 08:30",
+    "statusAktywna": "Aktywna",
+    "firma2Nazwa": "Innowacje IT SA",
+    "firma2Nip": "987-654-32-10",
+    "firma2Logowanie": "10.05.2025 14:20",
+    "firma3Nazwa": "SoftWare House",
+    "firma3Nip": "555-666-77-88",
+    "firma3Logowanie": "05.04.2025 09:15",
+    "przelacz": "Przełącz",
+    "dodajNowaFirme": "Dodaj nową firmę",
+    "wpiszNazweFirmy": "Wpisz nazwę firmy",
+    "wpiszNip": "Wpisz NIP",
+    "typFirmy": "Typ firmy",
+    "wybierzTypFirmy": "Wybierz typ firmy...",
+    "spolkaZOO": "Spółka z o.o.",
+    "spolkaAkcyjna": "Spółka akcyjna",
+    "dzialalnoscGospodarcza": "Działalność gospodarcza",
+    "dodajFirme": "Dodaj firmę",
+    "anuluj": "Anuluj",
+    "zapiszZmiany": "Zapisz zmiany",
+    "uwagaZmianaFirmy": "Uwaga: Zmiana firmy może wymagać ponownego zalogowania do systemu."
+  },
+  "konfiguracja": {
+    "tytul": "Konfiguracja systemu",
+    "podtytul": "Ustawienia główne i parametry (2025)",
+    "podstawowe": "Podstawowe",
+    "ustawieniaSystemowe": "Ustawienia systemowe",
+    "nazwaSystemu": "Nazwa systemu",
+    "domyslnaNazwaSystemu": "ERP FIRMA",
+    "domyslnaWaluta": "Domyślna waluta",
+    "domyslnyJezyk": "Domyślny język",
+    "jezykPolski": "Polski",
+    "jezykAngielski": "Angielski",
+    "jezykNiemiecki": "Niemiecki",
+    "zapiszZmiany": "Zapisz zmiany",
+    "fiskalne": "Fiskalne",
+    "konfiguracjaJPK": "Konfiguracja JPK",
+    "ustawieniaJPKInfo": "Ustawienia dotyczące plików JPK na 2025 rok",
+    "certyfikatPodpisu": "Certyfikat podpisu",
+    "przykladowyCertyfikat": "CERT_2025_12345678",
+    "formatDaty": "Format daty",
+    "typJPK": "Typ JPK",
+    "zapiszUstawienia": "Zapisz ustawienia",
+    "integracje": "Integracje",
+    "integracjeZewnetrzne": "Integracje zewnętrzne",
+    "usluga": "Usługa",
+    "status": "Status",
+    "akcja": "Akcja",
+    "apiBankowe": "API Bankowe 2025",
+    "statusAktywna": "Aktywna",
+    "konfiguruj": "Konfiguruj",
+    "systemKsiegowy": "System księgowy",
+    "statusNieaktywna": "Nieaktywna",
+    "aktywuj": "Aktywuj",
+    "platnosciOnline": "Płatności online",
+    "statusBlad": "Błąd",
+    "polaczPonownie": "Połącz ponownie",
+    "komunikatPonowneLogowanie": "Wszystkie zmiany wymagają ponownego zalogowania (2025)"
+  },
+  "odswierzKonfiguracje": {
+    "title": "Odśwież konfigurację systemu",
+    "subtitle": "Wersja 3.2.0 | 15.05.2025",
+    "status": "System wymaga odświeżenia konfiguracji",
+    "changesHeader": "Wykryte zmiany konfiguracji:",
+    "change1": "Nowe ustawienia JPK 2025",
+    "badge1": "Wymaga akceptacji",
+    "change2": "Zaktualizowane stawki VAT",
+    "badge2": "Gotowe",
+    "change3": "Integracja z API bankowym",
+    "badge3": "Brak konfiguracji",
+    "change4": "Kopia zapasowa ustawień",
+    "badge4": "Wykonana",
+    "progressTitle": "Postęp odświeżania:",
+    "lastUpdate": "Ostatnia aktualizacja: 15.05.2025 14:30",
+    "refreshNow": "Odśwież teraz",
+    "scheduleLater": "Zaplanuj na później",
+    "finalWarning": "Proces odświeżania może zająć kilka minut i wymagać restartu systemu"
+  },
+  "wlaczNoweFunkcje": {
+    "title": "Nowe funkcje systemu",
+    "subtitle": "Wersja 3.2.0 | Maj 2025",
+    "featuresHeader": "Funkcje do aktywacji",
+    "feature1": {
+      "title": "Panel analityczny 2025",
+      "desc": "Nowe wizualizacje danych"
+    },
+    "feature2": {
+      "title": "Integracja bankowa",
+      "desc": "Standard API 2025"
+    },
+    "feature3": {
+      "title": "Powiadomienia push",
+      "desc": "Automatyczne komunikaty dla użytkowników"
+    },
+    "inProgressHeader": "W przygotowaniu",
+    "inProgress": {
+      "title": "Moduł AI",
+      "desc": "Planowana premiera: Q3 2025",
+      "progress": "25%",
+      "badge": "W rozwoju"
+    },
+    "cancel": "Anuluj",
+    "save": "Zapisz zmiany",
+    "alert": "Po zapisaniu zmian system może wymagać ponownego zalogowania"
+  },
+  "nowoscWwersji": {
+    "title": "Nowości w wersji 3.2.0",
+    "subtitle": "Data wydania: 15.05.2025",
+    "changesHeader": "Najważniejsze zmiany:",
+    "change1": {
+      "icon": "bi-bar-chart-steps",
+      "title": "Nowy moduł analityczny",
+      "desc": "Zaawansowane raporty sprzedaży",
+      "badgeVariant": "success",
+      "badgeIcon": "bi-star",
+      "badgeText": "Nowe"
+    },
+    "change2": {
+      "icon": "bi-bank",
+      "title": "Integracja z API bankowym 2025",
+      "desc": "Automatyzacja płatności",
+      "badgeVariant": "primary",
+      "badgeIcon": "bi-arrow-repeat",
+      "badgeText": "Ulepszone"
+    },
+    "change3": {
+      "icon": "bi-file-earmark-bar-graph",
+      "title": "Optymalizacja JPK_V7M",
+      "desc": "Szybsze generowanie dokumentów",
+      "badgeVariant": "info",
+      "badgeIcon": "bi-rocket-takeoff",
+      "badgeText": "Usprawnione"
+    },
+    "change4": {
+      "icon": "bi-robot",
+      "title": "Asystent AI",
+      "desc": "Wsparcie w generowaniu dokumentów",
+      "badgeVariant": "warning",
+      "badgeIcon": "bi-stars",
+      "badgeText": "Beta"
+    },
+    "plannedHeader": "W przygotowaniu:",
+    "planned1": {
+      "icon": "bi-people",
+      "title": "System rekomendacji klientów",
+      "progress": "65",
+      "variant": "success",
+      "schedule": "Planowane na Q3 2025"
+    },
+    "planned2": {
+      "icon": "bi-envelope-paper",
+      "title": "Nowe powiadomienia push",
+      "progress": "40",
+      "variant": "warning",
+      "schedule": "Testy beta: 08.2025"
+    },
+    "planned3": {
+      "icon": "bi-diagram-3",
+      "title": "Panel do zarządzania zespołami",
+      "progress": "25",
+      "variant": "danger",
+      "schedule": "Planowane na Q4 2025"
+    },
+    "badges": {
+      "inProgress": "W trakcie",
+      "beta": "Wersja beta: 09.2025"
+    },
+    "actions": {
+      "details": "Zobacz szczegóły",
+      "skip": "Pomiń"
+    },
+    "footerInfo": "Więcej informacji znajdziesz w dokumentacji systemu"
+  },
+  "logowanie": {
+    "title": "Logowanie do systemu",
+    "subtitle": "Wprowadź swoje dane dostępowe",
+    "labelLogin": "Login",
+    "placeholderLogin": "Wprowadź login",
+    "labelPassword": "Hasło",
+    "placeholderPassword": "Wprowadź hasło",
+    "labelCompany": "Firma",
+    "companyOptionPlaceholder": "Wybierz firmę...",
+    "company1": "TechSolutions Sp. z o.o.",
+    "company2": "Handel24 S.A.",
+    "company3": "NetSoft Polska",
+    "rememberMe": "Zapamiętaj mnie",
+    "submit": "Zaloguj się",
+    "forgotPassword": "Przypomnij hasło",
+    "changeCompany": "Zmień firmę",
+    "versionInfo": "System ERP v3.2.0 (2025)"
+  },
+  "koniecPracy": {
+    "title": "Zakończenie pracy",
+    "subtitle": "Bezpieczne wylogowanie z systemu (15.05.2025)",
+    "warning": "Przed wylogowaniem zapoznaj się z poniższymi informacjami",
+    "unsavedHeader": "Niezapisane zmiany",
+    "table": {
+      "module": "Moduł",
+      "status": "Status"
+    },
+    "unsaved1": {
+      "module": "Dokumenty sprzedaży",
+      "status": "Zapisane"
+    },
+    "unsaved2": {
+      "module": "Edycja kontraktów",
+      "status": "Niezapisane (2)"
+    },
+    "unsaved3": {
+      "module": "Zadania CRM",
+      "status": "W trakcie"
+    },
+    "activeHeader": "Aktywne procesy",
+    "active1": {
+      "text": "Generowanie raportu miesięcznego",
+      "percent": "65"
+    },
+    "active2": {
+      "text": "Synchronizacja danych",
+      "percent": "30"
+    },
+    "activeWarning": "Zalecane zakończenie procesów przed wylogowaniem",
+    "dailyHeader": "Statystyki dzienne",
+    "dailyDate": "15.05.2025",
+    "stats1": {
+      "icon": "bi bi-file-earmark-text",
+      "label": "Dokumenty",
+      "value": "24"
+    },
+    "stats2": {
+      "icon": "bi bi-check2-square",
+      "label": "Zadania",
+      "value": "8"
+    },
+    "stats3": {
+      "icon": "bi bi-people",
+      "label": "Klienci",
+      "value": "5"
+    },
+    "stats4": {
+      "icon": "bi bi-clock-history",
+      "label": "Czas pracy",
+      "value": "7:45"
+    },
+    "actions": {
+      "logout": "Wyloguj się",
+      "cancel": "Anuluj",
+      "saveContinue": "Zapisz i kontynuuj"
+    },
+    "backupInfo": "Ostatnia kopia zapasowa systemu wykonana: 15.05.2025 02:00"
+  },
+  "kontrahenci": {
+    "title": "Zarządzanie kontrahentami",
+    "subtitle": "Aktualne dane kontrahentów na rok 2025",
+    "tabs": {
+      "all": "Wszyscy",
+      "groups": "Grupy"
+    },
+    "actions": {
+      "add": "Dodaj",
+      "filter": "Filtry",
+      "view": "Zobacz",
+      "edit": "Edytuj"
+    },
+    "searchPlaceholder": "Szukaj kontrahenta...",
+    "table": {
+      "id": "ID",
+      "name": "Nazwa",
+      "nip": "NIP",
+      "group": "Grupa",
+      "transactions": "Transakcje 2025",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "active": "Aktywny",
+      "pending": "Oczekuje",
+      "inactive": "Nieaktywny"
+    },
+    "groups": {
+      "business": "Biznes",
+      "partner": "Partner",
+      "standard": "Standard",
+      "manageHeader": "Zarządzanie grupami",
+      "add": "Nowa grupa",
+      "updated": "Zaktualizowano: {{date}}",
+      "table": {
+        "group": "Grupa",
+        "count": "Liczba",
+        "date": "Data",
+        "actions": "Akcje"
+      },
+      "counts": {
+        "business": "12",
+        "partner": "8",
+        "standard": "6"
+      },
+      "dates": {
+        "business": "10.03.2025",
+        "partner": "05.02.2025",
+        "standard": "12.01.2025"
+      }
+    },
+    "quickAdd": {
+      "header": "Dodaj kontrahenta",
+      "placeholders": {
+        "name": "Nazwa*",
+        "nip": "NIP*",
+        "group": "Wybierz grupę"
+      },
+      "actions": {
+        "saveNew": "Zapisz+Nowy",
+        "save": "Zapisz"
+      }
+    },
+    "stats": {
+      "new2025": "Nowi 2025",
+      "active": "Aktywni",
+      "transactions": "Transakcje",
+      "values": {
+        "new": "15",
+        "active": "25",
+        "transactions": "2 580 000 PLN"
+      }
+    }
+  },
+  "nowyKontrahent": {
+    "title": "Nowy kontrahent",
+    "subtitle": "Dodaj nowego kontrahenta (2025)",
+    "basicHeader": "Dane podstawowe",
+    "additionalHeader": "Dane dodatkowe",
+    "addressHeader": "Adres",
+    "contactHeader": "Dane kontaktowe",
+    "placeholders": {
+      "name": "Nazwa*",
+      "nip": "NIP*",
+      "regon": "REGON",
+      "krs": "KRS",
+      "street": "Ulica*",
+      "houseNumber": "Nr domu*",
+      "apartmentNumber": "Nr lokalu",
+      "postalCode": "Kod pocztowy*",
+      "city": "Miejscowość*",
+      "email": "Email*",
+      "phone": "Telefon*",
+      "website": "Strona WWW"
+    },
+    "countries": {
+      "PL": "Polska",
+      "DE": "Niemcy",
+      "CZ": "Czechy"
+    },
+    "actions": {
+      "cancel": "Anuluj",
+      "save": "Zapisz kontrahenta"
+    },
+    "summary": {
+      "newCount": "Nowi kontrahenci w 2025:",
+      "newCountValue": "",
+      "lastAdded": "Ostatnio dodany:",
+      "lastAddedValue": ""
+    }
+  },
+  "pracownicy": {
+    "title": "Zarządzanie pracownikami",
+    "subtitle": "Aktualne dane na rok 2025",
+    "actions": {
+      "add": "Dodaj",
+      "import": "Importuj",
+      "view": "Zobacz"
+    },
+    "searchPlaceholder": "Szukaj pracownika...",
+    "table": {
+      "id": "ID",
+      "name": "Imię i nazwisko",
+      "position": "Stanowisko",
+      "hireDate": "Data zatrudnienia",
+      "contractUntil": "Umowa do",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "rows": {
+      "1": {
+        "id": "PRAC-001",
+        "name": "Jan Kowalski",
+        "position": "Kierownik",
+        "hireDate": "2020-01-15",
+        "contractUntil": "2025-12-31",
+        "statusVariant": "success",
+        "statusText": "Aktywny"
+      },
+      "2": {
+        "id": "PRAC-002",
+        "name": "Anna Nowak",
+        "position": "Specjalista",
+        "hireDate": "2025-01-01",
+        "contractUntil": "2026-12-31",
+        "statusVariant": "planned",
+        "statusText": "Okres próbny"
+      },
+      "3": {
+        "id": "PRAC-003",
+        "name": "Kamil Kwiatkowski",
+        "position": "Magazynier",
+        "hireDate": "2024-06-10",
+        "contractUntil": "2025-12-31",
+        "statusVariant": "inactive",
+        "statusText": "Nieaktywny"
+      }
+    },
+    "new": {
+      "header": "Dodaj pracownika",
+      "placeholders": {
+        "firstName": "Imię*",
+        "lastName": "Nazwisko*",
+        "position": "Stanowisko"
+      },
+      "actions": {
+        "cancel": "Anuluj",
+        "save": "Zapisz"
+      }
+    },
+    "positions": {
+      "manager": "Kierownik",
+      "specialist": "Specjalista",
+      "warehouse": "Magazynier"
+    },
+    "summary": {
+      "total": "Łącznie pracowników:",
+      "totalValue": "3",
+      "new": "Nowi w 2025:",
+      "newValue": "1",
+      "yearlyReport": "Raport roczny"
+    }
+  },
+  "cennik": {
+    "title": "Zarządzanie cennikiem 2025",
+    "subtitle": "Definiuj i zarządzaj cennikami produktów i usług na rok 2025",
+    "tabs": {
+      "products": "Produkty",
+      "services": "Usługi"
+    },
+    "actions": {
+      "nowyCennik": "Nowy cennik",
+      "aktualizujCeny": "Aktualizuj ceny",
+      "drukuj": "Drukuj",
+      "eksportuj": "Eksportuj",
+      "grupy": "Grupy"
+    },
+    "table": {
+      "name": "Nazwa",
+      "from": "Od",
+      "to": "Do",
+      "currency": "Waluta",
+      "items": "Pozycji",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "products": {
+      "1": {
+        "name": "Standardowy",
+        "from": "01.01.2025",
+        "to": "31.12.2025",
+        "currency": "PLN",
+        "items": "500",
+        "statusVariant": "success",
+        "statusText": "Aktywny"
+      },
+      "2": {
+        "name": "Promocyjny Q1",
+        "from": "01.01.2025",
+        "to": "31.03.2025",
+        "currency": "PLN",
+        "items": "200",
+        "statusVariant": "planned",
+        "statusText": "Planowany"
+      },
+      "3": {
+        "name": "Sezonowy Wiosna",
+        "from": "01.04.2025",
+        "to": "30.06.2025",
+        "currency": "PLN",
+        "items": "150",
+        "statusVariant": "planned",
+        "statusText": "Planowany"
+      },
+      "4": {
+        "name": "Letni",
+        "from": "01.07.2025",
+        "to": "30.09.2025",
+        "currency": "PLN",
+        "items": "120",
+        "statusVariant": "inactive",
+        "statusText": "Wyczerpany"
+      }
+    },
+    "services": {
+      "1": {
+        "name": "Usługa Podstawowa",
+        "from": "01.01.2025",
+        "to": "31.12.2025",
+        "currency": "PLN",
+        "items": "100",
+        "statusVariant": "success",
+        "statusText": "Aktywny"
+      },
+      "2": {
+        "name": "Usługa Premium",
+        "from": "01.03.2025",
+        "to": "28.02.2026",
+        "currency": "EUR",
+        "items": "50",
+        "statusVariant": "success",
+        "statusText": "Aktywny"
+      },
+      "3": {
+        "name": "Wsparcie 24/7",
+        "from": "01.01.2025",
+        "to": "31.12.2025",
+        "currency": "PLN",
+        "items": "20",
+        "statusVariant": "success",
+        "statusText": "Aktywny"
+      },
+      "4": {
+        "name": "Szkolenie",
+        "from": "01.06.2025",
+        "to": "30.06.2025",
+        "currency": "PLN",
+        "items": "10",
+        "statusVariant": "planned",
+        "statusText": "Planowany"
+      }
+    },
+    "new": {
+      "header": "Dodaj cennik",
+      "placeholder": "Nazwa*",
+      "cancel": "Anuluj",
+      "save": "Zapisz"
+    },
+    "summary": {
+      "total": "Łącznie cenników:",
+      "totalValue": "20",
+      "active": "Aktywnych:",
+      "activeValue": "7",
+      "lastUpdate": "Ost. aktualizacja:",
+      "lastUpdateValue": "01.05.2025",
+      "history": "Historia"
+    }
+  },
+  "nowyTowar": {
+    "title": "Nowy towar",
+    "subtitle": "Dodaj nowy produkt (2025)",
+    "tabs": {
+      "basic": "Podstawowe",
+      "price": "Cennik"
+    },
+    "form": {
+      "basic": {
+        "productNamePlaceholder": "Nazwa produktu*",
+        "codePrefix": "PRD-2025-",
+        "codePlaceholder": "Kod*",
+        "categoryPlaceholder": "Wybierz kategorię...",
+        "categories": {
+          "elektro": "Elektronika",
+          "dom": "Artykuły domowe",
+          "odziez": "Odzież"
+        },
+        "unitPlaceholder": "szt",
+        "units": {
+          "szt": "szt",
+          "kg": "kg",
+          "op": "op."
+        },
+        "initialStockPlaceholder": "Stan początkowy",
+        "descriptionHeader": "Opis produktu"
+      },
+      "price": {
+        "purchaseNetPlaceholder": "Zakup netto",
+        "saleNetPlaceholder": "Sprzedaż netto*",
+        "vatValues": [ "23%", "8%", "0%" ]
+      }
+    },
+    "actions": {
+      "cancel": "Anuluj",
+      "save": "Zapisz towar"
+    },
+    "summary": {
+      "newProducts": "Nowe produkty w 2025:",
+      "lastAdded": "Ostatnio dodany:"
+    }
+  },
+  "grupyTowarowe": {
+    "title": "Grupy towarowe 2025",
+    "subtitle": "Zarządzaj hierarchią grup towarowych",
+    "actions": {
+      "newGroup": "Nowa grupa",
+      "searchPlaceholder": "Wyszukaj grupę..."
+    },
+    "table": {
+      "code": "Kod",
+      "name": "Nazwa",
+      "count": "Liczba",
+      "created": "Data utw.",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "statuses": {
+      "active": "Aktywna",
+      "planned": "Planowana",
+      "inactive": "Nieaktywna"
+    },
+    "add": {
+      "header": "Dodaj nową grupę",
+      "placeholderName": "Nazwa grupy*",
+      "placeholderCode": "Kod grupy*",
+      "placeholderType": "Typ grupy*",
+      "types": {
+        "Asortyment": "Asortyment",
+        "Usługa": "Usługa",
+        "Zestaw": "Zestaw"
+      },
+      "save": "Zapisz"
+    }
+  },
+  "layout": {
+    "search": "Szukaj",
+    "darkMode": "Tryb ciemny",
+    "lightMode": "Tryb jasny",
+    "language": "Język",
+    "languageOptions": {
+      "pl": "Polski",
+      "en": "English"
+    }
+  },
+  "rabaty": {
+    "title": "Zarządzanie rabatami",
+    "subtitle": "Promocje i oferty specjalne na 2025 rok",
+    "actions": {
+      "new": "Nowy rabat",
+      "planned": "Planowane promocje",
+      "view": "Podgląd",
+      "edit": "Edytuj"
+    },
+    "search": {
+      "placeholder": "Wyszukaj rabat..."
+    },
+    "table": {
+      "headers": {
+        "code": "Kod rabatu",
+        "name": "Nazwa promocji",
+        "value": "Wartość",
+        "period": "Okres ważności",
+        "status": "Status",
+        "actions": "Akcje"
+      }
+    },
+    "sample": {
+      "newYearSale": "Noworoczna wyprzedaż",
+      "summerPromo": "Letnie promocje"
+    },
+    "status": {
+      "active": "Aktywny",
+      "planned": "Planowany"
+    },
+    "accordion": {
+      "add": "Dodaj nowy rabat"
+    },
+    "form": {
+      "labels": {
+        "name": "Nazwa rabatu*",
+        "code": "Kod rabatu*",
+        "value": "Wartość rabatu*",
+        "start": "Data rozpoczęcia*",
+        "end": "Data zakończenia*"
+      },
+      "buttons": {
+        "cancel": "Anuluj",
+        "save": "Zapisz rabat"
+      }
+    },
+    "summary": {
+      "activeLabel": "Aktywne rabaty w 2025:",
+      "activeCount": "{{count}}",
+      "plannedLabel": "Planowane promocje:",
+      "plannedCount": "{{count}}",
+      "annualReport": "Raport roczny"
+    }
+  },
+  "kategorie": {
+    "title": "Kategorie produktów 2025",
+    "subtitle": "Zarządzaj kategoriami produktów",
+    "actions": {
+      "new": "Nowa kategoria",
+      "tree": "Drzewo kategorii",
+      "edit": "Edytuj",
+      "delete": "Usuń"
+    },
+    "search": {
+      "placeholder": "Wyszukaj kategorię..."
+    },
+    "table": {
+      "headers": {
+        "id": "ID",
+        "name": "Nazwa kategorii",
+        "count": "Liczba produktów",
+        "created": "Data utworzenia",
+        "status": "Status",
+        "actions": "Akcje"
+      }
+    },
+    "sample": {
+      "electronics": "Elektronika",
+      "homeGoods": "Artykuły gospodarstwa domowego",
+      "clothing": "Odzież"
+    },
+    "status": {
+      "active": "Aktywna",
+      "planned": "Wstrzymana"
+    },
+    "accordion": {
+      "add": "Dodaj nową kategorię"
+    },
+    "form": {
+      "labels": {
+        "name": "Nazwa kategorii*",
+        "parent": "Kategoria nadrzędna",
+        "status": "Status",
+        "expiry": "Data ważności"
+      },
+      "parentOptions": {
+        "none": "Brak (kategoria główna)"
+      },
+      "status": {
+        "active": "Aktywna",
+        "planned": "Wstrzymana",
+        "inactive": "Nieaktywna"
+      },
+      "buttons": {
+        "cancel": "Anuluj",
+        "save": "Zapisz kategorię"
+      }
+    },
+    "summary": {
+      "countLabel": "Liczba kategorii w 2025:",
+      "count": "{{count}}",
+      "lastUpdateLabel": "Ostatnia aktualizacja:",
+      "lastUpdate": "{{date}}",
+      "hierarchy": "Pełna hierarchia"
+    }
+  },
+  "atrybuty": {
+    "title": "Zarządzanie atrybutami",
+    "subtitle": "Grupa: Ogólne",
+    "filters": {
+      "searchPlaceholder": "Wprowadź nazwę atrybutu",
+      "searchButton": "Szukaj",
+      "typeAll": "Wszystkie typy",
+      "types": {
+        "text": "Tekst",
+        "number": "Liczba",
+        "date": "Data",
+        "list": "Lista"
+      },
+      "statusAll": "Wszystkie statusy",
+      "status": {
+        "active": "Aktywny",
+        "inactive": "Nieaktywny"
+      },
+      "button": "Filtruj"
+    },
+    "actions": {
+      "add": "Dodaj nowy",
+      "export": "Eksportuj",
+      "deleteSelected": "Usuń zaznaczone",
+      "edit": "Edytuj",
+      "delete": "Usuń"
+    },
+    "table": {
+      "headers": {
+        "checkbox": "Zaznacz",
+        "name": "Nazwa atrybutu",
+        "key": "Klucz",
+        "type": "Typ",
+        "required": "Wymagany",
+        "status": "Status",
+        "options": "Opcje"
+      },
+      "required": {
+        "yes": "Tak",
+        "no": "Nie"
+      },
+      "status": {
+        "active": "Aktywny",
+        "inactive": "Nieaktywny"
+      }
+    },
+    "sample": {
+      "color": "Kolor",
+      "weight": "Waga",
+      "expiryDate": "Data ważności"
+    },
+    "sampleTypes": {
+      "text": "Tekst",
+      "number": "Liczba",
+      "date": "Data"
+    },
+    "accordion": {
+      "add": "Dodaj nowy atrybut"
+    },
+    "form": {
+      "labels": {
+        "name": "Nazwa atrybutu*",
+        "key": "Klucz*",
+        "type": "Typ*",
+        "group": "Grupa",
+        "status": "Status"
+      },
+      "generateKey": "Wygeneruj klucz",
+      "types": {
+        "text": "Tekst",
+        "number": "Liczba",
+        "date": "Data",
+        "boolean": "Tak/Nie",
+        "list": "Lista"
+      },
+      "groups": {
+        "general": "Ogólne",
+        "inventory": "Magazynowe"
+      },
+      "status": {
+        "active": "Aktywny",
+        "inactive": "Nieaktywny"
+      },
+      "check": {
+        "required": "Wymagany",
+        "filterable": "Filtrowalny"
+      },
+      "buttons": {
+        "cancel": "Anuluj",
+        "save": "Zapisz atrybut"
+      }
+    }
+  },
+  "wymiaryOpisuAnalitycznego": {
+    "title": "Wymiary opisu analitycznego",
+    "subtitle": "Zarządzanie wymiarami wykorzystywanymi w analizach",
+    "tabs": {
+      "list": "Lista wymiarów",
+      "reports": "Raporty"
+    },
+    "actions": {
+      "add": "Dodaj wymiar",
+      "edit": "Edytuj",
+      "delete": "Usuń"
+    },
+    "search": {
+      "placeholder": "Szukaj wymiarów..."
+    },
+    "table": {
+      "headers": {
+        "code": "Kod",
+        "name": "Nazwa",
+        "desc": "Opis",
+        "status": "Status",
+        "created": "Data utworzenia",
+        "actions": "Akcje"
+      }
+    },
+    "status": {
+      "active": "Aktywny",
+      "inactive": "Nieaktywny"
+    },
+    "sample": {
+      "region": "Region",
+      "regionDesc": "Podział geograficzny",
+      "channel": "Kanał sprzedaży",
+      "channelDesc": "Kanały dystrybucji produktów",
+      "cost": "Typ kosztu",
+      "costDesc": "Klasyfikacja kosztów"
+    },
+    "reports": {
+      "header": "Statystyki wymiarów",
+      "activeCountLabel": "Liczba aktywnych:",
+      "activeCount": "{{count}} aktywne",
+      "inactiveCountLabel": "Liczba nieaktywnych:",
+      "inactiveCount": "{{count}} nieaktywne",
+      "mostUsedLabel": "Najczęściej używany:",
+      "lastAddedLabel": "Ostatnio dodany:"
+    },
+    "modal": {
+      "title": "Zarządzanie wymiarem"
+    },
+    "form": {
+      "labels": {
+        "code": "Kod wymiaru",
+        "name": "Nazwa wymiaru",
+        "desc": "Opis",
+        "active": "Wymiar aktywny"
+      },
+      "selectPlaceholder": "Wybierz nazwę...",
+      "buttons": {
+        "cancel": "Anuluj",
+        "save": "Zapisz"
+      }
+    }
+  },
+  "przesylkiKurierskie": {
+    "title": "Przesyłki kurierskie 2025",
+    "subtitle": "Zarządzanie przesyłkami i nadaniami",
+    "actions": {
+      "new": "Nowa przesyłka",
+      "printLabels": "Drukuj etykiety",
+      "cancel": "Anuluj",
+      "send": "Nadaj przesyłkę",
+      "generateReport": "Generuj raport"
+    },
+    "search": {
+      "placeholder": "Wyszukaj przesyłkę..."
+    },
+    "table": {
+      "headers": {
+        "number": "Nr przesyłki",
+        "sender": "Nadawca",
+        "receiver": "Odbiorca",
+        "date": "Data nadania",
+        "status": "Status",
+        "courier": "Kurier",
+        "actions": "Akcje"
+      }
+    },
+    "status": {
+      "delivered": "Dostarczona",
+      "inTransit": "W transporcie",
+      "return": "Zwrot"
+    },
+    "form": {
+      "newShipment": "Nadaj nową przesyłkę",
+      "labels": {
+        "sender": "Nadawca*",
+        "receiver": "Odbiorca*",
+        "date": "Data nadania*",
+        "company": "Firma kurierska*",
+        "weight": "Waga (kg)*"
+      },
+      "companies": {
+        "dpd": "DPD",
+        "inpost": "InPost",
+        "dhl": "DHL"
+      }
+    },
+    "summary": {
+      "title": "Przesyłki w 2025:",
+      "count": "148",
+      "delivered": "Dostarczone:",
+      "deliveredCount": "132 (89%)"
+    }
+  },
+  "wiadomosciSms": {
+    "title": "Wiadomości SMS",
+    "subtitle": "Wysyłka i historia wiadomości SMS w 2025",
+    "tabs": {
+      "new": "Nowa wiadomość",
+      "history": "Historia"
+    },
+    "form": {
+      "labels": {
+        "recipients": "Odbiorcy*",
+        "template": "Szablon",
+        "content": "Treść wiadomości*"
+      },
+      "hints": {
+        "recipients": "Wpisz numery telefonów oddzielone przecinkami"
+      },
+      "selectPlaceholder": "Wybierz szablon...",
+      "templates": {
+        "orderConfirmation": "Potwierdzenie zamówienia",
+        "paymentReminder": "Przypomnienie o płatności",
+        "seasonalPromo": "Promocja sezonowa"
+      },
+      "characters": "znaków"
+    },
+    "actions": {
+      "clear": "Wyczyść",
+      "send": "Wyślij SMS",
+      "fullStats": "Pełne statystyki"
+    },
+    "search": {
+      "placeholder": "Szukaj wiadomości..."
+    },
+    "table": {
+      "headers": {
+        "date": "Data wysłania",
+        "recipient": "Odbiorca",
+        "content": "Treść",
+        "status": "Status"
+      }
+    },
+    "status": {
+      "sent": "Wysłano",
+      "pending": "Oczekuje",
+      "error": "Błąd"
+    },
+    "samples": {
+      "orderConfirmation": "Potwierdzenie zamówienia nr 2025/001",
+      "paymentReminder": "Przypomnienie o płatności za FV/2025/12",
+      "seasonalPromo": "Promocja sezonowa – tylko dziś -20%"
+    },
+    "summary": {
+      "sent": "Wysłano w 2025:",
+      "sentCount": "248 SMS",
+      "lastMessage": "Ostatnia wiadomość:"
+    }
+  },
+  "zakupPaczkiSms": {
+    "title": "Zakup pakietu SMS",
+    "subtitle": "Moduł komunikacji SMS w systemie ERP (2025)",
+    "tabs": {
+      "newPurchase": "Nowy zakup",
+      "history": "Historia zakupów"
+    },
+    "accountStatus": {
+      "balance": "Stan konta:",
+      "balanceValue": "248 SMS ważnych do 31.12.2025",
+      "creditLimit": "Limit kredytowy:",
+      "creditLimitValue": "5 000 zł"
+    },
+    "packageSelection": {
+      "title": "Wybierz pakiet SMS",
+      "labels": {
+        "type": "Typ pakietu",
+        "quantity": "Ilość SMS"
+      },
+      "types": {
+        "standard": "Standard (0.40 zł/SMS)",
+        "business": "Biznes (0.35 zł/SMS)",
+        "premium": "Premium (0.30 zł/SMS)"
+      },
+      "units": "sztuk"
+    },
+    "summary": {
+      "netCost": "Koszt netto:",
+      "netCostValue": "350,00 zł",
+      "vat": "VAT (23%):",
+      "vatValue": "80,50 zł",
+      "total": "Do zapłaty:",
+      "totalValue": "430,50 zł"
+    },
+    "paymentMethod": {
+      "title": "Metoda płatności",
+      "options": {
+        "transfer": "Przelew tradycyjny",
+        "card": "Płatność kartą",
+        "credit": "Saldo kredytowe w ERP"
+      },
+      "acceptTerms": "Akceptuję regulamin usług SMS"
+    },
+    "search": {
+      "placeholder": "Szukaj zamówień..."
+    },
+    "historyTable": {
+      "headers": {
+        "date": "Data",
+        "orderNumber": "Numer zamówienia",
+        "smsQuantity": "Ilość SMS",
+        "amount": "Kwota",
+        "status": "Status"
+      }
+    },
+    "status": {
+      "completed": "Zrealizowane",
+      "pending": "Oczekuje",
+      "cancelled": "Anulowane"
+    },
+    "actions": {
+      "cancel": "Anuluj",
+      "confirm": "Zatwierdź zakup"
+    }
+  },
+  "raporty": {
+    "title": "Generowanie raportów",
+    "subtitle": "Dane za rok 2025",
+    "tabs": {
+      "sales": "Sprzedażowe",
+      "warehouse": "Magazynowe"
+    },
+    "form": {
+      "labels": {
+        "reportType": "Typ raportu",
+        "fromDate": "Od daty",
+        "toDate": "Do daty",
+        "product": "Produkt",
+        "reportKind": "Rodzaj raportu"
+      }
+    },
+    "reportTypes": {
+      "monthly": "Raport miesięczny",
+      "quarterly": "Raport kwartalny",
+      "yearly": "Raport roczny"
+    },
+    "periods": {
+      "january2025": "Styczeń 2025",
+      "q1_2025": "I kwartał 2025"
+    },
+    "products": {
+      "monitor": "Monitor Dell 24\"",
+      "printer": "Drukarka HP 2330",
+      "paper": "Paleta papieru A4"
+    },
+    "warehouseReports": {
+      "stock": "Raport stanów",
+      "movements": "Raport ruchów",
+      "receipts": "Raport przyjęć"
+    },
+    "table": {
+      "headers": {
+        "type": "Typ raportu",
+        "period": "Okres",
+        "generationDate": "Data wygenerowania",
+        "status": "Status",
+        "actions": "Akcje"
+      }
+    },
+    "status": {
+      "ready": "Gotowy",
+      "inProgress": "W toku",
+      "pending": "Oczekuje"
+    },
+    "scheduledReports": {
+      "title": "Zaplanowane raporty",
+      "headers": {
+        "name": "Nazwa raportu",
+        "frequency": "Częstotliwość",
+        "recipients": "Odbiorcy",
+        "nextExecution": "Następne wykonanie",
+        "actions": "Akcje"
+      },
+      "types": {
+        "weekly": "Raport tygodniowy",
+        "monthly": "Raport miesięczny",
+        "yearly": "Raport roczny"
+      },
+      "frequencies": {
+        "weekly": "Co tydzień",
+        "monthly": "Co miesiąc",
+        "yearly": "Rocznie"
+      }
+    },
+    "summary": {
+      "generated": "Wygenerowano w 2025:",
+      "generatedCount": "24 raporty",
+      "scheduled": "Zaplanowane:",
+      "scheduledCount": "8 raportów"
+    },
+    "actions": {
+      "generate": "Generuj raport",
+      "download": "Pobierz",
+      "edit": "Edytuj",
+      "reportHistory": "Historia raportów"
+    }
+  },
+  "waluty": {
+    "title": "Kursy walut 2025",
+    "subtitle": "Aktualne kursy i zarządzanie walutami",
+    "lastUpdate": "Ostatnia aktualizacja",
+    "actions": {
+      "refresh": "Aktualizuj kursy",
+      "add": "Dodaj walutę",
+      "edit": "Edytuj",
+      "history": "Historia",
+      "cancel": "Anuluj",
+      "save": "Zapisz walutę",
+      "rateHistory": "Historia kursów"
+    },
+    "table": {
+      "headers": {
+        "currency": "Waluta",
+        "code": "Kod",
+        "rate": "Kurs (PLN)",
+        "validity": "Data obowiązywania",
+        "status": "Status",
+        "actions": "Akcje"
+      }
+    },
+    "currencies": {
+      "usd": "Dolar amerykański",
+      "eur": "Euro",
+      "gbp": "Funt szterling"
+    },
+    "status": {
+      "active": "Aktywny",
+      "changed": "Zmieniony"
+    },
+    "form": {
+      "addTitle": "Dodaj nową walutę",
+      "labels": {
+        "name": "Nazwa waluty*",
+        "code": "Kod*",
+        "rate": "Kurs (PLN)*",
+        "validityDate": "Data obowiązywania*"
+      },
+      "selectPlaceholder": "Wybierz..."
+    },
+    "summary": {
+      "currenciesCount": "Liczba obsługiwanych walut:",
+      "currenciesNumber": "8",
+      "lastRateChange": "Ostatnia zmiana kursu:"
+    }
+  },
+  "daneOsobowe": {
+    "title": "Zarządzanie danymi osobowymi",
+    "subtitle": "Aktualne dane na rok 2025",
+    "search": {
+      "placeholder": "Imię, nazwisko lub ID"
+    },
+    "filters": {
+      "allDepartments": "Wszystkie działy",
+      "allStatuses": "Wszystkie statusy"
+    },
+    "departments": {
+      "hr": "HR",
+      "finance": "Finanse",
+      "it": "IT"
+    },
+    "status": {
+      "active": "Aktywny",
+      "vacation": "Urlop",
+      "inactive": "Nieaktywny"
+    },
+    "positions": {
+      "accountant": "Księgowa",
+      "developer": "Programista",
+      "hrbp": "HRBP"
+    },
+    "contractTypes": {
+      "employment": "Umowa o pracę",
+      "b2b": "B2B",
+      "contract": "Zlecenie"
+    },
+    "employees": {
+      "annaKowalska": "Anna Kowalska",
+      "piotrNowak": "Piotr Nowak",
+      "mariaWisniewska": "Maria Wiśniewska"
+    },
+    "actions": {
+      "filter": "Filtruj",
+      "add": "Dodaj",
+      "import": "Importuj",
+      "print": "Drukuj",
+      "export": "Eksportuj",
+      "cancel": "Anuluj",
+      "save": "Zapisz",
+      "statistics": "Statystyki"
+    },
+    "table": {
+      "headers": {
+        "id": "ID",
+        "name": "Imię i nazwisko",
+        "position": "Stanowisko",
+        "department": "Dział",
+        "hireDate": "Data zatr.",
+        "contractEnd": "Umowa do",
+        "status": "Status",
+        "actions": "Akcje"
+      }
+    },
+    "form": {
+      "addEmployee": "Dodaj pracownika",
+      "labels": {
+        "firstName": "Imię*",
+        "lastName": "Nazwisko*",
+        "pesel": "PESEL*"
+      },
+      "selectPlaceholders": {
+        "position": "Stanowisko*",
+        "department": "Dział*",
+        "contractType": "Typ umowy*"
+      }
+    },
+    "summary": {
+      "total": "Łącznie:",
+      "totalCount": "3",
+      "new": "Nowi:",
+      "newCount": "1",
+      "lastUpdate": "Ostatnia aktualizacja:"
+    }
+  },
+  "udzielPelnomocnictwa": {
+    "title": "Pełnomocnictwa",
+    "subtitle": "Zarządzanie pełnomocnictwami na rok 2025",
+    "search": {
+      "placeholder": "Wyszukaj pełnomocnictwo..."
+    },
+    "actions": {
+      "new": "Nowe pełnomocnictwo",
+      "preview": "Podgląd",
+      "edit": "Edytuj",
+      "cancel": "Anuluj",
+      "save": "Zapisz pełnomocnictwo",
+      "generateReport": "Generuj zestawienie"
+    },
+    "table": {
+      "headers": {
+        "number": "Nr pełnomocnictwa",
+        "grantor": "Mocodawca",
+        "attorney": "Pełnomocnik",
+        "expiryDate": "Data ważności",
+        "status": "Status",
+        "actions": "Akcje"
+      }
+    },
+    "people": {
+      "janKowalski": "Jan Kowalski",
+      "annaNowak": "Anna Nowak",
+      "barbaraWisniewska": "Barbara Wiśniewska",
+      "piotrZalewski": "Piotr Zalewski",
+      "tomaszMalinowski": "Tomasz Malinowski",
+      "katarzynaZielinska": "Katarzyna Zielińska"
+    },
+    "status": {
+      "active": "Aktywne",
+      "expiring": "Wygasa",
+      "expired": "Wygasło"
+    },
+    "form": {
+      "createNew": "Utwórz nowe pełnomocnictwo",
+      "labels": {
+        "grantor": "Mocodawca*",
+        "attorney": "Pełnomocnik*",
+        "scope": "Zakres uprawnień*",
+        "expiryDate": "Data ważności*",
+        "description": "Opis uprawnień"
+      },
+      "scopes": {
+        "full": "Pełne",
+        "limited": "Ograniczone",
+        "temporary": "Czasowe"
+      }
+    },
+    "summary": {
+      "active": "Aktywne pełnomocnictwa w 2025:",
+      "activeCount": "12",
+      "expiring": "Wygasające w 2025:",
+      "expiringCount": "3"
+    }
+  },
+  "crmNavbar": {
+    "brand": "CRM",
+    "sections": {
+      "contacts": "Kontakty i relacje",
+      "documents": "Dokumenty",
+      "library": "Biblioteka",
+      "archive": "Archiwum",
+      "communication": "Komunikacja",
+      "collection": "Windykacja",
+      "surveys": "Ankiety",
+      "more": "Więcej"
+    },
+    "links": {
+      "contactsList": "Lista kontaktów",
+      "calendar": "Terminarz",
+      "commercialOffers": "Oferty handlowe",
+      "recurringInvoices": "Faktury cykliczne",
+      "newDocument": "Nowy dokument",
+      "browseDocuments": "Przeglądaj dokumenty",
+      "printArchive": "Archiwum wydruków",
+      "archivedContacts": "Kontakty zarchiwizowane",
+      "operatorInbox": "Skrzynka operatora",
+      "mailbox": "Skrzynka pocztowa",
+      "schemes": "Schematy",
+      "eventHistory": "Historia zdarzeń",
+      "surveying": "Ankietowanie",
+      "surveyTemplates": "Wzorce ankiet",
+      "questions": "Pytania",
+      "answerTemplates": "Szablony odpowiedzi",
+      "queryGroups": "Grupy zapytań",
+      "moreFeatures": "Więcej funkcji"
+    }
+  },
+  "kasaBankNavbar": {
+    "brand": "Kasa/Bank",
+    "sections": {
+      "registers": "Rejestry",
+      "reports": "Raporty",
+      "settlements": "Rozliczenia",
+      "currencies": "Waluty",
+      "payments": "Płatności",
+      "businessTrips": "Delegacje",
+      "dataExchange": "Wymiana danych",
+      "office": "Biuro"
+    },
+    "links": {
+      "cashBankRegisters": "Rejestry kasowe/bankowe",
+      "cashBankReports": "Raporty kasowo/bankowe",
+      "cashBankEntries": "Zapisy kasowo/bankowe",
+      "entitySettlements": "Rozliczenia podmiotu",
+      "unsettledDocuments": "Dokumenty nierozliczone",
+      "settledDocuments": "Dokumenty rozliczone",
+      "compensationDocuments": "Dokumenty kompensat",
+      "currencyWarehouse": "Magazyn walut",
+      "exchangeDifferences": "Różnice kursowe",
+      "paymentSchedule": "Preliminarz płatności",
+      "businessTrips": "Delegacje",
+      "sendData": "Wyślij dane",
+      "receiveData": "Odbierz dane",
+      "exchangeHistory": "Historia wymiany",
+      "officeClients": "Klienci biura"
+    }
+  },
+  "rejestryVatNavbar": {
+    "brand": "Rejestry VAT",
+    "sections": {
+      "registers": "Rejestry",
+      "records": "Ewidencja",
+      "jpk": "JPK",
+      "vatDeclarations": "Deklaracje VAT",
+      "communication": "Komunikacja",
+      "clients": "Klienci",
+      "messages": "Wiadomości"
+    },
+    "links": {
+      "vatRegisters": "Rejestry VAT",
+      "purchaseStructure": "Struktura zakupów",
+      "additionalRecords": "Ewidencja dodatkowa",
+      "cashPitRecords": "Ewidencja kasowego PIT",
+      "jpkV7Files": "Pliki JPK_V7",
+      "vatUe": "VAT-UE",
+      "vat8": "VAT-8",
+      "vat9m": "VAT-9M",
+      "otherDeclarations": "Deklaracje inne",
+      "receiveData": "Odbierz dane",
+      "sendData": "Wyślij dane",
+      "exchangeHistory": "Historia wymiany",
+      "officeClients": "Klienci biura",
+      "clientMessages": "Wiadomości od klientów"
+    }
+  },
+  "ksiegowoscNavbar": {
+    "brand": "Księgowość",
+    "sections": {
+      "kpir": "KPiR",
+      "declarations": "Deklaracje",
+      "fixedAssets": "Środki trwałe",
+      "equipment": "Wyposażenie",
+      "cars": "Samochody",
+      "documents": "Dokumenty",
+      "inventory": "Inwentaryzacja"
+    },
+    "links": {
+      "kpirEntries": "Zapisy KPiR",
+      "inventoryList": "Spis z natury",
+      "pitDeclarations": "Deklaracje PIT",
+      "citDeclarations": "Deklaracje CIT",
+      "fixedAssetsRegister": "Ewidencja środków trwałych",
+      "fixedAssetsDocuments": "Dokumenty środków trwałych",
+      "equipmentRegister": "Ewidencja wyposażenia",
+      "cars": "Samochody",
+      "sourceDocuments": "Dokumenty źródłowe",
+      "inventory": "Inwentaryzacja"
+    }
+  },
+  "jpkNavbar": {
+    "brand": "JPK",
+    "sections": {
+      "jpkFiles": "Pliki JPK",
+      "importExport": "Import/Eksport",
+      "information": "Informacje"
+    },
+    "links": {
+      "jpkV7Files": "Pliki JPK_V7",
+      "vat9mFiles": "Pliki VAT 9M",
+      "vatUeFiles": "Pliki VAT UE-OE",
+      "vat8Files": "Pliki VAT 8",
+      "importToVatRegister": "Import do rejestru VAT",
+      "jpkInfoHelp": "Informacje o JPK / pomoc"
+    }
+  },
+  "placeKadryNavbar": {
+    "brand": "Płace i Kadry",
+    "sections": {
+      "hr": "Kadry",
+      "payroll": "Płace",
+      "socialSecurity": "ZUS",
+      "declarations": "Deklaracje",
+      "employeeLoanFunds": "PKZP"
+    },
+    "links": {
+      "hr": "Kadry",
+      "newEmployee": "Nowy pracownik",
+      "orgStructure": "Struktura organizacyjna",
+      "payrollLists": "Listy płac",
+      "employeePayments": "Wypłaty pracowników",
+      "socialSecurityKeduFiles": "ZUS Pliki KEDU",
+      "socialSecurityDeclarations": "Deklaracje ZUS",
+      "employeePitDeclarations": "Deklaracje PIT pracowników",
+      "pit4rAdvances": "Zaliczki na PIT-4R",
+      "pit8arTax": "Podatek na PIT-8AR",
+      "pfronDeclarations": "Deklaracje PFRON",
+      "ppkDeclarations": "Deklaracje PPK",
+      "annualZswaDeclarations": "Deklaracje roczne ZSWA",
+      "annualIwaDeclarations": "Deklaracje roczne IWA",
+      "employeeLoanFunds": "Kasy zapomogowo-pożyczkowe PKZP",
+      "hrmTs": "HRM TS",
+      "dictionaries": "Słowniki"
+    }
+  },
+  "widokNavbar": {
+    "brand": "Widok",
+    "sections": {
+      "views": "Widoki",
+      "windows": "Okna"
+    },
+    "links": {
+      "viewCompositions": "Kompozycje widoku",
+      "fonts": "Czcionki",
+      "windowSettings": "Ustawienia okien",
+      "import": "Import",
+      "export": "Eksport",
+      "generalSettings": "Ustawienia ogólne"
+    }
+  },
+  "pomocNavbar": {
+    "brand": "Pomoc",
+    "sections": {
+      "support": "Wsparcie",
+      "contact": "Kontakt i zdalna pomoc",
+      "registration": "Rejestracja"
+    },
+    "links": {
+      "help": "Pomoc",
+      "faq": "FAQ",
+      "gettingStarted": "Jak zacząć",
+      "tutorialVideos": "Filmy instruktażowe",
+      "remoteSupport": "Pomoc zdalna",
+      "incidentSystem": "System obsługi zdarzeń",
+      "personalPage": "Twoja indywidualna strona",
+      "programRegistration": "Rejestracja programu",
+      "about": "O programie"
+    }
+  },
+  "kontakty": {
+    "title": "Zarządzanie kontaktami",
+    "subtitle": "Baza kontaktów CRM - stan na 2025",
+    "tabs": {
+      "list": "Lista kontaktów",
+      "groups": "Grupy kontaktów"
+    },
+    "buttons": {
+      "add": "Dodaj",
+      "filters": "Filtry",
+      "newGroup": "Nowa grupa",
+      "save": "Zapisz",
+      "saveNew": "Zapisz+Nowy"
+    },
+    "search": {
+      "placeholder": "Szukaj kontaktu..."
+    },
+    "table": {
+      "id": "ID",
+      "name": "Imię i nazwisko",
+      "type": "Typ",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "types": {
+      "client": "Klient",
+      "partner": "Partner",
+      "supplier": "Dostawca"
+    },
+    "status": {
+      "active": "Aktywny",
+      "pending": "Oczekuje",
+      "inactive": "Nieaktywny"
+    },
+    "groups": {
+      "title": "Zarządzanie grupami",
+      "updated": "Zaktualizowano",
+      "name": "Nazwa grupy",
+      "count": "Liczba kontaktów",
+      "created": "Data utworzenia",
+      "vip": "Klienci VIP",
+      "strategic": "Partnerzy strategiczni"
+    },
+    "form": {
+      "addContact": "Dodaj kontakt",
+      "firstName": "Imię*",
+      "lastName": "Nazwisko*",
+      "selectType": "Wybierz typ",
+      "email": "E-mail*",
+      "phone": "Telefon"
+    },
+    "stats": {
+      "new2025": "Nowi w 2025",
+      "active": "Aktywni",
+      "total": "Wszystkie kontakty"
+    }
+  },
+  "terminarz": {
+    "title": "Terminarz",
+    "subtitle": "Zarządzanie zadaniami i wydarzeniami - Maj 2025",
+    "tabs": {
+      "upcoming": "Nadchodzące",
+      "categories": "Kategorie"
+    },
+    "buttons": {
+      "new": "Nowe",
+      "history": "Historia",
+      "newCategory": "Nowa kategoria",
+      "save": "Zapisz",
+      "saveNew": "Zapisz+Nowe"
+    },
+    "table": {
+      "type": "Typ",
+      "subject": "Temat",
+      "date": "Data",
+      "time": "Godzina",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "types": {
+      "meeting": "Spotkanie",
+      "task": "Zadanie"
+    },
+    "status": {
+      "scheduled": "Zaplanowane",
+      "pending": "Oczekuje"
+    },
+    "events": {
+      "clientMeeting": "Spotkanie z klientem XYZ",
+      "presentation": "Przygotowanie prezentacji",
+      "until": "Do"
+    },
+    "categories": {
+      "title": "Kategorie terminarza",
+      "updated": "Zaktualizowano",
+      "category": "Kategoria",
+      "count": "Liczba zdarzeń",
+      "created": "Data utworzenia",
+      "meetings": "Spotkania",
+      "tasks": "Zadania"
+    },
+    "form": {
+      "addEvent": "Dodaj nowe wydarzenie / zadanie",
+      "subject": "Temat*",
+      "selectType": "Wybierz typ",
+      "startTime": "Godzina rozpoczęcia",
+      "endTime": "Godzina zakończenia"
+    },
+    "stats": {
+      "allMay": "Wszystkie w maju",
+      "scheduledMeetings": "Zaplanowane spotkania",
+      "tasksToDo": "Zadania do wykonania"
+    }
+  },
+  "fakturyCykliczne": {
+    "title": "Faktury cykliczne",
+    "subtitle": "Zarządzanie fakturami okresowymi – rok 2025",
+    "tabs": {
+      "active": "Aktywne",
+      "archived": "Zarchiwizowane",
+      "addNew": "Dodaj nową"
+    },
+    "buttons": {
+      "new": "Nowa",
+      "history": "Historia",
+      "restore": "Przywróć",
+      "cancel": "Anuluj",
+      "saveInvoice": "Zapisz fakturę"
+    },
+    "search": {
+      "placeholder": "Szukaj faktury..."
+    },
+    "table": {
+      "number": "Numer",
+      "contractor": "Kontrahent",
+      "period": "Okres",
+      "amount": "Kwota",
+      "next": "Następna",
+      "status": "Status",
+      "actions": "Akcje",
+      "ended": "Zakończono"
+    },
+    "status": {
+      "active": "Aktywna"
+    },
+    "periods": {
+      "monthly": "Miesięczny",
+      "quarterly": "Kwartalny",
+      "yearly": "Roczny"
+    },
+    "example": {
+      "softnet": "SoftNet Sp. z o.o.",
+      "deltacom": "DeltaCom",
+      "testowa": "Testowa Sp. z o.o.",
+      "companyA": "Firma A",
+      "companyB": "Firma B"
+    },
+    "form": {
+      "contractor": "Kontrahent",
+      "select": "Wybierz",
+      "period": "Okres",
+      "startDate": "Początek cyklu",
+      "nextInvoice": "Następna faktura",
+      "netAmount": "Kwota netto",
+      "notes": "Uwagi"
+    },
+    "summary": {
+      "activeCount": "Łączna liczba aktywnych",
+      "monthlySum": "Suma miesięczna",
+      "lastUpdate": "Ostatnia aktualizacja"
+    }
+  },
+  "ofertyHandlowe": {
+    "title": "Oferty handlowe",
+    "subtitle": "Zarządzanie ofertami handlowymi – rok 2025",
+    "tabs": {
+      "active": "Aktywne",
+      "statistics": "Statystyki"
+    },
+    "buttons": {
+      "new": "Nowa",
+      "history": "Historia"
+    },
+    "search": {
+      "placeholder": "Szukaj ofert..."
+    },
+    "table": {
+      "number": "Numer",
+      "client": "Klient",
+      "date": "Data",
+      "validity": "Ważność",
+      "amount": "Kwota",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "sent": "Wysłana",
+      "accepted": "Zaakceptowana",
+      "inPreparation": "W przygotowaniu",
+      "rejected": "Odrzucona",
+      "inProgress": "W toku"
+    },
+    "example": {
+      "abc": "ABC Sp. z o.o.",
+      "xyz": "XYZ S.A.",
+      "techmedia": "TechMedia",
+      "firmaTech": "Firma Tech",
+      "alpha": "Alpha Sp. z o.o."
+    },
+    "statistics": {
+      "effectiveness": "Skuteczność ofert",
+      "topOffers": "Top oferty"
+    },
+    "summary": {
+      "activeOffers": "Aktywnych ofert",
+      "inProgressValue": "Wartość w toku"
+    }
+  },
+  "archiwumWydrukow": {
+    "title": "Archiwum wydruków",
+    "subtitle": "Historia wydrukowanych dokumentów – rok 2025",
+    "tabs": {
+      "history": "Historia",
+      "statistics": "Statystyki",
+      "settings": "Ustawienia"
+    },
+    "filters": {
+      "allTypes": "Wszystkie typy"
+    },
+    "types": {
+      "invoices": "Faktury",
+      "offers": "Oferty",
+      "orders": "Zamówienia"
+    },
+    "search": {
+      "placeholder": "Szukaj wydruków..."
+    },
+    "table": {
+      "date": "Data",
+      "type": "Typ",
+      "file": "Plik",
+      "user": "Użytkownik",
+      "size": "Rozmiar",
+      "actions": "Akcje"
+    },
+    "buttons": {
+      "download": "Pobierz",
+      "delete": "Usuń",
+      "cancel": "Anuluj",
+      "save": "Zapisz"
+    },
+    "statistics": {
+      "summary": "Podsumowanie",
+      "totalPrints": "Wszystkich wydruków",
+      "inMay2025": "W maju 2025",
+      "dominantType": "Dominujący typ",
+      "recentPrints": "Ostatnie wydruki"
+    },
+    "settings": {
+      "retentionTime": "Czas przechowywania",
+      "1month": "1 miesiąc",
+      "3months": "3 miesiące",
+      "6months": "6 miesięcy",
+      "1year": "1 rok",
+      "enableAutoCleanup": "Włącz automatyczne czyszczenie",
+      "archiveSizeLimit": "Limit rozmiaru archiwum"
+    },
+    "summary": {
+      "spaceUsage": "Zajętość archiwum",
+      "lastSave": "Ostatni zapis"
+    }
+  },
+  "bibliotekaDokumentow": {
+    "title": "Biblioteka dokumentów",
+    "subtitle": "Centralne repozytorium dokumentów firmowych – rok 2025",
+    "tabs": {
+      "documents": "Dokumenty",
+      "templates": "Szablony",
+      "categories": "Kategorie"
+    },
+    "filters": {
+      "allCategories": "Wszystkie kategorie",
+      "contracts": "Umowy",
+      "policies": "Polityki",
+      "procedures": "Procedury",
+      "allDepartments": "Wszystkie działy",
+      "hr": "HR",
+      "it": "IT",
+      "finance": "Finanse"
+    },
+    "buttons": {
+      "add": "Dodaj",
+      "download": "Pobierz",
+      "history": "Historia",
+      "archive": "Archiwizuj",
+      "save": "Zapisz",
+      "delete": "Usuń"
+    },
+    "searchPlaceholder": "Szukaj dokumentów...",
+    "table": {
+      "name": "Nazwa",
+      "category": "Kategoria",
+      "date": "Data",
+      "size": "Rozmiar",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "statusActive": "Aktywny",
+    "templates": {
+      "employmentContract": "Umowa o pracę",
+      "employmentContractDesc": "Standard HR",
+      "vatInvoice": "Faktura VAT",
+      "vatInvoiceDesc": "Dla działu finansów",
+      "monthlyReport": "Raport miesięczny",
+      "monthlyReportDesc": "Wewnętrzne zestawienia",
+      "modification": "Modyfikacja"
+    },
+    "categories": {
+      "addCategory": "Dodaj kategorię",
+      "categoryName": "Nazwa kategorii",
+      "enterNamePlaceholder": "Wpisz nazwę",
+      "department": "Dział",
+      "categoryList": "Lista kategorii",
+      "category": "Kategoria",
+      "departmentHeader": "Dział",
+      "procedures": "Procedury",
+      "reports": "Raporty",
+      "templates": "Szablony"
+    },
+    "summary": {
+      "documentsCount": "Dokumentów",
+      "lastUpdate": "Ostatnia aktualizacja"
+    }
+  },
+  "nowyDokument": {
+    "title": "Nowy dokument",
+    "subtitle": "Tworzenie dokumentu w systemie – rok 2025",
+    "form": {
+      "documentName": "Nazwa dokumentu",
+      "enterNamePlaceholder": "Wprowadź nazwę",
+      "type": "Typ",
+      "types": {
+        "invoice": "Faktura",
+        "contract": "Umowa",
+        "report": "Raport",
+        "memo": "Notatka służbowa"
+      },
+      "department": "Dział",
+      "departments": {
+        "finance": "Finanse",
+        "hr": "HR",
+        "it": "IT",
+        "marketing": "Marketing"
+      },
+      "description": "Opis",
+      "descriptionPlaceholder": "Opis dokumentu...",
+      "attachment": "Załącznik",
+      "maxSize": "Maks. 10MB",
+      "date": "Data",
+      "priority": "Priorytet",
+      "priorities": {
+        "normal": "Normalny",
+        "high": "Wysoki",
+        "critical": "Krytyczny"
+      },
+      "additionalOptions": "Opcje dodatkowe",
+      "requireApproval": "Wymagaj akceptacji",
+      "confidentialDocument": "Poufny dokument",
+      "notifyTeam": "Powiadom zespół"
+    },
+    "buttons": {
+      "cancel": "Anuluj",
+      "preview": "Podgląd",
+      "save": "Zapisz"
+    },
+    "quickCreate": {
+      "title": "Szybkie tworzenie",
+      "newInvoice": "Nowa faktura",
+      "newContract": "Nowa umowa",
+      "newReport": "Nowy raport",
+      "memo": "Notatka służbowa"
+    }
+  },
+  "skrzynkaOperatora": {
+    "title": "Skrzynka operatora",
+    "subtitle": "Komunikaty i zadania systemowe – rok 2025",
+    "tabs": {
+      "messages": "Wiadomości",
+      "tasks": "Zadania",
+      "notifications": "Powiadomienia"
+    },
+    "messages": {
+      "filter": {
+        "allTypes": "Wszystkie typy",
+        "system": "Systemowe",
+        "users": "Użytkownicy"
+      },
+      "newMessageButton": "Nowa wiadomość",
+      "list": {
+        "systemFailureUrgent": "Awaria systemu - pilne!",
+        "erpDowntime": "ERP będzie niedostępny 15.04.2025, 22:00–02:00",
+        "systemAdmin": "Administrator systemu",
+        "dataVerificationRequest": "Prośba o weryfikację danych",
+        "checkClientXYZ": "Sprawdź dane klienta XYZ S.A.",
+        "annaNowak": "Anna Nowak"
+      },
+      "newBadge": "Nowe"
+    },
+    "tasks": {
+      "table": {
+        "task": "Zadanie",
+        "priority": "Priorytet",
+        "deadline": "Termin",
+        "status": "Status",
+        "actions": "Akcje"
+      },
+      "list": {
+        "verifyContractorData": "Weryfikacja danych kontrahentów",
+        "documentUpdate": "Aktualizacja dokumentacji"
+      },
+      "priorities": {
+        "high": "Wysoki",
+        "normal": "Normalny"
+      },
+      "statuses": {
+        "inProgress": "W realizacji",
+        "new": "Nowe"
+      },
+      "actions": {
+        "complete": "Zakończ",
+        "start": "Rozpocznij"
+      }
+    },
+    "notifications": {
+      "newSystemVersion": "Nowa wersja systemu 2.5 dostępna od 01.04.2025",
+      "detailsButton": "Szczegóły",
+      "ticketAssigned": "Zgłoszenie #{{ticketId}} przypisane do Ciebie",
+      "newUserApproval": "Nowy użytkownik oczekuje akceptacji"
+    },
+    "summary": {
+      "unreadMessages": "Nieprzeczytane wiadomości",
+      "unresolvedTasks": "Nierozwiązane zadania"
+    }
+  },
+  "skrzynkaPocztowa": {
+    "title": "Skrzynka pocztowa",
+    "subtitle": "System zarządzania wiadomościami – rok 2025",
+    "tabs": {
+      "inbox": "Odebrane",
+      "sent": "Wysłane",
+      "newMessage": "Nowa wiadomość"
+    },
+    "inbox": {
+      "refreshButton": "Odśwież",
+      "filter": {
+        "all": "Wszystkie",
+        "unread": "Nieprzeczytane",
+        "flagged": "Oznaczone"
+      },
+      "searchPlaceholder": "Szukaj wiadomości...",
+      "messages": {
+        "orderConfirmation": "Potwierdzenie zamówienia #2456",
+        "salesDepartment": "Dział sprzedaży",
+        "deliveryTermsChange": "Zmiana terminów dostawy",
+        "logisticsDepartment": "Dział logistyki"
+      },
+      "newBadge": "Nowe"
+    },
+    "sent": {
+      "table": {
+        "recipient": "Adresat",
+        "subject": "Temat",
+        "date": "Data",
+        "status": "Status"
+      },
+      "statuses": {
+        "delivered": "Dostarczono",
+        "sent": "Wysłano"
+      },
+      "subjects": {
+        "offerInquiry": "Zapytanie ofertowe",
+        "paymentConfirmation": "Potwierdzenie płatności"
+      }
+    },
+    "newMessage": {
+      "recipientLabel": "Adresat",
+      "recipientPlaceholder": "np. jan@firma.pl",
+      "subjectLabel": "Temat",
+      "subjectPlaceholder": "Temat wiadomości",
+      "messageContentLabel": "Treść wiadomości",
+      "attachmentLabel": "Załącznik",
+      "cancelButton": "Anuluj",
+      "sendButton": "Wyślij wiadomość"
+    },
+    "summary": {
+      "unreadMessages": "Nieprzeczytane",
+      "messagesCount": "wiadomości",
+      "systemVersion": "Wersja systemu"
+    }
+  },
+  "windykacjaSchematy": {
+    "title": "Schematy windykacyjne",
+    "subtitle": "Zarządzanie procesami windykacyjnymi – rok 2025",
+    "tabs": {
+      "listSchemes": "Lista schematów",
+      "newScheme": "Nowy schemat"
+    },
+    "list": {
+      "newSchemeButton": "Nowy schemat",
+      "importButton": "Importuj",
+      "searchPlaceholder": "Szukaj schematów...",
+      "standardProcessTitle": "Standardowy proces windykacji",
+      "table": {
+        "step": "Krok",
+        "action": "Działanie",
+        "deadline": "Termin",
+        "status": "Status",
+        "actions": "Akcje",
+        "sendReminder": "Wysłanie upomnienia",
+        "days": "dni",
+        "activeStatus": "Aktywny",
+        "recoveryCall": "Telefon windykacyjny"
+      }
+    },
+    "newScheme": {
+      "schemeNameLabel": "Nazwa schematu",
+      "schemeNamePlaceholder": "np. Windykacja standardowa",
+      "clientTypeLabel": "Typ klienta",
+      "clientTypeStandard": "Standardowy",
+      "clientTypeVIP": "VIP",
+      "clientTypeCorporate": "Korporacyjny",
+      "stepsInSchemeTitle": "Kroki w schemacie",
+      "step1Title": "Wysłanie upomnienia",
+      "actionTypeLabel": "Typ działania",
+      "actionTypeEmail": "Email",
+      "actionTypeSMS": "SMS",
+      "actionTypeList": "List",
+      "deleteStepButton": "Usuń krok",
+      "addStepButton": "Dodaj krok",
+      "cancelButton": "Anuluj",
+      "saveSchemeButton": "Zapisz schemat"
+    },
+    "summary": {
+      "activeSchemes": "Aktywnych schematów",
+      "lastModified": "Ostatnia modyfikacja"
+    }
+  },
+  "windykacjaHistoriaZdarzen": {
+    "title": "Historia zdarzeń windykacyjnych",
+    "subtitle": "Przegląd i zarządzanie procesami – rok 2025",
+    "filter": {
+      "clientNumber": "Numer klienta",
+      "clientNumberPlaceholder": "np. KLT/2025/001",
+      "dateFrom": "Data od",
+      "dateTo": "Data do",
+      "status": "Status",
+      "statuses": {
+        "all": "Wszystkie",
+        "active": "Aktywne",
+        "completed": "Zakończone"
+      },
+      "filterButton": "Filtruj",
+      "clearButton": "Wyczyść"
+    },
+    "summary": {
+      "title": "Podsumowanie windykacji – Q1 2025",
+      "totalDebt": "Łączna wartość zadłużeń",
+      "activeCases": "Aktywne sprawy",
+      "averageDelay": "Średnie opóźnienie",
+      "days": "dni"
+    },
+    "table": {
+      "headers": {
+        "eventDate": "Data zdarzenia",
+        "client": "Klient",
+        "type": "Typ",
+        "amount": "Kwota",
+        "status": "Status",
+        "responsible": "Odpowiedzialny"
+      },
+      "types": {
+        "paymentReminder": "Wezwanie do zapłaty",
+        "debtCall": "Telefon windykacyjny",
+        "reminderEmail": "Email przypominający"
+      },
+      "statuses": {
+        "inProgress": "W toku",
+        "completed": "Zakończone",
+        "delayed": "Opóźnione"
+      },
+      "responsible": {
+        "annaKowalska": "Anna Kowalska",
+        "janNowak": "Jan Nowak",
+        "marekWisniewski": "Marek Wiśniewski"
+      }
+    },
+    "actions": {
+      "exportCSV": "Eksportuj CSV",
+      "printReport": "Drukuj raport",
+      "newEvent": "Nowe zdarzenie"
+    }
+  },
+  "ankietyAnkietowanie": {
+    "title": "Ankiety i ankietowanie",
+    "subtitle": "Moduł CRM / badania wewnętrzne – rok 2025",
+    "filter": {
+      "keyword": "Słowo kluczowe",
+      "keywordPlaceholder": "np. satysfakcja, szkolenie",
+      "createdFrom": "Data utworzenia od",
+      "status": "Status"
+    },
+    "status": {
+      "all": "Wszystkie",
+      "active": "Aktywna",
+      "inPreparation": "W przygotowaniu"
+    },
+    "buttons": {
+      "filter": "Filtruj",
+      "preview": "Podgląd",
+      "edit": "Edytuj",
+      "exportCSV": "Eksportuj CSV",
+      "printReport": "Drukuj raport",
+      "newSurvey": "Nowa ankieta"
+    },
+    "summary": {
+      "title": "Podsumowanie ankiet – Q1 2025",
+      "totalSurveys": "Łączna liczba ankiet",
+      "activeNow": "Aktywne obecnie",
+      "avgResponses": "Średnia liczba odpowiedzi"
+    },
+    "table": {
+      "title": "Tytuł",
+      "created": "Utworzono",
+      "deadline": "Termin",
+      "status": "Status",
+      "responses": "Odpowiedzi",
+      "actions": "Akcje"
+    },
+    "example": {
+      "erpSurvey": "Satysfakcja z systemu ERP",
+      "trainingSurvey": "Ocena szkoleń 2025",
+      "customerSurvey": "Badanie potrzeb klientów"
+    }
+  },
+  "ankietyWzorce": {
+    "title": "Wzorce ankiet",
+    "subtitle": "Zarządzanie szablonami pytań i formularzy – CRM 2025",
+    "tabs": {
+      "templates": "Lista wzorców",
+      "newTemplate": "Nowy wzorzec",
+      "statistics": "Statystyki"
+    },
+    "buttons": {
+      "newTemplate": "Nowy wzorzec",
+      "import": "Importuj",
+      "preview": "Podgląd",
+      "use": "Użyj",
+      "delete": "Usuń",
+      "addQuestion": "Dodaj pytanie",
+      "fromLibrary": "Z biblioteki",
+      "cancel": "Anuluj",
+      "saveTemplate": "Zapisz wzorzec",
+      "deleteQuestion": "Usuń pytanie"
+    },
+    "search": {
+      "placeholder": "Szukaj wzorców..."
+    },
+    "table": {
+      "name": "Nazwa",
+      "category": "Kategoria",
+      "questions": "Pytania",
+      "date": "Data",
+      "status": "Status",
+      "actions": "Akcje",
+      "template": "Wzorzec",
+      "usageCount": "Użycia",
+      "lastUsed": "Ostatnie"
+    },
+    "status": {
+      "active": "Aktywny",
+      "draft": "Wersja robocza"
+    },
+    "categories": {
+      "marketResearch": "Badania rynku",
+      "hr": "HR",
+      "customerService": "Obsługa klienta"
+    },
+    "example": {
+      "customerSatisfaction": "Ankieta satysfakcji klienta",
+      "trainingEvaluation": "Ocena szkolenia"
+    },
+    "form": {
+      "templateName": "Nazwa wzorca",
+      "namePlaceholder": "Wpisz nazwę...",
+      "category": "Kategoria",
+      "description": "Opis",
+      "question": "Pytanie",
+      "questionType": "Typ pytania"
+    },
+    "questionTypes": {
+      "scale": "Skala 1–5",
+      "yesNo": "Tak/Nie",
+      "text": "Odpowiedź tekstowa"
+    },
+    "statistics": {
+      "usage": "Użycie wzorców"
+    },
+    "summary": {
+      "templatesCount": "Liczba dostępnych wzorców",
+      "mostUsed": "Najczęściej używany",
+      "uses": "użycia"
+    }
+  },
+  "ankietyPytania": {
+    "title": "Baza pytań ankietowych",
+    "subtitle": "Zarządzanie pytaniami formularzy w dziale CRM – 2025",
+    "tabs": {
+      "allQuestions": "Wszystkie pytania",
+      "newQuestion": "Nowe pytanie",
+      "statistics": "Statystyki"
+    },
+    "buttons": {
+      "newQuestion": "Nowe pytanie",
+      "edit": "Edytuj",
+      "delete": "Usuń",
+      "addOption": "Dodaj opcję",
+      "cancel": "Anuluj",
+      "saveQuestion": "Zapisz pytanie"
+    },
+    "search": {
+      "placeholder": "Szukaj pytań..."
+    },
+    "table": {
+      "questionText": "Treść pytania",
+      "type": "Typ",
+      "group": "Grupa",
+      "addedDate": "Dodano",
+      "status": "Status",
+      "actions": "Akcje",
+      "question": "Pytanie",
+      "surveys": "Ankiety",
+      "lastUsed": "Ostatnie użycie"
+    },
+    "status": {
+      "active": "Aktywne",
+      "archived": "Archiwalne"
+    },
+    "questionTypes": {
+      "ratingScale": "Skala ocen",
+      "multipleChoice": "Wielokrotny wybór",
+      "singleChoice": "Pojedynczy wybór",
+      "textAnswer": "Odpowiedź tekstowa"
+    },
+    "groups": {
+      "none": "Brak",
+      "satisfaction": "Satysfakcja",
+      "preferences": "Preferencje",
+      "demographics": "Demografia"
+    },
+    "example": {
+      "productRating": "Jak oceniasz nasz produkt w skali 1–5?",
+      "importantFeatures": "Jakie funkcje są dla Ciebie najważniejsze?"
+    },
+    "form": {
+      "questionText": "Treść pytania",
+      "questionPlaceholder": "Wpisz treść pytania...",
+      "questionType": "Typ pytania",
+      "selectPlaceholder": "Wybierz...",
+      "questionGroup": "Grupa pytań",
+      "answerOptions": "Opcje odpowiedzi",
+      "option": "Opcja",
+      "requiredQuestion": "Pytanie wymagane"
+    },
+    "statistics": {
+      "usageStats": "Statystyki użycia pytań"
+    },
+    "summary": {
+      "activeQuestions": "Liczba aktywnych pytań",
+      "lastAdded": "Ostatnio dodane"
+    }
+  },
+  "ankietySzablony": {
+    "title": "Szablony odpowiedzi",
+    "subtitle": "Zarządzanie predefiniowanymi odpowiedziami do pytań (2025)",
+    "tabs": {
+      "templates": "Lista szablonów",
+      "newTemplate": "Nowy szablon",
+      "statistics": "Statystyki"
+    },
+    "buttons": {
+      "newTemplate": "Nowy szablon",
+      "edit": "Edytuj",
+      "delete": "Usuń",
+      "addOption": "Dodaj opcję",
+      "cancel": "Anuluj",
+      "saveTemplate": "Zapisz szablon"
+    },
+    "search": {
+      "placeholder": "Szukaj szablonów..."
+    },
+    "table": {
+      "name": "Nazwa",
+      "type": "Typ",
+      "optionsCount": "Liczba opcji",
+      "date": "Data",
+      "status": "Status",
+      "actions": "Akcje",
+      "template": "Szablon",
+      "usageCount": "Użycia",
+      "lastUsed": "Ostatnie użycie"
+    },
+    "status": {
+      "active": "Aktywny",
+      "draft": "Roboczy"
+    },
+    "types": {
+      "scale": "Skala",
+      "list": "Lista",
+      "numericScale": "Skala liczbowa",
+      "choiceList": "Lista wyboru",
+      "yesNo": "Tak/Nie",
+      "verbalRating": "Ocena słowna"
+    },
+    "example": {
+      "satisfactionScale": "Skala satysfakcji 1–5",
+      "qualityRating": "Ocena jakości",
+      "veryDissatisfied": "Bardzo niezadowolony",
+      "satisfied": "Zadowolony"
+    },
+    "form": {
+      "templateName": "Nazwa szablonu",
+      "responseType": "Typ odpowiedzi",
+      "description": "Opis",
+      "responseOptions": "Opcje odpowiedzi",
+      "option": "Opcja",
+      "setAsDefault": "Ustaw jako domyślny"
+    },
+    "statistics": {
+      "usage": "Użycie szablonów"
+    },
+    "summary": {
+      "activeTemplates": "Liczba aktywnych szablonów",
+      "lastAdded": "Ostatnio dodany"
+    }
+  },
+  "ankietyGrupyZapytan": {
+    "title": "Grupy zapytań ankietowych",
+    "subtitle": "Zarządzanie zestawami pytań wykorzystywanych w ankietach",
+    "tabs": {
+      "list": "Lista grup",
+      "newGroup": "Nowa grupa",
+      "statistics": "Statystyki"
+    },
+    "buttons": {
+      "newGroup": "Nowa grupa",
+      "import": "Importuj",
+      "preview": "Podgląd",
+      "use": "Użyj",
+      "delete": "Usuń",
+      "addQuestion": "Dodaj pytanie",
+      "fromLibrary": "Z biblioteki",
+      "cancel": "Anuluj",
+      "saveGroup": "Zapisz grupę",
+      "deleteQuestion": "Usuń pytanie"
+    },
+    "search": {
+      "placeholder": "Szukaj grup..."
+    },
+    "table": {
+      "groupName": "Nazwa grupy",
+      "category": "Kategoria",
+      "questions": "Pytania",
+      "created": "Utworzono",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "active": "Aktywna",
+      "draft": "Robocza"
+    },
+    "categories": {
+      "customerService": "Obsługa klienta",
+      "management": "Zarządzanie",
+      "marketResearch": "Badania rynku",
+      "other": "Inne"
+    },
+    "example": {
+      "customerSatisfaction": "Grupa satysfakcji klienta",
+      "hrEvaluation": "Ocena wewnętrzna HR",
+      "question1": "Jak oceniasz szybkość obsługi?"
+    },
+    "form": {
+      "groupName": "Nazwa grupy",
+      "groupNamePlaceholder": "Wprowadź nazwę grupy",
+      "category": "Kategoria",
+      "description": "Opis grupy",
+      "questionsInGroup": "Pytania w grupie",
+      "questionType": "Typ pytania"
+    },
+    "questionTypes": {
+      "scale": "Skala 1-5",
+      "yesNo": "Tak/Nie",
+      "openText": "Tekst otwarty"
+    },
+    "statistics": {
+      "title": "Statystyka użycia grup",
+      "group": "Grupa",
+      "usage": "Użycia",
+      "lastUsed": "Ostatnie użycie"
+    },
+    "summary": {
+      "totalGroups": "Łączna liczba grup",
+      "mostUsed": "Najczęściej używana",
+      "uses": "użyć"
+    }
+  },
+  "wiecejFunkcji": {
+    "title": "Zaawansowane funkcje",
+    "subtitle": "Zarządzanie dodatkowymi funkcjonalnościami i raportami systemu",
+    "tabs": {
+      "reports": "Raporty",
+      "schedule": "Harmonogram"
+    },
+    "reports": {
+      "type": "Typ raportu",
+      "dateFrom": "Data od",
+      "dateTo": "Data do",
+      "reportName": "Nazwa raportu",
+      "generationDate": "Data generacji",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "reportTypes": {
+      "sales": "Raport sprzedaży",
+      "customerAnalysis": "Analiza klientów",
+      "productivity": "Statystyki produktywności"
+    },
+    "schedule": {
+      "filters": "Filtry harmonogramu",
+      "dateRange": "Zakres dat",
+      "next30Days": "Nadchodzące 30 dni",
+      "may2025": "Maj 2025",
+      "custom": "Niestandardowy",
+      "eventType": "Typ zdarzenia",
+      "all": "Wszystkie",
+      "meetings": "Spotkania",
+      "tasks": "Zadania",
+      "priority": "Priorytet",
+      "high": "Wysoki",
+      "medium": "Średni",
+      "upcomingEvents": "Nadchodzące wydarzenia",
+      "meeting": "Spotkanie",
+      "task": "Zadanie"
+    },
+    "status": {
+      "ready": "Gotowy",
+      "inProgress": "W trakcie",
+      "pending": "Oczekuje"
+    },
+    "examples": {
+      "salesQ1": "Raport sprzedaży Q1 2025",
+      "vipAnalysis": "Analiza klientów VIP",
+      "clientPresentation": "Prezentacja dla klienta",
+      "monthEnd": "Zamknięcie miesiąca"
+    },
+    "buttons": {
+      "download": "Pobierz",
+      "generateReport": "Generuj raport",
+      "exportData": "Eksportuj dane",
+      "saveSettings": "Zapisz ustawienia"
+    }
+  },
+  "faktury": {
+    "title": "Lista faktur sprzedażowych",
+    "subtitle": "Przeglądaj i filtruj wystawione faktury",
+    "tabs": {
+      "search": "Wyszukiwanie",
+      "list": "Lista faktur"
+    },
+    "search": {
+      "title": "Wyszukiwanie faktur sprzedażowych",
+      "invoiceNumber": "Numer faktury",
+      "invoiceNumberPlaceholder": "Wprowadź numer faktury",
+      "contractor": "Kontrahent",
+      "contractorPlaceholder": "Nazwa kontrahenta",
+      "dateFrom": "Data od",
+      "dateTo": "Data do",
+      "paymentStatus": "Status płatności",
+      "all": "Wszystkie",
+      "placeholderList": "Szukaj w liście faktur..."
+    },
+    "buttons": {
+      "clear": "Wyczyść",
+      "filter": "Filtruj",
+      "newInvoice": "Nowa faktura",
+      "proformaList": "Lista proforma"
+    },
+    "table": {
+      "number": "Numer",
+      "issueDate": "Data wystawienia",
+      "contractor": "Kontrahent",
+      "grossAmount": "Kwota brutto",
+      "status": "Status"
+    },
+    "status": {
+      "paid": "Zapłacona",
+      "unpaid": "Niezapłacona"
+    },
+    "example": {
+      "companyABC": "ABC Sp. z o.o.",
+      "companyXYZ": "XYZ S.A.",
+      "janNowak": "Nowak Jan"
+    }
+  },
+  "nowaFaktura": {
+    "title": "Nowa faktura sprzedażowa",
+    "form": {
+      "contractor": "Kontrahent",
+      "contractorPlaceholder": "Wprowadź nazwę lub NIP",
+      "issueDate": "Data wystawienia",
+      "dueDate": "Termin płatności",
+      "paymentMethod": "Sposób płatności",
+      "invoiceType": "Typ faktury"
+    },
+    "dueOptions": {
+      "7": "7 dni",
+      "14": "14 dni",
+      "30": "30 dni"
+    },
+    "paymentOptions": {
+      "transfer": "Przelew",
+      "cash": "Gotówka",
+      "card": "Karta"
+    },
+    "invoiceTypes": {
+      "vat": "Faktura VAT",
+      "proforma": "Faktura Proforma"
+    },
+    "items": {
+      "header": "Pozycje faktury",
+      "name": "Nazwa towaru/usługi",
+      "qty": "Ilość",
+      "unit": "J.m.",
+      "netPrice": "Cena netto",
+      "vat": "VAT",
+      "netValue": "Wartość netto",
+      "actions": "Akcje",
+      "add": "Dodaj pozycję",
+      "remove": "Usuń"
+    },
+    "buttons": {
+      "backVAT": "Lista faktur VAT",
+      "backProforma": "Lista faktur proforma",
+      "save": "Zapisz fakturę"
+    }
+  }
+}

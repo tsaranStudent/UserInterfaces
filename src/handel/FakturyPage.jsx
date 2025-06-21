@@ -1,140 +1,210 @@
-﻿import '../App.css';
-
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import { Container, Row, Col, Tabs, Tab, Button, Form, Table, Accordion, Badge, Card, InputGroup } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
 
 export const Faktury = () => {
+    const { t } = useTranslation();
+
     return (
-        <Container fluid className="lang-pl background">
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                <h3 className="page-title mt-3">Lista faktur sprzedażowych</h3>
-            </div>
-            </Container>
-            
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-2">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-file-text-fill me-1" aria-hidden="true" />
+                        {t('faktury.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('faktury.subtitle')}
+                    </p>
+                </div>
 
-            <Accordion defaultActiveKey="kryteria" className="module-tabs">
-                <Accordion.Item eventKey="kryteria" className="accordion-item">
-                    <Accordion.Header className="accordion-header">
-                        Wyszukiwanie faktur sprzedażowych
-                    </Accordion.Header>
-                    <Accordion.Body className="form-section">
-                        <Form>
-                            <Row fluid className="mb-2 row">
-                                <Col md={2}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Numer faktury</Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            placeholder="Wprowadź numer"
-                                            className="search-input"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={2}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Kontrahent</Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            placeholder="Nazwa kontrahenta"
-                                            className="search-input"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col mmd={2}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data od</Form.Label>
-                                        <Form.Control
-                                            type="date"
-                                            className="form-control"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={2}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data do</Form.Label>
-                                        <Form.Control
-                                            type="date"
-                                            className="form-control"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={2}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Status płatności</Form.Label>
-                                        <Form.Select className="form-control">
-                                            <option>Wszystkie</option>
-                                            <option value="zaplacona">Zapłacona</option>
-                                            <option value="niezaplacona">Niezapłacona</option>
-                                        </Form.Select>
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-                            <Row className="mb-2">                                
-                                <Col md={12} className="d-flex align-items-end justify-content-end">
-                                    <div className="actions-bar-end">
-                                        <Button variant="secondary">Wyczyść</Button>
-                                        <Button variant="primary" className="ms-2">Filtruj</Button>
+                {/* Zakładki */}
+                <Tabs defaultActiveKey="search" className="mb-4 module-tabs">
+                    {/* Wyszukiwanie */}
+                    <Tab
+                        eventKey="search"
+                        title={
+                            <>
+                                <i className="bi bi-search me-1" aria-hidden="true" />
+                                {t('faktury.search.title')}
+                            </>
+                        }
+                    >
+                        <Card className="form-section">
+                            <Card.Body>
+                                <Form>
+                                    <Row className="g-3">
+                                        <Col md={3}>
+                                            <Form.Label className="form-label">
+                                                <i className="bi bi-file-earmark-text me-1" aria-hidden="true" />
+                                                {t('faktury.search.invoiceNumber')}
+                                            </Form.Label>
+                                            <Form.Control
+                                                type="text"
+                                                placeholder={t('faktury.search.invoiceNumberPlaceholder')}
+                                                className="search-input"
+                                            />
+                                        </Col>
+                                        <Col md={3}>
+                                            <Form.Label className="form-label">
+                                                <i className="bi bi-people me-1" aria-hidden="true" />
+                                                {t('faktury.search.contractor')}
+                                            </Form.Label>
+                                            <Form.Control
+                                                type="text"
+                                                placeholder={t('faktury.search.contractorPlaceholder')}
+                                                className="search-input"
+                                            />
+                                        </Col>
+                                        <Col md={2}>
+                                            <Form.Label className="form-label">
+                                                <i className="bi bi-calendar-date me-1" aria-hidden="true" />
+                                                {t('faktury.search.dateFrom')}
+                                            </Form.Label>
+                                            <Form.Control type="date" />
+                                        </Col>
+                                        <Col md={2}>
+                                            <Form.Label className="form-label">
+                                                <i className="bi bi-calendar2-check me-1" aria-hidden="true" />
+                                                {t('faktury.search.dateTo')}
+                                            </Form.Label>
+                                            <Form.Control type="date" />
+                                        </Col>
+                                        <Col md={2}>
+                                            <Form.Label className="form-label">
+                                                <i className="bi bi-wallet2 me-1" aria-hidden="true" />
+                                                {t('faktury.search.paymentStatus')}
+                                            </Form.Label>
+                                            <Form.Select>
+                                                <option>{t('faktury.search.all')}</option>
+                                                <option value="zaplacona">{t('faktury.status.paid')}</option>
+                                                <option value="niezaplacona">{t('faktury.status.unpaid')}</option>
+                                            </Form.Select>
+                                        </Col>
+                                    </Row>
+                                    <div className="actions-bar-end mt-3">
+                                        <Button variant="outline-secondary">
+                                            <i className="bi bi-x-circle me-1" aria-hidden="true" />
+                                            {t('faktury.buttons.clear')}
+                                        </Button>
+                                        <Button variant="primary" className="ms-2">
+                                            <i className="bi bi-funnel me-1" aria-hidden="true" />
+                                            {t('faktury.buttons.filter')}
+                                        </Button>
                                     </div>
-                                </Col>
-                            </Row>
+                                </Form>
+                            </Card.Body>
+                        </Card>
+                    </Tab>
 
-                        </Form>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
+                    {/* Lista faktur */}
+                    <Tab
+                        eventKey="list"
+                        title={
+                            <>
+                                <i className="bi bi-list-ul me-1" aria-hidden="true" />
+                                {t('faktury.tabs.list')}
+                            </>
+                        }
+                    >
+                        {/* Wyszukiwanie w liście */}
+                        <div className="actions-bar mb-3">
+                            <InputGroup className="search-input">
+                                <Form.Control placeholder={t('faktury.search.placeholderList')} />
+                                <Button variant="outline-secondary">
+                                    <i className="bi bi-search" aria-hidden="true" />
+                                </Button>
+                            </InputGroup>
+                            <div className="actions-bar-end">
+                                <Link to="/nowaFaktura">
+                                    <Button variant="outline-success" className="me-2">
+                                        <i className="bi bi-plus-circle me-1" aria-hidden="true" />
+                                        {t('faktury.buttons.newInvoice')}
+                                    </Button>
+                                </Link>
+                                <Link to="/fakturyProforma">
+                                    <Button variant="outline-primary">
+                                        <i className="bi bi-file-earmark-text-fill me-1" aria-hidden="true" />
+                                        {t('faktury.buttons.proformaList')}
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
 
-            <div className="actions-bar-end mt-4 form-section">
-                <Link to="/nowaFaktura">
-                    <Button variant="outline-success" className="me-3">Nowa faktura</Button>
-                </Link>
-                <Link to="/fakturyProforma">
-                    <Button variant="outline-primary">Lista proforma</Button>
-                </Link>
-            </div>
-
-            <Table striped bordered hover responsive className="data-table mt-4">
-                <thead>
-                    <tr>
-                        <th>Numer</th>
-                        <th>Data wystawienia</th>
-                        <th>Kontrahent</th>
-                        <th>Kwota brutto</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>FV/2024/001</td>
-                        <td>2024-04-01</td>
-                        <td>ABC Sp. z o.o.</td>
-                        <td>5 000,00 zł</td>
-                        <td><span className="badge badge-success">Zapłacona</span></td>
-                    </tr>
-                    <tr>
-                        <td>FV/2024/002</td>
-                        <td>2024-04-03</td>
-                        <td>XYZ S.A.</td>
-                        <td>8 500,00 zł</td>
-                        <td><span className="badge badge-danger">Niezapłacona</span></td>
-                    </tr>
-                    <tr>
-                        <td>FV/2024/003</td>
-                        <td>2024-04-05</td>
-                        <td>Nowak Jan</td>
-                        <td>1 200,00 zł</td>
-                        <td><span className="badge badge-success">Zapłacona</span></td>
-                    </tr>
-                </tbody>
-            </Table>
-
-        </Container>
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <i className="bi bi-hash me-1" aria-hidden="true" />
+                                        {t('faktury.table.number')}
+                                    </th>
+                                    <th>
+                                        <i className="bi bi-calendar-date me-1" aria-hidden="true" />
+                                        {t('faktury.table.issueDate')}
+                                    </th>
+                                    <th>
+                                        <i className="bi bi-people me-1" aria-hidden="true" />
+                                        {t('faktury.table.contractor')}
+                                    </th>
+                                    <th>
+                                        <i className="bi bi-cash-stack me-1" aria-hidden="true" />
+                                        {t('faktury.table.grossAmount')}
+                                    </th>
+                                    <th>
+                                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                                        {t('faktury.table.status')}
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {/* Przykładowe wiersze */}
+                                <tr>
+                                    <td>FV/2024/001</td>
+                                    <td>2024-04-01</td>
+                                    <td>{t('faktury.example.companyABC')}</td>
+                                    <td>5 000,00 zł</td>
+                                    <td>
+                                        <Badge bg="success">
+                                            <i className="bi bi-check2-circle me-1" aria-hidden="true" />
+                                            {t('faktury.status.paid')}
+                                        </Badge>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>FV/2024/002</td>
+                                    <td>2024-04-03</td>
+                                    <td>{t('faktury.example.companyXYZ')}</td>
+                                    <td>8 500,00 zł</td>
+                                    <td>
+                                        <Badge bg="danger">
+                                            <i className="bi bi-x-circle me-1" aria-hidden="true" />
+                                            {t('faktury.status.unpaid')}
+                                        </Badge>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>FV/2024/003</td>
+                                    <td>2024-04-05</td>
+                                    <td>{t('faktury.example.janNowak')}</td>
+                                    <td>1 200,00 zł</td>
+                                    <td>
+                                        <Badge bg="success">
+                                            <i className="bi bi-check2-circle me-1" aria-hidden="true" />
+                                            {t('faktury.status.paid')}
+                                        </Badge>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Tab>
+                </Tabs>
+            </Container>
+        </div>
     );
 };
