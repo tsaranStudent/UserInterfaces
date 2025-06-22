@@ -1,56 +1,180 @@
-﻿# React + Vite
+﻿# SystemERP – Aplikacja webowa ERP (React + Vite + Bootstrap)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SystemERP to eksperymentalna aplikacja webowa klasy ERP, stworzona jako projekt edukacyjny inspirowany systemem Comarch Optima. 
+Projekt wykorzystuje React i Vite do stworzenia modularnego, skalowalnego systemu do zarządzania zasobami firmy, 
+zawierającego setki stron `.jsx`, rozbudowaną nawigację, dynamiczne menu oraz wstępną obsługę ciemnego motywu i tłumaczeń.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Główne założenia
 
-# Projekt - Aplikacja SystemERP (React + Bootstrap)
+- Wzorowanie się na strukturze i logice Comarch Optima
+- Frontend-only – bez zaplecza serwerowego
+- Setki stron `.jsx` zgrupowane w folderach modułowych (handel, CRM, księgowość itd.)
+- Obsługa wielu języków (PL/EN) z tłumaczeniami w plikach `.json`
+- Routing z podziałem na sekcje i dynamiczny pasek nawigacyjny
+- Eksperymentalny ciemny motyw
+- Koncentracja na strukturze kodu, nie na danych
 
-# Komponent Layout
+## Technologie
 
-Główny komponent nawigacyjny aplikacji, który zawiera:
+- React + React Router DOM – logika aplikacji i routing
+- Vite – szybkie bundlowanie projektu
+- React-Bootstrap – UI oparte na Bootstrap 5
+- i18next – internacjonalizacja, tłumaczenia PL/EN
+- ESLint + Prettier – kontrola jakości kodu
+- JSON – struktury tłumaczeń (i18n/locales/pl.json, en.json)
 
-- Responsywną nawigację z wykorzystaniem React-Bootstrap
-- Dynamiczne menu rozwijane z podziałem na sekcje (Home, Handel, CRM, Księgowość itp.)
-- System grupowania ścieżek i wyświetlania odpowiednich pasków nawigacyjnych
-- Wyszukiwarkę w navbarze
-- Obsługę routingu przy użyciu React Router
-- Kontener dla treści strony (Outlet)
-- Stopkę aplikacji
+## Moduły aplikacji
 
-## Funkcjonalności
+Struktura kodu zawiera ponad 200 plików .jsx, pogrupowanych tematycznie:
 
-- Automatyczne wykrywanie aktualnej ścieżki i wyświetlanie odpowiedniego paska nawigacyjnego
-- Rozbudowane menu z podziałem na logiczne kategorie
-- Responsywny design dostosowany do różnych rozmiarów ekranu
-- Spójny układ dla całej aplikacji
+Start:
+- Strona główna
+- Informacje o firmie
+- Konfiguracja
+- Zmiana firmy
+- Odśwież konfigurację
+- Włącz nowe funkcje
+- Nowości w wersji
+- Koniec pracy
+- Logowanie
 
-## Wykorzystane technologie
+Handel:
+- Faktury sprzedaży i zakupu
+- Faktury proforma, paragony
+- Przyjęcia i wydania zewnętrzne
+- Nowa faktura / paragon
+- Zlecenia cykliczne i jednorazowe
+- Raport braków, zasoby magazynowe
+- Rezerwacje odbiorców, sprzedaż dedykowana
+- Urządzenia serwisowe
 
-- React
-- React-Bootstrap
-- React Router
+CRM:
+- Kontakty i skrzynka operatora
+- Skrzynka pocztowa
+- Oferty handlowe, terminarz
+- Faktury cykliczne
+- Biblioteka dokumentów
+- Windykacja: historia zdarzeń, schematy
+- Ankiety: pytania, wzorce, grupy zapytań, szablony
 
-## Podstrony:
-1. **Faktury** - Przegląd i dodawanie faktur sprzedaży.
-2. **Paragony** - Lista paragonów i możliwość ich wystawienia.
-3. **Przyjęcia zewnętrzne** - Rejestrowanie dostaw do magazynu.
-4. **Zlecenia** - Zlecenia serwisowe / produkcyjne.
-5. **Raport braków** - Raportowanie brakujących towarów.
-6. **Zasoby** - Widok aktualnych zasobów magazynowych.
+Księgowość:
+- Dokumenty źródłowe i księgowe
+- Zapisy KPiR, środki trwałe, wyposażenie
+- Deklaracje CIT, PIT
+- Spis z natury, inwentaryzacja, ewidencja
+- Samochody i dokumentacja
 
-## Funkcje:
-- Routing między stronami (react-router-dom)
-- Nawigacja w menu (Navbar)
-- Bootstrap do stylizacji
-- Każda podstrona posiada unikalną treść
+Kasa/Bank:
+- Preliminarz płatności
+- Rejestry kasowo-bankowe, zapisy kasowe
+- Rozliczenia podmiotów
+- Raporty, kompensaty, różnice kursowe
+- Historia wymiany walut
+- Magazyn walut
+- Import/eksport danych z systemami bankowymi
 
-## Autor:
-Tomek S.
+Kadry i płace:
+- Kadry, pracownicy, struktura organizacyjna
+- Nowy pracownik, listy płac
+- PIT pracowników, PPK, PFRON, ZUS
+- PKZP, wpłaty i deklaracje
+- Deklaracje roczne i załączniki PIT
+
+Widok / Personalizacja:
+- Czcionki, kompozycje widoków
+- Ustawienia okien (ogólne, import, eksport)
+- Personalizacja układów ekranów
+
+Ogólne:
+- Kontrahenci, nowy kontrahent
+- Towary, nowy towar
+- Kategorie, grupy towarowe, cenniki
+- Rabaty, atrybuty, waluty
+- Przesyłki kurierskie, pracownicy
+- Dane osobowe, raporty
+- Wiadomości SMS, zakup pakietów
+- Udzielanie pełnomocnictwa
+- Wymiary opisu analitycznego
+
+Rejestry VAT / JPK:
+- Ewidencje rejestrów VAT
+- Deklaracje VAT-7, VAT-UE, VAT-9M, JPK
+- Struktura zakupów, wiadomości od klientów
+- Historia wymiany danych
+- Import JPK do rejestrów
+- Wysyłka i odbiór danych
+
+Pomoc:
+- Pomoc – jak zacząć
+- FAQ, filmy instruktażowe
+- System obsługi zdarzeń
+- Rejestracja programu, zdalna pomoc
+- O programie
+- Personalizowana strona użytkownika
+
+## Tłumaczenia i języki
+
+Aplikacja posiada mechanizm tłumaczeń z użyciem react-i18next.
+
+- Obsługiwane języki: polski, angielski
+- Tłumaczenia przechowywane w plikach JSON:
+  - i18n/locales/pl.json
+  - i18n/locales/en.json
+- Komponent LanguageManager pozwala na przełączanie języka w interfejsie
+
+## Tryb ciemny
+
+W aplikacji znajduje się przełącznik trybu ciemnego (ThemeManager), jednak:
+
+- Tryb ciemny działa tylko częściowo
+- Wiele komponentów nie posiada pełnego wsparcia stylów
+- Ze względu na ograniczony czas, funkcja została zaimplementowana w wersji roboczej
+
+## Wyzwania i ograniczenia
+
+- Bardzo duża liczba plików `.jsx` utrudnia refaktoryzację
+- Brak backendu – tylko warstwa front-end (mock-up)
+- Częściowa implementacja trybu ciemnego
+- Ręczna konfiguracja wielu tras i komponentów
+- Brak testów jednostkowych
+- Konieczność refaktoryzacji do TypeScript w przyszłości
+
+## Uruchamianie projektu
+
+Instalacja zależności:
+
+npm install
+
+Uruchomienie aplikacji w trybie deweloperskim:
+
+npm run dev
+
+Budowanie wersji produkcyjnej:
+
+npm run build
+
+## Możliwości dalszego rozwoju
+
+- Połączenie z backendem (REST API lub GraphQL)
+- Wprowadzenie TypeScript
+- Poprawa działania trybu ciemnego
+- Automatyzacja generowania tras
+- Refaktoryzacja i optymalizacja struktury folderów
+- Testy jednostkowe komponentów
+
+## Autor projektu
+
+Tomasz S.
+
+GitHub: https://github.com/tomeks-dev (przykład – podmień na właściwy jeśli inny)
+
+## Inspiracja
+
+Projekt inspirowany został systemem Comarch Optima – zarówno pod względem struktury modułów, jak i typowych funkcjonalności stosowanych w firmach księgowych i handlowych w Polsce.
+
+## Licencja
+
+Projekt ma charakter edukacyjny. Nie zawiera rzeczywistych danych, nie posiada backendu i nie jest przeznaczony do wdrożeń produkcyjnych bez dalszych prac.

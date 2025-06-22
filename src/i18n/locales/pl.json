@@ -3875,5 +3875,1093 @@
       "contractor1": "ABC Sp. z o.o.",
       "contractor2": "XYZ S.A."
     }
+  },
+  "dokumentyRozliczone": {
+    "title": "Dokumenty rozliczone",
+    "subtitle": "Przegląd rozliczonych dokumentów finansowych (2025)",
+    "tabs": {
+      "overview": "Przegląd rozliczeń",
+      "details": "Szczegóły rozliczenia",
+      "statistics": "Statystyki"
+    },
+    "table": {
+      "settlementNumber": "Numer rozliczenia",
+      "date": "Data",
+      "type": "Typ",
+      "documentsCount": "Liczba dokumentów",
+      "amount": "Kwota",
+      "status": "Status",
+      "actions": "Akcje",
+      "documentNumber": "Numer dokumentu",
+      "contractor": "Kontrahent",
+      "percentage": "% udziału"
+    },
+    "types": {
+      "invoice": "Faktura VAT",
+      "payment": "Płatność",
+      "invoicePayment": "Faktura + Płatność",
+      "multipleDocuments": "Wiele dokumentów",
+      "other": "Inne"
+    },
+    "status": {
+      "booked": "Zaksięgowano",
+      "verification": "Weryfikacja"
+    },
+    "actions": {
+      "filter": "Filtruj",
+      "exportExcel": "Eksportuj do Excel",
+      "details": "Szczegóły",
+      "printConfirmation": "Drukuj potwierdzenie"
+    },
+    "search": {
+      "placeholder": "Wyszukaj rozliczenia..."
+    },
+    "details": {
+      "title": "Szczegóły rozliczenia",
+      "settlementDate": "Data rozliczenia",
+      "settlementAmount": "Kwota rozliczenia",
+      "status": "Status",
+      "linkedDocuments": "Powiązane dokumenty"
+    },
+    "statistics": {
+      "year2025": "Rozliczenia w 2025 roku",
+      "settlementsCount": "Liczba rozliczeń",
+      "totalAmount": "Łączna kwota",
+      "averageValue": "Średnia wartość",
+      "settlementTypes": "Typy rozliczeń",
+      "wholeYear": "Cały rok"
+    },
+    "months": {
+      "january": "Styczeń",
+      "may": "Maj"
+    },
+    "example": {
+      "contractor1": "ABC Sp. z o.o."
+    }
+  },
+  "dokumentyKompensat": {
+    "title": "Dokumenty kompensat",
+    "subtitle": "Zarządzanie dokumentami kompensat finansowych (2025)",
+    "tabs": {
+      "list": "Lista dokumentów",
+      "new": "Nowy dokument",
+      "reports": "Raporty"
+    },
+    "table": {
+      "documentNumber": "Numer dokumentu",
+      "date": "Data",
+      "contractor": "Kontrahent",
+      "amount": "Kwota",
+      "status": "Status",
+      "actions": "Akcje",
+      "type": "Typ",
+      "balance": "Saldo",
+      "month": "Miesiąc",
+      "count": "Liczba",
+      "value": "Wartość"
+    },
+    "types": {
+      "internal": "Kompensata wewnętrzna",
+      "contractor": "Kompensata z kontrahentem",
+      "invoice": "Faktura",
+      "payment": "Płatność"
+    },
+    "status": {
+      "booked": "Zaksięgowana",
+      "inProgress": "W trakcie"
+    },
+    "actions": {
+      "newCompensation": "Nowa kompensata",
+      "import": "Importuj",
+      "details": "Szczegóły",
+      "edit": "Edytuj",
+      "addItem": "Dodaj pozycję",
+      "cancel": "Anuluj",
+      "saveDocument": "Zapisz dokument",
+      "generateReport": "Generuj raport"
+    },
+    "search": {
+      "placeholder": "Szukaj dokumentów..."
+    },
+    "newDocument": {
+      "title": "Nowy dokument kompensaty",
+      "documentType": "Typ dokumentu",
+      "documentDate": "Data dokumentu",
+      "contractor": "Kontrahent",
+      "compensationItems": "Pozycje kompensaty"
+    },
+    "reports": {
+      "title": "Raporty kompensat",
+      "periodFrom": "Okres od",
+      "periodTo": "Okres do"
+    },
+    "months": {
+      "may": "Maj",
+      "april": "Kwiecień"
+    },
+    "example": {
+      "contractor1": "ABC Sp. z o.o.",
+      "contractor2": "XYZ S.A."
+    }
+  },
+  "rozniceKursowe": {
+    "title": "Różnice kursowe",
+    "subtitle": "Ewidencja i rozliczanie różnic kursowych (2025)",
+    "tabs": {
+      "registry": "Ewidencja",
+      "new": "Nowa różnica",
+      "reports": "Raporty"
+    },
+    "table": {
+      "date": "Data",
+      "currency": "Waluta",
+      "amount": "Kwota",
+      "nbpRate": "Kurs NBP",
+      "difference": "Różnica",
+      "status": "Status",
+      "actions": "Akcje",
+      "operationsCount": "Liczba operacji",
+      "differencesSum": "Suma różnic",
+      "averageRate": "Kurs średni",
+      "change": "Zmiana"
+    },
+    "status": {
+      "booked": "Zaksięgowano",
+      "toSettle": "Do rozliczenia"
+    },
+    "actions": {
+      "addDifference": "Dodaj różnicę",
+      "export": "Eksportuj",
+      "details": "Szczegóły",
+      "settle": "Rozlicz",
+      "cancel": "Anuluj",
+      "saveDifference": "Zapisz różnicę"
+    },
+    "newDifference": {
+      "title": "Dodaj nową różnicę kursową",
+      "operationDate": "Data operacji",
+      "currency": "Waluta",
+      "amount": "Kwota",
+      "nbpRate": "Kurs NBP",
+      "transactionRate": "Kurs transakcyjny",
+      "differenceLabel": "Różnica kursowa"
+    },
+    "reports": {
+      "monthlySettlements": "Rozliczenia miesięczne",
+      "nbpRates": "Kursy średnie NBP"
+    },
+    "months": {
+      "may": "Maj"
+    }
+  },
+  "delegacje": {
+    "title": "Zarządzanie delegacjami",
+    "subtitle": "Moduł rozliczeń delegacji służbowych (2025)",
+    "tabs": {
+      "list": "Lista delegacji",
+      "new": "Nowa delegacja",
+      "settlements": "Rozliczenia"
+    },
+    "table": {
+      "number": "Numer",
+      "employee": "Pracownik",
+      "purpose": "Cel delegacji",
+      "period": "Okres",
+      "amount": "Kwota",
+      "status": "Status",
+      "actions": "Akcje",
+      "category": "Kategoria",
+      "advance": "Zaliczka",
+      "settlement": "Rozliczenie",
+      "difference": "Różnica"
+    },
+    "status": {
+      "settled": "Rozliczona",
+      "toSettle": "Do rozliczenia"
+    },
+    "categories": {
+      "diet": "Dieta",
+      "accommodation": "Nocleg",
+      "transport": "Transport"
+    },
+    "actions": {
+      "newDelegation": "Nowa delegacja",
+      "import": "Importuj",
+      "details": "Szczegóły",
+      "cancel": "Anuluj",
+      "saveDelegation": "Zapisz delegację",
+      "approveSettlement": "Zatwierdź rozliczenie"
+    },
+    "search": {
+      "placeholder": "Szukaj delegacji..."
+    },
+    "newDelegation": {
+      "title": "Nowa delegacja służbowa",
+      "employee": "Pracownik",
+      "selectEmployee": "Wybierz pracownika...",
+      "orderDate": "Data zlecenia",
+      "purpose": "Cel delegacji",
+      "startDate": "Data rozpoczęcia",
+      "endDate": "Data zakończenia",
+      "costs": "Koszty delegacji",
+      "diet": "Dieta",
+      "accommodation": "Nocleg",
+      "transport": "Transport"
+    },
+    "settlements": {
+      "title": "Rozliczenie delegacji",
+      "selectDelegation": "Wybierz delegację do rozliczenia",
+      "finalBalance": "Saldo końcowe"
+    },
+    "example": {
+      "employee1": "Jan Kowalski",
+      "employee2": "Anna Nowak",
+      "employee3": "Marek Wiśniewski",
+      "purpose1": "Szkolenie ERP",
+      "purpose2": "Wizyta u klienta"
+    }
+  },
+  "wyslijDaneKasaBank": {
+    "title": "Wysyłka danych bankowych",
+    "subtitle": "Integracja i eksport danych do systemów bankowych (2025)",
+    "tabs": {
+      "send": "Wysyłka danych",
+      "config": "Konfiguracja",
+      "logs": "Logi systemowe"
+    },
+    "lastSend": "Ostatnia wysyłka",
+    "status": "Status",
+    "statuses": {
+      "sent": "Wysłano",
+      "inProgress": "W trakcie",
+      "success": "Sukces",
+      "error": "Błąd"
+    },
+    "selectBank": "Wybierz bank",
+    "dataType": "Typ danych",
+    "dateFrom": "Data od",
+    "dateTo": "Data do",
+    "recentSends": "Ostatnie wysyłki",
+    "banks": {
+      "pko": "Bank PKO BP",
+      "pekao": "Bank Pekao SA",
+      "mbank": "mBank",
+      "nbp": "NBP"
+    },
+    "types": {
+      "payments": "Zlecenia płatności",
+      "statement": "Wyciąg bankowy",
+      "contractors": "Dane kontrahentów"
+    },
+    "table": {
+      "sendDate": "Data wysyłki",
+      "bank": "Bank",
+      "dataType": "Typ danych",
+      "records": "Liczba rekordów",
+      "operation": "Operacja",
+      "details": "Szczegóły"
+    },
+    "actions": {
+      "sendData": "Wyślij dane",
+      "cancel": "Anuluj",
+      "saveChanges": "Zapisz zmiany"
+    },
+    "config": {
+      "title": "Ustawienia integracji",
+      "autoSend": "Automatyczna wysyłka",
+      "enabled": "Właczona",
+      "disabled": "Wyłączona",
+      "dataFormat": "Format danych",
+      "accessData": "Dane dostępowe",
+      "apiLogin": "Login API",
+      "enterLogin": "Wprowadź login",
+      "apiKey": "Klucz API",
+      "enterKey": "Wprowadź klucz"
+    },
+    "logs": {
+      "allStatuses": "Wszystkie statusy",
+      "sent24": "Wysłano 24 zlecenia",
+      "noConnection": "Brak połączenia"
+    },
+    "operations": {
+      "sendPayments": "Wysyłka płatności",
+      "syncRates": "Synchronizacja kursów"
+    }
+  },
+  "odbierzDane": {
+    "title": "Odbierz dane bankowe",
+    "subtitle": "Integracja z systemami bankowymi (2025)",
+    "tabs": {
+      "download": "Pobierz dane",
+      "config": "Konfiguracja",
+      "logs": "Logi systemowe"
+    },
+    "lastUpdate": "Ostatnia aktualizacja",
+    "selectBank": "Wybierz bank",
+    "dateFrom": "Data od",
+    "dateTo": "Data do",
+    "recentDownloads": "Ostatnie pobrania",
+    "banks": {
+      "pko": "Bank PKO BP",
+      "pekao": "Bank Pekao SA",
+      "mbank": "mBank",
+      "nbp": "NBP"
+    },
+    "table": {
+      "downloadDate": "Data pobrania",
+      "bank": "Bank",
+      "period": "Okres",
+      "transactions": "Liczba transakcji",
+      "date": "Data",
+      "operation": "Operacja",
+      "status": "Status",
+      "details": "Szczegóły"
+    },
+    "statuses": {
+      "success": "Sukces",
+      "error": "Błąd"
+    },
+    "actions": {
+      "downloadData": "Pobierz dane",
+      "cancel": "Anuluj",
+      "saveChanges": "Zapisz zmiany"
+    },
+    "config": {
+      "title": "Ustawienia integracji",
+      "autoDownload": "Automatyczne pobieranie",
+      "enabled": "Właczone",
+      "disabled": "Wyłączone",
+      "dataFormat": "Format danych",
+      "accessData": "Dane dostępowe",
+      "login": "Login",
+      "enterLogin": "Wprowadź login",
+      "password": "Hasło",
+      "enterPassword": "Wprowadź hasło"
+    },
+    "logs": {
+      "allStatuses": "Wszystkie statusy",
+      "downloaded24": "Pobrano 24 transakcje",
+      "updated12": "Zaktualizowano 12 kursów"
+    },
+    "operations": {
+      "downloadTransactions": "Pobieranie transakcji",
+      "updateRates": "Aktualizacja kursów"
+    }
+  },
+  "handelNavbar": {
+    "brand": "Handel",
+    "sections": {
+      "sales": "Sprzedaż",
+      "purchase": "Zakup",
+      "warehouse": "Magazyn",
+      "orders": "Zlecenia",
+      "service": "Serwis",
+      "dictionaries": "Słowniki"
+    },
+    "links": {
+      "salesInvoices": "Faktury sprzedaży",
+      "newInvoice": "Nowa faktura",
+      "receipts": "Paragony",
+      "newReceipt": "Nowy paragon",
+      "proformaInvoices": "Faktury proforma",
+      "customerReservations": "Rezerwacje odbiorcy",
+      "purchaseInvoices": "Faktury zakupu",
+      "externalReceipts": "Przyjęcia zewnętrzne (Pz)",
+      "resources": "Zasoby (stany magazynowe)",
+      "externalIssues": "Wydania zewnętrzne (Wz)",
+      "shortageReport": "Raport braków",
+      "salesOrders": "Zlecenia sprzedaży",
+      "recurringOrders": "Zlecenia cykliczne",
+      "supplierOrders": "Zlecenia u dostawcy",
+      "deviceService": "Serwis urządzeń",
+      "deviceTypes": "Rodzaje urządzeń",
+      "serviceOrders": "Zlecenia serwisowe",
+      "resourcesWarehouse": "Zasoby (magazyn)"
+    }
+  },
+  "historiaWymiany": {
+    "title": "Historia wymiany walut",
+    "subtitle": "Archiwum operacji wymiany walutowych (2025)",
+    "tabs": {
+      "list": "Lista operacji",
+      "new": "Nowa wymiana",
+      "report": "Raport kursów"
+    },
+    "filters": {
+      "allCurrencies": "Wszystkie waluty"
+    },
+    "table": {
+      "operationNumber": "Numer operacji",
+      "date": "Data",
+      "sourceCurrency": "Waluta źródłowa",
+      "targetCurrency": "Waluta docelowa",
+      "rate": "Kurs",
+      "amount": "Kwota",
+      "status": "Status",
+      "actions": "Akcje",
+      "currency": "Waluta",
+      "averageRate": "Kurs średni",
+      "change": "Zmiana",
+      "currencyPair": "Para walutowa",
+      "operationsCount": "Liczba operacji",
+      "totalAmount": "Łączna kwota"
+    },
+    "statuses": {
+      "booked": "Zaksięgowano",
+      "pending": "Oczekuje"
+    },
+    "actions": {
+      "export": "Eksportuj",
+      "details": "Szczegóły",
+      "cancel": "Anuluj",
+      "confirmExchange": "Zatwierdź wymianę"
+    },
+    "newOperation": {
+      "title": "Nowa operacja wymiany walut",
+      "operationDate": "Data operacji",
+      "sourceCurrency": "Waluta źródłowa",
+      "amount": "Kwota",
+      "targetCurrency": "Waluta docelowa",
+      "exchangeRate": "Kurs wymiany",
+      "exchangedAmount": "Kwota po wymianie"
+    },
+    "reports": {
+      "averageRates": "Średnie kursy walut",
+      "exchangeStats": "Statystyki wymian"
+    }
+  },
+  "klienciBiura": {
+    "title": "Klienci biura walutowego",
+    "subtitle": "Zarządzanie klientami wymiany walut (2025)",
+    "tabs": {
+      "list": "Lista klientów",
+      "add": "Nowy klient",
+      "stats": "Statystyki"
+    },
+    "table": {
+      "clientId": "ID Klienta",
+      "name": "Nazwa",
+      "type": "Typ",
+      "lastTransaction": "Ostatnia transakcja",
+      "transactionsCount": "Liczba transakcji",
+      "status": "Status",
+      "actions": "Akcje",
+      "month": "Miesiąc",
+      "newClients": "Nowi klienci",
+      "transactions": "Transakcje",
+      "clientType": "Typ klienta",
+      "count": "Liczba",
+      "share": "% udziału"
+    },
+    "clientTypes": {
+      "individual": "Osoba fizyczna",
+      "company": "Firma"
+    },
+    "statuses": {
+      "active": "Aktywny",
+      "verification": "Weryfikacja"
+    },
+    "actions": {
+      "addClient": "Dodaj klienta",
+      "export": "Eksportuj",
+      "history": "Historia",
+      "cancel": "Anuluj",
+      "register": "Zarejestruj klienta"
+    },
+    "search": {
+      "placeholder": "Wyszukaj klienta...",
+      "button": "Szukaj"
+    },
+    "newClient": {
+      "title": "Rejestracja nowego klienta",
+      "clientType": "Typ klienta",
+      "registrationDate": "Data rejestracji",
+      "name": "Imię i nazwisko / Nazwa firmy",
+      "namePlaceholder": "Wprowadź nazwę",
+      "documentNumber": "Numer dokumentu",
+      "documentPlaceholder": "PESEL/NIP",
+      "contactData": "Dane kontaktowe",
+      "email": "Email",
+      "phone": "Telefon"
+    },
+    "stats": {
+      "activity": "Aktywność klientów",
+      "distribution": "Podział klientów"
+    },
+    "months": {
+      "january": "Styczeń",
+      "february": "Luty",
+      "march": "Marzec",
+      "april": "Kwiecień",
+      "may": "Maj",
+      "june": "Czerwiec",
+      "july": "Lipiec",
+      "august": "Sierpień",
+      "september": "Wrzesień",
+      "october": "Październik",
+      "november": "Listopad",
+      "december": "Grudzień"
+    },
+    "exampleClients": {
+      "individual": "Jan Nowak",
+      "company": "ABC Sp. z o.o."
+    }
+  },
+  "rejestryVatPage": {
+    "title": "Rejestry VAT",
+    "subtitle": "Ewidencja VAT dla potrzeb rozliczeń z urzędem skarbowym (2025)",
+    "tabs": {
+      "register": "Ewidencja VAT",
+      "settlement": "Rozliczenie miesięczne",
+      "reports": "Raporty bankowe"
+    },
+    "filters": {
+      "all": "Wszystkie",
+      "sales": "Sprzedaż",
+      "purchases": "Zakup"
+    },
+    "table": {
+      "date": "Data",
+      "number": "Numer",
+      "contractor": "Kontrahent",
+      "net": "Netto",
+      "vat": "VAT",
+      "gross": "Brutto",
+      "status": "Status",
+      "rate": "Stawka VAT",
+      "operationDate": "Data operacji",
+      "documentNumber": "Numer dokumentu",
+      "description": "Opis",
+      "amount": "Kwota"
+    },
+    "statuses": {
+      "booked": "Zaksięgowano",
+      "pending": "Oczekuje"
+    },
+    "actions": {
+      "newEntry": "Nowy wpis",
+      "import": "Importuj z banku",
+      "generateVat7": "Generuj deklarację VAT-7",
+      "generateReport": "Generuj raport",
+      "exportCsv": "Eksportuj do CSV"
+    },
+    "search": {
+      "placeholder": "Szukaj..."
+    },
+    "settlement": {
+      "title": "Rozliczenie miesięczne",
+      "month": "Miesiąc rozliczeniowy",
+      "deadline": "Termin płatności VAT",
+      "vatToPay": "VAT do zapłaty"
+    },
+    "reports": {
+      "title": "Raporty bankowe",
+      "dateFrom": "Data od",
+      "dateTo": "Data do",
+      "paymentForInvoice": "Płatność za fakturę"
+    },
+    "months": {
+      "january": "Styczeń",
+      "february": "Luty",
+      "march": "Marzec",
+      "april": "Kwiecień",
+      "may": "Maj",
+      "june": "Czerwiec",
+      "july": "Lipiec",
+      "august": "Sierpień",
+      "september": "Wrzesień",
+      "october": "Październik",
+      "november": "Listopad",
+      "december": "Grudzień"
+    },
+    "exampleContractors": {
+      "abc": "ABC Sp. z o.o.",
+      "xyz": "XYZ Sp. z o.o."
+    }
+  },
+  "strukturaZakupowPage": {
+    "title": "Struktura zakupów",
+    "subtitle": "Analiza zakupów VAT za okresy rozliczeniowe (2025)",
+    "tabs": {
+      "analysis": "Analiza zakupów",
+      "vatRates": "Stawki VAT",
+      "suppliersAnalysis": "Analiza dostawców"
+    },
+    "table": {
+      "supplier": "Dostawca",
+      "nip": "NIP",
+      "netValue": "Wartość netto",
+      "vat": "VAT",
+      "invoicesCount": "Liczba faktur",
+      "share": "Udział %",
+      "vatRate": "Stawka VAT",
+      "vatAmount": "Kwota VAT",
+      "documentsCount": "Liczba dokumentów",
+      "lp": "Lp.",
+      "purchasesValue": "Wartość zakupów",
+      "trend": "Trend",
+      "actions": "Akcje"
+    },
+    "summary": {
+      "totalPurchases": "Łączna wartość zakupów",
+      "vatAmount": "VAT naliczony",
+      "invoicesCount": "Liczba faktur",
+      "growth": "{value} wzrost względem poprzedniego miesiąca"
+    },
+    "vatRates": {
+      "title": "Analiza stawek VAT",
+      "period": "Okres rozliczeniowy",
+      "supplierGroup": "Grupa dostawców",
+      "allGroups": "Wszystkie grupy",
+      "buildingMaterials": "Materiały budowlane",
+      "services": "Usługi",
+      "totalNetValue": "Łączna wartość netto"
+    },
+    "actions": {
+      "generateReport": "Generuj raport",
+      "exportExcel": "Eksportuj do Excel",
+      "generateSummary": "Generuj zestawienie",
+      "filter": "Filtruj",
+      "details": "Szczegóły"
+    },
+    "search": {
+      "suppliers": "Filtruj dostawców..."
+    },
+    "months": {
+      "january": "Styczeń",
+      "february": "Luty",
+      "march": "Marzec",
+      "april": "Kwiecień",
+      "may": "Maj",
+      "june": "Czerwiec",
+      "july": "Lipiec",
+      "august": "Sierpień",
+      "september": "Wrzesień",
+      "october": "Październik",
+      "november": "Listopad",
+      "december": "Grudzień"
+    },
+    "exampleSuppliers": {
+      "abc": "ABC Zaopatrzenie Sp. z o.o.",
+      "xyz": "XYZ Materiały Budowlane"
+    }
+  },
+  "ewidencjaDodatkowaPage": {
+    "title": "Ewidencja dodatkowa VAT",
+    "subtitle": "Specjalne rejestry i zestawienia podatkowe (2025)",
+    "tabs": {
+      "registers": "Rejestry specjalne",
+      "statements": "Zestawienia okresowe",
+      "corrections": "Korekty VAT",
+      "analysis": "Analiza rozliczeń"
+    },
+    "filters": {
+      "allRegisters": "Wszystkie rejestry"
+    },
+    "registerTypes": {
+      "fixedAssets": "Środki trwałe",
+      "internationalServices": "Usługi międzynarodowe",
+      "companyCars": "Samochody służbowe"
+    },
+    "statementTypes": {
+      "taxationChoice": "Wybór opodatkowania",
+      "splitPayment": "Podzielona płatność",
+      "wdtWnt": "WDT/WNT"
+    },
+    "correctionTypes": {
+      "correctingInvoice": "Faktura korygująca",
+      "fixedAssetCorrection": "Korekta środka trwałego"
+    },
+    "categories": {
+      "intraCommunityAcquisition": "Wewnątrzwspólnotowe nabycie towarów",
+      "intraCommunitySupply": "Wewnątrzwspólnotowa dostawa towarów"
+    },
+    "statuses": {
+      "booked": "Zaksięgowano",
+      "verification": "Do weryfikacji"
+    },
+    "actions": {
+      "newEntry": "Nowy wpis",
+      "generateReport": "Generuj raport",
+      "exportJpk": "Eksportuj do JPK",
+      "addCorrection": "Dodaj korektę",
+      "details": "Szczegóły"
+    },
+    "statements": {
+      "title": "Zestawienia okresowe",
+      "period": "Okres rozliczeniowy",
+      "type": "Typ zestawienia",
+      "details": "Szczegóły zestawienia",
+      "totalValue": "Łączna wartość transakcji"
+    },
+    "analysis": {
+      "specialTransactions": "Transakcje specjalne",
+      "currentMonth": "w bieżącym miesiącu",
+      "totalCorrections": "Łączna wartość korekt",
+      "lastQuarter": "w ostatnim kwartale",
+      "avgSettlementTime": "Średni czas rozliczenia",
+      "days": "dnia",
+      "forSpecialTransactions": "dla transakcji specjalnych",
+      "monthlyStats": "Statystyki miesięczne"
+    },
+    "search": {
+      "corrections": "Szukaj korekt..."
+    },
+    "table": {
+      "date": "Data",
+      "registerType": "Typ rejestru",
+      "documentNumber": "Numer dokumentu",
+      "netAmount": "Kwota netto",
+      "vat": "VAT",
+      "status": "Status",
+      "category": "Kategoria",
+      "transactionsCount": "Liczba transakcji",
+      "netValue": "Wartość netto",
+      "correctionDate": "Data korekty",
+      "sourceDocument": "Dokument źródłowy",
+      "correctionAmount": "Kwota korekty",
+      "correctionType": "Typ korekty",
+      "actions": "Akcje",
+      "month": "Miesiąc",
+      "specialTransactions": "Transakcje specjalne",
+      "vatCorrections": "Korekty VAT"
+    },
+    "months": {
+      "january": "Styczeń",
+      "february": "Luty",
+      "march": "Marzec",
+      "april": "Kwiecień",
+      "may": "Maj",
+      "june": "Czerwiec",
+      "july": "Lipiec",
+      "august": "Sierpień",
+      "september": "Wrzesień",
+      "october": "Październik",
+      "november": "Listopad",
+      "december": "Grudzień"
+    }
+  },
+  "ewidencjaKasowegoPit": {
+    "title": "Ewidencja kasowego PIT",
+    "subtitle": "Rozliczenia miesięczne PIT dla transakcji gotówkowych (2025)",
+    "tabs": {
+      "ewidencja": "Ewidencja transakcji",
+      "rozliczenie": "Rozliczenie miesięczne",
+      "raporty": "Raporty i statystyki"
+    },
+    "actions": {
+      "addTransaction": "Dodaj transakcję",
+      "importBank": "Importuj z banku",
+      "filterPlaceholder": "Szukaj transakcji..."
+    },
+    "selectors": {
+      "selectMonth": "Maj 2025",
+      "selectMonthAlt": "Kwiecień 2025",
+      "selectMonthMar": "Marzec 2025"
+    },
+    "table": {
+      "date": "Data",
+      "docNo": "Numer dokumentu",
+      "counterparty": "Kontrahent",
+      "netAmount": "Kwota netto",
+      "tax": "Podatek",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "statuses": {
+      "posted": "Zaksięgowano",
+      "pending": "Do weryfikacji"
+    },
+    "actionsCell": {
+      "details": "Szczegóły"
+    },
+    "operations": {
+      "monthlyHeading": "Miesiąc rozliczeniowy*",
+      "paymentDue": "Termin płatności"
+    },
+    "summary": {
+      "header": "Podatek do zapłaty",
+      "generateBtn": "Generuj deklarację PIT-5"
+    },
+    "report": {
+      "quarterlyTitle": "Podsumowanie kwartalne",
+      "monthlyStatsTitle": "Statystyki miesięczne",
+      "fields": {
+        "transactions": "Ilość transakcji",
+        "netTotal": "Łączna wartość netto",
+        "taxDue": "Podatek należny",
+        "avgTransaction": "Średnia transakcja",
+        "topCounterparty": "Najczęstszy kontrahent",
+        "topDay": "Dzień z największą liczbą transakcji"
+      },
+      "groupedReport": {
+        "generate": "Generuj raport",
+        "exportCsv": "Eksportuj do CSV"
+      },
+      "groupedTable": {
+        "period": "Data",
+        "count": "Liczba transakcji",
+        "net": "Wartość netto",
+        "tax": "Podatek"
+      }
+    }
+  },
+  "deklaracjePlikiJPK_V7": {
+    "title": "Deklaracje JPK_V7",
+    "subtitle": "Generowanie i zarządzanie plikami JPK_V7 (2025)",
+    "tabs": {
+      "lista": "Lista deklaracji",
+      "nowy": "Nowy JPK_V7",
+      "weryfikacja": "Weryfikacja",
+      "statystyki": "Statystyki"
+    },
+    "actions": {
+      "newFile": "Nowy JPK_V7",
+      "importFile": "Importuj plik",
+      "filterPlaceholder": "Szukaj deklaracji..."
+    },
+    "selectors": {
+      "allMonths": "Wszystkie miesiące",
+      "may2025": "Maj 2025",
+      "apr2025": "Kwiecień 2025"
+    },
+    "table": {
+      "fileName": "Nazwa pliku",
+      "period": "Okres rozliczeniowy",
+      "creationDate": "Data utworzenia",
+      "size": "Rozmiar",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "statuses": {
+      "uploaded": "Przesłany",
+      "verification": "Weryfikacja"
+    },
+    "actionsCell": {
+      "download": "Pobierz",
+      "details": "Szczegóły"
+    },
+    "newForm": {
+      "fields": {
+        "period": {
+          "label": "Okres rozliczeniowy*",
+          "options": [ "Maj 2025", "Kwiecień 2025", "Marzec 2025" ]
+        },
+        "paymentDue": {
+          "label": "Termin płatności",
+          "default": "2025-06-25"
+        },
+        "declarationType": {
+          "label": "Typ deklaracji*",
+          "options": [ "Miesięczna", "Kwartalna" ]
+        },
+        "schemaVersion": {
+          "label": "Wersja schematu*",
+          "options": [ "JPK_V7M (1-3)", "JPK_V7K (1-2)" ]
+        },
+        "notes": {
+          "label": "Uwagi"
+        }
+      },
+      "buttons": {
+        "cancel": "Anuluj",
+        "generate": "Generuj JPK_V7"
+      }
+    },
+    "verification": {
+      "selectFile": {
+        "label": "Wybierz plik JPK_V7 do weryfikacji",
+        "options": [ "JPK_V7_05_2025.xml - Maj 2025", "JPK_V7_04_2025.xml - Kwiecień 2025" ]
+      },
+      "table": {
+        "element": "Element JPK",
+        "count": "Liczba pozycji",
+        "netValue": "Wartość netto",
+        "vat": "VAT"
+      },
+      "summary": {
+        "vatDue": "VAT do zapłaty",
+        "verifyBtn": "Zweryfikuj plik",
+        "sendBtn": "Wyślij do MF"
+      }
+    },
+    "statistics": {
+      "yearlyTitle": "Podsumowanie roczne",
+      "filesStatusTitle": "Statusy plików",
+      "yearly": {
+        "declarations": "Złożone deklaracje",
+        "avgTime": "Średni czas generowania",
+        "avgSize": "Średni rozmiar pliku"
+      },
+      "filesStatus": {
+        "uploaded": "Przesłane",
+        "verification": "Weryfikacja",
+        "errors": "Błędy"
+      }
+    }
+  },
+  "deklaracjeVatUe": {
+    "title": "Deklaracje VAT UE",
+    "subtitle": "Rozliczenia transakcji wewnątrzwspólnotowych (2025)",
+    "tabs": {
+      "wdt": "WDT",
+      "wnt": "WNT",
+      "intrastat": "INTRASTAT",
+      "statistics": "Statystyki"
+    },
+    "actions": {
+      "newDeclaration": "Nowa deklaracja",
+      "importData": "Importuj dane",
+      "searchPlaceholder": "Szukaj kontrahenta...",
+      "generateWnt": "Generuj deklarację WNT",
+      "generateReport": "Generuj raport",
+      "exportXml": "Eksportuj do XML"
+    },
+    "selectors": {
+      "may": "Maj 2025",
+      "april": "Kwiecień 2025",
+      "march": "Marzec 2025"
+    },
+    "table": {
+      "country": "Kraj",
+      "contractor": "Kontrahent",
+      "vatNumber": "Numer VAT",
+      "netValue": "Wartość netto",
+      "transactions": "Liczba transakcji",
+      "status": "Status",
+      "originCountry": "Kraj pochodzenia",
+      "supplier": "Dostawca",
+      "goodsCode": "Kod towaru",
+      "quantity": "Ilość",
+      "unit": "Jednostka"
+    },
+    "units": {
+      "pcs": "szt",
+      "kg": "kg"
+    },
+    "status": {
+      "reported": "Zgłoszono",
+      "inProgress": "W przygotowaniu"
+    },
+    "wntForm": {
+      "period": "Okres rozliczeniowy*",
+      "deadline": "Termin zgłoszenia"
+    },
+    "summary": {
+      "totalWnt": "Łączna wartość WNT"
+    },
+    "stats": {
+      "wdt": "Transakcje WDT",
+      "wnt": "Transakcje WNT",
+      "contractors": "Liczba kontrahentów",
+      "suppliers": "Liczba dostawców",
+      "totalValue": "Łączna wartość",
+      "topCountry": "Najczęstszy kraj",
+      "germany": "Niemcy (45%)",
+      "italy": "Włochy (38%)"
+    }
+  },
+  "homePage": {
+    "title": "Panel główny",
+    "subtitle": "System zarządzania firmą",
+    "changeCompany": "Zmień firmę",
+    "selectCompany": "Wybierz firmę",
+    "companies": {
+      "system": "System ERP",
+      "contractors": "NASA",
+      "invoices": "WSB-NLU"
+    },
+    "mainModules": "Główne moduły",
+    "modules": {
+      "contractors": {
+        "icon": "people",
+        "color": "primary",
+        "title": "Kontrahenci",
+        "description": "Zarządzanie kontrahentami"
+      },
+      "invoices": {
+        "icon": "receipt",
+        "color": "success",
+        "title": "Faktury",
+        "description": "Wystawianie faktur"
+      },
+      "products": {
+        "icon": "boxes",
+        "color": "warning",
+        "title": "Produkty",
+        "description": "Zarządzanie produktami"
+      },
+      "reports": {
+        "icon": "graph-up-arrow",
+        "color": "danger",
+        "title": "Raporty",
+        "description": "Generowanie raportów"
+      }
+    },
+    "ui": {
+      "goTo": "Przejdź",
+      "quickAccess": "Szybki dostęp",
+      "showAll": "Pokaż wszystkie"
+    },
+    "settings": {
+      "system": "Konfiguracja systemu"
+    },
+    "help": {
+      "faq": "Pomoc i FAQ"
+    },
+    "user": {
+      "logout": "Wyloguj się"
+    },
+    "news": {
+      "title": "Aktualności",
+      "latestUpdates": "Najnowsze aktualizacje",
+      "items": [
+        {
+          "icon": "robot",
+          "text": "Integracja z systemem HRM",
+          "badgeColor": "success",
+          "badgeText": "Nowe"
+        },
+        {
+          "icon": "bank",
+          "text": "Aktualizacja modułu kasowego",
+          "badgeColor": "primary",
+          "badgeText": "Ulepszone"
+        },
+        {
+          "icon": "file-earmark-bar-graph",
+          "text": "Informacje o JPK",
+          "badgeColor": "info",
+          "badgeText": "Szybciej"
+        }
+      ]
+    },
+    "stats": {
+      "title": "Statystyki",
+      "items": [
+        {
+          "icon": "receipt",
+          "color": "success",
+          "label": "Faktury",
+          "value": "5"
+        },
+        {
+          "icon": "people",
+          "color": "primary",
+          "label": "Kontrahenci",
+          "value": "3"
+        },
+        {
+          "icon": "boxes",
+          "color": "warning",
+          "label": "Operacje magazynowe",
+          "value": "12"
+        }
+      ]
+    },
+    "footer": {
+      "about": "O programie",
+      "docs": "Dokumentacja"
+    }
   }
 }

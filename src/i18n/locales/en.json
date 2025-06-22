@@ -3875,5 +3875,1093 @@
       "contractor1": "ABC Ltd.",
       "contractor2": "XYZ Inc."
     }
+  },
+  "dokumentyRozliczone": {
+    "title": "Settled Documents",
+    "subtitle": "Overview of settled financial documents (2025)",
+    "tabs": {
+      "overview": "Settlements overview",
+      "details": "Settlement details",
+      "statistics": "Statistics"
+    },
+    "table": {
+      "settlementNumber": "Settlement number",
+      "date": "Date",
+      "type": "Type",
+      "documentsCount": "Documents count",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions",
+      "documentNumber": "Document number",
+      "contractor": "Contractor",
+      "percentage": "Percentage"
+    },
+    "types": {
+      "invoice": "VAT Invoice",
+      "payment": "Payment",
+      "invoicePayment": "Invoice + Payment",
+      "multipleDocuments": "Multiple documents",
+      "other": "Other"
+    },
+    "status": {
+      "booked": "Booked",
+      "verification": "Verification"
+    },
+    "actions": {
+      "filter": "Filter",
+      "exportExcel": "Export to Excel",
+      "details": "Details",
+      "printConfirmation": "Print confirmation"
+    },
+    "search": {
+      "placeholder": "Search settlements..."
+    },
+    "details": {
+      "title": "Settlement details",
+      "settlementDate": "Settlement date",
+      "settlementAmount": "Settlement amount",
+      "status": "Status",
+      "linkedDocuments": "Linked documents"
+    },
+    "statistics": {
+      "year2025": "Settlements in 2025",
+      "settlementsCount": "Settlements count",
+      "totalAmount": "Total amount",
+      "averageValue": "Average value",
+      "settlementTypes": "Settlement types",
+      "wholeYear": "Whole year"
+    },
+    "months": {
+      "january": "January",
+      "may": "May"
+    },
+    "example": {
+      "contractor1": "ABC Ltd."
+    }
+  },
+  "dokumentyKompensat": {
+    "title": "Compensation Documents",
+    "subtitle": "Management of financial compensation documents (2025)",
+    "tabs": {
+      "list": "Documents list",
+      "new": "New document",
+      "reports": "Reports"
+    },
+    "table": {
+      "documentNumber": "Document number",
+      "date": "Date",
+      "contractor": "Contractor",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions",
+      "type": "Type",
+      "balance": "Balance",
+      "month": "Month",
+      "count": "Count",
+      "value": "Value"
+    },
+    "types": {
+      "internal": "Internal compensation",
+      "contractor": "Contractor compensation",
+      "invoice": "Invoice",
+      "payment": "Payment"
+    },
+    "status": {
+      "booked": "Booked",
+      "inProgress": "In progress"
+    },
+    "actions": {
+      "newCompensation": "New compensation",
+      "import": "Import",
+      "details": "Details",
+      "edit": "Edit",
+      "addItem": "Add item",
+      "cancel": "Cancel",
+      "saveDocument": "Save document",
+      "generateReport": "Generate report"
+    },
+    "search": {
+      "placeholder": "Search documents..."
+    },
+    "newDocument": {
+      "title": "New compensation document",
+      "documentType": "Document type",
+      "documentDate": "Document date",
+      "contractor": "Contractor",
+      "compensationItems": "Compensation items"
+    },
+    "reports": {
+      "title": "Compensation reports",
+      "periodFrom": "Period from",
+      "periodTo": "Period to"
+    },
+    "months": {
+      "may": "May",
+      "april": "April"
+    },
+    "example": {
+      "contractor1": "ABC Ltd.",
+      "contractor2": "XYZ Inc."
+    }
+  },
+  "rozniceKursowe": {
+    "title": "Exchange Differences",
+    "subtitle": "Recording and settlement of exchange differences (2025)",
+    "tabs": {
+      "registry": "Registry",
+      "new": "New difference",
+      "reports": "Reports"
+    },
+    "table": {
+      "date": "Date",
+      "currency": "Currency",
+      "amount": "Amount",
+      "nbpRate": "NBP Rate",
+      "difference": "Difference",
+      "status": "Status",
+      "actions": "Actions",
+      "operationsCount": "Operations count",
+      "differencesSum": "Differences sum",
+      "averageRate": "Average rate",
+      "change": "Change"
+    },
+    "status": {
+      "booked": "Booked",
+      "toSettle": "To settle"
+    },
+    "actions": {
+      "addDifference": "Add difference",
+      "export": "Export",
+      "details": "Details",
+      "settle": "Settle",
+      "cancel": "Cancel",
+      "saveDifference": "Save difference"
+    },
+    "newDifference": {
+      "title": "Add new exchange difference",
+      "operationDate": "Operation date",
+      "currency": "Currency",
+      "amount": "Amount",
+      "nbpRate": "NBP Rate",
+      "transactionRate": "Transaction rate",
+      "differenceLabel": "Exchange difference"
+    },
+    "reports": {
+      "monthlySettlements": "Monthly settlements",
+      "nbpRates": "NBP Average Rates"
+    },
+    "months": {
+      "may": "May"
+    }
+  },
+  "delegacje": {
+    "title": "Business Trips Management",
+    "subtitle": "Business trips settlement module (2025)",
+    "tabs": {
+      "list": "Trips list",
+      "new": "New trip",
+      "settlements": "Settlements"
+    },
+    "table": {
+      "number": "Number",
+      "employee": "Employee",
+      "purpose": "Purpose",
+      "period": "Period",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions",
+      "category": "Category",
+      "advance": "Advance",
+      "settlement": "Settlement",
+      "difference": "Difference"
+    },
+    "status": {
+      "settled": "Settled",
+      "toSettle": "To settle"
+    },
+    "categories": {
+      "diet": "Diet",
+      "accommodation": "Accommodation",
+      "transport": "Transport"
+    },
+    "actions": {
+      "newDelegation": "New trip",
+      "import": "Import",
+      "details": "Details",
+      "cancel": "Cancel",
+      "saveDelegation": "Save trip",
+      "approveSettlement": "Approve settlement"
+    },
+    "search": {
+      "placeholder": "Search trips..."
+    },
+    "newDelegation": {
+      "title": "New business trip",
+      "employee": "Employee",
+      "selectEmployee": "Select employee...",
+      "orderDate": "Order date",
+      "purpose": "Purpose",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "costs": "Trip costs",
+      "diet": "Diet",
+      "accommodation": "Accommodation",
+      "transport": "Transport"
+    },
+    "settlements": {
+      "title": "Trip settlement",
+      "selectDelegation": "Select trip to settle",
+      "finalBalance": "Final balance"
+    },
+    "example": {
+      "employee1": "John Smith",
+      "employee2": "Anna Nowak",
+      "employee3": "Mark Wilson",
+      "purpose1": "ERP Training",
+      "purpose2": "Client visit"
+    }
+  },
+  "wyslijDaneKasaBank": {
+    "title": "Bank Data Export",
+    "subtitle": "Integration and export of data to banking systems (2025)",
+    "tabs": {
+      "send": "Data export",
+      "config": "Configuration",
+      "logs": "System logs"
+    },
+    "lastSend": "Last export",
+    "status": "Status",
+    "statuses": {
+      "sent": "Sent",
+      "inProgress": "In progress",
+      "success": "Success",
+      "error": "Error"
+    },
+    "selectBank": "Select bank",
+    "dataType": "Data type",
+    "dateFrom": "Date from",
+    "dateTo": "Date to",
+    "recentSends": "Recent exports",
+    "banks": {
+      "pko": "PKO BP Bank",
+      "pekao": "Pekao SA Bank",
+      "mbank": "mBank",
+      "nbp": "NBP"
+    },
+    "types": {
+      "payments": "Payment orders",
+      "statement": "Bank statement",
+      "contractors": "Contractors data"
+    },
+    "table": {
+      "sendDate": "Export date",
+      "bank": "Bank",
+      "dataType": "Data type",
+      "records": "Records count",
+      "operation": "Operation",
+      "details": "Details"
+    },
+    "actions": {
+      "sendData": "Send data",
+      "cancel": "Cancel",
+      "saveChanges": "Save changes"
+    },
+    "config": {
+      "title": "Integration settings",
+      "autoSend": "Auto export",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "dataFormat": "Data format",
+      "accessData": "Access data",
+      "apiLogin": "API login",
+      "enterLogin": "Enter login",
+      "apiKey": "API key",
+      "enterKey": "Enter key"
+    },
+    "logs": {
+      "allStatuses": "All statuses",
+      "sent24": "Sent 24 orders",
+      "noConnection": "No connection"
+    },
+    "operations": {
+      "sendPayments": "Payments export",
+      "syncRates": "Rates synchronization"
+    }
+  },
+  "odbierzDane": {
+    "title": "Receive Bank Data",
+    "subtitle": "Integration with banking systems (2025)",
+    "tabs": {
+      "download": "Download data",
+      "config": "Configuration",
+      "logs": "System logs"
+    },
+    "lastUpdate": "Last update",
+    "selectBank": "Select bank",
+    "dateFrom": "Date from",
+    "dateTo": "Date to",
+    "recentDownloads": "Recent downloads",
+    "banks": {
+      "pko": "PKO BP Bank",
+      "pekao": "Pekao SA Bank",
+      "mbank": "mBank",
+      "nbp": "NBP"
+    },
+    "table": {
+      "downloadDate": "Download date",
+      "bank": "Bank",
+      "period": "Period",
+      "transactions": "Transactions count",
+      "date": "Date",
+      "operation": "Operation",
+      "status": "Status",
+      "details": "Details"
+    },
+    "statuses": {
+      "success": "Success",
+      "error": "Error"
+    },
+    "actions": {
+      "downloadData": "Download data",
+      "cancel": "Cancel",
+      "saveChanges": "Save changes"
+    },
+    "config": {
+      "title": "Integration settings",
+      "autoDownload": "Auto download",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "dataFormat": "Data format",
+      "accessData": "Access data",
+      "login": "Login",
+      "enterLogin": "Enter login",
+      "password": "Password",
+      "enterPassword": "Enter password"
+    },
+    "logs": {
+      "allStatuses": "All statuses",
+      "downloaded24": "Downloaded 24 transactions",
+      "updated12": "Updated 12 rates"
+    },
+    "operations": {
+      "downloadTransactions": "Download transactions",
+      "updateRates": "Update rates"
+    }
+  },
+  "handelNavbar": {
+    "brand": "Trade",
+    "sections": {
+      "sales": "Sales",
+      "purchase": "Purchase",
+      "warehouse": "Warehouse",
+      "orders": "Orders",
+      "service": "Service",
+      "dictionaries": "Dictionaries"
+    },
+    "links": {
+      "salesInvoices": "Sales Invoices",
+      "newInvoice": "New Invoice",
+      "receipts": "Receipts",
+      "newReceipt": "New Receipt",
+      "proformaInvoices": "Proforma Invoices",
+      "customerReservations": "Customer Reservations",
+      "purchaseInvoices": "Purchase Invoices",
+      "externalReceipts": "External Receipts (Pz)",
+      "resources": "Resources (stock levels)",
+      "externalIssues": "External Issues (Wz)",
+      "shortageReport": "Shortage Report",
+      "salesOrders": "Sales Orders",
+      "recurringOrders": "Recurring Orders",
+      "supplierOrders": "Supplier Orders",
+      "deviceService": "Device Service",
+      "deviceTypes": "Device Types",
+      "serviceOrders": "Service Orders",
+      "resourcesWarehouse": "Resources (warehouse)"
+    }
+  },
+  "historiaWymiany": {
+    "title": "Currency Exchange History",
+    "subtitle": "Currency exchange operations archive (2025)",
+    "tabs": {
+      "list": "Operations list",
+      "new": "New exchange",
+      "report": "Rates report"
+    },
+    "filters": {
+      "allCurrencies": "All currencies"
+    },
+    "table": {
+      "operationNumber": "Operation number",
+      "date": "Date",
+      "sourceCurrency": "Source currency",
+      "targetCurrency": "Target currency",
+      "rate": "Rate",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions",
+      "currency": "Currency",
+      "averageRate": "Average rate",
+      "change": "Change",
+      "currencyPair": "Currency pair",
+      "operationsCount": "Operations count",
+      "totalAmount": "Total amount"
+    },
+    "statuses": {
+      "booked": "Booked",
+      "pending": "Pending"
+    },
+    "actions": {
+      "export": "Export",
+      "details": "Details",
+      "cancel": "Cancel",
+      "confirmExchange": "Confirm exchange"
+    },
+    "newOperation": {
+      "title": "New currency exchange",
+      "operationDate": "Operation date",
+      "sourceCurrency": "Source currency",
+      "amount": "Amount",
+      "targetCurrency": "Target currency",
+      "exchangeRate": "Exchange rate",
+      "exchangedAmount": "Exchanged amount"
+    },
+    "reports": {
+      "averageRates": "Average currency rates",
+      "exchangeStats": "Exchange statistics"
+    }
+  },
+  "klienciBiura": {
+    "title": "Currency Office Clients",
+    "subtitle": "Currency exchange clients management (2025)",
+    "tabs": {
+      "list": "Clients list",
+      "add": "New client",
+      "stats": "Statistics"
+    },
+    "table": {
+      "clientId": "Client ID",
+      "name": "Name",
+      "type": "Type",
+      "lastTransaction": "Last transaction",
+      "transactionsCount": "Transactions count",
+      "status": "Status",
+      "actions": "Actions",
+      "month": "Month",
+      "newClients": "New clients",
+      "transactions": "Transactions",
+      "clientType": "Client type",
+      "count": "Count",
+      "share": "Share"
+    },
+    "clientTypes": {
+      "individual": "Individual",
+      "company": "Company"
+    },
+    "statuses": {
+      "active": "Active",
+      "verification": "Verification"
+    },
+    "actions": {
+      "addClient": "Add client",
+      "export": "Export",
+      "history": "History",
+      "cancel": "Cancel",
+      "register": "Register client"
+    },
+    "search": {
+      "placeholder": "Search client...",
+      "button": "Search"
+    },
+    "newClient": {
+      "title": "New client registration",
+      "clientType": "Client type",
+      "registrationDate": "Registration date",
+      "name": "Full name / Company name",
+      "namePlaceholder": "Enter name",
+      "documentNumber": "Document number",
+      "documentPlaceholder": "PESEL/NIP",
+      "contactData": "Contact data",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "stats": {
+      "activity": "Clients activity",
+      "distribution": "Clients distribution"
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "exampleClients": {
+      "individual": "John Smith",
+      "company": "ABC Corp."
+    }
+  },
+  "rejestryVatPage": {
+    "title": "VAT Registers",
+    "subtitle": "VAT records for tax office settlements (2025)",
+    "tabs": {
+      "register": "VAT Register",
+      "settlement": "Monthly Settlement",
+      "reports": "Bank Reports"
+    },
+    "filters": {
+      "all": "All",
+      "sales": "Sales",
+      "purchases": "Purchases"
+    },
+    "table": {
+      "date": "Date",
+      "number": "Number",
+      "contractor": "Contractor",
+      "net": "Net",
+      "vat": "VAT",
+      "gross": "Gross",
+      "status": "Status",
+      "rate": "VAT Rate",
+      "operationDate": "Operation Date",
+      "documentNumber": "Document Number",
+      "description": "Description",
+      "amount": "Amount"
+    },
+    "statuses": {
+      "booked": "Booked",
+      "pending": "Pending"
+    },
+    "actions": {
+      "newEntry": "New Entry",
+      "import": "Import from Bank",
+      "generateVat7": "Generate VAT-7 Declaration",
+      "generateReport": "Generate Report",
+      "exportCsv": "Export to CSV"
+    },
+    "search": {
+      "placeholder": "Search..."
+    },
+    "settlement": {
+      "title": "Monthly Settlement",
+      "month": "Settlement Month",
+      "deadline": "VAT Payment Deadline",
+      "vatToPay": "VAT to Pay"
+    },
+    "reports": {
+      "title": "Bank Reports",
+      "dateFrom": "Date From",
+      "dateTo": "Date To",
+      "paymentForInvoice": "Payment for invoice"
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "exampleContractors": {
+      "abc": "ABC Corp.",
+      "xyz": "XYZ Ltd."
+    }
+  },
+  "strukturaZakupowPage": {
+    "title": "Purchases Structure",
+    "subtitle": "VAT purchases analysis for settlement periods (2025)",
+    "tabs": {
+      "analysis": "Purchases Analysis",
+      "vatRates": "VAT Rates",
+      "suppliersAnalysis": "Suppliers Analysis"
+    },
+    "table": {
+      "supplier": "Supplier",
+      "nip": "Tax ID",
+      "netValue": "Net Value",
+      "vat": "VAT",
+      "invoicesCount": "Invoices Count",
+      "share": "Share %",
+      "vatRate": "VAT Rate",
+      "vatAmount": "VAT Amount",
+      "documentsCount": "Documents Count",
+      "lp": "No.",
+      "purchasesValue": "Purchases Value",
+      "trend": "Trend",
+      "actions": "Actions"
+    },
+    "summary": {
+      "totalPurchases": "Total Purchases Value",
+      "vatAmount": "VAT Charged",
+      "invoicesCount": "Invoices Count",
+      "growth": "{value} growth compared to previous month"
+    },
+    "vatRates": {
+      "title": "VAT Rates Analysis",
+      "period": "Settlement Period",
+      "supplierGroup": "Suppliers Group",
+      "allGroups": "All Groups",
+      "buildingMaterials": "Building Materials",
+      "services": "Services",
+      "totalNetValue": "Total Net Value"
+    },
+    "actions": {
+      "generateReport": "Generate Report",
+      "exportExcel": "Export to Excel",
+      "generateSummary": "Generate Summary",
+      "filter": "Filter",
+      "details": "Details"
+    },
+    "search": {
+      "suppliers": "Filter suppliers..."
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "exampleSuppliers": {
+      "abc": "ABC Supplies Ltd.",
+      "xyz": "XYZ Building Materials"
+    }
+  },
+  "ewidencjaDodatkowaPage": {
+    "title": "Additional VAT Records",
+    "subtitle": "Special tax registers and statements (2025)",
+    "tabs": {
+      "registers": "Special Registers",
+      "statements": "Periodic Statements",
+      "corrections": "VAT Corrections",
+      "analysis": "Settlement Analysis"
+    },
+    "filters": {
+      "allRegisters": "All registers"
+    },
+    "registerTypes": {
+      "fixedAssets": "Fixed Assets",
+      "internationalServices": "International Services",
+      "companyCars": "Company Cars"
+    },
+    "statementTypes": {
+      "taxationChoice": "Taxation Choice",
+      "splitPayment": "Split Payment",
+      "wdtWnt": "WDT/WNT"
+    },
+    "correctionTypes": {
+      "correctingInvoice": "Correcting Invoice",
+      "fixedAssetCorrection": "Fixed Asset Correction"
+    },
+    "categories": {
+      "intraCommunityAcquisition": "Intra-Community Acquisition",
+      "intraCommunitySupply": "Intra-Community Supply"
+    },
+    "statuses": {
+      "booked": "Booked",
+      "verification": "For Verification"
+    },
+    "actions": {
+      "newEntry": "New Entry",
+      "generateReport": "Generate Report",
+      "exportJpk": "Export to JPK",
+      "addCorrection": "Add Correction",
+      "details": "Details"
+    },
+    "statements": {
+      "title": "Periodic Statements",
+      "period": "Settlement Period",
+      "type": "Statement Type",
+      "details": "Statement Details",
+      "totalValue": "Total Transaction Value"
+    },
+    "analysis": {
+      "specialTransactions": "Special Transactions",
+      "currentMonth": "in current month",
+      "totalCorrections": "Total Corrections Value",
+      "lastQuarter": "in last quarter",
+      "avgSettlementTime": "Average Settlement Time",
+      "days": "days",
+      "forSpecialTransactions": "for special transactions",
+      "monthlyStats": "Monthly Statistics"
+    },
+    "search": {
+      "corrections": "Search corrections..."
+    },
+    "table": {
+      "date": "Date",
+      "registerType": "Register Type",
+      "documentNumber": "Document Number",
+      "netAmount": "Net Amount",
+      "vat": "VAT",
+      "status": "Status",
+      "category": "Category",
+      "transactionsCount": "Transactions Count",
+      "netValue": "Net Value",
+      "correctionDate": "Correction Date",
+      "sourceDocument": "Source Document",
+      "correctionAmount": "Correction Amount",
+      "correctionType": "Correction Type",
+      "actions": "Actions",
+      "month": "Month",
+      "specialTransactions": "Special Transactions",
+      "vatCorrections": "VAT Corrections"
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "ewidencjaKasowegoPit": {
+    "title": "Cash PIT Ledger",
+    "subtitle": "Monthly PIT settlements for cash transactions (2025)",
+    "tabs": {
+      "ewidencja": "Transaction Log",
+      "rozliczenie": "Monthly Settlement",
+      "raporty": "Reports & Stats"
+    },
+    "actions": {
+      "addTransaction": "Add Transaction",
+      "importBank": "Import from Bank",
+      "filterPlaceholder": "Search transactions..."
+    },
+    "selectors": {
+      "selectMonth": "May 2025",
+      "selectMonthAlt": "April 2025",
+      "selectMonthMar": "March 2025"
+    },
+    "table": {
+      "date": "Date",
+      "docNo": "Document No.",
+      "counterparty": "Counterparty",
+      "netAmount": "Net Amount",
+      "tax": "Tax",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "statuses": {
+      "posted": "Posted",
+      "pending": "Pending"
+    },
+    "actionsCell": {
+      "details": "Details"
+    },
+    "operations": {
+      "monthlyHeading": "Settlement Month*",
+      "paymentDue": "Payment Due"
+    },
+    "summary": {
+      "header": "Tax Due",
+      "generateBtn": "Generate PIT-5 Declaration"
+    },
+    "report": {
+      "quarterlyTitle": "Quarterly Summary",
+      "monthlyStatsTitle": "Monthly Statistics",
+      "fields": {
+        "transactions": "Transaction Count",
+        "netTotal": "Total Net Value",
+        "taxDue": "Tax Due",
+        "avgTransaction": "Average Transaction",
+        "topCounterparty": "Top Counterparty",
+        "topDay": "Busiest Day"
+      },
+      "groupedReport": {
+        "generate": "Generate Report",
+        "exportCsv": "Export CSV"
+      },
+      "groupedTable": {
+        "period": "Period",
+        "count": "Transactions",
+        "net": "Net Value",
+        "tax": "Tax"
+      }
+    }
+  },
+  "deklaracjePlikiJPK_V7": {
+    "title": "JPK_V7 Declarations",
+    "subtitle": "Generate and manage JPK_V7 files (2025)",
+    "tabs": {
+      "lista": "Declaration List",
+      "nowy": "New JPK_V7",
+      "weryfikacja": "Verification",
+      "statystyki": "Statistics"
+    },
+    "actions": {
+      "newFile": "New JPK_V7",
+      "importFile": "Import File",
+      "filterPlaceholder": "Search declarations..."
+    },
+    "selectors": {
+      "allMonths": "All months",
+      "may2025": "May 2025",
+      "apr2025": "April 2025"
+    },
+    "table": {
+      "fileName": "File name",
+      "period": "Tax period",
+      "creationDate": "Created on",
+      "size": "Size",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "statuses": {
+      "uploaded": "Uploaded",
+      "verification": "Verification"
+    },
+    "actionsCell": {
+      "download": "Download",
+      "details": "Details"
+    },
+    "newForm": {
+      "fields": {
+        "period": {
+          "label": "Tax period*",
+          "options": [ "May 2025", "April 2025", "March 2025" ]
+        },
+        "paymentDue": {
+          "label": "Payment due",
+          "default": "2025-06-25"
+        },
+        "declarationType": {
+          "label": "Declaration type*",
+          "options": [ "Monthly", "Quarterly" ]
+        },
+        "schemaVersion": {
+          "label": "Schema version*",
+          "options": [ "JPK_V7M (1-3)", "JPK_V7K (1-2)" ]
+        },
+        "notes": {
+          "label": "Notes"
+        }
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "generate": "Generate JPK_V7"
+      }
+    },
+    "verification": {
+      "selectFile": {
+        "label": "Select JPK_V7 file to verify",
+        "options": [ "JPK_V7_05_2025.xml - May 2025", "JPK_V7_04_2025.xml - April 2025" ]
+      },
+      "table": {
+        "element": "JPK element",
+        "count": "Item count",
+        "netValue": "Net value",
+        "vat": "VAT"
+      },
+      "summary": {
+        "vatDue": "VAT due",
+        "verifyBtn": "Verify file",
+        "sendBtn": "Send to Ministry"
+      }
+    },
+    "statistics": {
+      "yearlyTitle": "Annual Summary",
+      "filesStatusTitle": "File Statuses",
+      "yearly": {
+        "declarations": "Submitted declarations",
+        "avgTime": "Avg. generation time",
+        "avgSize": "Avg. file size"
+      },
+      "filesStatus": {
+        "uploaded": "Uploaded",
+        "verification": "Verification",
+        "errors": "Errors"
+      }
+    }
+  },
+  "deklaracjeVatUe": {
+    "title": "EU VAT Declarations",
+    "subtitle": "Intra-community transaction reporting (2025)",
+    "tabs": {
+      "wdt": "WDT",
+      "wnt": "WNT",
+      "intrastat": "INTRASTAT",
+      "statistics": "Statistics"
+    },
+    "actions": {
+      "newDeclaration": "New declaration",
+      "importData": "Import data",
+      "searchPlaceholder": "Search contractor...",
+      "generateWnt": "Generate WNT declaration",
+      "generateReport": "Generate report",
+      "exportXml": "Export to XML"
+    },
+    "selectors": {
+      "may": "May 2025",
+      "april": "April 2025",
+      "march": "March 2025"
+    },
+    "table": {
+      "country": "Country",
+      "contractor": "Contractor",
+      "vatNumber": "VAT Number",
+      "netValue": "Net value",
+      "transactions": "Number of transactions",
+      "status": "Status",
+      "originCountry": "Origin country",
+      "supplier": "Supplier",
+      "goodsCode": "Goods code",
+      "quantity": "Quantity",
+      "unit": "Unit"
+    },
+    "units": {
+      "pcs": "pcs",
+      "kg": "kg"
+    },
+    "status": {
+      "reported": "Reported",
+      "inProgress": "In progress"
+    },
+    "wntForm": {
+      "period": "Reporting period*",
+      "deadline": "Submission deadline"
+    },
+    "summary": {
+      "totalWnt": "Total WNT value"
+    },
+    "stats": {
+      "wdt": "WDT Transactions",
+      "wnt": "WNT Transactions",
+      "contractors": "Number of contractors",
+      "suppliers": "Number of suppliers",
+      "totalValue": "Total value",
+      "topCountry": "Most frequent country",
+      "germany": "Germany (45%)",
+      "italy": "Italy (38%)"
+    }
+  },
+  "homePage": {
+    "title": "Dashboard",
+    "subtitle": "Business management system",
+    "changeCompany": "Change company",
+    "selectCompany": "Select company",
+    "companies": {
+      "system": "ERP System",
+      "contractors": "NASA",
+      "invoices": "WSB-NLU"
+    },
+    "mainModules": "Main modules",
+    "modules": {
+      "contractors": {
+        "icon": "people",
+        "color": "primary",
+        "title": "Contractors",
+        "description": "Contractors management"
+      },
+      "invoices": {
+        "icon": "receipt",
+        "color": "success",
+        "title": "Invoices",
+        "description": "Invoice issuing"
+      },
+      "products": {
+        "icon": "boxes",
+        "color": "warning",
+        "title": "Products",
+        "description": "Products management"
+      },
+      "reports": {
+        "icon": "graph-up-arrow",
+        "color": "danger",
+        "title": "Reports",
+        "description": "Reports generation"
+      }
+    },
+    "ui": {
+      "goTo": "Go to",
+      "quickAccess": "Quick access",
+      "showAll": "Show all"
+    },
+    "settings": {
+      "system": "System settings"
+    },
+    "help": {
+      "faq": "Help & FAQ"
+    },
+    "user": {
+      "logout": "Logout"
+    },
+    "news": {
+      "title": "News",
+      "latestUpdates": "Latest updates",
+      "items": [
+        {
+          "icon": "robot",
+          "text": "HRM system integration",
+          "badgeColor": "success",
+          "badgeText": "New"
+        },
+        {
+          "icon": "bank",
+          "text": "Cash module update",
+          "badgeColor": "primary",
+          "badgeText": "Improved"
+        },
+        {
+          "icon": "file-earmark-bar-graph",
+          "text": "JPK information",
+          "badgeColor": "info",
+          "badgeText": "Faster"
+        }
+      ]
+    },
+    "stats": {
+      "title": "Statistics",
+      "items": [
+        {
+          "icon": "receipt",
+          "color": "success",
+          "label": "Invoices",
+          "value": "5"
+        },
+        {
+          "icon": "people",
+          "color": "primary",
+          "label": "Contractors",
+          "value": "3"
+        },
+        {
+          "icon": "boxes",
+          "color": "warning",
+          "label": "Warehouse operations",
+          "value": "12"
+        }
+      ]
+    },
+    "footer": {
+      "about": "About system",
+      "docs": "Documentation"
+    }
   }
 }

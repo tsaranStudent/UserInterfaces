@@ -472,151 +472,153 @@ html[data-theme='dark'], .dark {
             }
 
 /*****************************/
-/* Comarch Optima – Dark Mode */
+/* Comarch Optima – Light Cream Mode */
 /*****************************/
-html[data-theme="dark"] {
-    --bg: #2b2b2b;
-    --surface: #323232;
-    --surface-alt: #3a3a3a;
-    --border: #505050;
-    --text: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --primary: #4f94d4;
-    --secondary: #9ca0a4;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
+html[data-theme="cream"] {
+    --bg: #f9f7f3;
+    --surface: #f0ede8;
+    --surface-alt: #e8e5df;
+    --border: #ccc;
+    --text: #2a2a2a;
+    --text-muted: #777;
+    --primary: #8ca6b8;
+    --secondary: #b5b5b5;
+    --success: #5cb85c;
+    --info: #5bc0de;
+    --warning: #f0ad4e;
+    --danger: #d9534f;
     background-color: var(--bg);
     color: var(--text);
 }
 
-    html[data-theme="dark"] .main-content {
+    html[data-theme="cream"] .main-content {
         background-color: var(--surface);
     }
 
-    html[data-theme="dark"] .form-section {
+    html[data-theme="cream"] .form-section {
         background-color: var(--surface-alt);
         border: 1px solid var(--border);
     }
 
-    html[data-theme="dark"] .page-title {
+    html[data-theme="cream"] .page-title {
         color: var(--text);
     }
 
     /* Tabele */
-    html[data-theme="dark"] .data-table th {
+    html[data-theme="cream"] .data-table th {
         background-color: var(--surface-alt);
         color: var(--text);
         border-bottom: 1px solid var(--border);
     }
 
-    html[data-theme="dark"] .data-table td {
+    html[data-theme="cream"] .data-table td {
         color: var(--text);
         border-color: var(--border);
     }
 
-    html[data-theme="dark"] .data-table tbody tr:nth-child(even) {
-        background-color: #2f2f2f;
+    html[data-theme="cream"] .data-table tbody tr:nth-child(even) {
+        background-color: #f4f1ec;
     }
 
     /* Przyciski */
-    html[data-theme="dark"] .btn-primary {
+    html[data-theme="cream"] .btn-primary {
         background-color: var(--primary);
         border-color: var(--primary);
     }
 
-    html[data-theme="dark"] .btn-outline-secondary {
+    html[data-theme="cream"] .btn-outline-secondary {
         color: var(--text);
         border-color: var(--border);
     }
 
-        html[data-theme="dark"] .btn-outline-secondary:hover {
+        html[data-theme="cream"] .btn-outline-secondary:hover {
             background-color: var(--border);
         }
 
     /* Badges */
-    html[data-theme="dark"] .badge-success {
+    html[data-theme="cream"] .badge-success {
         background-color: var(--success);
     }
 
-    html[data-theme="dark"] .badge-info {
+    html[data-theme="cream"] .badge-info {
         background-color: var(--info);
     }
 
-    html[data-theme="dark"] .badge-warning {
+    html[data-theme="cream"] .badge-warning {
         background-color: var(--warning);
     }
 
-    html[data-theme="dark"] .badge-danger {
+    html[data-theme="cream"] .badge-danger {
         background-color: var(--danger);
     }
 
     /* Alerty */
-    html[data-theme="dark"] .alert {
+    html[data-theme="cream"] .alert {
         border-color: var(--border);
         color: var(--text);
     }
 
-    html[data-theme="dark"] .alert-info {
-        background-color: #1f3a4b;
+    html[data-theme="cream"] .alert-info {
+        background-color: #d9edf7;
     }
 
-    html[data-theme="dark"] .alert-warning {
-        background-color: #5a4a00;
-        color: #fff3cd;
+    html[data-theme="cream"] .alert-warning {
+        background-color: #fcf8e3;
+        color: #8a6d3b;
     }
 
-    html[data-theme="dark"] .alert-danger {
-        background-color: #641b1b;
+    html[data-theme="cream"] .alert-danger {
+        background-color: #f2dede;
     }
 
     /* Navbar & dropdown */
-    html[data-theme="dark"] .navbar,
-    html[data-theme="dark"] .dropdown-menu {
+    html[data-theme="cream"] .navbar,
+    html[data-theme="cream"] .dropdown-menu {
         background-color: var(--surface-alt) !important;
     }
 
-        html[data-theme="dark"] .navbar .nav-link {
+        html[data-theme="cream"] .navbar .nav-link {
             color: var(--text) !important;
         }
 
-            html[data-theme="dark"] .navbar .nav-link:hover {
+            html[data-theme="cream"] .navbar .nav-link:hover {
                 color: var(--primary) !important;
             }
 
     /* Formularze */
-    html[data-theme="dark"] input,
-    html[data-theme="dark"] select,
-    html[data-theme="dark"] .form-control {
+    html[data-theme="cream"] input,
+    html[data-theme="cream"] select,
+    html[data-theme="cream"] .form-control {
         background-color: var(--surface-alt);
         color: var(--text);
         border: 1px solid var(--border);
     }
 
-        html[data-theme="dark"] input::placeholder,
-        html[data-theme="dark"] .form-control::placeholder {
+        html[data-theme="cream"] input::placeholder,
+        html[data-theme="cream"] .form-control::placeholder {
             color: var(--text-muted);
         }
 
     /* Quick Access */
-    html[data-theme="dark"] .quick-access-btn {
+    html[data-theme="cream"] .quick-access-btn {
         background: var(--surface-alt);
         border-color: var(--border);
         color: var(--text);
     }
 
-        html[data-theme="dark"] .quick-access-btn:hover {
+        html[data-theme="cream"] .quick-access-btn:hover {
             background: var(--surface);
         }
 
     /* Stopka */
-    html[data-theme="dark"] footer {
+    html[data-theme="cream"] footer {
         background-color: var(--surface-alt);
         color: var(--text-muted);
     }
 
-/* Pozostałe style (jasne) – bez zmian */
+/*****************************/
+/* Reset & logo */
+/*****************************/
 html, body, #root {
     height: 100%;
     margin: 0;
@@ -636,5 +638,106 @@ html, body, #root {
 .logo-name {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #fff;
+    color: var(--text);
 }
+
+/*****************************/
+/* Comarch Optima – Mid-Dim Theme */
+/*****************************/
+html[data-theme='midgrey'], .midgrey {
+    --bg-main: #2f2f35;
+    --surface: #3a3f46;
+    --surface-alt: #474d56;
+    --border: #5c5c65;
+    --text: #e6e6ea;
+    --text-muted: #b0b3b8;
+    --primary: #8ab4f8;
+    --success: #57c785;
+    --info: #5dade2;
+    --warning: #f4c430;
+    --danger: #e57373;
+    background-color: var(--bg-main);
+    color: var(--text);
+}
+
+    /* Navbar i dropdown */
+    .midgrey .navbar,
+    .midgrey .dropdown-menu {
+        background-color: var(--surface) !important;
+        color: var(--text);
+    }
+
+        .midgrey .navbar .nav-link {
+            color: var(--text) !important;
+        }
+
+            .midgrey .navbar .nav-link:hover {
+                color: var(--primary) !important;
+            }
+
+    .midgrey .dropdown-menu {
+        border: 1px solid var(--border);
+        background-color: var(--surface-alt) !important;
+        color: var(--text);
+        border-radius: 6px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+        .midgrey .dropdown-menu .dropdown-item {
+            color: var(--text);
+        }
+
+            .midgrey .dropdown-menu .dropdown-item:hover {
+                background-color: #5a5f66 !important;
+                color: #fff !important;
+            }
+
+    /* Main content */
+    .midgrey .main-content {
+        background-color: var(--surface);
+    }
+
+    .midgrey .form-section {
+        background-color: var(--surface-alt);
+        border: 1px solid var(--border);
+    }
+
+    .midgrey .page-title {
+        color: var(--text);
+    }
+
+    .midgrey input,
+    .midgrey select,
+    .midgrey .form-control {
+        background-color: var(--surface-alt);
+        color: var(--text);
+        border: 1px solid var(--border);
+    }
+
+        .midgrey input::placeholder {
+            color: var(--text-muted);
+        }
+
+    /* Badge */
+    .midgrey .badge {
+        background-color: #5a5a6a;
+        color: #fff;
+    }
+
+    /* Button hover, quick-access */
+    .midgrey .quick-access-btn {
+        background: var(--surface-alt);
+        border-color: var(--border);
+        color: var(--text);
+    }
+
+        .midgrey .quick-access-btn:hover {
+            background: #62666e;
+            color: #fff;
+        }
+
+    /* Footer */
+    .midgrey footer {
+        background-color: var(--surface);
+        color: var(--text-muted);
+    }

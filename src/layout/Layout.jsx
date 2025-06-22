@@ -67,17 +67,15 @@ export function Layout() {
                         <Button
                             variant="outline-secondary"
                             onClick={toggleTheme}
-                            aria-label={
-                                theme === 'light' ? t('layout.darkMode') : t('layout.lightMode')
-                            }
                             className="me-2"
+                            aria-label={theme === 'light' ? 'Włącz tryb półciemny' : 'Włącz tryb jasny'}
                         >
-                            {theme === 'light' ? (
-                                <i className="bi bi-moon-fill" />
-                            ) : (
-                                <i className="bi bi-sun-fill" />
-                            )}
+                            {theme === 'light'
+                                ? <i className="bi bi-circle-half" title="Tryb półciemny" />
+                                : <i className="bi bi-sun-fill" title="Tryb jasny" />}
                         </Button>
+
+
 
                         {/* Jedna ikonka do przełączania języka */}
                         <Button

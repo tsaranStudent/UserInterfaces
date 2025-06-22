@@ -8,175 +8,121 @@ function App() {
     const { t } = useTranslation();
 
     return (
-        <Container className="main-content lang-pl mt-2 mb-2">
-            <div className="background mt-2 mb-2">
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-4">
+                {/* Sekcja powitalna */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-house-door icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-box-seam me-1" aria-hidden="true" />
+                        {t('homePage.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('homePage.subtitle')} <span className="text-primary">{t('homePage.changeCompany')}</span>
+                    </p>
+                    <Form className="mt-4 d-inline-block" style={{ minWidth: 250 }}>
+                        <Form.Label className="mb-2">
+                            <i className="bi bi-building me-1" />{t('homePage.selectCompany')}:
+                        </Form.Label>
+                        <Form.Select>
+                            <option>{t('homePage.companies.system')}</option>
+                            <option>{t('homePage.companies.contractors')}</option>
+                            <option>{t('homePage.companies.invoices')}</option>
+                        </Form.Select>
+                    </Form>
+                </div>
 
-                {/* Sekcja powitalna bez banerów */}
-                <Container className="mt-3">
-                    <div className="form-section text-center mb-4">
-                        <i className="bi bi-box-seam icon-unified mb-2 display-4" />
-                        <h1 className="page-title mb-2">{t('start.stronaGlowna')}</h1>
-                        <p className="mb-3">
-                            {t('start.informacjeOFirmie')} <span className="text-muted">{t('start.zmianaFirmy')}</span>
-                        </p>
-                        <Form className="mt-4 d-inline-block" style={{ minWidth: 250 }}>
-                            <Form.Label className="mb-2">
-                                <i className="bi bi-building me-1" />{t('start.wybierzFirme')}:
-                            </Form.Label>
-                            <Form.Select>
-                                <option>{t('system.nazwa')}</option>
-                                <option>{t('ogolne.kontrahenci')}</option>
-                                <option>{t('handel.faktury')}</option>
-                            </Form.Select>
-                        </Form>
+                {/* Karty modułów */}
+                <div className="form-section">
+                    <h2 className="page-title text-center mb-4">
+                        <i className="bi bi-grid-1x2 me-2" />{t('homePage.mainModules')}
+                    </h2>
+                    <Row className="mb-3">
+                        {['contractors', 'invoices', 'products', 'reports'].map((module, index) => (
+                            <Col md={3} sm={6} xs={12} className="mb-3" key={index}>
+                                <Card className="text-center h-100 shadow-sm">
+                                    <Card.Body>
+                                        <i className={`bi bi-${t(`homePage.modules.${module}.icon`)} display-5 text-${t(`homePage.modules.${module}.color`)} mb-3`} />
+                                        <Card.Title>{t(`homePage.modules.${module}.title`)}</Card.Title>
+                                        <Card.Text className="text-muted">{t(`homePage.modules.${module}.description`)}</Card.Text>
+                                        <Button variant="primary" className="w-100">
+                                            <i className="bi bi-box-arrow-in-right me-1" />{t('homePage.ui.goTo')}
+                                        </Button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))}
+                    </Row>
+
+                    {/* Szybki dostęp */}
+                    <div className="text-center mb-4">
+                        <Form.Select className="d-inline-block" style={{ width: '250px' }}>
+                            <option value="">{t('homePage.ui.quickAccess')}</option>
+                            <option value="settings">{t('homePage.settings.system')}</option>
+                            <option value="help">{t('homePage.help.faq')}</option>
+                            <option value="logout">{t('homePage.user.logout')}</option>
+                        </Form.Select>
                     </div>
-                </Container>
+                </div>
 
-                {/* Karty modułów z ikonami */}
-                <Container className="mt-3">
-                    <div className="form-section">
-                        <h2 className="page-title text-center mb-3">
-                            <i className="bi bi-grid-1x2 me-2" />{t('start.stronaGlowna')}
-                        </h2>
-                        <Row className="mb-3">
-                            <Col md={3} sm={6} xs={12} className="mb-3">
-                                <Card className="text-center h-100 shadow-sm">
-                                    <Card.Body>
-                                        <i className="bi bi-people display-5 text-primary mb-2" />
-                                        <Card.Title>{t('ogolne.kontrahenci')}</Card.Title>
-                                        <Card.Text>{t('ogolne.listaKontrahentow')}</Card.Text>
-                                        <Button variant="primary" className="w-100">
-                                            <i className="bi bi-box-arrow-in-right me-1" />{t('ui.przejdz')}
-                                        </Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col md={3} sm={6} xs={12} className="mb-3">
-                                <Card className="text-center h-100 shadow-sm">
-                                    <Card.Body>
-                                        <i className="bi bi-receipt display-5 text-success mb-2" />
-                                        <Card.Title>{t('handel.faktury')}</Card.Title>
-                                        <Card.Text>{t('handel.nowaFaktura')}</Card.Text>
-                                        <Button variant="primary" className="w-100">
-                                            <i className="bi bi-box-arrow-in-right me-1" />{t('ui.przejdz')}
-                                        </Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col md={3} sm={6} xs={12} className="mb-3">
-                                <Card className="text-center h-100 shadow-sm">
-                                    <Card.Body>
-                                        <i className="bi bi-boxes display-5 text-warning mb-2" />
-                                        <Card.Title>{t('ogolne.towary')}</Card.Title>
-                                        <Card.Text>{t('handel.operacjeMagazynowe')}</Card.Text>
-                                        <Button variant="primary" className="w-100">
-                                            <i className="bi bi-box-arrow-in-right me-1" />{t('ui.przejdz')}
-                                        </Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col md={3} sm={6} xs={12} className="mb-3">
-                                <Card className="text-center h-100 shadow-sm">
-                                    <Card.Body>
-                                        <i className="bi bi-graph-up-arrow display-5 text-danger mb-2" />
-                                        <Card.Title>{t('ogolne.raporty')}</Card.Title>
-                                        <Card.Text>{t('ogolne.wymiary')}</Card.Text>
-                                        <Button variant="primary" className="w-100">
-                                            <i className="bi bi-box-arrow-in-right me-1" />{t('ui.przejdz')}
-                                        </Button>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        </Row>
-                        {/* Szybki dostęp do innych sekcji */}
-                        <div className="mt-3 mb-3 text-center">
-                            <Form.Select className="w-auto d-inline-block" style={{ minWidth: 220 }}>
-                                <option value="">{t('ui.szybkiDostep')}</option>
-                                <option value="settings">{t('konfiguracja.konfiguracjaSystemu')}</option>
-                                <option value="help">{t('pomoc.pomocFaq')}</option>
-                                <option value="logout">{t('uzytkownik.koniecPracy')}</option>
-                            </Form.Select>
-                        </div>
-                    </div>
-                </Container>
-
-                {/* Sekcja aktualności + statystyki */}
-                <Container className="mt-3">
-                    <Row className="summary-row">
-                        <Col md={8}>
-                            <h2 className="page-title mb-2">
-                                <i className="bi bi-megaphone me-2" />{t('aktualnosci.nazwa')}
+                {/* Aktualności i statystyki */}
+                <Row className="mb-4">
+                    <Col md={8}>
+                        <div className="form-section">
+                            <h2 className="page-title mb-3">
+                                <i className="bi bi-megaphone me-2" />{t('homePage.news.title')}
                             </h2>
-                            <Card className="mb-3 shadow-sm">
+                            <Card className="shadow-sm">
                                 <Card.Body>
                                     <Card.Title>
-                                        <i className="bi bi-stars me-1" />{t('aktualnosci.nowosci')}
+                                        <i className="bi bi-stars me-2" />{t('homePage.news.latestUpdates')}
                                     </Card.Title>
-                                    <Card.Text>
-                                        <ListGroup variant="flush">
-                                            <ListGroup.Item>
-                                                <i className="bi bi-robot me-1" />{t('crm.hrmTs')}
-                                                <Badge bg="success" pill className="ms-2">{t('ui.nowe')}</Badge>
+                                    <ListGroup variant="flush">
+                                        {t('homePage.news.items', { returnObjects: true }).map((item, index) => (
+                                            <ListGroup.Item key={index}>
+                                                <i className={`bi bi-${item.icon} me-2`} />{item.text}
+                                                <Badge bg={item.badgeColor} pill className="ms-2">{item.badgeText}</Badge>
                                             </ListGroup.Item>
-                                            <ListGroup.Item>
-                                                <i className="bi bi-bank me-1" />{t('kasaBank.rejestryKasowoBankowe')}
-                                                <Badge bg="primary" pill className="ms-2">{t('ui.ulepszone')}</Badge>
-                                            </ListGroup.Item>
-                                            <ListGroup.Item>
-                                                <i className="bi bi-file-earmark-bar-graph me-1" />{t('jpk.informacjeJpk')}
-                                                <Badge bg="info" pill className="ms-2">{t('ui.szybciej')}</Badge>
-                                            </ListGroup.Item>
-                                        </ListGroup>
-                                    </Card.Text>
+                                        ))}
+                                    </ListGroup>
                                 </Card.Body>
                             </Card>
-                        </Col>
-                        <Col md={4}>
-                            <h2 className="page-title mb-2">
-                                <i className="bi bi-bar-chart-steps me-2" />{t('ogolne.raporty')}
+                        </div>
+                    </Col>
+                    <Col md={4}>
+                        <div className="form-section">
+                            <h2 className="page-title mb-3">
+                                <i className="bi bi-bar-chart-steps me-2" />{t('homePage.stats.title')}
                             </h2>
-                            <Card className="shadow-sm mb-3">
+                            <Card className="shadow-sm">
                                 <Card.Body>
-                                    <Table borderless size="sm" className="mb-2">
+                                    <Table borderless className="mb-3">
                                         <tbody>
-                                            <tr>
-                                                <td><i className="bi bi-receipt me-1 text-success" />{t('handel.faktury')}</td>
-                                                <td>
-                                                    <Badge bg="success" pill>5</Badge>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><i className="bi bi-people me-1 text-primary" />{t('ogolne.kontrahenci')}</td>
-                                                <td>
-                                                    <Badge bg="primary" pill>3</Badge>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><i className="bi bi-boxes me-1 text-warning" />{t('handel.operacjeMagazynowe')}</td>
-                                                <td>
-                                                    <Badge bg="warning" pill>12</Badge>
-                                                </td>
-                                            </tr>
+                                            {t('homePage.stats.items', { returnObjects: true }).map((stat, index) => (
+                                                <tr key={index}>
+                                                    <td><i className={`bi bi-${stat.icon} me-2 text-${stat.color}`} />{stat.label}</td>
+                                                    <td className="text-end"><Badge bg={stat.color}>{stat.value}</Badge></td>
+                                                </tr>
+                                            ))}
                                         </tbody>
                                     </Table>
-                                    <Button variant="success" className="submit-btn w-100 mt-2">
-                                        <i className="bi bi-send-check me-1" />{t('ogolne.slowniki')}
+                                    <Button variant="success" className="w-100">
+                                        <i className="bi bi-send-check me-1" />{t('homePage.ui.showAll')}
                                     </Button>
                                 </Card.Body>
                             </Card>
-                        </Col>
-                    </Row>
-                </Container>
+                        </div>
+                    </Col>
+                </Row>
 
-                {/* Stopka, wersja, link do dokumentacji */}
-                <Container className="mt-4">
-                    <div className="text-center text-muted small mb-2">
-                        <i className="bi bi-info-circle me-1" />
-                        {t('pomoc.oprogramie')} | <a href="/dokumentacja" className="ms-1">{t('pomoc.pomocJakZaczac')}</a>
-                    </div>
-                </Container>
-            </div>
-        </Container>
+                {/* Stopka */}
+                <div className="text-center text-muted small mt-4">
+                    <i className="bi bi-info-circle me-1" />
+                    {t('homePage.footer.about')} | <a href="/docs" className="text-muted ms-1">{t('homePage.footer.docs')}</a>
+                </div>
+            </Container>
+        </div>
     );
 }
 
