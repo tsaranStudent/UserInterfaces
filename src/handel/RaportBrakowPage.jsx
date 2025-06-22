@@ -1,74 +1,100 @@
-﻿import '../App.css';
-
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import {
+    Container, Table, Card, Form,
+    Button, Badge
+} from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 export const RaportBrakow = () => {
+    const { t } = useTranslation();
+
     return (
-        <Container fluid className="lang-pl background">
-            
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Raport brakow magazynowych</h3>
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-4">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-clipboard-data me-1" aria-hidden="true" />
+                        {t('raportBrakow.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('raportBrakow.subtitle')}
+                    </p>
                 </div>
+
+                {/* Formularz generowania raportu */}
+                <Card className="shadow-sm mb-4">
+                    <Card.Body>
+                        <Form>
+                            <Form.Group className="mb-3">
+                                <Form.Label>
+                                    <i className="bi bi-building me-1" />
+                                    {t('raportBrakow.form.selectWarehouse')}
+                                </Form.Label>
+                                <Form.Select>
+                                    <option>{t('raportBrakow.form.all')}</option>
+                                    <option value="main">{t('raportBrakow.form.main')}</option>
+                                    <option value="backup">{t('raportBrakow.form.backup')}</option>
+                                </Form.Select>
+                            </Form.Group>
+                            <div className="d-flex justify-content-end">
+                                <Button variant="primary">
+                                    <i className="bi bi-file-earmark-text me-1" />
+                                    {t('raportBrakow.actions.generate')}
+                                </Button>
+                            </div>
+                        </Form>
+                    </Card.Body>
+                </Card>
+
+                {/* Tabela braków */}
+                <Card className="shadow-sm">
+                    <Card.Body>
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th><i className="bi bi-barcode me-1" />{t('raportBrakow.table.code')}</th>
+                                    <th><i className="bi bi-box-seam me-1" />{t('raportBrakow.table.name')}</th>
+                                    <th><i className="bi bi-calculator me-1" />{t('raportBrakow.table.min')}</th>
+                                    <th><i className="bi bi-stack me-1" />{t('raportBrakow.table.current')}</th>
+                                    <th><i className="bi bi-dash-circle me-1" />{t('raportBrakow.table.diff')}</th>
+                                    <th><i className="bi bi-clock-history me-1" />{t('raportBrakow.table.lastDelivery')}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PROD-001</td>
+                                    <td>{t('raportBrakow.example.item1.name')}</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>
+                                        <Badge bg="danger" className="text-uppercase">
+                                            -8
+                                        </Badge>
+                                    </td>
+                                    <td>2025-06-10</td>
+                                </tr>
+                                <tr>
+                                    <td>PROD-002</td>
+                                    <td>{t('raportBrakow.example.item2.name')}</td>
+                                    <td>15</td>
+                                    <td>0</td>
+                                    <td>
+                                        <Badge bg="danger" className="text-uppercase">
+                                            -15
+                                        </Badge>
+                                    </td>
+                                    <td>2025-06-12</td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Card.Body>
+                </Card>
             </Container>
-            <Card className="form-section mb-4">
-
-                <Card.Body>
-                    <Form>
-                        <Form.Group className="mb-3">
-                            <Form.Label className="form-label">Wybierz magazyn</Form.Label>
-                            <Form.Select className="form-control">
-                                <option>Wszystkie magazyny</option>
-                                <option>Magazyn główny</option>
-                                <option>Magazyn zapasowy</option>
-                            </Form.Select>
-                        </Form.Group>
-                        <div className="actions-bar-end">
-                            <Button variant="primary">
-                                Generuj raport
-                            </Button>
-                        </div>
-                    </Form>
-                </Card.Body>
-            </Card>
-
-            <h4 className="page-title">Braki magazynowe</h4>
-            <Table striped bordered hover responsive className="data-table">
-                <thead>
-                    <tr>
-                        <th>Kod produktu</th>
-                        <th>Nazwa produktu</th>
-                        <th>Minimalny stan</th>
-                        <th>Aktualny stan</th>
-                        <th>Różnica</th>
-                        <th>Ostatnia dostawa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>PROD-001</td>
-                        <td>Kabel HDMI 2.0</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td><span className="badge badge-danger">-8</span></td>
-                        <td>2023-06-15</td>
-                    </tr>
-                    <tr>
-                        <td>PROD-002</td>
-                        <td>Adapter USB-C</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td><span className="badge badge-danger">-15</span></td>
-                        <td>2023-05-22</td>
-                    </tr>
-                </tbody>
-            </Table>
-        </Container>
+        </div>
     );
 };

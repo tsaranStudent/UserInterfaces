@@ -1,81 +1,106 @@
-﻿import '../App.css';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Accordion from 'react-bootstrap/Accordion';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import {
+    Container, Table, Card, Form,
+    Button, Badge
+} from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 export const UrzadzniaServis = () => {
+    const { t } = useTranslation();
+
     return (
-        <Container fluid className="background">
-            
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Lista urządzen przyjetych na servis</h3>
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-4">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt-cutoff icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-tools me-1" aria-hidden="true" />
+                        {t('urzadzniaServis.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('urzadzniaServis.subtitle')}
+                    </p>
                 </div>
-            </Container>
 
-            {/* Pasek akcji z wyszukiwarką i przyciskiem */}
-            <div className="actions-bar">
-                <div className="actions-bar-start">
-                    <Form className="d-flex search-input">
-                        <Form.Control
-                            type="search"
-                            placeholder="Wyszukaj po numerze zgłoszenia..."
-                            className="me-2"
-                        />
-                        <Button variant="outline-primary" type="submit">
-                            Szukaj
+                {/* Pasek akcji */}
+                <Card className="shadow-sm mb-4">
+                    <Card.Body className="d-flex justify-content-between align-items-center">
+                        <Form className="d-flex search-input w-50">
+                            <i className="bi bi-search me-2 align-self-center" />
+                            <Form.Control
+                                type="search"
+                                placeholder={t('urzadzniaServis.actions.searchPlaceholder')}
+                            />
+                        </Form>
+                        <Button variant="primary">
+                            <i className="bi bi-plus-circle me-1" />
+                            {t('urzadzniaServis.actions.new')}
                         </Button>
-                    </Form>
-                </div>
+                    </Card.Body>
+                </Card>
 
-                <div className="actions-bar-end">
-                    <Button variant="primary">+ Nowe zgłoszenie</Button>
-                </div>
-            </div>
-
-            {/* Tabela urządzeń */}
-            <Table bordered hover responsive className="data-table">
-                <thead>
-                    <tr>
-                        <th>Numer zgłoszenia</th>
-                        <th>Data przyjęcia</th>
-                        <th>Urządzenie</th>
-                        <th>Klient</th>
-                        <th>Status</th>
-                        <th>Akcje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>SER/2023/07/001</td>
-                        <td>2023-07-12</td>
-                        <td>Laptop Lenovo XYZ</td>
-                        <td>Jan Kowalski</td>
-                        <td><span className="badge badge-w-realizacji">W diagnozie</span></td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Szczegóły</Button>{' '}
-                            <Button variant="outline-success" size="sm">Zakończ</Button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>SER/2023/07/002</td>
-                        <td>2023-07-15</td>
-                        <td>Drukarka Epson L310</td>
-                        <td>Firma ABC Sp. z o.o.</td>
-                        <td><span className="badge badge-success">W naprawie</span></td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Szczegóły</Button>{' '}
-                            <Button variant="outline-success" size="sm">Zakończ</Button>
-                        </td>
-                    </tr>
-                </tbody>
-            </Table>
-        </Container>
+                {/* Tabela urządzeń */}
+                <Card className="shadow-sm">
+                    <Card.Body>
+                        <Table bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th>{t('urzadzniaServis.table.requestNo')}</th>
+                                    <th>{t('urzadzniaServis.table.dateReceived')}</th>
+                                    <th>{t('urzadzniaServis.table.device')}</th>
+                                    <th>{t('urzadzniaServis.table.client')}</th>
+                                    <th>{t('urzadzniaServis.table.status')}</th>
+                                    <th>{t('urzadzniaServis.table.actions')}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SER/2025/07/001</td>
+                                    <td>2025-06-12</td>
+                                    <td>{t('urzadzniaServis.example.device1')}</td>
+                                    <td>{t('urzadzniaServis.example.client1')}</td>
+                                    <td>
+                                        <Badge bg="warning" className="text-uppercase">
+                                            {t('urzadzniaServis.status.diagnosis')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('urzadzniaServis.actions.details')}
+                                        </Button>{' '}
+                                        <Button variant="outline-success" size="sm">
+                                            {t('urzadzniaServis.actions.complete')}
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SER/2025/07/002</td>
+                                    <td>2025-06-15</td>
+                                    <td>{t('urzadzniaServis.example.device2')}</td>
+                                    <td>{t('urzadzniaServis.example.client2')}</td>
+                                    <td>
+                                        <Badge bg="info" className="text-uppercase">
+                                            {t('urzadzniaServis.status.repair')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('urzadzniaServis.actions.details')}
+                                        </Button>{' '}
+                                        <Button variant="outline-success" size="sm">
+                                            {t('urzadzniaServis.actions.complete')}
+                                        </Button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Card.Body>
+                </Card>
+            </Container>
+        </div>
     );
 };

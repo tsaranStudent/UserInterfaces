@@ -2800,14 +2800,15 @@
     }
   },
   "nowaFaktura": {
-    "title": "New Sales Invoice",
+    "title": "New invoice",
+    "subtitle": "Fill the form to add a new invoice",
     "form": {
       "contractor": "Contractor",
-      "contractorPlaceholder": "Enter name or VAT ID",
-      "issueDate": "Issue Date",
-      "dueDate": "Due Date",
-      "paymentMethod": "Payment Method",
-      "invoiceType": "Invoice Type"
+      "contractorPlaceholder": "Select contractor",
+      "issueDate": "Issue date",
+      "dueDate": "Due date",
+      "paymentMethod": "Payment method",
+      "invoiceType": "Invoice type"
     },
     "dueOptions": {
       "7": "7 days",
@@ -2820,25 +2821,1059 @@
       "card": "Card"
     },
     "invoiceTypes": {
-      "vat": "VAT Invoice",
-      "proforma": "Proforma Invoice"
+      "vat": "VAT",
+      "proforma": "Proforma"
     },
     "items": {
-      "header": "Invoice Items",
-      "name": "Item Name/Service",
-      "qty": "Qty",
+      "header": "Invoice items",
+      "name": "Name",
+      "qty": "Quantity",
       "unit": "Unit",
-      "netPrice": "Net Price",
+      "netPrice": "Net price",
       "vat": "VAT",
-      "netValue": "Net Value",
-      "actions": "Actions",
-      "add": "Add Item",
-      "remove": "Remove"
+      "netValue": "Net value"
+    },
+    "units": {
+      "pcs": "pcs",
+      "kg": "kg",
+      "m": "m"
     },
     "buttons": {
-      "backVAT": "VAT Invoice List",
-      "backProforma": "Proforma Invoice List",
-      "save": "Save Invoice"
+      "backVAT": "Back to VAT",
+      "backProforma": "Back to Proforma"
+    }
+  },
+  "common": {
+    "currency": "PLN",
+    "actions": {
+      "title": "Actions",
+      "add": "Add",
+      "remove": "Remove",
+      "save": "Save"
+    }
+  },
+  "paragony": {
+    "title": "Receipts history",
+    "subtitle": "View and manage fiscal receipts",
+    "currency": "PLN",
+    "listTitle": "Receipts list",
+    "search": {
+      "title": "Search filters",
+      "receiptNumber": "Receipt number",
+      "receiptNumberPlaceholder": "Enter number",
+      "dateFrom": "Date from",
+      "dateTo": "Date to",
+      "amountAbove": "Amount above"
+    },
+    "table": {
+      "receiptNumber": "Receipt number",
+      "date": "Date",
+      "seller": "Seller",
+      "amount": "Gross amount",
+      "status": "Fiscal status"
+    },
+    "status": {
+      "booked": "Booked"
+    },
+    "actions": {
+      "title": "Actions",
+      "filter": "Filter",
+      "addNew": "Add new receipt",
+      "view": "View",
+      "print": "Print",
+      "confirm": "Confirm"
+    },
+    "summary": {
+      "title": "Transaction summary",
+      "totalReceipts": "Total receipts",
+      "totalAmount": "Total amount"
+    },
+    "example": {
+      "seller1": "Cashier 1 - Anna Nowak"
+    }
+  },
+  "nowyParagon": {
+    "title": "New receipt",
+    "subtitle": "Issue a new fiscal receipt",
+    "currency": "PLN",
+    "form": {
+      "seller": "Seller",
+      "client": "Client",
+      "clientPlaceholder": "Client name (optional)",
+      "date": "Date"
+    },
+    "products": {
+      "title": "Products list",
+      "code": "Code",
+      "name": "Name",
+      "quantity": "Quantity",
+      "price": "Gross price",
+      "value": "Value",
+      "scanPlaceholder": "Scan code"
+    },
+    "actions": {
+      "title": "Actions",
+      "addProduct": "Add product",
+      "remove": "Remove",
+      "discount": "Discount",
+      "issue": "Issue receipt"
+    },
+    "summary": {
+      "total": "Total"
+    },
+    "example": {
+      "seller1": "Cashier 1 - Anna Nowak",
+      "seller2": "Cashier 2 - John Kowalski",
+      "product1": "Test product"
+    }
+  },
+  "rezerwacjeOdbiorcy": {
+    "title": "Customer reservations",
+    "subtitle": "Manage customer reservations",
+    "form": {
+      "addTitle": "Add new reservation",
+      "recipient": "Recipient",
+      "recipientPlaceholder": "Select recipient",
+      "reservationDate": "Reservation date",
+      "expiryDate": "Expiry date",
+      "status": "Status"
+    },
+    "table": {
+      "reservationNumber": "Reservation number",
+      "recipient": "Recipient",
+      "reservationDate": "Reservation date",
+      "expiryDate": "Expiry date",
+      "itemsCount": "Items count",
+      "status": "Status"
+    },
+    "status": {
+      "pending": "Pending",
+      "inProgress": "In progress",
+      "confirmed": "Confirmed"
+    },
+    "actions": {
+      "actions": "Actions",
+      "clear": "Clear",
+      "save": "Save reservation",
+      "allReservations": "All reservations list",
+      "exportCSV": "Export to CSV",
+      "edit": "Edit",
+      "process": "Process"
+    },
+    "example": {
+      "client1": "Client ABC Ltd.",
+      "client2": "Client XYZ Ltd."
+    }
+  },
+  "fakturyProforma": {
+    "title": "Proforma Invoices",
+    "subtitle": "Manage proforma invoices",
+    "search": {
+      "title": "Proforma invoices search",
+      "recipient": "Recipient",
+      "recipientPlaceholder": "Recipient name",
+      "invoiceNumber": "Invoice number",
+      "invoiceNumberPlaceholder": "Invoice number",
+      "dateFrom": "Date from",
+      "dateTo": "Date to"
+    },
+    "table": {
+      "invoiceNumber": "Proforma number",
+      "recipient": "Recipient",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status"
+    },
+    "status": {
+      "sent": "Sent",
+      "pending": "Pending"
+    },
+    "actions": {
+      "clear": "Clear",
+      "search": "Search",
+      "generateVAT": "Generate VAT Invoice",
+      "newInvoice": "New invoice",
+      "vatInvoicesList": "VAT invoices list"
+    },
+    "example": {
+      "client1": "TechWorld",
+      "client2": "StudioDesign"
+    }
+  },
+  "sprzedarzDedykowana": {
+    "title": "Dedicated Sales",
+    "subtitle": "Management of special sales agreements",
+    "form": {
+      "title": "New sales agreement",
+      "client": "Client",
+      "clientPlaceholder": "Search client...",
+      "agreementDate": "Agreement date",
+      "agreementValue": "Agreement value",
+      "currency": "PLN"
+    },
+    "table": {
+      "agreementNumber": "Agreement number",
+      "client": "Client",
+      "signDate": "Sign date",
+      "deadline": "Deadline",
+      "value": "Value",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "inProgress": "In progress",
+      "completed": "Completed"
+    },
+    "actions": {
+      "addProducts": "Add products",
+      "details": "Details"
+    },
+    "example": {
+      "client1": "ABC Company Ltd.",
+      "client2": "XYZ Enterprise LLC"
+    }
+  },
+  "fakturyZakupu": {
+    "title": "Purchase Invoices",
+    "subtitle": "Manage purchase invoices",
+    "filter": {
+      "title": "Purchase invoices filtering",
+      "supplier": "Supplier",
+      "supplierPlaceholder": "Supplier name",
+      "dateFrom": "Date from",
+      "dateTo": "Date to"
+    },
+    "table": {
+      "invoiceNumber": "Invoice No.",
+      "supplier": "Supplier",
+      "purchaseDate": "Purchase Date",
+      "amount": "Amount",
+      "status": "Status"
+    },
+    "status": {
+      "recorded": "Recorded",
+      "pending": "Pending"
+    },
+    "actions": {
+      "clear": "Clear",
+      "search": "Search",
+      "newInvoice": "Add New Invoice"
+    },
+    "example": {
+      "supplier1": "ABC Tools",
+      "supplier2": "Global Parts"
+    }
+  },
+  "zleceniaUDostawcy": {
+    "title": "Supplier Orders",
+    "subtitle": "Overview and management of supplier orders",
+    "filter": {
+      "title": "Filtering & sorting",
+      "supplier": "Supplier",
+      "supplierPlaceholder": "Supplier name",
+      "dateFrom": "Order date from",
+      "dateTo": "Order date to",
+      "status": "Status",
+      "choose": "Choose"
+    },
+    "table": {
+      "orderNumber": "Order No.",
+      "supplier": "Supplier",
+      "orderDate": "Order Date",
+      "status": "Status",
+      "notes": "Notes"
+    },
+    "status": {
+      "pending": "Pending",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "apply": "Apply filters"
+    },
+    "example": {
+      "supplier1": "ABC Co.",
+      "supplier2": "XYZ Supplier",
+      "supplier3": "Global Supply",
+      "noteNone": "None",
+      "noteOnTime": "Delivered on time",
+      "noteIssue": "Availability issues"
+    }
+  },
+  "zasoby": {
+    "title": "Warehouse Resources",
+    "subtitle": "Overview and management of resources",
+    "actions": {
+      "searchPlaceholder": "Search by resource ID",
+      "add": "+ Add Resource",
+      "edit": "Edit"
+    },
+    "table": {
+      "id": "Resource ID",
+      "name": "Name",
+      "type": "Type",
+      "quantity": "Quantity",
+      "unit": "Unit",
+      "unitLabel": "pcs",
+      "unitSet": "set",
+      "availability": "Availability",
+      "actions": "Actions"
+    },
+    "status": {
+      "available": "Available",
+      "low": "Low Stock"
+    },
+    "example": {
+      "item1": {
+        "name": "Bosch Hammer Drill",
+        "type": "Tools"
+      },
+      "item2": {
+        "name": "Socket Wrench Set",
+        "type": "Tools"
+      }
+    }
+  },
+  "raportBrakow": {
+    "title": "Stock Shortage Report",
+    "subtitle": "Analysis of warehouse shortages",
+    "form": {
+      "selectWarehouse": "Select warehouse",
+      "all": "All warehouses",
+      "main": "Main warehouse",
+      "backup": "Backup warehouse"
+    },
+    "actions": {
+      "generate": "Generate report"
+    },
+    "table": {
+      "code": "Product code",
+      "name": "Product name",
+      "min": "Minimum level",
+      "current": "Current level",
+      "diff": "Difference",
+      "lastDelivery": "Last delivery"
+    },
+    "example": {
+      "item1": {
+        "name": "HDMI 2.0 Cable"
+      },
+      "item2": {
+        "name": "USB-C Adapter"
+      }
+    }
+  },
+  "wydaniaZewnetrzne": {
+    "title": "External Releases (WZ)",
+    "subtitle": "Manage WZ documents",
+    "form": {
+      "title": "Add new external release",
+      "docNumber": "Document number",
+      "docNumberPlaceholder": "Enter document number",
+      "date": "Release date",
+      "recipient": "Recipient",
+      "recipientPlaceholder": "Enter recipient name",
+      "reason": "Reason for release",
+      "reasonPlaceholder": "Enter reason for release",
+      "itemsCount": "Number of items",
+      "itemsCountPlaceholder": "Number of items",
+      "notes": "Notes",
+      "notesPlaceholder": "Enter additional info"
+    },
+    "actions": {
+      "clear": "Clear",
+      "save": "Save release",
+      "list": "Releases list",
+      "export": "Export to CSV",
+      "details": "Details",
+      "convert": "Convert to"
+    },
+    "convert": {
+      "toReceipt": "Receipt",
+      "toInvoice": "Invoice",
+      "toRW": "RW"
+    },
+    "table": {
+      "docNumber": "Document no.",
+      "date": "Date",
+      "recipient": "Recipient",
+      "reason": "Reason",
+      "itemsCount": "Items count",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "approved": "Approved",
+      "inProgress": "In progress",
+      "cancelled": "Cancelled"
+    },
+    "example": {
+      "recipient1": "Client XYZ",
+      "reason1": "Sale",
+      "recipient2": "ABC Service",
+      "reason2": "Warranty repair",
+      "recipient3": "Client ABC",
+      "reason3": "Return"
+    }
+  },
+  "przyjeciaZewnetrzne": {
+    "title": "External Receipts (PZ)",
+    "subtitle": "Manage PZ documents",
+    "form": {
+      "title": "Add new external receipt",
+      "docNumber": "Document number",
+      "docNumberPlaceholder": "Enter document number",
+      "date": "Receipt date",
+      "supplier": "Supplier",
+      "supplierPlaceholder": "Enter supplier name",
+      "invoiceNumber": "Invoice number",
+      "invoiceNumberPlaceholder": "Enter invoice number",
+      "itemsCount": "Number of items",
+      "itemsCountPlaceholder": "Number of items",
+      "notes": "Notes",
+      "notesPlaceholder": "Enter additional notes"
+    },
+    "actions": {
+      "clear": "Clear",
+      "save": "Save receipt",
+      "list": "All receipts list",
+      "export": "Export to CSV",
+      "edit": "Edit",
+      "approve": "Approve",
+      "reject": "Reject"
+    },
+    "table": {
+      "docNumber": "Document no.",
+      "date": "Date",
+      "supplier": "Supplier",
+      "invoiceNumber": "Invoice no.",
+      "itemsCount": "Items count",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "inProgress": "In progress",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "example": {
+      "supplier1": "Supplier Ltd.",
+      "invoice1": "INV/123/2025",
+      "supplier2": "ABC Supplier",
+      "invoice2": "INV/124/2025",
+      "supplier3": "XYZ Supply",
+      "invoice3": "INV/125/2025"
+    }
+  },
+  "zlecenia": {
+    "title": "Service Orders",
+    "subtitle": "Manage service orders",
+    "actions": {
+      "searchPlaceholder": "Search by order no.",
+      "new": "+ New Order",
+      "applyFilter": "Search",
+      "details": "Details",
+      "approve": "Approve",
+      "cancel": "Cancel",
+      "wait": "Wait"
+    },
+    "filter": {
+      "dateFrom": "Date from",
+      "dateTo": "Date to",
+      "title": "Search title",
+      "titlePlaceholder": "Order title"
+    },
+    "tabs": {
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "table": {
+      "orderNo": "Order No.",
+      "title": "Title",
+      "created": "Created",
+      "due": "Due date",
+      "closed": "Closed on",
+      "status": "Status",
+      "priority": "Priority",
+      "actions": "Actions"
+    },
+    "status": {
+      "inProgress": "In progress",
+      "pending": "Pending",
+      "done": "Done"
+    },
+    "priority": {
+      "high": "High",
+      "medium": "Medium"
+    }
+  },
+  "zleceniaCykliczne": {
+    "title": "Cyclic Orders",
+    "subtitle": "Manage cyclic service orders",
+    "actions": {
+      "searchPlaceholder": "Search orders…",
+      "new": "+ New cyclic order",
+      "edit": "Edit"
+    },
+    "filter": {
+      "allStatuses": "All statuses"
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "planned": "Planned"
+    },
+    "table": {
+      "no": "Order No.",
+      "name": "Order Name",
+      "startDate": "Start Date",
+      "frequency": "Frequency",
+      "last": "Last Execution",
+      "next": "Next Execution",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "example": {
+      "task1": {
+        "name": "AC maintenance",
+        "freq": "Every 3 months"
+      },
+      "task2": {
+        "name": "Coffee machine service",
+        "freq": "Every 6 months"
+      },
+      "task3": {
+        "name": "Electrical installation check",
+        "freq": "Every 12 months"
+      }
+    }
+  },
+  "urzadzniaServis": {
+    "title": "Devices Received for Service",
+    "subtitle": "Service request list",
+    "actions": {
+      "searchPlaceholder": "Search by request no.…",
+      "new": "+ New request",
+      "details": "Details",
+      "complete": "Complete"
+    },
+    "table": {
+      "requestNo": "Request No.",
+      "dateReceived": "Date received",
+      "device": "Device",
+      "client": "Client",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "diagnosis": "In diagnosis",
+      "repair": "Under repair"
+    },
+    "example": {
+      "device1": "Lenovo XYZ Laptop",
+      "client1": "Jan Kowalski",
+      "device2": "Epson L310 Printer",
+      "client2": "ABC Company Ltd."
+    }
+  },
+  "rodzajeUrzadzenServis": {
+    "title": "Service Device Catalog",
+    "subtitle": "Overview of device types",
+    "form": {
+      "searchLabel": "Search device",
+      "searchPlaceholder": "Device name or ID",
+      "newHeading": "Add new device type",
+      "name": "Device name",
+      "namePlaceholder": "e.g. Laser printer",
+      "avgRepair": "Avg. repair time",
+      "avgRepairPlaceholder": "e.g. 3 days",
+      "requests": "Number of requests",
+      "requestsPlaceholder": "e.g. 0"
+    },
+    "actions": {
+      "search": "Search",
+      "add": "+ Add new device type",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save device type"
+    },
+    "table": {
+      "heading": "Available device types",
+      "id": "ID",
+      "type": "Device type",
+      "avgRepair": "Avg. repair time",
+      "requests": "Requests",
+      "actions": "Actions"
+    },
+    "example": {
+      "type1": "Laptop",
+      "type2": "Smartphone"
+    }
+  },
+  "rejestryKasowoBankowe": {
+    "title": "Cash & Bank Registers",
+    "subtitle": "Record of cash and bank operations (2025)",
+    "tabs": {
+      "kasa": "Cash",
+      "bank": "Bank",
+      "summary": "Summary"
+    },
+    "kasa": {
+      "newDocument": "New Document",
+      "export": "Export",
+      "table": {
+        "date": "Date",
+        "number": "Document No.",
+        "type": "Type",
+        "amount": "Amount",
+        "description": "Description",
+        "status": "Status"
+      },
+      "types": {
+        "payout": "Payout",
+        "receipt": "Receipt"
+      },
+      "desc": {
+        "salary": "Salary payout",
+        "client": "Client receipt"
+      }
+    },
+    "bank": {
+      "newTransaction": "New Transaction",
+      "download": "Download Statement",
+      "filter": {
+        "allAccounts": "All Accounts",
+        "main": "Main Account",
+        "currency": "Currency Account"
+      },
+      "table": {
+        "date": "Transaction Date",
+        "transactionNo": "Transaction No.",
+        "type": "Type",
+        "amount": "Amount",
+        "counterparty": "Counterparty",
+        "status": "Status"
+      },
+      "types": {
+        "outgoing": "Outgoing Transfer",
+        "incoming": "Incoming Transfer"
+      },
+      "counterparty": {
+        "supplier": "Supplier XYZ",
+        "client": "Client ABC"
+      }
+    },
+    "status": {
+      "recorded": "Recorded",
+      "pending": "Pending"
+    },
+    "summary": {
+      "balanceDate": "Balance as of 31 May 2025",
+      "monthly": "May 2025 Activity",
+      "table": {
+        "account": "Account",
+        "balance": "Balance",
+        "inflow": "Inflows",
+        "outflow": "Outflows"
+      },
+      "accounts": {
+        "cash": "Main Cash",
+        "current": "Current Account",
+        "currency": "Currency Account"
+      }
+    }
+  },
+  "raportyKasowoBankowe": {
+    "title": "Cash & Bank Reports",
+    "subtitle": "Generate and analyze financial reports (2025)",
+    "tabs": {
+      "daily": "Daily",
+      "monthly": "Monthly",
+      "custom": "Custom"
+    },
+    "daily": {
+      "form": {
+        "date": "Report date",
+        "type": "Report type",
+        "all": "All operations",
+        "onlyInflows": "Only inflows",
+        "onlyOutflows": "Only outflows",
+        "currency": "Currency",
+        "curAll": "All"
+      },
+      "actions": {
+        "generate": "Generate report"
+      },
+      "summaryTitle": "Daily summary – 15 May 2025",
+      "table": {
+        "account": "Account",
+        "inflows": "Inflows",
+        "outflows": "Outflows",
+        "balance": "Balance",
+        "transactions": "Transactions"
+      },
+      "accounts": {
+        "main": "Main account",
+        "currency": "Currency account"
+      }
+    },
+    "monthly": {
+      "form": {
+        "month": "Month",
+        "type": "Report type",
+        "general": "General overview",
+        "byCounterparty": "By counterparty",
+        "byCategory": "By category",
+        "export": "Export format"
+      },
+      "actions": {
+        "generate": "Generate",
+        "export": "Export"
+      },
+      "summaryTitle": "Monthly report – May 2025",
+      "table": {
+        "category": "Category",
+        "inflows": "Inflows",
+        "outflows": "Outflows",
+        "balance": "Balance",
+        "total": "TOTAL"
+      }
+    },
+    "custom": {
+      "title": "Custom report generator",
+      "form": {
+        "from": "Period from",
+        "to": "Period to",
+        "accounts": "Bank accounts",
+        "categories": "Categories"
+      },
+      "accounts": {
+        "main": "Main (PLN)",
+        "currency": "Currency (EUR)",
+        "savings": "Savings account"
+      },
+      "categories": {
+        "all": "All categories",
+        "sales": "Sales",
+        "purchases": "Purchases",
+        "salary": "Salary"
+      },
+      "actions": {
+        "clear": "Clear",
+        "generate": "Generate report"
+      }
+    }
+  },
+  "zapisyKasowoBankowe": {
+    "title": "Cash & Bank Entries",
+    "subtitle": "Record of financial operations (2025)",
+    "tabs": {
+      "operations": "Operations",
+      "new": "New entry",
+      "balances": "Balances"
+    },
+    "operations": {
+      "new": "New operation",
+      "export": "Export"
+    },
+    "new": {
+      "heading": "Add new operation",
+      "form": {
+        "type": "Type of operation",
+        "date": "Operation date",
+        "amount": "Amount",
+        "account": "Account",
+        "desc": "Description",
+        "descPlaceholder": "Enter operation description…"
+      }
+    },
+    "table": {
+      "date": "Date",
+      "docNo": "Document no.",
+      "type": "Type",
+      "amount": "Amount",
+      "account": "Account",
+      "status": "Status",
+      "actions": "Actions",
+      "balance": "Balance",
+      "currency": "Currency"
+    },
+    "types": {
+      "cashIn": "Cash inflow",
+      "cashOut": "Cash outflow",
+      "bankIn": "Incoming transfer",
+      "bankOut": "Outgoing transfer"
+    },
+    "accounts": {
+      "cash": "Main cash",
+      "current": "Current account",
+      "currency": "Currency account"
+    },
+    "status": {
+      "posted": "Posted",
+      "pending": "Pending"
+    },
+    "actions": {
+      "details": "Details",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "save": "Save entry"
+    },
+    "balances": {
+      "heading": "Balances as of 31 May 2025"
+    }
+  },
+  "preliminarzPlatnosci": {
+    "title": "Payment Schedule",
+    "subtitle": "Plan and manage upcoming payments (2025)",
+    "tabs": {
+      "list": "Payment List",
+      "new": "New Payment",
+      "summary": "Summary"
+    },
+    "list": {
+      "add": "Add Payment",
+      "export": "Export"
+    },
+    "table": {
+      "due": "Due Date",
+      "doc": "Document",
+      "partner": "Counterparty",
+      "amount": "Amount",
+      "currency": "Currency",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "pending": "Pending",
+      "posted": "Posted"
+    },
+    "actions": {
+      "pay": "Pay",
+      "details": "Details",
+      "cancel": "Cancel",
+      "save": "Save Payment"
+    },
+    "new": {
+      "heading": "Add New Payment",
+      "form": {
+        "docType": "Document Type",
+        "due": "Due Date",
+        "docNo": "Document No.",
+        "docNoPlaceholder": "Enter number",
+        "partner": "Counterparty",
+        "partnerPlaceholder": "Enter name",
+        "amount": "Amount",
+        "currency": "Currency",
+        "method": "Payment Method"
+      },
+      "options": {
+        "invoice": "Invoice",
+        "bill": "Bill",
+        "other": "Other",
+        "transfer": "Transfer",
+        "cash": "Cash",
+        "card": "Card"
+      }
+    },
+    "summary": {
+      "byStatus": "Payments by Status – May 2025",
+      "byCurrency": "Payments by Currency",
+      "table": {
+        "status": "Status",
+        "count": "Count",
+        "amount": "Amount",
+        "currency": "Currency"
+      }
+    }
+  },
+  "magazynWalut": {
+    "title": "Currency Vault",
+    "subtitle": "Status and management of currency holdings (2025)",
+    "tabs": {
+      "status": "Vault Status",
+      "operations": "Operations",
+      "report": "Reports"
+    },
+    "status": {
+      "add": "Add Entry",
+      "export": "Export",
+      "filterPlaceholder": "Filter currencies...",
+      "available": "Available",
+      "low": "Low Stock"
+    },
+    "table": {
+      "currency": "Currency",
+      "amount": "Amount",
+      "value": "Value (PLN)",
+      "updated": "Last Updated",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actions": {
+      "history": "History",
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    },
+    "operations": {
+      "heading": "New Vault Operation",
+      "form": {
+        "type": "Operation Type",
+        "date": "Operation Date",
+        "docNo": "Document No.",
+        "docNoPlaceholder": "Enter number",
+        "currency": "Currency",
+        "amount": "Amount",
+        "rate": "Exchange Rate",
+        "notes": "Notes"
+      },
+      "types": {
+        "in": "Receipt",
+        "out": "Issue",
+        "adjust": "Adjustment"
+      }
+    },
+    "report": {
+      "flow": "Currency Movement – May 2025",
+      "in": "Receipts",
+      "out": "Issues",
+      "value": "Vault Value",
+      "total": "TOTAL"
+    }
+  },
+  "rozliczeniaPodmiotu": {
+    "title": "Inter-entity Settlements",
+    "subtitle": "Managing internal settlements (2025)",
+    "tabs": {
+      "lista": "Settlement List",
+      "nowe": "New Settlement",
+      "raporty": "Reports"
+    },
+    "actions": {
+      "new": "New Settlement",
+      "export": "Export",
+      "filterPlaceholder": "Filter dates..."
+    },
+    "table": {
+      "settlementNo": "Settlement No.",
+      "date": "Date",
+      "source": "Source Entity",
+      "target": "Target Entity",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "statuses": {
+      "posted": "Posted",
+      "inProgress": "In Progress"
+    },
+    "actionsCell": {
+      "details": "Details",
+      "edit": "Edit"
+    },
+    "newForm": {
+      "heading": "Create New Settlement",
+      "fields": {
+        "source": {
+          "label": "Source Entity",
+          "placeholder": "Select entity..."
+        },
+        "target": {
+          "label": "Target Entity",
+          "placeholder": "Select entity..."
+        },
+        "date": {
+          "label": "Settlement Date"
+        },
+        "amount": {
+          "label": "Amount",
+          "placeholder": "0.00"
+        },
+        "currency": {
+          "label": "Currency"
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Enter settlement description..."
+        }
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "save": "Save Settlement"
+      }
+    },
+    "report": {
+      "monthlyHeading": "Monthly Settlements – May 2025",
+      "balanceHeading": "Entity Balances",
+      "monthlyTable": {
+        "entity": "Entity",
+        "count": "Settlement Count",
+        "total": "Total Amount"
+      },
+      "balanceTable": {
+        "entity": "Entity",
+        "balance": "Balance"
+      }
+    }
+  },
+  "dokumentyNierozliczone": {
+    "title": "Unsettled Documents",
+    "subtitle": "Management of documents awaiting settlement (2025)",
+    "tabs": {
+      "list": "Documents list",
+      "settlements": "Settlements",
+      "reports": "Reports"
+    },
+    "table": {
+      "documentNumber": "Document number",
+      "type": "Type",
+      "contractor": "Contractor",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions",
+      "number": "Number",
+      "balance": "Balance",
+      "link": "Link",
+      "documentType": "Document type",
+      "count": "Count",
+      "value": "Value"
+    },
+    "types": {
+      "invoice": "VAT Invoice",
+      "payment": "Payment",
+      "invoices": "Invoices",
+      "payments": "Payments"
+    },
+    "status": {
+      "pending": "Pending",
+      "overdue": "Overdue"
+    },
+    "actions": {
+      "settleSelected": "Settle selected",
+      "export": "Export",
+      "settle": "Settle",
+      "cancel": "Cancel",
+      "confirmSettlement": "Confirm settlement",
+      "generateReport": "Generate report"
+    },
+    "search": {
+      "placeholder": "Search documents..."
+    },
+    "settlement": {
+      "title": "Document settlement",
+      "selectDocument": "Select document to settle",
+      "date": "Settlement date",
+      "documentsToLink": "Documents to link"
+    },
+    "reports": {
+      "title": "Unsettled documents reports",
+      "periodFrom": "Period from",
+      "periodTo": "Period to"
+    },
+    "example": {
+      "contractor1": "ABC Ltd.",
+      "contractor2": "XYZ Inc."
     }
   }
 }

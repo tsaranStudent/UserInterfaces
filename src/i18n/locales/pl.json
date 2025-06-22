@@ -2800,13 +2800,14 @@
     }
   },
   "nowaFaktura": {
-    "title": "Nowa faktura sprzedażowa",
+    "title": "Nowa faktura",
+    "subtitle": "Wypełnij formularz aby dodać nową fakturę",
     "form": {
       "contractor": "Kontrahent",
-      "contractorPlaceholder": "Wprowadź nazwę lub NIP",
+      "contractorPlaceholder": "Wybierz kontrahenta",
       "issueDate": "Data wystawienia",
       "dueDate": "Termin płatności",
-      "paymentMethod": "Sposób płatności",
+      "paymentMethod": "Forma płatności",
       "invoiceType": "Typ faktury"
     },
     "dueOptions": {
@@ -2820,25 +2821,1059 @@
       "card": "Karta"
     },
     "invoiceTypes": {
-      "vat": "Faktura VAT",
-      "proforma": "Faktura Proforma"
+      "vat": "VAT",
+      "proforma": "Proforma"
     },
     "items": {
       "header": "Pozycje faktury",
-      "name": "Nazwa towaru/usługi",
+      "name": "Nazwa",
       "qty": "Ilość",
-      "unit": "J.m.",
+      "unit": "Jednostka",
       "netPrice": "Cena netto",
       "vat": "VAT",
-      "netValue": "Wartość netto",
-      "actions": "Akcje",
-      "add": "Dodaj pozycję",
-      "remove": "Usuń"
+      "netValue": "Wartość netto"
+    },
+    "units": {
+      "pcs": "szt.",
+      "kg": "kg",
+      "m": "m"
     },
     "buttons": {
-      "backVAT": "Lista faktur VAT",
-      "backProforma": "Lista faktur proforma",
-      "save": "Zapisz fakturę"
+      "backVAT": "Powrót do VAT",
+      "backProforma": "Powrót do Proforma"
+    }
+  },
+  "common": {
+    "currency": "zł",
+    "actions": {
+      "title": "Akcje",
+      "add": "Dodaj",
+      "remove": "Usuń",
+      "save": "Zapisz"
+    }
+  },
+  "paragony": {
+    "title": "Historia paragonów",
+    "subtitle": "Przeglądaj i zarządzaj paragonami fiskalnymi",
+    "currency": "zł",
+    "listTitle": "Lista paragonów",
+    "search": {
+      "title": "Filtry wyszukiwania",
+      "receiptNumber": "Numer paragonu",
+      "receiptNumberPlaceholder": "Wprowadź numer",
+      "dateFrom": "Data od",
+      "dateTo": "Data do",
+      "amountAbove": "Kwota powyżej"
+    },
+    "table": {
+      "receiptNumber": "Numer paragonu",
+      "date": "Data",
+      "seller": "Sprzedawca",
+      "amount": "Kwota brutto",
+      "status": "Status fiskalny"
+    },
+    "status": {
+      "booked": "Zaksięgowany"
+    },
+    "actions": {
+      "title": "Akcje",
+      "filter": "Filtruj",
+      "addNew": "Dodaj nowy paragon",
+      "view": "Podgląd",
+      "print": "Drukuj",
+      "confirm": "Zatwierdź"
+    },
+    "summary": {
+      "title": "Podsumowanie transakcji",
+      "totalReceipts": "Łączna liczba paragonów",
+      "totalAmount": "Całkowita kwota"
+    },
+    "example": {
+      "seller1": "Kasa 1 - Anna Nowak"
+    }
+  },
+  "nowyParagon": {
+    "title": "Nowy paragon",
+    "subtitle": "Wystaw nowy paragon fiskalny",
+    "currency": "zł",
+    "form": {
+      "seller": "Sprzedawca",
+      "client": "Klient",
+      "clientPlaceholder": "Nazwa klienta (opcjonalnie)",
+      "date": "Data"
+    },
+    "products": {
+      "title": "Lista produktów",
+      "code": "Kod",
+      "name": "Nazwa",
+      "quantity": "Ilość",
+      "price": "Cena brutto",
+      "value": "Wartość",
+      "scanPlaceholder": "Skanuj kod"
+    },
+    "actions": {
+      "title": "Akcje",
+      "addProduct": "Dodaj produkt",
+      "remove": "Usuń",
+      "discount": "Rabat",
+      "issue": "Wystaw paragon"
+    },
+    "summary": {
+      "total": "Suma"
+    },
+    "example": {
+      "seller1": "Kasa 1 - Anna Nowak",
+      "seller2": "Kasa 2 - Jan Kowalski",
+      "product1": "Produkt testowy"
+    }
+  },
+  "rezerwacjeOdbiorcy": {
+    "title": "Rezerwacje odbiorców",
+    "subtitle": "Zarządzaj rezerwacjami klientów",
+    "form": {
+      "addTitle": "Dodaj nową rezerwację",
+      "recipient": "Odbiorca",
+      "recipientPlaceholder": "Wybierz odbiorcę",
+      "reservationDate": "Data rezerwacji",
+      "expiryDate": "Termin ważności",
+      "status": "Status"
+    },
+    "table": {
+      "reservationNumber": "Numer rezerwacji",
+      "recipient": "Odbiorca",
+      "reservationDate": "Data rezerwacji",
+      "expiryDate": "Termin ważności",
+      "itemsCount": "Liczba pozycji",
+      "status": "Status"
+    },
+    "status": {
+      "pending": "Oczekuje",
+      "inProgress": "W realizacji",
+      "confirmed": "Potwierdzona"
+    },
+    "actions": {
+      "actions": "Akcje",
+      "clear": "Wyczyść",
+      "save": "Zapisz rezerwację",
+      "allReservations": "Lista wszystkich rezerwacji",
+      "exportCSV": "Eksportuj do CSV",
+      "edit": "Edytuj",
+      "process": "Realizuj"
+    },
+    "example": {
+      "client1": "Klient ABC Sp. z o.o.",
+      "client2": "Klient XYZ Sp. z o.o."
+    }
+  },
+  "fakturyProforma": {
+    "title": "Faktury Proforma",
+    "subtitle": "Zarządzaj fakturami proforma",
+    "search": {
+      "title": "Wyszukiwanie faktur proforma",
+      "recipient": "Odbiorca",
+      "recipientPlaceholder": "Nazwa odbiorcy",
+      "invoiceNumber": "Nr faktury",
+      "invoiceNumberPlaceholder": "Nr faktury",
+      "dateFrom": "Data od",
+      "dateTo": "Data do"
+    },
+    "table": {
+      "invoiceNumber": "Nr proformy",
+      "recipient": "Odbiorca",
+      "date": "Data",
+      "amount": "Kwota",
+      "status": "Status"
+    },
+    "status": {
+      "sent": "Wysłana",
+      "pending": "Oczekuje"
+    },
+    "actions": {
+      "clear": "Wyczyść",
+      "search": "Szukaj",
+      "generateVAT": "Generuj Fakturę VAT",
+      "newInvoice": "Nowa faktura",
+      "vatInvoicesList": "Lista faktur VAT"
+    },
+    "example": {
+      "client1": "TechWorld",
+      "client2": "StudioDesign"
+    }
+  },
+  "sprzedarzDedykowana": {
+    "title": "Sprzedaż Dedykowana",
+    "subtitle": "Zarządzanie specjalnymi umowami sprzedaży",
+    "form": {
+      "title": "Nowa umowa sprzedaży",
+      "client": "Klient",
+      "clientPlaceholder": "Wyszukaj klienta...",
+      "agreementDate": "Data umowy",
+      "agreementValue": "Wartość umowy",
+      "currency": "PLN"
+    },
+    "table": {
+      "agreementNumber": "Numer umowy",
+      "client": "Klient",
+      "signDate": "Data zawarcia",
+      "deadline": "Termin realizacji",
+      "value": "Wartość",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "inProgress": "W realizacji",
+      "completed": "Zrealizowana"
+    },
+    "actions": {
+      "addProducts": "Dodaj produkty",
+      "details": "Szczegóły"
+    },
+    "example": {
+      "client1": "Firma ABC Sp. z o.o.",
+      "client2": "Przedsiębiorstwo XYZ Sp. k."
+    }
+  },
+  "fakturyZakupu": {
+    "title": "Faktury Zakupu",
+    "subtitle": "Zarządzaj fakturami zakupu",
+    "filter": {
+      "title": "Filtrowanie faktur zakupu",
+      "supplier": "Dostawca",
+      "supplierPlaceholder": "Nazwa dostawcy",
+      "dateFrom": "Data od",
+      "dateTo": "Data do"
+    },
+    "table": {
+      "invoiceNumber": "Nr faktury",
+      "supplier": "Dostawca",
+      "purchaseDate": "Data zakupu",
+      "amount": "Kwota",
+      "status": "Status"
+    },
+    "status": {
+      "recorded": "Zaksięgowana",
+      "pending": "W toku"
+    },
+    "actions": {
+      "clear": "Wyczyść",
+      "search": "Szukaj",
+      "newInvoice": "Dodaj nową fakturę"
+    },
+    "example": {
+      "supplier1": "ABC Tools",
+      "supplier2": "Global Parts"
+    }
+  },
+  "zleceniaUDostawcy": {
+    "title": "Zlecenia u dostawcy",
+    "subtitle": "Przegląd i zarządzanie zleceniami u dostawców",
+    "filter": {
+      "title": "Filtrowanie i sortowanie",
+      "supplier": "Dostawca",
+      "supplierPlaceholder": "Nazwa dostawcy",
+      "dateFrom": "Data zlecenia od",
+      "dateTo": "Data zlecenia do",
+      "status": "Status",
+      "choose": "Wybierz"
+    },
+    "table": {
+      "orderNumber": "Numer zlecenia",
+      "supplier": "Dostawca",
+      "orderDate": "Data zlecenia",
+      "status": "Status",
+      "notes": "Uwagi"
+    },
+    "status": {
+      "pending": "Oczekuje",
+      "completed": "Zrealizowane",
+      "cancelled": "Anulowane"
+    },
+    "actions": {
+      "apply": "Zastosuj filtry"
+    },
+    "example": {
+      "supplier1": "Firma ABC",
+      "supplier2": "Dostawca XYZ",
+      "supplier3": "Global Supply",
+      "noteNone": "Brak",
+      "noteOnTime": "Dostarczono na czas",
+      "noteIssue": "Problemy z dostępnością"
+    }
+  },
+  "zasoby": {
+    "title": "Zasoby magazynowe",
+    "subtitle": "Przegląd i zarządzanie zasobami",
+    "actions": {
+      "searchPlaceholder": "Wyszukaj po nr zasobu",
+      "add": "+ Dodaj zasób",
+      "edit": "Edytuj"
+    },
+    "table": {
+      "id": "ID zasobu",
+      "name": "Nazwa",
+      "type": "Typ",
+      "quantity": "Ilość",
+      "unit": "Jednostka",
+      "unitLabel": "szt.",
+      "unitSet": "komplet",
+      "availability": "Dostępność",
+      "actions": "Akcje"
+    },
+    "status": {
+      "available": "Dostępny",
+      "low": "Niska ilość"
+    },
+    "example": {
+      "item1": {
+        "name": "Wiertarka udarowa Bosch",
+        "type": "Narzędzia"
+      },
+      "item2": {
+        "name": "Zestaw kluczy nasadowych",
+        "type": "Narzędzia"
+      }
+    }
+  },
+  "raportBrakow": {
+    "title": "Raport braków magazynowych",
+    "subtitle": "Analiza braków w magazynach",
+    "form": {
+      "selectWarehouse": "Wybierz magazyn",
+      "all": "Wszystkie magazyny",
+      "main": "Magazyn główny",
+      "backup": "Magazyn zapasowy"
+    },
+    "actions": {
+      "generate": "Generuj raport"
+    },
+    "table": {
+      "code": "Kod produktu",
+      "name": "Nazwa produktu",
+      "min": "Minimalny stan",
+      "current": "Aktualny stan",
+      "diff": "Różnica",
+      "lastDelivery": "Ostatnia dostawa"
+    },
+    "example": {
+      "item1": {
+        "name": "Kabel HDMI 2.0"
+      },
+      "item2": {
+        "name": "Adapter USB-C"
+      }
+    }
+  },
+  "wydaniaZewnetrzne": {
+    "title": "Wydania zewnętrzne WZ",
+    "subtitle": "Zarządzanie dokumentami WZ",
+    "form": {
+      "title": "Dodaj nowe wydanie zewnętrzne",
+      "docNumber": "Numer dokumentu",
+      "docNumberPlaceholder": "Wprowadź numer dokumentu",
+      "date": "Data wydania",
+      "recipient": "Odbiorca",
+      "recipientPlaceholder": "Wprowadź nazwę odbiorcy",
+      "reason": "Powód wydania",
+      "reasonPlaceholder": "Wprowadź powód wydania",
+      "itemsCount": "Liczba pozycji",
+      "itemsCountPlaceholder": "Liczba pozycji",
+      "notes": "Uwagi",
+      "notesPlaceholder": "Wprowadź dodatkowe informacje"
+    },
+    "actions": {
+      "clear": "Wyczyść",
+      "save": "Zapisz wydanie",
+      "list": "Lista wydań",
+      "export": "Eksportuj do CSV",
+      "details": "Szczegóły",
+      "convert": "Zamień na"
+    },
+    "convert": {
+      "toReceipt": "Paragon",
+      "toInvoice": "Faktura",
+      "toRW": "RW"
+    },
+    "table": {
+      "docNumber": "Numer dokumentu",
+      "date": "Data wydania",
+      "recipient": "Odbiorca",
+      "reason": "Powód",
+      "itemsCount": "Liczba pozycji",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "approved": "Zatwierdzone",
+      "inProgress": "W trakcie",
+      "cancelled": "Anulowane"
+    },
+    "example": {
+      "recipient1": "Klient XYZ",
+      "reason1": "Sprzedaż",
+      "recipient2": "Serwis ABC",
+      "reason2": "Naprawa gwarancyjna",
+      "recipient3": "Klient ABC",
+      "reason3": "Zwrot towaru"
+    }
+  },
+  "przyjeciaZewnetrzne": {
+    "title": "Przyjęcia zewnętrzne PZ",
+    "subtitle": "Zarządzanie dokumentami PZ",
+    "form": {
+      "title": "Dodaj nowe przyjęcie zewnętrzne",
+      "docNumber": "Numer dokumentu",
+      "docNumberPlaceholder": "Wprowadź numer dokumentu",
+      "date": "Data przyjęcia",
+      "supplier": "Dostawca",
+      "supplierPlaceholder": "Wprowadź nazwę dostawcy",
+      "invoiceNumber": "Numer faktury",
+      "invoiceNumberPlaceholder": "Wprowadź numer faktury",
+      "itemsCount": "Liczba pozycji",
+      "itemsCountPlaceholder": "Liczba pozycji",
+      "notes": "Uwagi",
+      "notesPlaceholder": "Wpisz dodatkowe uwagi"
+    },
+    "actions": {
+      "clear": "Wyczyść",
+      "save": "Zapisz przyjęcie",
+      "list": "Lista wszystkich przyjęć",
+      "export": "Eksportuj do CSV",
+      "edit": "Edytuj",
+      "approve": "Zatwierdź",
+      "reject": "Odrzuć"
+    },
+    "table": {
+      "docNumber": "Numer dokumentu",
+      "date": "Data przyjęcia",
+      "supplier": "Dostawca",
+      "invoiceNumber": "Numer faktury",
+      "itemsCount": "Liczba pozycji",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "inProgress": "W trakcie",
+      "approved": "Zatwierdzone",
+      "rejected": "Odrzucone"
+    },
+    "example": {
+      "supplier1": "Dostawca Sp. z o.o.",
+      "invoice1": "FV/123/2025",
+      "supplier2": "Dostawca ABC",
+      "invoice2": "FV/124/2025",
+      "supplier3": "Dostawca XYZ",
+      "invoice3": "FV/125/2025"
+    }
+  },
+  "zlecenia": {
+    "title": "Zlecenia serwisowe",
+    "subtitle": "Zarządzaj zleceniami serwisowymi",
+    "actions": {
+      "searchPlaceholder": "Wyszukaj po nr zlecenia",
+      "new": "+ Nowe zlecenie",
+      "applyFilter": "Szukaj",
+      "details": "Szczegóły",
+      "approve": "Zatwierdź",
+      "cancel": "Anuluj",
+      "wait": "Oczekuj"
+    },
+    "filter": {
+      "dateFrom": "Data od",
+      "dateTo": "Data do",
+      "title": "Wyszukaj tytuł",
+      "titlePlaceholder": "Tytuł zlecenia"
+    },
+    "tabs": {
+      "open": "Otwarte",
+      "closed": "Zamknięte"
+    },
+    "table": {
+      "orderNo": "Numer zlecenia",
+      "title": "Tytuł",
+      "created": "Data utworzenia",
+      "due": "Termin realizacji",
+      "closed": "Data zamknięcia",
+      "status": "Status",
+      "priority": "Priorytet",
+      "actions": "Akcje"
+    },
+    "status": {
+      "inProgress": "W realizacji",
+      "pending": "Oczekuje",
+      "done": "Zakończone"
+    },
+    "priority": {
+      "high": "Wysoki",
+      "medium": "Średni"
+    }
+  },
+  "zleceniaCykliczne": {
+    "title": "Zlecenia cykliczne",
+    "subtitle": "Zarządzanie zleceniami cyklicznymi",
+    "actions": {
+      "searchPlaceholder": "Szukaj zlecenia...",
+      "new": "+ Nowe zlecenie cykliczne",
+      "edit": "Edytuj"
+    },
+    "filter": {
+      "allStatuses": "Wszystkie statusy"
+    },
+    "status": {
+      "active": "Aktywne",
+      "completed": "Zakończone",
+      "planned": "W planie"
+    },
+    "table": {
+      "no": "Numer zlecenia",
+      "name": "Nazwa zlecenia",
+      "startDate": "Data rozpoczęcia",
+      "frequency": "Częstotliwość",
+      "last": "Ostatnie wykonanie",
+      "next": "Następne wykonanie",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "example": {
+      "task1": {
+        "name": "Przegląd klimatyzacji",
+        "freq": "Co 3 miesiące"
+      },
+      "task2": {
+        "name": "Serwis ekspresów do kawy",
+        "freq": "Co 6 miesięcy"
+      },
+      "task3": {
+        "name": "Kontrola instalacji elektrycznej",
+        "freq": "Co 12 miesięcy"
+      }
+    }
+  },
+  "urzadzniaServis": {
+    "title": "Urządzenia przyjęte na serwis",
+    "subtitle": "Lista zgłoszeń serwisowych",
+    "actions": {
+      "searchPlaceholder": "Wyszukaj po numerze zgłoszenia...",
+      "new": "+ Nowe zgłoszenie",
+      "details": "Szczegóły",
+      "complete": "Zakończ"
+    },
+    "table": {
+      "requestNo": "Numer zgłoszenia",
+      "dateReceived": "Data przyjęcia",
+      "device": "Urządzenie",
+      "client": "Klient",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "diagnosis": "W diagnozie",
+      "repair": "W naprawie"
+    },
+    "example": {
+      "device1": "Laptop Lenovo XYZ",
+      "client1": "Jan Kowalski",
+      "device2": "Drukarka Epson L310",
+      "client2": "Firma ABC Sp. z o.o."
+    }
+  },
+  "rodzajeUrzadzenServis": {
+    "title": "Katalog urządzeń serwisowych",
+    "subtitle": "Przegląd typów urządzeń",
+    "form": {
+      "searchLabel": "Wyszukaj urządzenie",
+      "searchPlaceholder": "Nazwa lub ID urządzenia",
+      "newHeading": "Dodaj nowy typ urządzenia",
+      "name": "Nazwa urządzenia",
+      "namePlaceholder": "np. Drukarka laserowa",
+      "avgRepair": "Średni czas naprawy",
+      "avgRepairPlaceholder": "np. 3 dni",
+      "requests": "Liczba zgłoszeń",
+      "requestsPlaceholder": "np. 0"
+    },
+    "actions": {
+      "search": "Szukaj",
+      "add": "+ Dodaj nowy typ urządzenia",
+      "edit": "Edytuj",
+      "delete": "Usuń",
+      "save": "Zapisz typ urządzenia"
+    },
+    "table": {
+      "heading": "Lista dostępnych typów urządzeń",
+      "id": "ID",
+      "type": "Typ urządzenia",
+      "avgRepair": "Średni czas naprawy",
+      "requests": "Liczba zgłoszeń",
+      "actions": "Akcje"
+    },
+    "example": {
+      "type1": "Laptop",
+      "type2": "Smartphone"
+    }
+  },
+  "rejestryKasowoBankowe": {
+    "title": "Rejestry kasowo-bankowe",
+    "subtitle": "Ewidencja operacji gotówkowych i bankowych (2025)",
+    "tabs": {
+      "kasa": "Kasa",
+      "bank": "Bank",
+      "summary": "Podsumowanie"
+    },
+    "kasa": {
+      "newDocument": "Nowy dokument",
+      "export": "Eksportuj",
+      "table": {
+        "date": "Data",
+        "number": "Numer dokumentu",
+        "type": "Typ",
+        "amount": "Kwota",
+        "description": "Opis",
+        "status": "Status"
+      },
+      "types": {
+        "payout": "Wypłata",
+        "receipt": "Wpływ"
+      },
+      "desc": {
+        "salary": "Wypłata na wynagrodzenia",
+        "client": "Wpływ od klienta"
+      }
+    },
+    "bank": {
+      "newTransaction": "Nowa transakcja",
+      "download": "Pobierz wyciąg",
+      "filter": {
+        "allAccounts": "Wszystkie konta",
+        "main": "Konto główne",
+        "currency": "Konto walutowe"
+      },
+      "table": {
+        "date": "Data operacji",
+        "transactionNo": "Numer transakcji",
+        "type": "Typ",
+        "amount": "Kwota",
+        "counterparty": "Kontrahent",
+        "status": "Status"
+      },
+      "types": {
+        "outgoing": "Przelew wychodzący",
+        "incoming": "Przelew przychodzący"
+      },
+      "counterparty": {
+        "supplier": "Dostawca XYZ",
+        "client": "Klient ABC"
+      }
+    },
+    "status": {
+      "recorded": "Zaksięgowano",
+      "pending": "Do weryfikacji"
+    },
+    "summary": {
+      "balanceDate": "Stan na 31.05.2025",
+      "monthly": "Ruch w maju 2025",
+      "table": {
+        "account": "Konto",
+        "balance": "Saldo",
+        "inflow": "Wpływy",
+        "outflow": "Wydatki"
+      },
+      "accounts": {
+        "cash": "Kasa główna",
+        "current": "Konto bieżące",
+        "currency": "Konto walutowe"
+      }
+    }
+  },
+  "raportyKasowoBankowe": {
+    "title": "Raporty kasowo-bankowe",
+    "subtitle": "Generowanie i analiza raportów finansowych (2025)",
+    "tabs": {
+      "daily": "Dzienne",
+      "monthly": "Miesięczne",
+      "custom": "Niestandardowe"
+    },
+    "daily": {
+      "form": {
+        "date": "Data raportu",
+        "type": "Typ raportu",
+        "all": "Wszystkie operacje",
+        "onlyInflows": "Tylko wpływy",
+        "onlyOutflows": "Tylko wydatki",
+        "currency": "Waluta",
+        "curAll": "Wszystkie"
+      },
+      "actions": {
+        "generate": "Generuj raport"
+      },
+      "summaryTitle": "Podsumowanie dzienne – 15.05.2025",
+      "table": {
+        "account": "Konto",
+        "inflows": "Wpływy",
+        "outflows": "Wydatki",
+        "balance": "Saldo",
+        "transactions": "Liczba transakcji"
+      },
+      "accounts": {
+        "main": "Konto główne",
+        "currency": "Konto walutowe"
+      }
+    },
+    "monthly": {
+      "form": {
+        "month": "Miesiąc",
+        "type": "Typ raportu",
+        "general": "Zestawienie ogólne",
+        "byCounterparty": "Analiza kontrahentów",
+        "byCategory": "Podział kategorii",
+        "export": "Format eksportu"
+      },
+      "actions": {
+        "generate": "Generuj",
+        "export": "Eksportuj"
+      },
+      "summaryTitle": "Raport miesięczny – Maj 2025",
+      "table": {
+        "category": "Kategoria",
+        "inflows": "Wpływy",
+        "outflows": "Wydatki",
+        "balance": "Bilans",
+        "total": "SUMA"
+      }
+    },
+    "custom": {
+      "title": "Generator raportów niestandardowych",
+      "form": {
+        "from": "Okres od",
+        "to": "Okres do",
+        "accounts": "Konta bankowe",
+        "categories": "Kategorie"
+      },
+      "accounts": {
+        "main": "Konto główne (PLN)",
+        "currency": "Konto walutowe (EUR)",
+        "savings": "Konto oszczędnościowe"
+      },
+      "categories": {
+        "all": "Wszystkie kategorie",
+        "sales": "Sprzedaż",
+        "purchases": "Zakupy",
+        "salary": "Wynagrodzenia"
+      },
+      "actions": {
+        "clear": "Wyczyść",
+        "generate": "Generuj raport"
+      }
+    }
+  },
+  "zapisyKasowoBankowe": {
+    "title": "Zapisy kasowo-bankowe",
+    "subtitle": "Ewidencja operacji finansowych (2025)",
+    "tabs": {
+      "operations": "Operacje",
+      "new": "Nowa operacja",
+      "balances": "Salda"
+    },
+    "operations": {
+      "new": "Nowa operacja",
+      "export": "Eksportuj"
+    },
+    "new": {
+      "heading": "Dodaj nową operację",
+      "form": {
+        "type": "Typ operacji",
+        "date": "Data operacji",
+        "amount": "Kwota",
+        "account": "Konto",
+        "desc": "Opis",
+        "descPlaceholder": "Wprowadź opis operacji…"
+      }
+    },
+    "table": {
+      "date": "Data",
+      "docNo": "Numer dokumentu",
+      "type": "Typ",
+      "amount": "Kwota",
+      "account": "Konto",
+      "status": "Status",
+      "actions": "Akcje",
+      "balance": "Saldo",
+      "currency": "Waluta"
+    },
+    "types": {
+      "cashIn": "Wpływ gotówki",
+      "cashOut": "Wypłata gotówki",
+      "bankIn": "Przelew przychodzący",
+      "bankOut": "Przelew wychodzący"
+    },
+    "accounts": {
+      "cash": "Kasa główna",
+      "current": "Konto bieżące",
+      "currency": "Konto walutowe"
+    },
+    "status": {
+      "posted": "Zaksięgowano",
+      "pending": "W trakcie"
+    },
+    "actions": {
+      "details": "Szczegóły",
+      "edit": "Edytuj",
+      "cancel": "Anuluj",
+      "save": "Zapisz operację"
+    },
+    "balances": {
+      "heading": "Stan kont na 31.05.2025"
+    }
+  },
+  "preliminarzPlatnosci": {
+    "title": "Preliminarz płatności",
+    "subtitle": "Planowanie i zarządzanie nadchodzącymi płatnościami (2025)",
+    "tabs": {
+      "list": "Lista płatności",
+      "new": "Nowa płatność",
+      "summary": "Podsumowanie"
+    },
+    "list": {
+      "add": "Dodaj płatność",
+      "export": "Eksportuj"
+    },
+    "table": {
+      "due": "Termin płatności",
+      "doc": "Dokument",
+      "partner": "Kontrahent",
+      "amount": "Kwota",
+      "currency": "Waluta",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "status": {
+      "pending": "Oczekuje",
+      "posted": "Zaksięgowano"
+    },
+    "actions": {
+      "pay": "Zrealizuj",
+      "details": "Szczegóły",
+      "cancel": "Anuluj",
+      "save": "Zapisz płatność"
+    },
+    "new": {
+      "heading": "Dodaj nową płatność",
+      "form": {
+        "docType": "Typ dokumentu",
+        "due": "Termin płatności",
+        "docNo": "Numer dokumentu",
+        "docNoPlaceholder": "Wprowadź numer",
+        "partner": "Kontrahent",
+        "partnerPlaceholder": "Wprowadź nazwę",
+        "amount": "Kwota",
+        "currency": "Waluta",
+        "method": "Sposób płatności"
+      },
+      "options": {
+        "invoice": "Faktura",
+        "bill": "Rachunek",
+        "other": "Inne",
+        "transfer": "Przelew",
+        "cash": "Gotówka",
+        "card": "Karta"
+      }
+    },
+    "summary": {
+      "byStatus": "Płatności wg statusu – Maj 2025",
+      "byCurrency": "Płatności wg waluty",
+      "table": {
+        "status": "Status",
+        "count": "Liczba",
+        "amount": "Kwota",
+        "currency": "Waluta"
+      }
+    }
+  },
+  "magazynWalut": {
+    "title": "Magazyn walut",
+    "subtitle": "Stan i zarządzanie zasobami walutowymi (2025)",
+    "tabs": {
+      "status": "Stan magazynu",
+      "operations": "Operacje",
+      "report": "Raporty"
+    },
+    "status": {
+      "add": "Dodaj wpis",
+      "export": "Eksportuj",
+      "filterPlaceholder": "Filtruj waluty...",
+      "available": "Dostępna",
+      "low": "Niski stan"
+    },
+    "table": {
+      "currency": "Waluta",
+      "amount": "Ilość",
+      "value": "Wartość (PLN)",
+      "updated": "Ostatnia aktualizacja",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "actions": {
+      "history": "Historia",
+      "cancel": "Anuluj",
+      "confirm": "Zatwierdź operację"
+    },
+    "operations": {
+      "heading": "Nowa operacja magazynowa",
+      "form": {
+        "type": "Typ operacji",
+        "date": "Data operacji",
+        "docNo": "Numer dokumentu",
+        "docNoPlaceholder": "Wprowadź numer",
+        "currency": "Waluta",
+        "amount": "Ilość",
+        "rate": "Kurs wymiany",
+        "notes": "Uwagi"
+      },
+      "types": {
+        "in": "Przyjęcie",
+        "out": "Wydanie",
+        "adjust": "Korekta"
+      }
+    },
+    "report": {
+      "flow": "Ruch walut – Maj 2025",
+      "in": "Przyjęcia",
+      "out": "Wydania",
+      "value": "Wartość magazynu",
+      "total": "SUMA"
+    }
+  },
+  "rozliczeniaPodmiotu": {
+    "title": "Rozliczenia między podmiotami",
+    "subtitle": "Zarządzanie rozliczeniami wewnętrznymi (2025)",
+    "tabs": {
+      "lista": "Lista rozliczeń",
+      "nowe": "Nowe rozliczenie",
+      "raporty": "Raporty"
+    },
+    "actions": {
+      "new": "Nowe rozliczenie",
+      "export": "Eksportuj",
+      "filterPlaceholder": "Filtruj daty..."
+    },
+    "table": {
+      "settlementNo": "Numer rozliczenia",
+      "date": "Data",
+      "source": "Podmiot źródłowy",
+      "target": "Podmiot docelowy",
+      "amount": "Kwota",
+      "status": "Status",
+      "actions": "Akcje"
+    },
+    "statuses": {
+      "posted": "Zaksięgowano",
+      "inProgress": "W trakcie"
+    },
+    "actionsCell": {
+      "details": "Szczegóły",
+      "edit": "Edytuj"
+    },
+    "newForm": {
+      "heading": "Utwórz nowe rozliczenie",
+      "fields": {
+        "source": {
+          "label": "Podmiot źródłowy",
+          "placeholder": "Wybierz podmiot..."
+        },
+        "target": {
+          "label": "Podmiot docelowy",
+          "placeholder": "Wybierz podmiot..."
+        },
+        "date": {
+          "label": "Data rozliczenia"
+        },
+        "amount": {
+          "label": "Kwota",
+          "placeholder": "0,00"
+        },
+        "currency": {
+          "label": "Waluta"
+        },
+        "description": {
+          "label": "Opis",
+          "placeholder": "Wprowadź opis rozliczenia..."
+        }
+      },
+      "buttons": {
+        "cancel": "Anuluj",
+        "save": "Zapisz rozliczenie"
+      }
+    },
+    "report": {
+      "monthlyHeading": "Rozliczenia miesięczne – Maj 2025",
+      "balanceHeading": "Salda podmiotów",
+      "monthlyTable": {
+        "entity": "Podmiot",
+        "count": "Liczba rozliczeń",
+        "total": "Suma kwot"
+      },
+      "balanceTable": {
+        "entity": "Podmiot",
+        "balance": "Saldo"
+      }
+    }
+  },
+  "dokumentyNierozliczone": {
+    "title": "Dokumenty nierozliczone",
+    "subtitle": "Zarządzanie dokumentami oczekującymi na rozliczenie (2025)",
+    "tabs": {
+      "list": "Lista dokumentów",
+      "settlements": "Rozliczenia",
+      "reports": "Raporty"
+    },
+    "table": {
+      "documentNumber": "Numer dokumentu",
+      "type": "Typ",
+      "contractor": "Kontrahent",
+      "date": "Data",
+      "amount": "Kwota",
+      "status": "Status",
+      "actions": "Akcje",
+      "number": "Numer",
+      "balance": "Saldo",
+      "link": "Powiąż",
+      "documentType": "Typ dokumentu",
+      "count": "Liczba",
+      "value": "Wartość"
+    },
+    "types": {
+      "invoice": "Faktura VAT",
+      "payment": "Płatność",
+      "invoices": "Faktury",
+      "payments": "Płatności"
+    },
+    "status": {
+      "pending": "Oczekuje",
+      "overdue": "Przekroczony termin"
+    },
+    "actions": {
+      "settleSelected": "Rozlicz wybrane",
+      "export": "Eksportuj",
+      "settle": "Rozlicz",
+      "cancel": "Anuluj",
+      "confirmSettlement": "Zatwierdź rozliczenie",
+      "generateReport": "Generuj raport"
+    },
+    "search": {
+      "placeholder": "Szukaj dokumentów..."
+    },
+    "settlement": {
+      "title": "Rozliczanie dokumentów",
+      "selectDocument": "Wybierz dokument do rozliczenia",
+      "date": "Data rozliczenia",
+      "documentsToLink": "Dokumenty do powiązania"
+    },
+    "reports": {
+      "title": "Raporty nierozliczonych dokumentów",
+      "periodFrom": "Okres od",
+      "periodTo": "Okres do"
+    },
+    "example": {
+      "contractor1": "ABC Sp. z o.o.",
+      "contractor2": "XYZ S.A."
     }
   }
 }

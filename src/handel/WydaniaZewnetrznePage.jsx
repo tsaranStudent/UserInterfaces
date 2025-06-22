@@ -1,167 +1,245 @@
-﻿import '../App.css';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Dropdown from 'react-bootstrap/Dropdown';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import {
+    Container, Table, Accordion, Form,
+    Row, Col, Button, Badge, Card, Dropdown
+} from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 export const WydaniaZewnetrzne = () => {
+    const { t } = useTranslation();
+
     return (
-        <Container fluid className="lang-pl background">
-            
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Wydania zewnętrzne WZ</h3>
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-4">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-box-arrow-up-right me-1" aria-hidden="true" />
+                        {t('wydaniaZewnetrzne.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('wydaniaZewnetrzne.subtitle')}
+                    </p>
                 </div>
+
+                {/* Formularz dodawania */}
+                <Accordion defaultActiveKey="new" className="mb-4 module-tabs">
+                    <Accordion.Item eventKey="new">
+                        <Accordion.Header>
+                            <i className="bi bi-plus-circle me-2" />
+                            {t('wydaniaZewnetrzne.form.title')}
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <Card className="shadow-sm">
+                                <Card.Body>
+                                    <Form>
+                                        <Row className="g-3 mb-3">
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-file-earmark-text me-1" />
+                                                        {t('wydaniaZewnetrzne.form.docNumber')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder={t('wydaniaZewnetrzne.form.docNumberPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-calendar-date me-1" />
+                                                        {t('wydaniaZewnetrzne.form.date')}
+                                                    </Form.Label>
+                                                    <Form.Control type="date" />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-person me-1" />
+                                                        {t('wydaniaZewnetrzne.form.recipient')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder={t('wydaniaZewnetrzne.form.recipientPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-chat-left-text me-1" />
+                                                        {t('wydaniaZewnetrzne.form.reason')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder={t('wydaniaZewnetrzne.form.reasonPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <Row className="g-3 mb-3">
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-list-ol me-1" />
+                                                        {t('wydaniaZewnetrzne.form.itemsCount')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="number"
+                                                        placeholder={t('wydaniaZewnetrzne.form.itemsCountPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={9}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-card-text me-1" />
+                                                        {t('wydaniaZewnetrzne.form.notes')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        as="textarea"
+                                                        rows={2}
+                                                        placeholder={t('wydaniaZewnetrzne.form.notesPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <div className="d-flex justify-content-end">
+                                            <Button variant="secondary" className="me-2">
+                                                <i className="bi bi-x-circle me-1" />
+                                                {t('wydaniaZewnetrzne.actions.clear')}
+                                            </Button>
+                                            <Button variant="primary">
+                                                <i className="bi bi-save me-1" />
+                                                {t('wydaniaZewnetrzne.actions.save')}
+                                            </Button>
+                                        </div>
+                                    </Form>
+                                </Card.Body>
+                            </Card>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+
+                {/* Akcje globalne */}
+                <div className="actions-bar-end mb-4">
+                    <Button variant="outline-primary">
+                        {t('wydaniaZewnetrzne.actions.list')}
+                    </Button>
+                    <Button variant="outline-success" className="ms-3">
+                        {t('wydaniaZewnetrzne.actions.export')}
+                    </Button>
+                </div>
+
+                {/* Tabela wydania */}
+                <Card className="shadow-sm">
+                    <Card.Body>
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th>{t('wydaniaZewnetrzne.table.docNumber')}</th>
+                                    <th>{t('wydaniaZewnetrzne.table.date')}</th>
+                                    <th>{t('wydaniaZewnetrzne.table.recipient')}</th>
+                                    <th>{t('wydaniaZewnetrzne.table.reason')}</th>
+                                    <th>{t('wydaniaZewnetrzne.table.itemsCount')}</th>
+                                    <th>{t('wydaniaZewnetrzne.table.status')}</th>
+                                    <th>{t('wydaniaZewnetrzne.table.actions')}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WZ/2025/07/001</td>
+                                    <td>2025-06-10</td>
+                                    <td>{t('wydaniaZewnetrzne.example.recipient1')}</td>
+                                    <td>{t('wydaniaZewnetrzne.example.reason1')}</td>
+                                    <td>3</td>
+                                    <td>
+                                        <Badge bg="success" className="text-uppercase">
+                                            {t('wydaniaZewnetrzne.status.approved')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('wydaniaZewnetrzne.actions.details')}
+                                        </Button>{' '}
+                                        <Dropdown size="sm" className="d-inline mx-1">
+                                            <Dropdown.Toggle variant="outline-secondary">
+                                                {t('wydaniaZewnetrzne.actions.convert')}
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toReceipt')}</Dropdown.Item>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toInvoice')}</Dropdown.Item>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toRW')}</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>WZ/2025/07/002</td>
+                                    <td>2025-06-12</td>
+                                    <td>{t('wydaniaZewnetrzne.example.recipient2')}</td>
+                                    <td>{t('wydaniaZewnetrzne.example.reason2')}</td>
+                                    <td>1</td>
+                                    <td>
+                                        <Badge bg="warning" className="text-uppercase">
+                                            {t('wydaniaZewnetrzne.status.inProgress')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('wydaniaZewnetrzne.actions.details')}
+                                        </Button>{' '}
+                                        <Dropdown size="sm" className="d-inline mx-1">
+                                            <Dropdown.Toggle variant="outline-secondary">
+                                                {t('wydaniaZewnetrzne.actions.convert')}
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toReceipt')}</Dropdown.Item>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toInvoice')}</Dropdown.Item>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toRW')}</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>WZ/2025/07/003</td>
+                                    <td>2025-06-14</td>
+                                    <td>{t('wydaniaZewnetrzne.example.recipient3')}</td>
+                                    <td>{t('wydaniaZewnetrzne.example.reason3')}</td>
+                                    <td>5</td>
+                                    <td>
+                                        <Badge bg="danger" className="text-uppercase">
+                                            {t('wydaniaZewnetrzne.status.cancelled')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('wydaniaZewnetrzne.actions.details')}
+                                        </Button>{' '}
+                                        <Dropdown size="sm" className="d-inline mx-1">
+                                            <Dropdown.Toggle variant="outline-secondary">
+                                                {t('wydaniaZewnetrzne.actions.convert')}
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toReceipt')}</Dropdown.Item>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toInvoice')}</Dropdown.Item>
+                                                <Dropdown.Item>{t('wydaniaZewnetrzne.convert.toRW')}</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Card.Body>
+                </Card>
             </Container>
-
-            <Accordion defaultActiveKey="form" className="module-tabs">
-                <Accordion.Item eventKey="form" className="accordion-item">
-                    <Accordion.Header className="accordion-header">
-                        Dodaj nowe wydanie zewnętrzne
-                    </Accordion.Header>
-                    <Accordion.Body className="form-section">
-                        <Form>
-                            <Row className="mb-3">
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Numer dokumentu</Form.Label>
-                                        <Form.Control type="text" placeholder="Wprowadź numer dokumentu" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data wydania</Form.Label>
-                                        <Form.Control type="date" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Odbiorca</Form.Label>
-                                        <Form.Control type="text" placeholder="Wprowadź nazwę odbiorcy" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Powód wydania</Form.Label>
-                                        <Form.Control type="text" placeholder="Wprowadź powód wydania" />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <Row className="mb-3">
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Liczba pozycji</Form.Label>
-                                        <Form.Control type="number" placeholder="Liczba pozycji" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Uwagi</Form.Label>
-                                        <Form.Control as="textarea" rows={2} placeholder="Wprowadź dodatkowe informacje" />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <div className="form-section actions-bar-end">
-                                <Button variant="secondary">Wyczyść</Button>
-                                <Button variant="primary" className="ms-2">Zapisz wydanie</Button>
-                            </div>
-                        </Form>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-
-            <div className="actions-bar-end mt-4 form-section">
-                <Button variant="outline-primary">Lista wydań</Button>
-                <Button variant="outline-success" className="ms-3">Eksportuj do CSV</Button>
-            </div>
-
-            {/* Tabela wydań */}
-            <Table striped bordered hover responsive className="data-table mt-3">
-                <thead>
-                    <tr>
-                        <th>Numer dokumentu</th>
-                        <th>Data wydania</th>
-                        <th>Odbiorca</th>
-                        <th>Powód</th>
-                        <th>Liczba pozycji</th>
-                        <th>Status</th>
-                        <th>Akcje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>WYD/2023/07/001</td>
-                        <td>2023-07-18</td>
-                        <td>Klient XYZ</td>
-                        <td>Sprzedaż</td>
-                        <td>3</td>
-                        <td><span className="badge badge-success">Zatwierdzone</span></td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Szczegóły</Button>{' '}
-                            <Dropdown size="sm" className="d-inline mx-1">
-                                <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
-                                    Zamień na
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item>Paragon</Dropdown.Item>
-                                    <Dropdown.Item>Faktura</Dropdown.Item>
-                                    <Dropdown.Item>RW</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>WYD/2023/07/002</td>
-                        <td>2023-07-17</td>
-                        <td>Serwis ABC</td>
-                        <td>Naprawa gwarancyjna</td>
-                        <td>1</td>
-                        <td><span className="badge badge-w-realizacji">W trakcie</span></td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Szczegóły</Button>{' '}
-                            <Dropdown size="sm" className="d-inline mx-1">
-                                <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
-                                    Zamień na
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item>Paragon</Dropdown.Item>
-                                    <Dropdown.Item>Faktura</Dropdown.Item>
-                                    <Dropdown.Item>RW</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>WYD/2023/07/003</td>
-                        <td>2023-07-16</td>
-                        <td>Klient ABC</td>
-                        <td>Zwrot towaru</td>
-                        <td>5</td>
-                        <td><span className="badge badge-danger">Anulowane</span></td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Szczegóły</Button>{' '}
-                            <Dropdown size="sm" className="d-inline mx-1">
-                                <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
-                                    Zamień na
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item>Paragon</Dropdown.Item>
-                                    <Dropdown.Item>Faktura</Dropdown.Item>
-                                    <Dropdown.Item>RW</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </td>
-                    </tr>
-                </tbody>
-            </Table>
-        </Container>
+        </div>
     );
 };

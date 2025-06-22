@@ -1,109 +1,183 @@
-﻿import '../App.css';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import {
+    Container, Row, Col, Button, Form, Table, Accordion,
+    Badge, Card, ListGroup
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 export const Paragony = () => {
+    const { t } = useTranslation();
+
     return (
-        <Container fluid className="background">
-
-            
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Historia paragonów</h3>
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-2">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-cash-stack me-1" aria-hidden="true" />
+                        {t('paragony.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('paragony.subtitle')}
+                    </p>
                 </div>
+
+                {/* Panel wyszukiwania */}
+                <Accordion defaultActiveKey="filters" className="mb-4 module-tabs">
+                    <Accordion.Item eventKey="filters">
+                        <Accordion.Header>
+                            <i className="bi bi-funnel me-2" />
+                            {t('paragony.search.title')}
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <Card className="shadow-sm">
+                                <Card.Body>
+                                    <Form>
+                                        <Row className="g-3">
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-123 me-1" />
+                                                        {t('paragony.search.receiptNumber')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder={t('paragony.search.receiptNumberPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-calendar-date me-1" />
+                                                        {t('paragony.search.dateFrom')}
+                                                    </Form.Label>
+                                                    <Form.Control type="date" />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-calendar2-check me-1" />
+                                                        {t('paragony.search.dateTo')}
+                                                    </Form.Label>
+                                                    <Form.Control type="date" />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-currency-dollar me-1" />
+                                                        {t('paragony.search.amountAbove')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="number"
+                                                        placeholder={t('paragony.currency')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <div className="d-flex justify-content-end mt-3">
+                                            <Button variant="primary">
+                                                <i className="bi bi-funnel me-1" />
+                                                {t('paragony.actions.filter')}
+                                            </Button>
+                                        </div>
+                                    </Form>
+                                </Card.Body>
+                            </Card>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+
+                {/* Tabela paragonów */}
+                <Card className="shadow-sm">
+                    <Card.Body>
+                        <div className="d-flex justify-content-between align-items-center mb-3">
+                            <h4 className="page-title mb-0">
+                                <i className="bi bi-list-ul me-2" />
+                                {t('paragony.listTitle')}
+                            </h4>
+                            <div>
+                                <Link to="/nowyParagon">
+                                    <Button variant="primary">
+                                        <i className="bi bi-plus-circle me-1" />
+                                        {t('paragony.actions.addNew')}
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <Table striped hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th><i className="bi bi-hash me-1" />{t('paragony.table.receiptNumber')}</th>
+                                    <th><i className="bi bi-calendar me-1" />{t('paragony.table.date')}</th>
+                                    <th><i className="bi bi-person me-1" />{t('paragony.table.seller')}</th>
+                                    <th><i className="bi bi-cash-stack me-1" />{t('paragony.table.amount')}</th>
+                                    <th><i className="bi bi-check-circle me-1" />{t('paragony.table.status')}</th>
+                                    <th><i className="bi bi-gear me-1" />{t('paragony.actions.title')}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PAR/2023/07/001</td>
+                                    <td>2023-07-15 10:23</td>
+                                    <td>{t('paragony.example.seller1')}</td>
+                                    <td>189.99 {t('paragony.currency')}</td>
+                                    <td>
+                                        <Badge bg="success">
+                                            {t('paragony.status.booked')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm" className="me-2">
+                                            <i className="bi bi-eye me-1" />
+                                            {t('paragony.actions.view')}
+                                        </Button>
+                                        <Button variant="outline-secondary" size="sm">
+                                            <i className="bi bi-printer me-1" />
+                                            {t('paragony.actions.print')}
+                                        </Button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Card.Body>
+                </Card>
+
+                {/* Sekcja podsumowania */}
+                <Card className="shadow-sm mt-4 summary-card">
+                    <Card.Body>
+                        <Row className="align-items-center">
+                            <Col md={8}>
+                                <h5><i className="bi bi-graph-up me-2" />{t('paragony.summary.title')}</h5>
+                                <ListGroup horizontal className="mt-2">
+                                    <ListGroup.Item className="border-0 ps-0">
+                                        <i className="bi bi-receipt me-1" />
+                                        {t('paragony.summary.totalReceipts')}: <strong>1</strong>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item className="border-0">
+                                        <i className="bi bi-cash-coin me-1" />
+                                        {t('paragony.summary.totalAmount')}: <strong>189.99 {t('paragony.currency')}</strong>
+                                    </ListGroup.Item>
+                                </ListGroup>
+                            </Col>
+                            <Col md={4} className="text-end">
+                                <Button variant="success" size="lg">
+                                    <i className="bi bi-check-circle me-1" />
+                                    {t('paragony.actions.confirm')}
+                                </Button>
+                            </Col>
+                        </Row>
+                    </Card.Body>
+                </Card>
             </Container>
-
-            <Accordion defaultActiveKey="filters" className="mb-4 module-tabs">
-                <Accordion.Item eventKey="filters">
-                    <Accordion.Header className="accordion-header">Filtry wyszukiwania</Accordion.Header>
-                    <Accordion.Body className="accordion-body">
-                        <Form>
-                            <Row>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Numer paragonu</Form.Label>
-                                        <Form.Control type="text" placeholder="Wprowadź numer" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data od</Form.Label>
-                                        <Form.Control type="date" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data do</Form.Label>
-                                        <Form.Control type="date" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Kwota powyżej</Form.Label>
-                                        <Form.Control type="number" placeholder="PLN" />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-                            <Button variant="primary" className="mt-3 actions-bar-end">Filtruj</Button>
-                        </Form>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-
-            <div className="d-flex justify-content-between align-items-center mt-4">
-                <h4 className="page-title">Lista paragonów</h4>
-                <div className="actions-bar-end">
-                    <Link to="/nowyParagon">
-                        <Button variant="primary">+ Dodaj nowy paragon</Button>
-                    </Link>
-                </div>
-            </div>
-
-            <Table striped hover responsive className="data-table mt-4">
-                <thead>
-                    <tr>
-                        <th>Numer paragonu</th>
-                        <th>Data</th>
-                        <th>Sprzedawca</th>
-                        <th>Kwota brutto</th>
-                        <th>Status fiskalny</th>
-                        <th>Akcje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>PAR/2023/07/001</td>
-                        <td>2023-07-15 10:23</td>
-                        <td>Kasa 1 - Anna Nowak</td>
-                        <td>189.99 zł</td>
-                        <td><Badge bg="success" className="badge badge-success">Zaksięgowany</Badge></td>
-                        <td className="actions-bar">
-                            <Button variant="outline-primary" size="sm" className="me-2">Podgląd</Button>
-                            <Button variant="outline-secondary" size="sm">Drukuj</Button>
-                        </td>
-                    </tr>
-                </tbody>
-            </Table>
-
-            {/* Sekcja podsumowania */}
-            <div className="summary-row">
-                <div className="summary-box">
-                    <div className="summary-text">
-                        <h5>Podsumowanie transakcji</h5>
-                        <p>Łączna liczba paragonów: 1</p>
-                        <p>Całkowita kwota: 189.99 zł</p>
-                    </div>
-                    <Button variant="success" className="submit-btn">Zatwierdź</Button>
-                </div>
-            </div>
-        </Container>
+        </div>
     );
 };

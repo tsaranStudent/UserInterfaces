@@ -1,108 +1,133 @@
-﻿import '../App.css';
-
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import {
+    Container, Table, Accordion, Form,
+    Row, Col, Button, Card, Badge
+} from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 export const ZleceniaCykliczne = () => {
+    const { t } = useTranslation();
+
     return (
-        <Container fluid className="background">
-            
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Zlecenia cykliczne</h3>
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-4">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt-cutoff icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-arrow-repeat me-1" aria-hidden="true" />
+                        {t('zleceniaCykliczne.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('zleceniaCykliczne.subtitle')}
+                    </p>
                 </div>
+
+                {/* Pasek akcji */}
+                <Card className="shadow-sm mb-4">
+                    <Card.Body className="d-flex justify-content-between align-items-center">
+                        <Form className="d-flex search-input w-50">
+                            <i className="bi bi-search me-2 align-self-center" />
+                            <Form.Control
+                                type="search"
+                                placeholder={t('zleceniaCykliczne.actions.searchPlaceholder')}
+                            />
+                        </Form>
+                        <Form.Select
+                            className="ms-3"
+                            style={{ width: '200px' }}
+                        >
+                            <option>{t('zleceniaCykliczne.filter.allStatuses')}</option>
+                            <option value="active">{t('zleceniaCykliczne.status.active')}</option>
+                            <option value="completed">{t('zleceniaCykliczne.status.completed')}</option>
+                            <option value="planned">{t('zleceniaCykliczne.status.planned')}</option>
+                        </Form.Select>
+                        <Button variant="primary" className="ms-3">
+                            <i className="bi bi-plus-circle me-1" />
+                            {t('zleceniaCykliczne.actions.new')}
+                        </Button>
+                    </Card.Body>
+                </Card>
+
+                {/* Tabela zleceń */}
+                <Card className="shadow-sm">
+                    <Card.Body>
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th>{t('zleceniaCykliczne.table.no')}</th>
+                                    <th>{t('zleceniaCykliczne.table.name')}</th>
+                                    <th>{t('zleceniaCykliczne.table.startDate')}</th>
+                                    <th>{t('zleceniaCykliczne.table.frequency')}</th>
+                                    <th>{t('zleceniaCykliczne.table.last')}</th>
+                                    <th>{t('zleceniaCykliczne.table.next')}</th>
+                                    <th>{t('zleceniaCykliczne.table.status')}</th>
+                                    <th>{t('zleceniaCykliczne.table.actions')}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CYK/2025/01/001</td>
+                                    <td>{t('zleceniaCykliczne.example.task1.name')}</td>
+                                    <td>2023-01-15</td>
+                                    <td>{t('zleceniaCykliczne.example.task1.freq')}</td>
+                                    <td>2024-07-15</td>
+                                    <td>2024-10-15</td>
+                                    <td>
+                                        <Badge bg="warning" className="text-uppercase">
+                                            {t('zleceniaCykliczne.status.active')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('zleceniaCykliczne.actions.edit')}
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CYK/2025/02/005</td>
+                                    <td>{t('zleceniaCykliczne.example.task2.name')}</td>
+                                    <td>2023-02-01</td>
+                                    <td>{t('zleceniaCykliczne.example.task2.freq')}</td>
+                                    <td>2024-08-01</td>
+                                    <td>2025-02-01</td>
+                                    <td>
+                                        <Badge bg="success" className="text-uppercase">
+                                            {t('zleceniaCykliczne.status.completed')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('zleceniaCykliczne.actions.edit')}
+                                        </Button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CYK/2025/03/012</td>
+                                    <td>{t('zleceniaCykliczne.example.task3.name')}</td>
+                                    <td>2023-03-10</td>
+                                    <td>{t('zleceniaCykliczne.example.task3.freq')}</td>
+                                    <td>2024-03-10</td>
+                                    <td>2025-03-10</td>
+                                    <td>
+                                        <Badge bg="danger" className="text-uppercase">
+                                            {t('zleceniaCykliczne.status.planned')}
+                                        </Badge>
+                                    </td>
+                                    <td>
+                                        <Button variant="outline-primary" size="sm">
+                                            {t('zleceniaCykliczne.actions.edit')}
+                                        </Button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Card.Body>
+                </Card>
             </Container>
-
-            {/* Pasek akcji z filtrowaniem i przyciskiem */}
-            <div className="actions-bar">
-                <div className="actions-bar-start">
-                    <Form className="d-flex search-input">
-                        <Form.Control
-                            type="search"
-                            placeholder="Szukaj zlecenia..."
-                            className="me-2"
-                        />
-                    </Form>
-
-                    <Form.Select aria-label="Filtruj status">
-                        <option>Wszystkie statusy</option>
-                        <option value="aktywny">Aktywne</option>
-                        <option value="zakonczony">Zakończone</option>
-                        <option value="wplanie">W planie</option>
-                    </Form.Select>
-                </div>
-
-                <div className="actions-bar-end">
-                    <Button variant="primary">+ Nowe zlecenie cykliczne</Button>
-                </div>
-            </div>
-
-            {/* Tabela zleceń */}
-            <Table bordered hover responsive className="data-table">
-                <thead>
-                    <tr>
-                        <th>Numer zlecenia</th>
-                        <th>Nazwa zlecenia</th>
-                        <th>Data rozpoczęcia</th>
-                        <th>Częstotliwość</th>
-                        <th>Ostatnie wykonanie</th>
-                        <th>Następne wykonanie</th>
-                        <th>Status</th>
-                        <th>Akcje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CYK/2023/01/001</td>
-                        <td>Przegląd klimatyzacji</td>
-                        <td>2023-01-15</td>
-                        <td>Co 3 miesiące</td>
-                        <td>2024-07-15</td>
-                        <td>2024-10-15</td>
-                        <td>
-                            <span className="badge badge-w-realizacji">Aktywne</span>
-                        </td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Edytuj</Button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>CYK/2023/02/005</td>
-                        <td>Serwis ekspresów do kawy</td>
-                        <td>2023-02-01</td>
-                        <td>Co 6 miesięcy</td>
-                        <td>2024-08-01</td>
-                        <td>2025-02-01</td>
-                        <td>
-                            <span className="badge badge-success">Zakończone</span>
-                        </td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Edytuj</Button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>CYK/2023/03/012</td>
-                        <td>Kontrola instalacji elektrycznej</td>
-                        <td>2023-03-10</td>
-                        <td>Co 12 miesięcy</td>
-                        <td>2024-03-10</td>
-                        <td>2025-03-10</td>
-                        <td>
-                            <span className="badge badge-danger">W planie</span>
-                        </td>
-                        <td>
-                            <Button variant="outline-primary" size="sm">Edytuj</Button>
-                        </td>
-                    </tr>
-                </tbody>
-            </Table>
-        </Container>
+        </div>
     );
 };

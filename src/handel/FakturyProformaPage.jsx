@@ -1,126 +1,165 @@
-﻿import '../App.css';
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import {
+    Container, Table, Accordion, Form,
+    Row, Col, Button, Badge, Card
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const FakturyProforma = () => {
+    const { t } = useTranslation();
 
     return (
-        <Container fluid className="lang-pl background">
-
-            {/* Nagłówek strony */}
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Lista faktur proforma</h3>
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-4">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt-cutoff icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-file-earmark-text me-1" aria-hidden="true" />
+                        {t('fakturyProforma.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('fakturyProforma.subtitle')}
+                    </p>
                 </div>
+
+                {/* Formularz wyszukiwania */}
+                <Accordion defaultActiveKey="search" className="mb-4 module-tabs">
+                    <Accordion.Item eventKey="search">
+                        <Accordion.Header>
+                            <i className="bi bi-search me-2" />
+                            {t('fakturyProforma.search.title')}
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <Card className="shadow-sm">
+                                <Card.Body>
+                                    <Form>
+                                        <Row className="g-3">
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-person me-1" />
+                                                        {t('fakturyProforma.search.recipient')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder={t('fakturyProforma.search.recipientPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-file-earmark-text me-1" />
+                                                        {t('fakturyProforma.search.invoiceNumber')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder={t('fakturyProforma.search.invoiceNumberPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-calendar-date me-1" />
+                                                        {t('fakturyProforma.search.dateFrom')}
+                                                    </Form.Label>
+                                                    <Form.Control type="date" />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-calendar2-date me-1" />
+                                                        {t('fakturyProforma.search.dateTo')}
+                                                    </Form.Label>
+                                                    <Form.Control type="date" />
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <div className="d-flex justify-content-end mt-3">
+                                            <Button variant="secondary" className="me-2">
+                                                <i className="bi bi-x-circle me-1" />
+                                                {t('fakturyProforma.actions.clear')}
+                                            </Button>
+                                            <Button variant="primary" className="me-2">
+                                                <i className="bi bi-search me-1" />
+                                                {t('fakturyProforma.actions.search')}
+                                            </Button>
+                                            <Button variant="success">
+                                                <i className="bi bi-file-earmark-plus me-1" />
+                                                {t('fakturyProforma.actions.generateVAT')}
+                                            </Button>
+                                        </div>
+                                    </Form>
+                                </Card.Body>
+                            </Card>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+
+                {/* Przyciski akcji */}
+                <div className="actions-bar-end mt-4">
+                    <Link to="/nowaFaktura">
+                        <Button variant="outline-success" className="me-3">
+                            <i className="bi bi-plus-circle me-1" />
+                            {t('fakturyProforma.actions.newInvoice')}
+                        </Button>
+                    </Link>
+                    <Link to="/faktury">
+                        <Button variant="outline-primary">
+                            <i className="bi bi-list-ul me-1" />
+                            {t('fakturyProforma.actions.vatInvoicesList')}
+                        </Button>
+                    </Link>
+                </div>
+
+                {/* Tabela danych */}
+                <Card className="shadow-sm mt-4">
+                    <Card.Body>
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th><i className="bi bi-hash me-1" />{t('fakturyProforma.table.invoiceNumber')}</th>
+                                    <th><i className="bi bi-person me-1" />{t('fakturyProforma.table.recipient')}</th>
+                                    <th><i className="bi bi-calendar me-1" />{t('fakturyProforma.table.date')}</th>
+                                    <th><i className="bi bi-currency-dollar me-1" />{t('fakturyProforma.table.amount')}</th>
+                                    <th><i className="bi bi-info-circle me-1" />{t('fakturyProforma.table.status')}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PF/2024/01</td>
+                                    <td>{t('fakturyProforma.example.client1')}</td>
+                                    <td>2024-04-01</td>
+                                    <td>3 500,00 zł</td>
+                                    <td>
+                                        <Badge bg="success" className="text-uppercase">
+                                            {t('fakturyProforma.status.sent')}
+                                        </Badge>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PF/2024/02</td>
+                                    <td>{t('fakturyProforma.example.client2')}</td>
+                                    <td>2024-04-04</td>
+                                    <td>7 200,00 zł</td>
+                                    <td>
+                                        <Badge bg="danger" className="text-uppercase">
+                                            {t('fakturyProforma.status.pending')}
+                                        </Badge>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Card.Body>
+                </Card>
             </Container>
-
-            {/* Akordeon z formularzem wyszukiwania */}
-            <Accordion defaultActiveKey="kryteria" className="module-tabs">
-                <Accordion.Item eventKey="kryteria" className="accordion-item">
-                    <Accordion.Header className="accordion-header">
-                        Wyszukiwanie faktur proforma
-                    </Accordion.Header>
-                    <Accordion.Body className="form-section">
-                        <Form>
-                            <Row className="mb-3">
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Odbiorca</Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            placeholder="Nazwa odbiorcy"
-                                            className="search-input"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Nr faktury VAT</Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            placeholder="Nr faktury"
-                                            className="search-input"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data od</Form.Label>
-                                        <Form.Control
-                                            type="date"
-                                            placeholder="RRRR-MM-DD"
-                                            className="form-control"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data do</Form.Label>
-                                        <Form.Control
-                                            type="date"
-                                            placeholder="RRRR-MM-DD"
-                                            className="form-control"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-                            <div className="form-section">
-                                <div className="actions-bar-end">
-                                    <Button variant="secondary" type="button">Wyczyść</Button>
-                                    <Button variant="primary" className="ms-2" type="submit">Szukaj</Button>
-                                    <Button variant="success">Generuj Fakturę VAT</Button>
-                                </div>
-                            </div>
-                        </Form>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-
-            {/* Przycisk do nowej faktury i listy faktur VAT */}
-            <div className="actions-bar-end mt-4 form-section">
-                <Link to="/nowaFaktura">
-                    <Button variant="outline-success" className="me-3">Nowa faktura</Button>
-                </Link>
-                <Link to="/faktury">
-                    <Button variant="outline-primary">Lista faktur VAT</Button>
-                </Link>
-            </div>
-
-            {/* Tabela faktur proforma */}
-            <Table striped bordered hover responsive className="data-table">
-                <thead>
-                    <tr>
-                        <th>Nr proformy</th>
-                        <th>Odbiorca</th>
-                        <th>Data</th>
-                        <th>Kwota</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>PF/2024/01</td>
-                        <td>TechWorld</td>
-                        <td>2024-04-01</td>
-                        <td>3 500,00 zł</td>
-                        <td><span className="badge bg-success">Wysłana</span></td>
-                    </tr>
-                    <tr>
-                        <td>PF/2024/02</td>
-                        <td>StudioDesign</td>
-                        <td>2024-04-04</td>
-                        <td>7 200,00 zł</td>
-                        <td><span className="badge bg-danger">Oczekuje</span></td>
-                    </tr>
-                </tbody>
-            </Table>
-
-        </Container>
+        </div>
     );
 };

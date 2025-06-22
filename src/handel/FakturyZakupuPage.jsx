@@ -1,102 +1,140 @@
-﻿import '../App.css';
-
-import Container from 'react-bootstrap/Container';
-import Table from 'react-bootstrap/Table';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+﻿import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../App.css';
+import {
+    Container, Table, Accordion, Form,
+    Row, Col, Button, Badge, Card
+} from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 export const FakturyZakupu = () => {
+    const { t } = useTranslation();
+
     return (
-        <Container fluid className="lang-pl background">
-
-            
-            <Container fluid className="lang-pl mt-3 mb-3">
-                <div className="form-section">
-                    <h3 className="page-title mt-3">Lista faktur zakupu</h3>
+        <div className="background">
+            <Container className="main-content lang-pl mt-2 mb-4">
+                {/* Nagłówek */}
+                <div className="form-section text-center mb-4">
+                    <i className="bi bi-receipt-cutoff icon-unified mb-2" aria-hidden="true" />
+                    <h1 className="page-title">
+                        <i className="bi bi-file-earmark-text me-1" aria-hidden="true" />
+                        {t('fakturyZakupu.title')}
+                    </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('fakturyZakupu.subtitle')}
+                    </p>
                 </div>
+
+                {/* Sekcja filtrowania */}
+                <Accordion defaultActiveKey="filter" className="mb-4 module-tabs">
+                    <Accordion.Item eventKey="filter">
+                        <Accordion.Header>
+                            <i className="bi bi-funnel me-2" />
+                            {t('fakturyZakupu.filter.title')}
+                        </Accordion.Header>
+                        <Accordion.Body>
+                            <Card className="shadow-sm">
+                                <Card.Body>
+                                    <Form>
+                                        <Row className="g-3">
+                                            <Col md={6}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-building me-1" />
+                                                        {t('fakturyZakupu.filter.supplier')}
+                                                    </Form.Label>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder={t('fakturyZakupu.filter.supplierPlaceholder')}
+                                                    />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-calendar-date me-1" />
+                                                        {t('fakturyZakupu.filter.dateFrom')}
+                                                    </Form.Label>
+                                                    <Form.Control type="date" />
+                                                </Form.Group>
+                                            </Col>
+                                            <Col md={3}>
+                                                <Form.Group>
+                                                    <Form.Label>
+                                                        <i className="bi bi-calendar2-date me-1" />
+                                                        {t('fakturyZakupu.filter.dateTo')}
+                                                    </Form.Label>
+                                                    <Form.Control type="date" />
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <div className="d-flex justify-content-end mt-3">
+                                            <Button variant="secondary" className="me-2">
+                                                <i className="bi bi-x-circle me-1" />
+                                                {t('fakturyZakupu.actions.clear')}
+                                            </Button>
+                                            <Button variant="primary">
+                                                <i className="bi bi-search me-1" />
+                                                {t('fakturyZakupu.actions.search')}
+                                            </Button>
+                                        </div>
+                                    </Form>
+                                </Card.Body>
+                            </Card>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+
+                {/* Przycisk dodawania */}
+                <div className="actions-bar-end mb-4">
+                    <Button variant="success">
+                        <i className="bi bi-file-earmark-plus me-1" />
+                        {t('fakturyZakupu.actions.newInvoice')}
+                    </Button>
+                </div>
+
+                {/* Tabela faktur */}
+                <Card className="shadow-sm">
+                    <Card.Body>
+                        <Table striped bordered hover responsive className="data-table">
+                            <thead>
+                                <tr>
+                                    <th><i className="bi bi-hash me-1" />{t('fakturyZakupu.table.invoiceNumber')}</th>
+                                    <th><i className="bi bi-building me-1" />{t('fakturyZakupu.table.supplier')}</th>
+                                    <th><i className="bi bi-calendar me-1" />{t('fakturyZakupu.table.purchaseDate')}</th>
+                                    <th><i className="bi bi-currency-dollar me-1" />{t('fakturyZakupu.table.amount')}</th>
+                                    <th><i className="bi bi-info-circle me-1" />{t('fakturyZakupu.table.status')}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>FZ/2025/07</td>
+                                    <td>{t('fakturyZakupu.example.supplier1')}</td>
+                                    <td>2025-06-10</td>
+                                    <td>4 800,00 zł</td>
+                                    <td>
+                                        <Badge bg="success" className="text-uppercase">
+                                            {t('fakturyZakupu.status.recorded')}
+                                        </Badge>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>FZ/2025/08</td>
+                                    <td>{t('fakturyZakupu.example.supplier2')}</td>
+                                    <td>2025-06-12</td>
+                                    <td>9 200,00 zł</td>
+                                    <td>
+                                        <Badge bg="warning" className="text-uppercase">
+                                            {t('fakturyZakupu.status.pending')}
+                                        </Badge>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </Card.Body>
+                </Card>
             </Container>
-
-            {/* Sekcja filtrowania */}
-            <Accordion defaultActiveKey="filtr" className="accordion">
-                <Accordion.Item eventKey="filtr" className="accordion-item">
-                    <Accordion.Header className="accordion-header">
-                        Filtrowanie faktur zakupu
-                    </Accordion.Header>
-                    <Accordion.Body className="accordion-body form-section">
-                        <Form>
-                            <Row className="mb-3">
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Dostawca</Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            placeholder="Nazwa dostawcy"
-                                            className="search-input"
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data od</Form.Label>
-                                        <Form.Control type="date" />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={3}>
-                                    <Form.Group>
-                                        <Form.Label className="form-label">Data do</Form.Label>
-                                        <Form.Control type="date" />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <div className="actions-bar-end">
-                                <Button variant="primary">Dodaj nową fakturę</Button>
-                            </div>
-                        </Form>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-
-            {/* Tytuł strony */}
-            <h4 className="mt-4 page-title">Rejestr faktur zakupu</h4>
-
-            {/* Tabela faktur */}
-            <Table striped bordered hover responsive className="data-table">
-                <thead>
-                    <tr>
-                        <th>Nr faktury</th>
-                        <th>Dostawca</th>
-                        <th>Data zakupu</th>
-                        <th>Kwota</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>FZ/2024/15</td>
-                        <td>ABC Tools</td>
-                        <td>2024-03-15</td>
-                        <td>4 800,00 zł</td>
-                        <td>
-                            <span className="badge badge-success">Zaksięgowana</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>FZ/2024/16</td>
-                        <td>Global Parts</td>
-                        <td>2024-03-18</td>
-                        <td>9 200,00 zł</td>
-                        <td>
-                            <span className="badge badge-danger">W toku</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </Table>
-        </Container>
+        </div>
     );
 };

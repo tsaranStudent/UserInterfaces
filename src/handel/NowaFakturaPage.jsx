@@ -21,9 +21,14 @@ export const NowaFaktura = () => {
                         <i className="bi bi-receipt me-1" aria-hidden="true" />
                         {t('nowaFaktura.title')}
                     </h1>
+                    <p className="text-muted">
+                        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+                        {t('nowaFaktura.subtitle')}
+                    </p>
                 </div>
 
                 <Form>
+                    {/* Sekcja danych faktury */}
                     <Card className="form-section">
                         <Card.Body>
                             <Row className="g-3">
@@ -81,6 +86,7 @@ export const NowaFaktura = () => {
                         </Card.Body>
                     </Card>
 
+                    {/* Sekcja pozycji faktury */}
                     <Card className="form-section">
                         <Card.Body>
                             <h5 className="mb-3">
@@ -96,7 +102,7 @@ export const NowaFaktura = () => {
                                         <th>{t('nowaFaktura.items.netPrice')}</th>
                                         <th>{t('nowaFaktura.items.vat')}</th>
                                         <th>{t('nowaFaktura.items.netValue')}</th>
-                                        <th>{t('nowaFaktura.items.actions')}</th>
+                                        <th>{t('common.actions.title')}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -109,15 +115,15 @@ export const NowaFaktura = () => {
                                         </td>
                                         <td>
                                             <Form.Select>
-                                                <option>szt.</option>
-                                                <option>kg</option>
-                                                <option>m</option>
+                                                <option>{t('nowaFaktura.units.pcs')}</option>
+                                                <option>{t('nowaFaktura.units.kg')}</option>
+                                                <option>{t('nowaFaktura.units.m')}</option>
                                             </Form.Select>
                                         </td>
                                         <td>
                                             <InputGroup>
                                                 <Form.Control type="number" step="0.01" />
-                                                <InputGroup.Text>zł</InputGroup.Text>
+                                                <InputGroup.Text>{t('common.currency')}</InputGroup.Text>
                                             </InputGroup>
                                         </td>
                                         <td>
@@ -128,11 +134,11 @@ export const NowaFaktura = () => {
                                                 <option>0%</option>
                                             </Form.Select>
                                         </td>
-                                        <td>0.00 zł</td>
+                                        <td>0.00 {t('common.currency')}</td>
                                         <td>
                                             <Button variant="danger" size="sm">
                                                 <i className="bi bi-trash me-1" aria-hidden="true" />
-                                                {t('nowaFaktura.items.remove')}
+                                                {t('common.actions.remove')}
                                             </Button>
                                         </td>
                                     </tr>
@@ -140,11 +146,12 @@ export const NowaFaktura = () => {
                             </Table>
                             <Button variant="outline-primary">
                                 <i className="bi bi-plus-circle me-1" aria-hidden="true" />
-                                {t('nowaFaktura.items.add')}
+                                {t('common.actions.add')}
                             </Button>
                         </Card.Body>
                     </Card>
 
+                    {/* Przyciski akcji */}
                     <div className="actions-bar-end form-section">
                         <Link to="/faktury">
                             <Button variant="outline-primary" className="me-3">
@@ -160,7 +167,7 @@ export const NowaFaktura = () => {
                         </Link>
                         <Button variant="success" size="lg">
                             <i className="bi bi-save me-1" aria-hidden="true" />
-                            {t('nowaFaktura.buttons.save')}
+                            {t('common.actions.save')}
                         </Button>
                     </div>
                 </Form>
