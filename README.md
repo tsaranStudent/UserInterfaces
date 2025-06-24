@@ -169,10 +169,6 @@ npm run build
 
 Tomasz S.
 
-GitHub: https://github.com/tomeks-dev (przykład – podmień na właściwy jeśli inny)
-
-## Inspiracja
-
 Projekt inspirowany został systemem Comarch Optima – zarówno pod względem struktury modułów, jak i typowych funkcjonalności stosowanych w firmach księgowych i handlowych w Polsce.
 
 ## Licencja
